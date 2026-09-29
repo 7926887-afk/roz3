@@ -33,6 +33,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ИсторияСтатусовЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ОчередьОтправкиСтатусовЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_КодыСтатусовПорталов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_КодыНоменклатурыПорталов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ВыгруженныеОстаткиПорталов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_НастройкиAPIИсточникаЗаказов</xr:Item>
 			</Content>

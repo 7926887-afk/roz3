@@ -17774,6 +17774,7 @@
 			<InformationRegister>эв_НастройкиAPIИсточникаЗаказов</InformationRegister>
 			<InformationRegister>эв_ВыгруженныеОстаткиПорталов</InformationRegister>
 			<InformationRegister>эв_КодыСтатусовПорталов</InformationRegister>
+			<InformationRegister>эв_КодыНоменклатурыПорталов</InformationRegister>
 			<InformationRegister>эв_ОчередьОтправкиСтатусовЗаказов</InformationRegister>
 			<InformationRegister>эв_ИсторияСтатусовЗаказов</InformationRegister>
 			<InformationRegister>эв_ЛогиHTTPПорталов</InformationRegister>
