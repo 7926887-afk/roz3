@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<Enum uuid="ed888d31-afd2-4970-ae55-812ab99dcd62">
+	<Enum uuid="0d725b5c-4b4e-43eb-8342-090a03f6d749">
 		<InternalInfo>
 			<xr:GeneratedType name="EnumRef.эв_ВидыИсточниковЗаказа" category="Ref">
-				<xr:TypeId>a5a7ab37-2b98-4a65-8ead-13e45ea089cf</xr:TypeId>
-				<xr:ValueId>930f0447-1bfa-4e44-a682-bd8d832ccb0a</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="EnumManager.эв_ВидыИсточниковЗаказа" category="Manager">
-				<xr:TypeId>de39e3c3-ee02-47b1-a289-2c0572c6e7c6</xr:TypeId>
-				<xr:ValueId>47ab3508-426f-49b7-9959-8436a97d6e81</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="EnumList.эв_ВидыИсточниковЗаказа" category="List">
-				<xr:TypeId>534ae5f2-7344-4a58-a1f2-4ae7f313f6fa</xr:TypeId>
-				<xr:ValueId>6c94fec5-b7a8-4a90-be31-ad68d556eea5</xr:ValueId>
+				<xr:TypeId>13541baa-84d3-4fdb-aeec-d91a699a69fe</xr:TypeId>
+				<xr:ValueId>a8664b3d-bbf2-4d22-a1cd-f8e511ace3d6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.эв_ВидыИсточниковЗаказа" category="Manager">
+				<xr:TypeId>e32e2663-8d7d-4f15-afee-f8ddbdafbffb</xr:TypeId>
+				<xr:ValueId>6342e9b7-f93e-46a5-9af0-0da598026ff4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.эв_ВидыИсточниковЗаказа" category="List">
+				<xr:TypeId>22728828-fe3a-4c99-ba49-d295a4e6014b</xr:TypeId>
+				<xr:ValueId>c8716064-36be-4c98-85dc-6c818e0c230d</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -22,9 +24,36 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<StandardAttributes>
 				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
 					<xr:LinkByType/>
 					<xr:FillChecking>DontCheck</xr:FillChecking>
 					<xr:MultiLine>false</xr:MultiLine>
@@ -65,7 +94,7 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="77bb8dda-a48a-46d4-9cbc-c19a43f57f9c">
+			<EnumValue uuid="444f7427-5dbc-4e06-b148-818bed0b9b7a">
 				<Properties>
 					<Name>Асна</Name>
 					<Synonym>
@@ -77,19 +106,34 @@
 					<Comment/>
 					<Color>auto</Color>
 				</Properties>
-			</EnumValue>			<EnumValue uuid="fd90d192-d51f-4f77-a1b1-1b363b9c76db">
+			</EnumValue>
+			<EnumValue uuid="34edeefa-7295-495d-9868-00947d090d17">
 				<Properties>
-					<Name>МегаАптека</Name>
+					<Name>АптекуРу</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Мегааптека</v8:content>
+							<v8:content>Аптеку.ру</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Color>auto</Color>
 				</Properties>
-			</EnumValue>			<EnumValue uuid="0049876b-8642-49f0-87c3-d4b48eec7119">
+			</EnumValue>
+			<EnumValue uuid="5fd35075-829c-4523-b57e-30edf9ab4daf">
+				<Properties>
+					<Name>МегаАптека</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мега аптека</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="71c2bcff-3d3c-4ce9-82e7-857cd54e7980">
 				<Properties>
 					<Name>Ютека</Name>
 					<Synonym>
@@ -101,25 +145,27 @@
 					<Comment/>
 					<Color>auto</Color>
 				</Properties>
-			</EnumValue>			<EnumValue uuid="4cb6f53d-51ce-4ff0-9a53-697696fecf36">
-				<Properties>
-					<Name>АптекаМос</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>АптекаМос</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Color>auto</Color>
-				</Properties>
-			</EnumValue>			<EnumValue uuid="8e788e00-17fd-40e6-88b8-7b55b63d7f6c">
+			</EnumValue>
+			<EnumValue uuid="91eb321f-ea5d-4a58-b1a5-1473c5a8e1b8">
 				<Properties>
 					<Name>Эвалар</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Эвалар</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="73928d5d-3eef-4db2-9117-71ea0642d1f9">
+				<Properties>
+					<Name>АптекаМос</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>АптекаМос</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
