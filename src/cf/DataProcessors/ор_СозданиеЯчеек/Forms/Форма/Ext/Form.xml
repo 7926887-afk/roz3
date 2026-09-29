@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСоздатьЯчейки" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СоздатьЯчейки</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаСоздатьЯчейкиРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаСправка" id="41">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="42"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщиеПараметры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщиеПараметрыExtendedTooltip" id="4"/>
+			<ChildItems>
+				<InputField name="Склад" id="5">
+					<DataPath>Объект.Склад</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад ячеек</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СкладКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="СкладExtendedTooltip" id="7"/>
+				</InputField>
+				<InputField name="КоличествоИзмерений" id="38">
+					<DataPath>Объект.КоличествоИзмерений</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество  измерений на складе</v8:content>
+						</v8:item>
+					</ToolTip>
+					<SpinButton>true</SpinButton>
+					<ContextMenu name="КоличествоИзмеренийКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КоличествоИзмеренийРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">КоличествоИзмеренийПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ТаблицаИзмерений" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица измерений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица измерений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТаблицаИзмеренийРасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<Table name="Измерения" id="10">
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.Измерения</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+					</CommandSet>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица измерений склада</v8:content>
+						</v8:item>
+					</ToolTip>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ИзмеренияКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="ИзмеренияКоманднаяПанель" id="12">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ИзмеренияРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="ИзмеренияСтрокаПоиска" id="14">
+						<AdditionSource>
+							<Item>Измерения</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИзмеренияСтрокаПоискаКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="ИзмеренияСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ИзмеренияСостояниеПросмотра" id="17">
+						<AdditionSource>
+							<Item>Измерения</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИзмеренияСостояниеПросмотраКонтекстноеМеню" id="18"/>
+						<ExtendedTooltip name="ИзмеренияСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ИзмеренияУправлениеПоиском" id="20">
+						<AdditionSource>
+							<Item>Измерения</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ИзмеренияУправлениеПоискомКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="ИзмеренияУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ИзмеренияНомерСтроки" id="23">
+							<DataPath>Объект.Измерения.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Width>1</Width>
+							<ContextMenu name="ИзмеренияНомерСтрокиКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ИзмеренияНомерСтрокиРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<InputField name="ИзмеренияПрефикс" id="26">
+							<DataPath>Объект.Измерения.Префикс</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИзмеренияПрефиксКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ИзмеренияПрефиксРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="ИзмеренияПостфикс" id="29">
+							<DataPath>Объект.Измерения.Постфикс</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИзмеренияПостфиксКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ИзмеренияПостфиксРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<InputField name="ИзмеренияНачальнаяПозиция" id="32">
+							<DataPath>Объект.Измерения.НачальнаяПозиция</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИзмеренияНачальнаяПозицияКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ИзмеренияНачальнаяПозицияРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="ИзмеренияКоличество" id="35">
+							<DataPath>Объект.Измерения.Количество</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИзмеренияКоличествоКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ИзмеренияКоличествоРасширеннаяПодсказка" id="37"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ор_СозданиеЯчеек</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="БылиОшибкиПриСозданииЯчеек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Были ошибки при создании ячеек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьЯчейки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ячейки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьЯчейки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

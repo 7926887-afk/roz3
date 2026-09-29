@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтбор" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="ОтборСтатусОбмена" id="30">
+					<DataPath>СтатусОбмена</DataPath>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтборСтатусОбменаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ОтборСтатусОбменаРасширеннаяПодсказка" id="32"/>
+					<Events>
+						<Event name="OnChange">ОтборСтатусОбменаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборОрганизация" id="36">
+					<DataPath>Организация</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ОтборОрганизацияРасширеннаяПодсказка" id="38"/>
+					<Events>
+						<Event name="OnChange">ОтборОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаЗаказов" id="50">
+			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаЗаказов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаЗаказовКонтекстноеМеню" id="51"/>
+			<AutoCommandBar name="ТаблицаЗаказовКоманднаяПанель" id="52">
+				<ChildItems>
+					<Button name="ФормаПередатьДанные" id="26">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.ПередатьДанные</CommandName>
+						<ButtonImportance>Main</ButtonImportance>
+						<ExtendedTooltip name="ФормаПередатьДанныеРасширеннаяПодсказка" id="27"/>
+					</Button>
+					<Popup name="СписокЗаказовПередачаСтатусов" id="39">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Передать статус
+</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список заказов передача статусов</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокЗаказовПередачаСтатусовРасширеннаяПодсказка" id="40"/>
+						<ChildItems>
+							<Button name="СписокЗаказовПередатьДанныеОПривезенномЗаказе" id="41">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПередатьДанныеОПривезенномЗаказе</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Принят</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокЗаказовПередатьДанныеОПривезенномЗаказеРасширеннаяПодсказка" id="42"/>
+							</Button>
+							<Button name="ТаблицаЗаказовПередатьДанныеОГотовомКВыдачеЗаказе" id="112">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПередатьДанныеОГотовностиКВыдачеЗаказа</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Готов к выдаче</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ТаблицаЗаказовПередатьДанныеОГотовомКВыдачеЗаказеРасширеннаяПодсказка" id="113"/>
+							</Button>
+							<Button name="СписокЗаказовПередатьДанныеОВыкупленномЗаказе" id="43">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПередатьДанныеОВыкупленномЗаказе</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Продан</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокЗаказовПередатьДанныеОВыкупленномЗаказеРасширеннаяПодсказка" id="44"/>
+							</Button>
+							<Button name="СписокЗаказовПередатьДанныеОВозвращенномЗаказе" id="45">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПередатьДанныеОВозвращенномЗаказе</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Возвращен</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокЗаказовПередатьДанныеОВозвращенномЗаказеРасширеннаяПодсказка" id="46"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Button name="ТаблицаЗаказовВыбратьВыделенныеСтроки" id="78">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.ВыбратьВыделенныеСтроки</CommandName>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ТаблицаЗаказовВыбратьВыделенныеСтрокиРасширеннаяПодсказка" id="79"/>
+					</Button>
+					<Button name="ТаблицаЗаказовИсключитьВыделенныеСтроки" id="80">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.ИсключитьВыделенныеСтроки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Исключить выделенные</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ТаблицаЗаказовИсключитьВыделенныеСтрокиРасширеннаяПодсказка" id="81"/>
+					</Button>
+					<Button name="ТаблицаЗаказовОбновитьСписокЗаказов" id="82">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьСписокЗаказов</CommandName>
+						<ExtendedTooltip name="ТаблицаЗаказовОбновитьСписокЗаказовРасширеннаяПодсказка" id="83"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаЗаказовРасширеннаяПодсказка" id="53"/>
+			<SearchStringAddition name="ТаблицаЗаказовСтрокаПоиска" id="54">
+				<AdditionSource>
+					<Item>ТаблицаЗаказов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗаказовСтрокаПоискаКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ТаблицаЗаказовСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаЗаказовСостояниеПросмотра" id="57">
+				<AdditionSource>
+					<Item>ТаблицаЗаказов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗаказовСостояниеПросмотраКонтекстноеМеню" id="58"/>
+				<ExtendedTooltip name="ТаблицаЗаказовСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаЗаказовУправлениеПоиском" id="60">
+				<AdditionSource>
+					<Item>ТаблицаЗаказов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЗаказовУправлениеПоискомКонтекстноеМеню" id="61"/>
+				<ExtendedTooltip name="ТаблицаЗаказовУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТаблицаЗаказовВыбор</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="ТаблицаЗаказовВыбран" id="63">
+					<DataPath>ТаблицаЗаказов.Выбран</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТаблицаЗаказовВыбранКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ТаблицаЗаказовВыбранРасширеннаяПодсказка" id="65"/>
+				</CheckBoxField>
+				<InputField name="ТаблицаЗаказовНомерЗаказаАптекаРУ" id="66">
+					<DataPath>ТаблицаЗаказов.НомерЗаказаАптекаРУ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЗаказовНомерЗаказаАптекаРУКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ТаблицаЗаказовНомерЗаказаАптекаРУРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ТаблицаЗаказовЗаказПокупателя" id="69">
+					<DataPath>ТаблицаЗаказов.ЗаказПокупателя</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЗаказовЗаказПокупателяКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ТаблицаЗаказовЗаказПокупателяРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ТаблицаЗаказовСтатусОбмена" id="72">
+					<DataPath>ТаблицаЗаказов.СтатусОбмена</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЗаказовСтатусОбменаКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ТаблицаЗаказовСтатусОбменаРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ТаблицаЗаказовСообщениеОбОшибке" id="75">
+					<DataPath>ТаблицаЗаказов.СообщениеОбОшибке</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЗаказовСообщениеОбОшибкеКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ТаблицаЗаказовСообщениеОбОшибкеРасширеннаяПодсказка" id="77"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ор_ПанельОбменаАптекаРУ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтатусОбмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ор_СтатусыОбменаАптекаРУ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеДляПередачиОПривезенныхЗаказах" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для передачи о привезенных заказах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗаказПокупателя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ покупателя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Организация" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизаций</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ДанныеДляПередачиОВыкупленныхЗаказах" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для передачи о выкупленных заказах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗаказПокупателя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ покупателя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДанныеДляПередачиОВозвращенныхЗаказах" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для передачи о возвращенных заказах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗаказПокупателя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ покупателя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаЗаказов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица заказов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Выбран" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерЗаказаАптекаРУ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер заказа Аптека.ру</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗаказПокупателя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ покупателя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусОбмена" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус обмена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ор_СтатусыОбменаАптекаРУ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СообщениеОбОшибке" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение об ошибке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДанныеДляПередачиОГотовыхКВыдачеЗаказах" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для передачи о выкупленных заказах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗаказПокупателя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ покупателя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаЗаказов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаЗаказов.СтатусОбмена</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ор_СтатусыОбменаАптекаРУ.Возвращен</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#AEAEAE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПередатьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПередатьДанные</Action>
+		</Command>
+		<Command name="ПередатьДанныеОПривезенномЗаказе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о привезенном заказе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о привезенном заказе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПередатьДанныеОПривезенномЗаказе</Action>
+		</Command>
+		<Command name="ПередатьДанныеОВыкупленномЗаказе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о выкупленном заказе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о выкупленном заказе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПередатьДанныеОВыкупленномЗаказе</Action>
+		</Command>
+		<Command name="ПередатьДанныеОВозвращенномЗаказе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о возвращенном заказе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о возвращенном заказе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПередатьДанныеОВозвращенномЗаказе</Action>
+		</Command>
+		<Command name="ИсключитьВыделенныеСтроки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить выделенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИсключитьВыделенныеСтроки</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВыделенныеСтроки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать выделенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьВыделенныеСтроки</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьСписокЗаказов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список заказов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список заказов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСписокЗаказов</Action>
+		</Command>
+		<Command name="ПередатьДанныеОГотовностиКВыдачеЗаказа" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о готовности к выдаче заказа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать данные о возвращенном заказе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПередатьДанныеОГотовомКВыдачеЗаказе</Action>
+		</Command>
+	</Commands>
+</Form>

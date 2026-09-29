@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПроверитьДоступКПроцессингу" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьДоступКПроцессингу</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьДоступКПроцессингуРасширеннаяПодсказка" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Владелец" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Терминал</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="АдресПроцессинга" id="29">
+			<DataPath>Объект.АдресПроцессинга</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АдресПроцессингаКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="АдресПроцессингаРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="27">
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<InputField name="Сертификат" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сертификат</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СертификатКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СертификатРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">СертификатНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<PictureDecoration name="Картинка" id="24">
+					<Width>4</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.СертификатКлюча</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="26"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ПарольСертификата" id="16">
+			<DataPath>Объект.ПарольСертификата</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПарольСертификатаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПарольСертификатаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="networks" id="4">
+			<DataPath>Объект.networks</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="networksКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="networksРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="partners" id="7">
+			<DataPath>Объект.partners</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="partnersКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="partnersРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НомерТерминала" id="10">
+			<DataPath>Объект.НомерТерминала</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерТерминалаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НомерТерминалаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="servicePointExtId" id="13">
+			<DataPath>Объект.servicePointExtId</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="servicePointExtIdКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="servicePointExtIdРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="P_DistribPath" id="48">
+			<DataPath>Объект.P_DistribPath</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="P_DistribPathКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="P_DistribPathРасширеннаяПодсказка" id="50"/>
+			<Events>
+				<Event name="StartChoice">P_DistribPathНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="МаксПроцентОплатыБоеусами" id="61">
+			<DataPath>Объект.МаксимальныйПроцентОплатыБонусами</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МаксПроцентОплатыБоеусамиКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="МаксПроцентОплатыБоеусамиРасширеннаяПодсказка" id="63"/>
+		</InputField>
+		<InputField name="РежимРаботы" id="111">
+			<DataPath>Объект.РежимРаботы</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ChoiceButtonRepresentation>ShowInDropList</ChoiceButtonRepresentation>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Рабочий</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">0</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Для теста 6.1</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">1</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Для теста 6.2</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">2</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Для теста 6.3 и 6.3.1</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">3</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="РежимРаботыКонтекстноеМеню" id="112"/>
+			<ExtendedTooltip name="РежимРаботыРасширеннаяПодсказка" id="113"/>
+			<Events>
+				<Event name="OnChange">РежимРаботыПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ОднаФиктивнаяПозиция" id="85">
+			<DataPath>Объект.ОднаФиктивнаяПозиция</DataPath>
+			<ContextMenu name="ОднаФиктивнаяПозицияКонтекстноеМеню" id="86"/>
+			<ExtendedTooltip name="ОднаФиктивнаяПозицияРасширеннаяПодсказка" id="87"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.эвПараметрыЭквайринкогоТерминалаСпасибо</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АдресФайла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимРаботыДоИзменения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы до изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьДоступКПроцессингу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить доступ к процессингу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить доступ к процессингу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьДоступКПроцессингу</Action>
+		</Command>
+	</Commands>
+</Form>

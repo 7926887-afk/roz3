@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Subsystem uuid="5c89858f-2589-4a49-963b-f59f146705ed">
+		<Properties>
+			<Name>ор_МДЛПОтраслеваяФункциональность</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>МДЛП отраслевая функциональность</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПКонтрольСтатусовКИЗПриПробитииЧерезРМК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ор_МДЛПВидКонтроляСтатусовКИЗПриПробитииЧерезРМК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПДатаНачалаМаркировкиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПИспользоватьМестаДеятельностиОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПКонтролироватьЗаполнениеТоваровВУведомлениях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПОтправлятьДанныеМаркировкиЧерезОФД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ИнтеграцияМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ИнтеграцияМДЛПКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ИнтеграцияМДЛПКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_СобытияФормМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_СобытияФормМДЛПКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ор_МДЛПЗаписатьУпаковкиМаркируемыхТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ор_МДЛПЗаполнитьНомераУпаковок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ор_МДЛПЗаполнитьПоУведомлению</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ор_МДЛПЗаполнениеСоставаТранспортнойУпаковки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ор_МДЛПФормаВводаНомеровУпаковок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ор_МДЛПСопоставленияНомераУпаковокПоУведомлению</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ор_СерийныеНомераУпаковок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПРегистрироватьGTINПриПодбореНомеровУпаковок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ор_МДЛПФормаРегистрацииGTIN</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ор_ПанельАдминистрированияМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПКонтролироватьКодыМаркировкиСредствамиККТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПРежимКонтроляКМСредствамиККТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ор_ОтчетОРасхожденияхКИЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ор_ОтчетОРасхожденияхКИЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ор_ФормаВыбораСтрокиЗапасов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПДатаНачалаРазрешительногоРежима</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ИнтеграцияМДЛПВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ИнтеграцияМДЛПКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ор_МДЛПДатаНачалаДействияТСПИоТ</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

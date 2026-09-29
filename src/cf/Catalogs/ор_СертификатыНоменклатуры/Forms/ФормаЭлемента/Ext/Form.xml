@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыРеквизитыИАналитика" id="230">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы реквизиты и аналитика</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>true</VerticalStretch>
+			<ExtendedTooltip name="СтраницыРеквизитыИАналитикаРасширеннаяПодсказка" id="231"/>
+			<ChildItems>
+				<Page name="СтраницаГлавное" id="232">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Главное</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalSpacing>Double</HorizontalSpacing>
+					<ShowTitle>true</ShowTitle>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаГлавноеРасширеннаяПодсказка" id="233"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКолонки" id="1271">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа колонки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа колонки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="1272"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОсновныеДанныеЛево" id="150">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Основные данные лево</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОсновныеДанныеЛевоРасширеннаяПодсказка" id="151"/>
+									<ChildItems>
+										<UsualGroup name="ПереключениеИзображений" id="1187">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Переключение изображений</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ПереключениеИзображенийРасширеннаяПодсказка" id="1188"/>
+											<ChildItems>
+												<UsualGroup name="ПереключениеИзображенийГруппаВлево" id="1189">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Переключение изображений группа влево</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Переключение изображений группа влево</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПереключениеИзображенийГруппаВлевоРасширеннаяПодсказка" id="1190"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияВлево" id="1266">
+															<Width>5</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>5</MaxWidth>
+															<Height>2</Height>
+															<ContextMenu name="ДекорацияВлевоКонтекстноеМеню" id="1267"/>
+															<ExtendedTooltip name="ДекорацияВлевоРасширеннаяПодсказка" id="1268"/>
+														</LabelDecoration>
+														<PictureDecoration name="ДекорацияПрокруткаИзображенийВлево" id="1196">
+															<Width>5</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>8</MaxWidth>
+															<Height>2</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Прокрутка Влево</v8:content>
+																</v8:item>
+															</Title>
+															<Hyperlink>true</Hyperlink>
+															<Picture>
+																<xr:Ref>CommonPicture.ИзображениеПредыдущее</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="ДекорацияПрокруткаИзображенийВлевоКонтекстноеМеню" id="1197"/>
+															<ExtendedTooltip name="ДекорацияПрокруткаИзображенийВлевоРасширеннаяПодсказка" id="1198"/>
+															<Events>
+																<Event name="Click">ДекорацияПрокруткаИзображенийВлевоНажатие</Event>
+															</Events>
+														</PictureDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Изображение" id="1202">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Изображение</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ИзображениеРасширеннаяПодсказка" id="1203"/>
+													<ChildItems>
+														<PictureField name="АдресКартинки" id="1204">
+															<DataPath>Изображения[0].Адрес</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Изображение</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<EditMode>EnterOnInput</EditMode>
+															<AutoEditMode>true</AutoEditMode>
+															<Width>20</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>20</MaxWidth>
+															<Height>5</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MaxHeight>5</MaxHeight>
+															<VerticalStretch>false</VerticalStretch>
+															<PictureSize>Proportionally</PictureSize>
+															<Hyperlink>true</Hyperlink>
+															<NonselectedPictureText>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Добавить изображение</v8:content>
+																</v8:item>
+															</NonselectedPictureText>
+															<TextColor>style:ЦветТекстаНевыбраннойКартинки</TextColor>
+															<Font ref="style:NormalTextFont" kind="StyleItem"/>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+															</Border>
+															<FileDragMode>AsFile</FileDragMode>
+															<PictureColor>style:ЦветТекстаНевыбраннойКартинки</PictureColor>
+															<ContextMenu name="АдресКартинкиКонтекстноеМеню" id="1205">
+																<ChildItems>
+																	<Button name="АдресКартинкиКонтекстноеМенюДобавитьИзображение" id="1210">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ДобавитьИзображение</CommandName>
+																		<ExtendedTooltip name="АдресКартинкиКонтекстноеМенюДобавитьИзображениеРасширеннаяПодсказка" id="1211"/>
+																	</Button>
+																	<Button name="АдресКартинкиКонтекстноеМенюУдалитьИзображение" id="1212">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.УдалитьИзображение</CommandName>
+																		<ExtendedTooltip name="АдресКартинкиКонтекстноеМенюУдалитьИзображениеРасширеннаяПодсказка" id="1213"/>
+																	</Button>
+																	<Button name="АдресКартинкиКонтекстноеМенюПросмотретьИзображение" id="1214">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ПросмотретьИзображение</CommandName>
+																		<ExtendedTooltip name="АдресКартинкиКонтекстноеМенюПросмотретьИзображениеРасширеннаяПодсказка" id="1215"/>
+																	</Button>
+																</ChildItems>
+															</ContextMenu>
+															<ExtendedTooltip name="АдресКартинкиРасширеннаяПодсказка" id="1206"/>
+															<Events>
+																<Event name="Click">Подключаемый_АдресКартинкиНажатие</Event>
+															</Events>
+														</PictureField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ИконкаПанельГруппаВправо" id="1218">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Иконка панель группа вправо</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ИконкаПанельГруппаВправоРасширеннаяПодсказка" id="1219"/>
+													<ChildItems>
+														<UsualGroup name="ИзображениеКоманднаяПанельГруппаВправо" id="1220">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Изображение командная панель группа вправо</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<HorizontalSpacing>Single</HorizontalSpacing>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ИзображениеКоманднаяПанельГруппаВправоРасширеннаяПодсказка" id="1221"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияВправо" id="1222">
+																	<Height>2</Height>
+																	<ContextMenu name="ДекорацияВправоКонтекстноеМеню" id="1223"/>
+																	<ExtendedTooltip name="ДекорацияВправоРасширеннаяПодсказка" id="1224"/>
+																</LabelDecoration>
+																<UsualGroup name="ГруппаКомандыИзображения" id="1225">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа команды изображения</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Group>HorizontalIfPossible</Group>
+																	<HorizontalSpacing>Half</HorizontalSpacing>
+																	<VerticalAlign>Center</VerticalAlign>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаКомандыИзображенияРасширеннаяПодсказка" id="1226"/>
+																	<ChildItems>
+																		<CommandBar name="ИзображениеКоманднаяПанель" id="1235">
+																			<Visible>false</Visible>
+																			<EnableContentChange>true</EnableContentChange>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Изображение командная панель</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Width>3</Width>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<HorizontalLocation>Right</HorizontalLocation>
+																			<ExtendedTooltip name="ИзображениеКоманднаяПанельРасширеннаяПодсказка" id="1236"/>
+																			<ChildItems>
+																				<Popup name="ИзображениеКоманднаяПанельПодменю" id="1237">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Изображение командная панель подменю</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Picture>
+																						<xr:Ref>CommonPicture.РазделАдминистрирование</xr:Ref>
+																						<xr:LoadTransparent>false</xr:LoadTransparent>
+																					</Picture>
+																					<Representation>Picture</Representation>
+																					<ShapeRepresentation>None</ShapeRepresentation>
+																					<ExtendedTooltip name="ИзображениеКоманднаяПанельПодменюРасширеннаяПодсказка" id="1238"/>
+																					<ChildItems>
+																						<Button name="АдресКартинкиКонтекстноеМенюУдалитьИзображениеДоп" id="1241">
+																							<Type>CommandBarButton</Type>
+																							<CommandName>Form.Command.УдалитьИзображение</CommandName>
+																							<ExtendedTooltip name="АдресКартинкиКонтекстноеМенюУдалитьИзображениеДопРасширеннаяПодсказка" id="1242"/>
+																						</Button>
+																						<Button name="АдресКартинкиКонтекстноеМенюПросмотретьИзображениеДоп" id="1243">
+																							<Type>CommandBarButton</Type>
+																							<CommandName>Form.Command.ПросмотретьИзображение</CommandName>
+																							<ExtendedTooltip name="АдресКартинкиКонтекстноеМенюПросмотретьИзображениеДопРасширеннаяПодсказка" id="1244"/>
+																						</Button>
+																						<Button name="АдресКартинкиКонтекстноеМенюДобавитьИзображениеДоп" id="1245">
+																							<Type>CommandBarButton</Type>
+																							<CommandName>Form.Command.ДобавитьИзображение</CommandName>
+																							<ExtendedTooltip name="АдресКартинкиКонтекстноеМенюДобавитьИзображениеДопРасширеннаяПодсказка" id="1246"/>
+																						</Button>
+																					</ChildItems>
+																				</Popup>
+																			</ChildItems>
+																		</CommandBar>
+																		<Button name="КомандыИзображения" id="1249">
+																			<Type>UsualButton</Type>
+																			<Representation>Picture</Representation>
+																			<Width>3</Width>
+																			<CommandName>Form.Command.КомандыИзображения</CommandName>
+																			<BackColor>style:FormBackColor</BackColor>
+																			<Picture>
+																				<xr:Ref>CommonPicture.Дополнительно</xr:Ref>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</Picture>
+																			<ShapeRepresentation>None</ShapeRepresentation>
+																			<ExtendedTooltip name="КомандыИзображенияРасширеннаяПодсказка" id="1250"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ДекорацияПрокруткаИзображенийВправоГруппа" id="1269">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация прокрутка изображений вправо группа</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ДекорацияПрокруткаИзображенийВправоГруппаРасширеннаяПодсказка" id="1270"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияПрокруткаИзображенийВправо" id="1251">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<MaxWidth>8</MaxWidth>
+																	<Height>2</Height>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Прокрутка вправо</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ИзображениеСледующее</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<FileDragMode>AsFile</FileDragMode>
+																	<ContextMenu name="ДекорацияПрокруткаИзображенийВправоКонтекстноеМеню" id="1252"/>
+																	<ExtendedTooltip name="ДекорацияПрокруткаИзображенийВправоРасширеннаяПодсказка" id="1253"/>
+																	<Events>
+																		<Event name="Click">ДекорацияПрокруткаИзображенийВправоНажатие</Event>
+																	</Events>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОсновныеДанныеПраво" id="152">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Основные данные право</v8:content>
+										</v8:item>
+									</Title>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОсновныеДанныеПравоРасширеннаяПодсказка" id="153"/>
+									<ChildItems>
+										<InputField name="ТипСертификата" id="100">
+											<DataPath>Объект.ТипСертификата</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ТипСертификатаКонтекстноеМеню" id="101"/>
+											<ExtendedTooltip name="ТипСертификатаРасширеннаяПодсказка" id="102"/>
+											<Events>
+												<Event name="OnChange">ТипСертификатаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="Номер" id="117">
+											<DataPath>Объект.Номер</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="НомерКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="119"/>
+											<Events>
+												<Event name="OnChange">НомерПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаСрокДействия" id="103">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Срок действия</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>true</ShowTitle>
+											<ExtendedTooltip name="ГруппаСрокДействияРасширеннаяПодсказка" id="104"/>
+											<ChildItems>
+												<InputField name="ДатаНачала" id="111">
+													<DataPath>Объект.ДатаНачала</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата начала</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="112"/>
+													<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="113"/>
+													<Events>
+														<Event name="OnChange">ДатаНачалаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ДатаОкончания" id="108">
+													<DataPath>Объект.ДатаОкончания</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата окончания</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="109"/>
+													<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="110"/>
+													<Events>
+														<Event name="OnChange">ДатаОкончанияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<CheckBoxField name="Бессрочный" id="105">
+													<DataPath>Объект.Бессрочный</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Switcher</CheckBoxType>
+													<ContextMenu name="БессрочныйКонтекстноеМеню" id="106"/>
+													<ExtendedTooltip name="БессрочныйРасширеннаяПодсказка" id="107"/>
+													<Events>
+														<Event name="OnChange">БессрочныйПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ОрганВыдавшийДокумент" id="114">
+							<DataPath>Объект.ОрганВыдавшийДокумент</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выдано</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>2</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>2</MaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОрганВыдавшийДокументКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ОрганВыдавшийДокументРасширеннаяПодсказка" id="116"/>
+							<Events>
+								<Event name="OnChange">ОрганВыдавшийДокументПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Родитель" id="93">
+							<DataPath>Объект.Parent</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="РодительКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="95"/>
+						</InputField>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>2</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>2</MaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="1183">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>true</ShowTitle>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="1184"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДополнительныеРеквизиты" id="162">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные реквизиты</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="163"/>
+						</UsualGroup>
+						<Button name="СоздатьНовыйДопРеквизит" id="1282">
+							<Type>Hyperlink</Type>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CommandName>Form.Command.СоздатьНовыйДопРеквизит</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ButtonImportance>Supplementary</ButtonImportance>
+							<ExtendedTooltip name="СоздатьНовыйДопРеквизитРасширеннаяПодсказка" id="1283"/>
+						</Button>
+						<UsualGroup name="СозданиеДополнительныхРеквизитов" id="1185">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создание реквизита</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="СозданиеДополнительныхРеквизитовРасширеннаяПодсказка" id="1186"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ор_СертификатыНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КэшНаименование" id="6">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтложеннаяИнициализация" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Изображения" id="4">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Адрес" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="2">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ор_СертификатыНоменклатурыПрисоединенныеФайлы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекущееИзображение" id="2">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПросмотретьИзображение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотреть изображение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотреть изображение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldOpen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПросмотретьИзображение</Action>
+			<Representation>Picture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьИзображение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить изображение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить изображение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьИзображение</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьИзображение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить изображение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить изображение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьИзображение</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандыИзображения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды изображения</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КомандыИзображения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьНовыйДопРеквизит" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>+ Свой реквизит</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новый доп реквизит</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовыйДопРеквизит</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьДополнительныеРеквизитыИСведения</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>3:a2dc04f8-106d-40b9-bcf2-899fc656da14</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>5:21a4baca-3ad7-4217-bd1e-974d458b2c3d</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3:84a14ad1-7bcb-4f1e-9116-222d20401f18</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0:029566f3-f943-4868-8add-231d1093e666</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>3:78db2e98-1496-4b87-9255-046fcb1e785c</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>4:78db2e98-1496-4b87-9255-046fcb1e785c</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

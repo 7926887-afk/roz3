@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="76655578-440f-477a-9ce6-80c5940ddede">
+		<Name>ГруппаНастроекВыгрузки</Name>
+		<Code/>
+		<Description>Настройки выгрузки документов и справочников</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="20bdf5de-7cdf-4e3f-aad1-73cb5f626208">
+		<Name>ГруппаНастроекЗагрузки</Name>
+		<Code/>
+		<Description>Настройки загрузки документов и справочников</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="ef61af58-84a9-4da5-8917-7547bc3927e0">
+				<Name>АптекаХолд</Name>
+				<Code/>
+				<Description>Аптека-холдинг</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bacbb808-6f89-4f6a-91af-f055ea0eec6a">
+				<Name>Генезис</Name>
+				<Code/>
+				<Description>Генезис</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="69b59efe-ef3b-433b-8f11-8123c034d673">
+				<Name>Катрен</Name>
+				<Code/>
+				<Description>Катрен</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="61f1ab5b-54b1-4bc5-8707-6d40552dc91d">
+				<Name>Морон</Name>
+				<Code/>
+				<Description>Морон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d56a7ff0-ceca-4fc0-808c-42290b6ad0e7">
+				<Name>Протек</Name>
+				<Code/>
+				<Description>Протек</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="642a528b-caa7-4c75-8db9-7e070fc9c556">
+				<Name>Сиа</Name>
+				<Code/>
+				<Description>Сиа</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="fd3e0aaa-4cbc-4da1-a2e0-a1c360b3103e">
+		<Name>ГруппаНастроекЗагрузкиФальсификатов</Name>
+		<Code/>
+		<Description>Настройки загрузки фальсификатов</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="33fa0bdf-02a2-484e-89b9-5ca3a4f2de83">
+				<Name>ЗагрузкаФальсификатовDBF</Name>
+				<Code/>
+				<Description>Загрузка фальсификатов из DBF</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4d6ce517-4d69-400a-b344-570b52b6803a">
+				<Name>ЗагрузкаФальсификатовMDB</Name>
+				<Code/>
+				<Description>Загрузка фальсификатов из MDB</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="87484192-513a-4226-b672-5b6806daaafd">
+		<Name>ГруппаНастроекЗагрузкиРеестрЦенЖНВЛС</Name>
+		<Code/>
+		<Description>Настройки загрузки цен ЖНВЛП</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="5b1e3808-574f-4985-8385-09704e82e07c">
+				<Name>ЗагрузкаЦенЖНВЛСНедействующие</Name>
+				<Code/>
+				<Description>Загрузка в реестр недействующих цен ЖНВЛП</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="bbc381b9-19d4-455a-802c-15c9995588f3">
+				<Name>ЗагрузкаЦенЖНВЛС</Name>
+				<Code/>
+				<Description>Загрузка в реестр цен ЖНВЛП</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

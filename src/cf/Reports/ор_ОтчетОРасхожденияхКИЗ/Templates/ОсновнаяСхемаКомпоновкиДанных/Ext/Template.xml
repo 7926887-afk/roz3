@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерУпаковки</dataPath>
+			<field>НомерУпаковки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер упаковки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Уведомление</dataPath>
+			<field>Уведомление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВДокументе</dataPath>
+			<field>ВДокументе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В документе</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВУведомлении</dataPath>
+			<field>ВУведомлении</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В уведомлении</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьРасхождения</dataPath>
+			<field>ЕстьРасхождения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть расхождения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ТаблицаДокументы.Ссылка КАК Ссылка,
+	Статусы.Статус КАК Статус
+ПОМЕСТИТЬ ОформленныеДокументы
+ИЗ
+	Документ.УведомлениеОПриемкеМДЛП КАК ТаблицаДокументы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтатусыИнформированияМДЛП КАК Статусы
+		ПО (Статусы.Документ = ТаблицаДокументы.Ссылка)
+ГДЕ
+	ТаблицаДокументы.Основание = &amp;Документ
+	И НЕ ТаблицаДокументы.ПометкаУдаления
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаДокументы.Ссылка,
+	Статусы.Статус
+ИЗ
+	Документ.УведомлениеОбОтгрузкеМДЛП КАК ТаблицаДокументы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтатусыИнформированияМДЛП КАК Статусы
+		ПО (Статусы.Документ = ТаблицаДокументы.Ссылка)
+ГДЕ
+	ТаблицаДокументы.Основание = &amp;Документ
+	И НЕ ТаблицаДокументы.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаУпаковок.НомерКИЗ КАК НомерУпаковки,
+	ТаблицаТовары.Номенклатура КАК Номенклатура,
+	ТаблицаТовары.Характеристика КАК Характеристика
+ПОМЕСТИТЬ ТоварыКОформлениюДокумент
+ИЗ
+	Документ.ПриходнаяНакладная.Запасы КАК ТаблицаТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ПриходнаяНакладная.ор_НомераУпаковок КАК ТаблицаУпаковок
+		ПО (ТаблицаУпаковок.Ссылка = ТаблицаТовары.Ссылка)
+			И (ТаблицаУпаковок.ИдентификаторСтроки = ТаблицаТовары.ор_ИдентификаторСтроки)
+ГДЕ
+	ТаблицаТовары.Ссылка = &amp;Документ
+	И ТаблицаТовары.ор_СтатусЗаполненияУпаковок &lt;&gt; 0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаУпаковок.НомерКИЗ,
+	ТаблицаТовары.Номенклатура,
+	ТаблицаТовары.Характеристика
+ИЗ
+	Документ.РасходнаяНакладная.Запасы КАК ТаблицаТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.РасходнаяНакладная.ор_НомераУпаковок КАК ТаблицаУпаковок
+		ПО (ТаблицаУпаковок.Ссылка = ТаблицаТовары.Ссылка)
+			И (ТаблицаУпаковок.ИдентификаторСтроки = ТаблицаТовары.ор_ИдентификаторСтроки)
+ГДЕ
+	ТаблицаТовары.Ссылка = &amp;Документ
+	И ТаблицаТовары.ор_СтатусЗаполненияУпаковок &lt;&gt; 0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаТранспортныеУпаковки.НомерУпаковки,
+	"Транспортная упаковка",
+	"Транспортная упаковка"
+ИЗ
+	Документ.ПриходнаяНакладная.ор_ТранспортныеУпаковки КАК ТаблицаТранспортныеУпаковки
+ГДЕ
+	ТаблицаТранспортныеУпаковки.Ссылка = &amp;Документ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаТранспортныеУпаковки.НомерУпаковки,
+	"Транспортная упаковка",
+	"Транспортная упаковка"
+ИЗ
+	Документ.РасходнаяНакладная.ор_ТранспортныеУпаковки КАК ТаблицаТранспортныеУпаковки
+ГДЕ
+	ТаблицаТранспортныеУпаковки.Ссылка = &amp;Документ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаУпаковок.НомерКИЗ,
+	ТаблицаТовары.Номенклатура,
+	ТаблицаТовары.Характеристика
+ИЗ
+	Документ.ПриходныйОрдер.Запасы КАК ТаблицаТовары
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ПриходныйОрдер.ор_НомераУпаковок КАК ТаблицаУпаковок
+		ПО (ТаблицаУпаковок.Ссылка = ТаблицаТовары.Ссылка)
+			И (ТаблицаУпаковок.ИдентификаторСтроки = ТаблицаТовары.ор_ИдентификаторСтроки)
+ГДЕ
+	ТаблицаТовары.Ссылка.ДокументОснование = &amp;Документ
+	И ТаблицаТовары.ор_СтатусЗаполненияУпаковок &lt;&gt; 0
+	И ТаблицаТовары.Ссылка.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаТранспортныеУпаковки.НомерУпаковки,
+	"Транспортная упаковка",
+	"Транспортная упаковка"
+ИЗ
+	Документ.ПриходныйОрдер.ор_ТранспортныеУпаковки КАК ТаблицаТранспортныеУпаковки
+ГДЕ
+	ТаблицаТранспортныеУпаковки.Ссылка.ДокументОснование = &amp;Документ
+	И ТаблицаТранспортныеУпаковки.Ссылка.Проведен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОформленныеУпаковки.НомерКИЗ КАК НомерУпаковки,
+	ОформленныеТовары.Номенклатура КАК Номенклатура,
+	ОформленныеТовары.Характеристика КАК Характеристика,
+	ОформленныеУпаковки.Ссылка КАК Уведомление
+ПОМЕСТИТЬ ТоварыКОформлениюУведомление
+ИЗ
+	Документ.УведомлениеОПриемкеМДЛП.НомераУпаковок КАК ОформленныеУпаковки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.УведомлениеОПриемкеМДЛП.Товары КАК ОформленныеТовары
+		ПО (ОформленныеТовары.Ссылка = ОформленныеУпаковки.Ссылка)
+			И (ОформленныеТовары.ИдентификаторСтроки = ОформленныеУпаковки.ИдентификаторСтроки)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ОформленныеДокументы КАК ОформленныеДокументы
+		ПО (ОформленныеДокументы.Ссылка = ОформленныеУпаковки.Ссылка)
+ГДЕ
+	ВЫБОР
+			КОГДА ОформленныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтозваноПоставщиком)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоПокупателем)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоГИСМ)
+				ТОГДА ВЫБОР
+						КОГДА ОформленныеДокументы.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыИнформированияМДЛП.Закрыто)
+							ТОГДА ЛОЖЬ
+						ИНАЧЕ ЛОЖЬ
+					КОНЕЦ
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОформленныеУпаковки.НомерКИЗ,
+	ОформленныеТовары.Номенклатура,
+	ОформленныеТовары.Характеристика,
+	ОформленныеУпаковки.Ссылка
+ИЗ
+	Документ.УведомлениеОбОтгрузкеМДЛП.НомераУпаковок КАК ОформленныеУпаковки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.УведомлениеОбОтгрузкеМДЛП.Товары КАК ОформленныеТовары
+		ПО (ОформленныеТовары.Ссылка = ОформленныеУпаковки.Ссылка)
+			И (ОформленныеТовары.ИдентификаторСтроки = ОформленныеУпаковки.ИдентификаторСтроки)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ОформленныеДокументы КАК ОформленныеДокументы
+		ПО (ОформленныеДокументы.Ссылка = ОформленныеУпаковки.Ссылка)
+ГДЕ
+	ВЫБОР
+			КОГДА ОформленныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтозваноПоставщиком)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоПокупателем)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоГИСМ)
+				ТОГДА ВЫБОР
+						КОГДА ОформленныеДокументы.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыИнформированияМДЛП.Закрыто)
+							ТОГДА ЛОЖЬ
+						ИНАЧЕ ЛОЖЬ
+					КОНЕЦ
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОформленныеТранспортныеУпаковки.НомерУпаковки,
+	"Транспортная упаковка",
+	"Транспортная упаковка",
+	ОформленныеТранспортныеУпаковки.Ссылка
+ИЗ
+	Документ.УведомлениеОПриемкеМДЛП.ТранспортныеУпаковки КАК ОформленныеТранспортныеУпаковки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ОформленныеДокументы КАК ОформленныеДокументы
+		ПО (ОформленныеДокументы.Ссылка = ОформленныеТранспортныеУпаковки.Ссылка)
+ГДЕ
+	ВЫБОР
+			КОГДА ОформленныеТранспортныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтозваноПоставщиком)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеТранспортныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоПокупателем)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеТранспортныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоГИСМ)
+				ТОГДА ВЫБОР
+						КОГДА ОформленныеДокументы.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыИнформированияМДЛП.Закрыто)
+							ТОГДА ЛОЖЬ
+						ИНАЧЕ ЛОЖЬ
+					КОНЕЦ
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОформленныеТранспортныеУпаковки.НомерУпаковки,
+	"Транспортная упаковка",
+	"Транспортная упаковка",
+	ОформленныеТранспортныеУпаковки.Ссылка
+ИЗ
+	Документ.УведомлениеОбОтгрузкеМДЛП.ТранспортныеУпаковки КАК ОформленныеТранспортныеУпаковки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ОформленныеДокументы КАК ОформленныеДокументы
+		ПО (ОформленныеДокументы.Ссылка = ОформленныеТранспортныеУпаковки.Ссылка)
+ГДЕ
+	ВЫБОР
+			КОГДА ОформленныеТранспортныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтозваноПоставщиком)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеТранспортныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоПокупателем)
+				ТОГДА ЛОЖЬ
+			КОГДА ОформленныеТранспортныеУпаковки.СостояниеПодтверждения = ЗНАЧЕНИЕ(Перечисление.СостоянияПодтвержденияМДЛП.ОтклоненоГИСМ)
+				ТОГДА ВЫБОР
+						КОГДА ОформленныеДокументы.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыИнформированияМДЛП.Закрыто)
+							ТОГДА ЛОЖЬ
+						ИНАЧЕ ЛОЖЬ
+					КОНЕЦ
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(ТоварыКОформлениюУведомление.Уведомление, "Нет уведомления") КАК Уведомление,
+	ЕСТЬNULL(ТоварыКОформлениюДокумент.Номенклатура, ТоварыКОформлениюУведомление.Номенклатура) КАК Номенклатура,
+	ЕСТЬNULL(ТоварыКОформлениюДокумент.Характеристика, ТоварыКОформлениюУведомление.Характеристика) КАК Характеристика,
+	ЕСТЬNULL(ТоварыКОформлениюДокумент.НомерУпаковки, ТоварыКОформлениюУведомление.НомерУпаковки) КАК НомерУпаковки,
+	ВЫБОР
+		КОГДА ТоварыКОформлениюДокумент.НомерУпаковки ЕСТЬ NULL
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК ВДокументе,
+	ВЫБОР
+		КОГДА ТоварыКОформлениюУведомление.НомерУпаковки ЕСТЬ NULL
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК ВУведомлении
+ПОМЕСТИТЬ Результат
+ИЗ
+	ТоварыКОформлениюДокумент КАК ТоварыКОформлениюДокумент
+		ПОЛНОЕ СОЕДИНЕНИЕ ТоварыКОформлениюУведомление КАК ТоварыКОформлениюУведомление
+		ПО ТоварыКОформлениюДокумент.НомерУпаковки = ТоварыКОформлениюУведомление.НомерУпаковки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Результат.Уведомление КАК Уведомление,
+	Результат.Номенклатура КАК Номенклатура,
+	Результат.Характеристика КАК Характеристика,
+	Результат.НомерУпаковки КАК НомерУпаковки,
+	Результат.ВДокументе КАК ВДокументе,
+	Результат.ВУведомлении КАК ВУведомлении,
+	ЕСТЬNULL(УпаковкиМДЛП.Статус, "Нет записи") КАК Статус,
+	Результат.ВДокументе &lt;&gt; Результат.ВУведомлении КАК ЕстьРасхождения
+ПОМЕСТИТЬ РезультатСоСтатусом
+ИЗ
+	Результат КАК Результат
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УпаковкиМДЛП КАК УпаковкиМДЛП
+		ПО Результат.НомерУпаковки = УпаковкиМДЛП.НомерУпаковки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РезультатСоСтатусом.Уведомление КАК Уведомление,
+	РезультатСоСтатусом.Номенклатура КАК Номенклатура,
+	РезультатСоСтатусом.Характеристика КАК Характеристика,
+	РезультатСоСтатусом.НомерУпаковки КАК НомерУпаковки,
+	РезультатСоСтатусом.ВДокументе КАК ВДокументе,
+	РезультатСоСтатусом.ВУведомлении КАК ВУведомлении,
+	РезультатСоСтатусом.Статус КАК Статус,
+	РезультатСоСтатусом.ЕстьРасхождения КАК ЕстьРасхождения
+ПОМЕСТИТЬ РезультатСОтбором
+ИЗ
+	РезультатСоСтатусом КАК РезультатСоСтатусом
+ГДЕ
+	&amp;ПоказыватьТолькоРасхождения
+	И РезультатСоСтатусом.ЕстьРасхождения
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	РезультатСоСтатусом.Уведомление,
+	РезультатСоСтатусом.Номенклатура,
+	РезультатСоСтатусом.Характеристика,
+	РезультатСоСтатусом.НомерУпаковки,
+	РезультатСоСтатусом.ВДокументе,
+	РезультатСоСтатусом.ВУведомлении,
+	РезультатСоСтатусом.Статус,
+	РезультатСоСтатусом.ЕстьРасхождения
+ИЗ
+	РезультатСоСтатусом КАК РезультатСоСтатусом
+ГДЕ
+	НЕ &amp;ПоказыватьТолькоРасхождения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РезультатСОтбором.Уведомление КАК Уведомление,
+	РезультатСОтбором.Номенклатура КАК Номенклатура,
+	РезультатСОтбором.Характеристика КАК Характеристика,
+	РезультатСОтбором.НомерУпаковки КАК НомерУпаковки,
+	РезультатСОтбором.ВДокументе КАК ВДокументе,
+	РезультатСОтбором.ВУведомлении КАК ВУведомлении,
+	РезультатСОтбором.Статус КАК Статус,
+	РезультатСОтбором.ЕстьРасхождения КАК ЕстьРасхождения
+ИЗ
+	РезультатСОтбором КАК РезультатСОтбором</query>
+	</dataSet>
+	<parameter>
+		<name>Документ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Документ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.РасходнаяНакладная</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ПриходнаяНакладная</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПоказыватьТолькоРасхождения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Показывать только расхождения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетОРасхожденияхКИЗ</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет о р асхождениях КИЗ</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Уведомление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерУпаковки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВДокументе</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВУведомлении</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Статус</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>3cb4b323-4cdf-41c0-a277-a6428f64dbc4</dcsset:userSettingID>
+				<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Колонки</v8:content>
+					</v8:item>
+				</dcsset:userSettingPresentation>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Документ</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>3df09d56-64c2-41f2-9d81-e72501d88a33</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПоказыватьТолькоРасхождения</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>9ebe3b7c-814f-4eb2-b86d-d0da6b2d42f1</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Уведомление</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовБежевый</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>764729d8-cfc3-432c-b522-61161ce78303</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет о р асхождениях КИЗ</v8:content>
+						</v8:item>
+					</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>52441ed3-4ea4-4b50-b21e-cc53b8817f79</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выводить заголовок при печати</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>fc188147-842b-4c0a-83ed-0fa85790162b</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>24191259-e475-40ae-bbfe-c841d1f03337</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Уведомление</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Номенклатура</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Характеристика</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+								<dcsset:conditionalAppearance>
+									<dcsset:item>
+										<dcsset:selection>
+											<dcsset:item>
+												<dcsset:field>НомерУпаковки</dcsset:field>
+											</dcsset:item>
+										</dcsset:selection>
+										<dcsset:filter>
+											<dcsset:item xsi:type="dcsset:FilterItemComparison">
+												<dcsset:left xsi:type="dcscor:Field">ЕстьРасхождения</dcsset:left>
+												<dcsset:comparisonType>Equal</dcsset:comparisonType>
+												<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+											</dcsset:item>
+										</dcsset:filter>
+										<dcsset:appearance>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>ЦветТекста</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+											</dcscor:item>
+										</dcsset:appearance>
+									</dcsset:item>
+								</dcsset:conditionalAppearance>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>bb1bf6bc-9cdb-4a9e-a3bf-62fcc2c2092b</dcsset:itemsUserSettingID>
+			<dcsset:itemsUserSettingPresentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строки</v8:content>
+				</v8:item>
+			</dcsset:itemsUserSettingPresentation>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="5"/>
+		</InputField>
+		<UsualGroup name="ГруппаПараметрыФормыВыпуска" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры формы выпуска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры формы выпуска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаПараметрыФормыВыпускаРасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<InputField name="ЛекарственнаяФорма" id="6">
+					<DataPath>Объект.ЛекарственнаяФорма</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ЛекарственнаяФормаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ЛекарственнаяФормаРасширеннаяПодсказка" id="8"/>
+					<Events>
+						<Event name="OnChange">ЭлементПриИзменении</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="ГруппаКоличествоЕдиницаИзмерения" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа количество единица измерения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа количество единица измерения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКоличествоЕдиницаИзмеренияРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<InputField name="Количество" id="9">
+							<DataPath>Объект.Количество</DataPath>
+							<ContextMenu name="КоличествоКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="11"/>
+							<Events>
+								<Event name="OnChange">ЭлементПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЕдиницаИзмерения" id="12">
+							<DataPath>Объект.ЕдиницаИзмерения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. изм.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="14"/>
+							<Events>
+								<Event name="OnChange">ЭлементПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ДополнительноеОписание" id="20">
+					<DataPath>Объект.ДополнительноеОписание</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ДополнительноеОписаниеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДополнительноеОписаниеРасширеннаяПодсказка" id="22"/>
+					<Events>
+						<Event name="OnChange">ЭлементПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="Произвольно" id="17">
+			<DataPath>Произвольно</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести в произвольном формате</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Switcher</CheckBoxType>
+			<ContextMenu name="ПроизвольноКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ПроизвольноРасширеннаяПодсказка" id="19"/>
+			<Events>
+				<Event name="OnChange">ПроизвольноПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="ДанныеСтрокой" id="23">
+			<DataPath>Объект.ДанныеСтрокой</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Width>25</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ДанныеСтрокойКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ДанныеСтрокойРасширеннаяПодсказка" id="25"/>
+			<Events>
+				<Event name="OnChange">ЭлементПриИзменении</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ор_ФормыВыпуска</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключаемых команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Произвольно" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Произвольно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

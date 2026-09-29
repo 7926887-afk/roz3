@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="40">
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Вид" id="37">
+					<DataPath>Объект.Вид</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВидКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">ВидПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="76">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<CheckBoxField name="Активный" id="7">
+					<DataPath>Объект.Активный</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для активации отправьте аптеку в сервис</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="АктивныйКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="АктивныйРасширеннаяПодсказка" id="9"/>
+				</CheckBoxField>
+				<InputField name="СимволВСписке" id="78">
+					<DataPath>Объект.СимволВСписке</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление в списке заказов</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СимволВСпискеКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="СимволВСпискеРасширеннаяПодсказка" id="80"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Склад" id="10">
+			<DataPath>Объект.Склад</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СкладКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ВидЦен" id="13">
+			<DataPath>Объект.ВидЦен</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВидЦенКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВидЦенРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СрокХраненияРезерва" id="42">
+			<DataPath>Объект.СрокХраненияРезерва</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СрокХраненияРезерваКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="СрокХраненияРезерваРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<InputField name="ГрафикРаботы" id="26">
+			<DataPath>Объект.ГрафикРаботы</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ГрафикРаботыКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ГрафикРаботыРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Координады аптеки</v8:content>
+				</v8:item>
+			</Title>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="Широта" id="34">
+					<DataPath>Объект.Широта</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ШиротаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ШиротаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="Долгота" id="31">
+					<DataPath>Объект.Долгота</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДолготаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ДолготаРасширеннаяПодсказка" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Мегааптека" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуализация данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мегааптека</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="МегааптекаРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<Button name="ОтправитьАптекуВСервис" id="20">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ОтправитьАптекуВСервис</CommandName>
+					<ExtendedTooltip name="ОтправитьАптекуВСервисРасширеннаяПодсказка" id="21"/>
+				</Button>
+				<Button name="ПроверитьСтатусАптеки" id="18">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ПроверитьСтатусАптеки</CommandName>
+					<ExtendedTooltip name="ПроверитьСтатусАптекиРасширеннаяПодсказка" id="19"/>
+				</Button>
+				<Button name="УдалитьАптекуИзСервиса" id="22">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.УдалитьАптекуИзСервиса</CommandName>
+					<ExtendedTooltip name="УдалитьАптекуИзСервисаРасширеннаяПодсказка" id="23"/>
+				</Button>
+				<Button name="ВыполнитьСвязкиАСНА" id="45">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ВыполнитьСвязкиАСНА</CommandName>
+					<ExtendedTooltip name="ВыполнитьСвязкиАСНАРасширеннаяПодсказка" id="46"/>
+				</Button>
+				<Button name="ОтправитьФайлКаталога" id="47">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ОтправитьФайлКаталога</CommandName>
+					<ExtendedTooltip name="ОтправитьФайлКаталогаРасширеннаяПодсказка" id="48"/>
+				</Button>
+				<Button name="ПолнаяВыгрузкаОстатков" id="52">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ПолнаяВыгрузкаОстатков</CommandName>
+					<ExtendedTooltip name="ПолнаяВыгрузкаОстатковРасширеннаяПодсказка" id="53"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="49">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="51"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.эв_ИсточникиЗаказов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Мегааптека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтправитьАптекуВСервис</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПроверитьСтатусАптеки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>УдалитьАптекуИзСервиса</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Вид</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.эвВидыИсточниковЗаказа.МегаАпткека</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьСтатусАптеки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить статус аптеки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить статус аптеки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьСтатусАптеки</Action>
+		</Command>
+		<Command name="ОтправитьАптекуВСервис" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить аптеку в сервис</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить аптеку в сервис</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьАптекуВСервис</Action>
+		</Command>
+		<Command name="УдалитьАптекуИзСервиса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить аптеку из сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить аптеку из сервиса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьАптекуИзСервиса</Action>
+		</Command>
+		<Command name="ВыполнитьСвязкиАСНА" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить связки АСНА</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить связки АСНА</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьСвязкиАСНА</Action>
+		</Command>
+		<Command name="ОтправитьФайлКаталога" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить файл каталога АСНА</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить файл каталога</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьФайлКаталога</Action>
+		</Command>
+		<Command name="ПолнаяВыгрузкаОстатков" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полная выгрузка остатков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полная выгрузка остатков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолнаяВыгрузкаОстатков</Action>
+		</Command>
+	</Commands>
+</Form>

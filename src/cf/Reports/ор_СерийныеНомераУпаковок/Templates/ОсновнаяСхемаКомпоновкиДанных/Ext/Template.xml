@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерУпаковки</dataPath>
+			<field>НомерУпаковки</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоДеятельности</dataPath>
+			<field>МестоДеятельности</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СубъектыОбращенияМДЛП.МестоДеятельности КАК МестоДеятельности,
+	МАКСИМУМ(СубъектыОбращенияМДЛП.ОбъектМестаДеятельности) КАК Склад,
+	СУММА(1) КАК КоличествоСкладов
+ПОМЕСТИТЬ втСубъекты
+ИЗ
+	РегистрСведений.СубъектыОбращенияМДЛП КАК СубъектыОбращенияМДЛП
+
+СГРУППИРОВАТЬ ПО
+	СубъектыОбращенияМДЛП.МестоДеятельности
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втСубъекты.МестоДеятельности КАК МестоДеятельности,
+	ВЫБОР
+		КОГДА втСубъекты.КоличествоСкладов = 1
+			ТОГДА втСубъекты.Склад
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка)
+	КОНЕЦ КАК Склад
+ПОМЕСТИТЬ втСубъектыИтог
+ИЗ
+	втСубъекты КАК втСубъекты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДолиУпаковокМДЛП.НомерУпаковки КАК НомерУпаковки,
+	СУММА(ВЫБОР
+			КОГДА ДолиУпаковокМДЛП.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыУпаковокМДЛП.ВыбылаИзОборота)
+				ТОГДА ДолиУпаковокМДЛП.ДоляУпаковки
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ДоляУпаковки
+ПОМЕСТИТЬ ДолиУпаковокМДЛП
+ИЗ
+	РегистрСведений.ДолиУпаковокМДЛП КАК ДолиУпаковокМДЛП
+
+СГРУППИРОВАТЬ ПО
+	ДолиУпаковокМДЛП.НомерУпаковки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДолиУпаковокМДЛП.НомерУпаковки КАК НомерУпаковки,
+	ЗНАЧЕНИЕ(перечисление.СтатусыУпаковокМДЛП.ВыбылаИзОборота) КАК Статус
+ПОМЕСТИТЬ ДолиУпаковокМДЛПИтог
+ИЗ
+	ДолиУпаковокМДЛП КАК ДолиУпаковокМДЛП
+ГДЕ
+	НЕ ДолиУпаковокМДЛП.ДоляУпаковки &lt; 1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УпаковкиМДЛП.НомерУпаковки КАК НомерУпаковки,
+	ЕСТЬNULL(ДолиУпаковокМДЛПИтог.Статус, УпаковкиМДЛП.Статус) КАК Статус,
+	УпаковкиМДЛП.МестоДеятельности КАК МестоДеятельности,
+	втСубъектыИтог.Склад КАК Склад
+ИЗ
+	РегистрСведений.УпаковкиМДЛП КАК УпаковкиМДЛП
+		ЛЕВОЕ СОЕДИНЕНИЕ втСубъектыИтог КАК втСубъектыИтог
+		ПО УпаковкиМДЛП.МестоДеятельности = втСубъектыИтог.МестоДеятельности
+		ЛЕВОЕ СОЕДИНЕНИЕ ДолиУпаковокМДЛПИтог КАК ДолиУпаковокМДЛПИтог
+		ПО УпаковкиМДЛП.НомерУпаковки = ДолиУпаковокМДЛПИтог.НомерУпаковки</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерГрупповойУпаковки</dataPath>
+			<field>НомерГрупповойУпаковки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерУпаковки</dataPath>
+			<field>НомерУпаковки</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоДеятельности</dataPath>
+			<field>МестоДеятельности</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГрупповаяУпаковка</dataPath>
+			<field>ГрупповаяУпаковка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СубъектыОбращенияМДЛП.МестоДеятельности КАК МестоДеятельности,
+	МАКСИМУМ(СубъектыОбращенияМДЛП.ОбъектМестаДеятельности) КАК Склад,
+	СУММА(1) КАК КоличествоСкладов
+ПОМЕСТИТЬ втСубъекты
+ИЗ
+	РегистрСведений.СубъектыОбращенияМДЛП КАК СубъектыОбращенияМДЛП
+
+СГРУППИРОВАТЬ ПО
+	СубъектыОбращенияМДЛП.МестоДеятельности
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втСубъекты.МестоДеятельности КАК МестоДеятельности,
+	ВЫБОР
+		КОГДА втСубъекты.КоличествоСкладов = 1
+			ТОГДА втСубъекты.Склад
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка)
+	КОНЕЦ КАК Склад
+ПОМЕСТИТЬ втСубъектыИтог
+ИЗ
+	втСубъекты КАК втСубъекты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДолиУпаковокМДЛП.НомерУпаковки КАК НомерУпаковки,
+	СУММА(ВЫБОР
+			КОГДА ДолиУпаковокМДЛП.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыУпаковокМДЛП.ВыбылаИзОборота)
+				ТОГДА ДолиУпаковокМДЛП.ДоляУпаковки
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ДоляУпаковки
+ПОМЕСТИТЬ ДолиУпаковокМДЛП
+ИЗ
+	РегистрСведений.ДолиУпаковокМДЛП КАК ДолиУпаковокМДЛП
+ГДЕ
+	ДолиУпаковокМДЛП.НомерУпаковки В(&amp;МассивНомеров)
+
+СГРУППИРОВАТЬ ПО
+	ДолиУпаковокМДЛП.НомерУпаковки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДолиУпаковокМДЛП.НомерУпаковки КАК НомерУпаковки,
+	ЗНАЧЕНИЕ(перечисление.СтатусыУпаковокМДЛП.ВыбылаИзОборота) КАК Статус
+ПОМЕСТИТЬ ДолиУпаковокМДЛПИтог
+ИЗ
+	ДолиУпаковокМДЛП КАК ДолиУпаковокМДЛП
+ГДЕ
+	НЕ ДолиУпаковокМДЛП.ДоляУпаковки &lt; 1
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УпаковкиМДЛП.НомерУпаковки КАК НомерУпаковки,
+	УпаковкиМДЛП.НомерГрупповойУпаковки КАК НомерГрупповойУпаковки,
+	ЕСТЬNULL(ДолиУпаковокМДЛПИтог.Статус, УпаковкиМДЛП.Статус) КАК Статус,
+	УпаковкиМДЛП.МестоДеятельности КАК МестоДеятельности,
+	УпаковкиМДЛП.ГрупповаяУпаковка КАК ГрупповаяУпаковка,
+	втСубъектыИтог.Склад КАК Склад
+ИЗ
+	РегистрСведений.УпаковкиМДЛП КАК УпаковкиМДЛП
+		ЛЕВОЕ СОЕДИНЕНИЕ втСубъектыИтог КАК втСубъектыИтог
+		ПО УпаковкиМДЛП.МестоДеятельности = втСубъектыИтог.МестоДеятельности
+		ЛЕВОЕ СОЕДИНЕНИЕ ДолиУпаковокМДЛПИтог КАК ДолиУпаковокМДЛПИтог
+		ПО УпаковкиМДЛП.НомерУпаковки = ДолиУпаковокМДЛПИтог.НомерУпаковки
+ГДЕ
+	УпаковкиМДЛП.НомерУпаковки В(&amp;МассивНомеров)</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>НомерУпаковки</sourceExpression>
+		<destinationExpression>НомерУпаковки</destinationExpression>
+		<parameter>МассивНомеров</parameter>
+		<parameterListAllowed>true</parameterListAllowed>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных2</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>НомерГрупповойУпаковки</sourceExpression>
+		<destinationExpression>НомерУпаковки</destinationExpression>
+		<parameter>МассивНомеров</parameter>
+		<parameterListAllowed>true</parameterListAllowed>
+	</dataSetLink>
+	<parameter>
+		<name>МассивНомеров</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив номеров</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:TypeId>3aa09f6a-9cb7-49a9-bddd-691fb68989fb</v8:TypeId>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Серийные номера упаковок</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:userFields>
+				<dcsset:item xsi:type="dcsset:UserFieldExpression">
+					<dcsset:dataPath>ПользовательскиеПоля.Поле1</dcsset:dataPath>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Родитель</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:detailExpression>ВычислитьВыражение("НомерУпаковки", "", "Иерархия")</dcsset:detailExpression>
+					<dcsset:detailExpressionPresentation>ВычислитьВыражение("[Номер упаковки]", "", "Иерархия")</dcsset:detailExpressionPresentation>
+					<dcsset:totalExpression>ВычислитьВыражение("НомерУпаковки", "", "Иерархия")</dcsset:totalExpression>
+					<dcsset:totalExpressionPresentation>ВычислитьВыражение("[Номер упаковки]", "", "Иерархия")</dcsset:totalExpressionPresentation>
+				</dcsset:item>
+			</dcsset:userFields>
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">МестоДеятельности</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.МестаДеятельностиМДЛП.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>621b28cf-d3ac-43f5-b3b7-3dd9313d99b4</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СтруктурныеЕдиницы.ОсновнойСклад</dcsset:right>
+					<dcsset:userSettingID>a5808e27-0aa8-4602-9c35-41defb0da2eb</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыУпаковокМДЛП.ВОбороте</dcsset:right>
+					<dcsset:userSettingID>2bb1cb73-bc33-4c31-8f4e-a628718d308f</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МассивНомеров</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовБежевый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>МестоДеятельности</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Склад</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НомерУпаковки</dcsset:field>
+							<dcsset:groupType>Hierarchy</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Статус</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">НомерУпаковки</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:Field">ПользовательскиеПоля.Поле1</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">СистемныеПоля.УровеньВГруппировке</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+							</dcsset:item>
+							<dcsset:application>Hierarchy</dcsset:application>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

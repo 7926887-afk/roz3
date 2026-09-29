@@ -1,0 +1,328 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!-- Версия макета: 4.1, 17.08.2021 10:37 -->
+<!-- Внимание!!! При обновлении макета вручную обновить версию -->
+<book>
+	<entries>
+		<entry>
+			<ID>1</ID>
+			<BasicDoseForm>Аэрозоль</BasicDoseForm>
+			<BasicDoseForm_LAT>Aerosolum</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>aer.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Другое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>4</ID>
+			<BasicDoseForm>Газ медицинский</BasicDoseForm>
+			<BasicDoseForm_LAT>Gasum medicinalis</BasicDoseForm_LAT>
+			<StateOfMatter>Газообразное</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>5</ID>
+			<BasicDoseForm>Гель</BasicDoseForm>
+			<BasicDoseForm_LAT>Gelum</BasicDoseForm_LAT>
+			<StateOfMatter>Мягкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>6</ID>
+			<BasicDoseForm>Гранулы</BasicDoseForm>
+			<BasicDoseForm_LAT>Granulae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>gran.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>7</ID>
+			<BasicDoseForm>Губка лекарственная</BasicDoseForm>
+			<BasicDoseForm_LAT>Spongia medicinalis</BasicDoseForm_LAT>
+			<StateOfMatter>Другое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>8</ID>
+			<BasicDoseForm>Дисперсия</BasicDoseForm>
+			<BasicDoseForm_LAT>Dispersio</BasicDoseForm_LAT>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>10</ID>
+			<BasicDoseForm>Драже</BasicDoseForm>
+			<BasicDoseForm_LAT>Dragees</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>11</ID>
+			<BasicDoseForm>Другие лекарственные формы</BasicDoseForm>
+			<BasicDoseForm_LAT>Alias formas dosis</BasicDoseForm_LAT>
+			<StateOfMatter>Другое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>12</ID>
+			<BasicDoseForm>Жидкость</BasicDoseForm>
+			<BasicDoseForm_LAT>Liquor</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>liq.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>13</ID>
+			<BasicDoseForm>Имплантат</BasicDoseForm>
+			<BasicDoseForm_LAT>Implantatum</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>14</ID>
+			<BasicDoseForm>Капли</BasicDoseForm>
+			<BasicDoseForm_LAT>Guttae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>gtt.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>15</ID>
+			<BasicDoseForm>Капсулы</BasicDoseForm>
+			<BasicDoseForm_LAT>Capsulae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>caps.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>16</ID>
+			<BasicDoseForm>Карандаш лекарственный</BasicDoseForm>
+			<BasicDoseForm_LAT>Stylus medicinalis</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>20</ID>
+			<BasicDoseForm>Концентрат</BasicDoseForm>
+			<BasicDoseForm_LAT>Concentratum</BasicDoseForm_LAT>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>21</ID>
+			<BasicDoseForm>Крем</BasicDoseForm>
+			<BasicDoseForm_LAT>Ceroma</BasicDoseForm_LAT>
+			<StateOfMatter>Мягкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>22</ID>
+			<BasicDoseForm>Лак для ногтей лекарственный</BasicDoseForm>
+			<BasicDoseForm_LAT>Vernix medicinalis</BasicDoseForm_LAT>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>23</ID>
+			<BasicDoseForm>Леденцы лекарственные</BasicDoseForm>
+			<BasicDoseForm_LAT>Caramelum medicinale</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>24</ID>
+			<BasicDoseForm>Линимент</BasicDoseForm>
+			<BasicDoseForm_LAT>Linimenta</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>lin.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Мягкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>25</ID>
+			<BasicDoseForm>Лиофилизат</BasicDoseForm>
+			<BasicDoseForm_LAT>Lyophilisatum</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>26</ID>
+			<BasicDoseForm>Мазь</BasicDoseForm>
+			<BasicDoseForm_LAT>Unguentum</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>ung.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Мягкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>27</ID>
+			<BasicDoseForm>Масло</BasicDoseForm>
+			<BasicDoseForm_LAT>Oleum</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>ol.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>31</ID>
+			<BasicDoseForm>Настойка</BasicDoseForm>
+			<BasicDoseForm_LAT>Tincturae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>tinct.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>33</ID>
+			<BasicDoseForm>Оподельдок</BasicDoseForm>
+			<BasicDoseForm_LAT>Linimentum saponatum</BasicDoseForm_LAT>
+			<StateOfMatter>Мягкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>34</ID>
+			<BasicDoseForm>Палочки</BasicDoseForm>
+			<BasicDoseForm_LAT>Bacilli</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>35</ID>
+			<BasicDoseForm>Паста</BasicDoseForm>
+			<BasicDoseForm_LAT>Pastae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>past.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Мягкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>36</ID>
+			<BasicDoseForm>Пастилки лекарственные</BasicDoseForm>
+			<BasicDoseForm_LAT>Rochiscus medicinalis</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>37</ID>
+			<BasicDoseForm>Пена</BasicDoseForm>
+			<BasicDoseForm_LAT>Musci medicati</BasicDoseForm_LAT>
+			<StateOfMatter>Мягкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>39</ID>
+			<BasicDoseForm>Пилюли</BasicDoseForm>
+			<BasicDoseForm_LAT>Pilulae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>pil.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>40</ID>
+			<BasicDoseForm>Пластины лекарственные</BasicDoseForm>
+			<BasicDoseForm_LAT>Lamina medicinalis</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>41</ID>
+			<BasicDoseForm>Пластырь</BasicDoseForm>
+			<BasicDoseForm_LAT>Emplastra</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>42</ID>
+			<BasicDoseForm>Пленки</BasicDoseForm>
+			<BasicDoseForm_LAT>Membranulae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>membr.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>43</ID>
+			<BasicDoseForm>Плитки</BasicDoseForm>
+			<BasicDoseForm_LAT>Tabella</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>44</ID>
+			<BasicDoseForm>Порошок</BasicDoseForm>
+			<BasicDoseForm_LAT>Pulvveres</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>pulv.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>46</ID>
+			<BasicDoseForm>Раствор</BasicDoseForm>
+			<BasicDoseForm_LAT>Solutiones</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>sol.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>47</ID>
+			<BasicDoseForm>Растворитель</BasicDoseForm>
+			<BasicDoseForm_LAT>Solvent</BasicDoseForm_LAT>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>48</ID>
+			<BasicDoseForm>Растительное сырье</BasicDoseForm>
+			<BasicDoseForm_LAT>Herbal materiales</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>49</ID>
+			<BasicDoseForm>Резинка жевательная лекарственная</BasicDoseForm>
+			<BasicDoseForm_LAT>Masticabilia gummis medicata</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>50</ID>
+			<BasicDoseForm>Салфетки лекарственные рассасывающиеся</BasicDoseForm>
+			<BasicDoseForm_LAT>Mappula medicinalis resorbens</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>51</ID>
+			<BasicDoseForm>Сироп</BasicDoseForm>
+			<BasicDoseForm_LAT>Sirupi</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>sir.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>52</ID>
+			<BasicDoseForm>Система</BasicDoseForm>
+			<BasicDoseForm_LAT>Systema</BasicDoseForm_LAT>
+			<StateOfMatter>Другое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>53</ID>
+			<BasicDoseForm>Спрей</BasicDoseForm>
+			<BasicDoseForm_LAT>Spray</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>spr.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Другое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>54</ID>
+			<BasicDoseForm>Суппозитории</BasicDoseForm>
+			<BasicDoseForm_LAT>Suppositoria</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>supp.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>55</ID>
+			<BasicDoseForm>Суспензия</BasicDoseForm>
+			<BasicDoseForm_LAT>Suspensiones</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>susp.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>56</ID>
+			<BasicDoseForm>Таблетки</BasicDoseForm>
+			<BasicDoseForm_LAT>Tabulettae</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>tabl.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>58</ID>
+			<BasicDoseForm>Тампоны лекарственные</BasicDoseForm>
+			<BasicDoseForm_LAT>Tamponae medicatae</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>61</ID>
+			<BasicDoseForm>Шампунь лекарственный</BasicDoseForm>
+			<BasicDoseForm_LAT>Capitilavium medicinale</BasicDoseForm_LAT>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>62</ID>
+			<BasicDoseForm>Экстракт</BasicDoseForm>
+			<BasicDoseForm_LAT>Extractа</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>extr.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>63</ID>
+			<BasicDoseForm>Эликсир</BasicDoseForm>
+			<BasicDoseForm_LAT>Elixir</BasicDoseForm_LAT>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>64</ID>
+			<BasicDoseForm>Эмульсия</BasicDoseForm>
+			<BasicDoseForm_LAT>Emulsa</BasicDoseForm_LAT>
+			<BasicDoseForm_LAT_short>emuls.</BasicDoseForm_LAT_short>
+			<StateOfMatter>Жидкое</StateOfMatter>
+		</entry>
+		<entry>
+			<ID>65</ID>
+			<BasicDoseForm>Специальные формы гомеопатических лекарственных препаратов</BasicDoseForm>
+			<BasicDoseForm_LAT>Homeopathic medicines est specialis formae</BasicDoseForm_LAT>
+			<StateOfMatter>Твёрдое</StateOfMatter>
+		</entry>
+	</entries>
+</book>

@@ -1,0 +1,5267 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!-- Версия макета: 1.1, 23.12.2021 10:44 -->
+<!-- Внимание!!! При обновлении макета вручную обновить версию -->
+<book>
+	<entries>
+		<entry>
+			<CS_ID>2</CS_ID>
+			<NameR>Противоаллергическое средство - H1-гистаминовых рецепторов блокатор</NameR>
+			<NameE>Antiallergic agent - H1-histamine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>3</CS_ID>
+			<NameR>Желез желудка секрецию понижающее средство - H2-гистаминовых рецепторов блокатор</NameR>
+			<NameE>Antiulcerant agent - H2-histamine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>4</CS_ID>
+			<NameR>Абсорбирующее средство</NameR>
+			<NameE>Absorbent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>5</CS_ID>
+			<NameR>Адаптогенное средство</NameR>
+			<NameE>Adaptogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>6</CS_ID>
+			<NameR>Адаптогенное средство растительного происхождения</NameR>
+			<NameE>Adaptogen phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>7</CS_ID>
+			<NameR>АКТГ</NameR>
+			<NameE>ACTH</NameE>
+		</entry>
+		<entry>
+			<CS_ID>8</CS_ID>
+			<NameR>АПФ ингибитор</NameR>
+			<NameE>ACE inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>9</CS_ID>
+			<NameR>Альфа- и бета-адреноблокатор</NameR>
+			<NameE>Alfa- and beta-adrenoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>10</CS_ID>
+			<NameR>Альфа- и бета-адреномиметик</NameR>
+			<NameE>Alfa- and beta-adrenoreceptors agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>11</CS_ID>
+			<NameR>Альфа-адреноблокатор</NameR>
+			<NameE>Alfa-adrenoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>12</CS_ID>
+			<NameR>Альфа-адреномиметик</NameR>
+			<NameE>Alfa-adrenoreceptors agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>13</CS_ID>
+			<NameR>Гипотензивное средство центрального действия</NameR>
+			<NameE>Antihypertensive agent central action</NameE>
+		</entry>
+		<entry>
+			<CS_ID>14</CS_ID>
+			<NameR>Анаболическое стероидное средство</NameR>
+			<NameE>Anabolic steroid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>15</CS_ID>
+			<NameR>Аналептическое средство</NameR>
+			<NameE>Analeptic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>16</CS_ID>
+			<NameR>Аналептическое средство растительного происхождения</NameR>
+			<NameE>Analeptic phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>17</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП спазмолитическое средство)</NameR>
+			<NameE>Analgetic (NSAID spasmolytic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>18</CS_ID>
+			<NameR>Анальгезирующее наркотическое средство</NameR>
+			<NameE>Analgetic opioid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>19</CS_ID>
+			<NameR>Анальгезирующее ненаркотическое средство</NameR>
+			<NameE>Analgetic not-opioid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>21</CS_ID>
+			<NameR>Анальгезирующее средство центрального действия</NameR>
+			<NameE>Analgetic centrally acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>22</CS_ID>
+			<NameR>Ангиопротекторное средство</NameR>
+			<NameE>Angioprotector</NameE>
+		</entry>
+		<entry>
+			<CS_ID>23</CS_ID>
+			<NameR>Ангиопротекторное средство растительного происхождения</NameR>
+			<NameE>Angioprotector agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>24</CS_ID>
+			<NameR>Ангиотензина II рецепторов антагонист</NameR>
+			<NameE>Angiotensin II receptors antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>26</CS_ID>
+			<NameR>Андроген</NameR>
+			<NameE>Androgen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>28</CS_ID>
+			<NameR>Анксиолитическое средство (транквилизатор)</NameR>
+			<NameE>Anxiolytic (tranquilizer)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>29</CS_ID>
+			<NameR>Анорексигенное средство</NameR>
+			<NameE>Anorexigenic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>30</CS_ID>
+			<NameR>Анорексигенное средство растительного происхождения</NameR>
+			<NameE>Anorexigenic agent phyitogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>31</CS_ID>
+			<NameR>Антацидное средство</NameR>
+			<NameE>Antacid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>32</CS_ID>
+			<NameR>Антиагрегантное средство</NameR>
+			<NameE>Antiaggregant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>33</CS_ID>
+			<NameR>Антиандроген</NameR>
+			<NameE>Antiandrogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>34</CS_ID>
+			<NameR>Антиаритмическое средство</NameR>
+			<NameE>Antiarrhythmic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>35</CS_ID>
+			<NameR>Антиацидемическое средство</NameR>
+			<NameE>Antiacidemic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>36</CS_ID>
+			<NameR>Антибиотик</NameR>
+			<NameE>Antibiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>37</CS_ID>
+			<NameR>Антибиотик комбинированный</NameR>
+			<NameE>Antibiotic combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>38</CS_ID>
+			<NameR>Антибиотик-аминогликозид</NameR>
+			<NameE>Antibiotic-aminoglycoside</NameE>
+		</entry>
+		<entry>
+			<CS_ID>39</CS_ID>
+			<NameR>Антибиотик-карбапенем дегидропептидазы ингибитор</NameR>
+			<NameE>Antibiotic-carbapenem dehydropeptidase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>40</CS_ID>
+			<NameR>Антибиотик-линкозамид</NameR>
+			<NameE>Antibiotic-lincosamide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>41</CS_ID>
+			<NameR>Антибиотик-макролид</NameR>
+			<NameE>Antibiotic-macrolide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>42</CS_ID>
+			<NameR>Антибиотик-пенициллин полусинтетический</NameR>
+			<NameE>Antibiotic-penicilline hemisynthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>43</CS_ID>
+			<NameR>Антибиотик-пенициллин полусинтетический бета-лактамаз ингибитор</NameR>
+			<NameE>Antibiotic-penicilline hemisynthetic beta-lactamase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>45</CS_ID>
+			<NameR>Антибиотик-тетрациклин</NameR>
+			<NameE>Antibiotic-tetracycline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>46</CS_ID>
+			<NameR>Антибиотик-цефалоспорин</NameR>
+			<NameE>Antibiotic-cephalosporine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>48</CS_ID>
+			<NameR>Антидепрессант</NameR>
+			<NameE>Antidepressant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>49</CS_ID>
+			<NameR>Диабета несахарного средство лечения</NameR>
+			<NameE>Diabetes insipidus treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>50</CS_ID>
+			<NameR>Антикоагулянтное средство</NameR>
+			<NameE>Anticoagulant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>51</CS_ID>
+			<NameR>Антикоагулянтное средство прямого действия</NameR>
+			<NameE>Anticoagulant direct</NameE>
+		</entry>
+		<entry>
+			<CS_ID>52</CS_ID>
+			<NameR>Антикоагулянтное средство прямого действия для местного применения</NameR>
+			<NameE>Anticoagulant direct local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>54</CS_ID>
+			<NameR>Антиоксидантное средство</NameR>
+			<NameE>Antioxidant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>55</CS_ID>
+			<NameR>Антипсихотическое средство (нейролептик)</NameR>
+			<NameE>Antipsychotic agent (neuroleptic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>56</CS_ID>
+			<NameR>Антисептическое кишечное средство</NameR>
+			<NameE>Antiseptic intestinal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>57</CS_ID>
+			<NameR>Дезинфицирующее кожное средство</NameR>
+			<NameE>Disinfectant dermal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>58</CS_ID>
+			<NameR>Антисептическое средство</NameR>
+			<NameE>Antiseptic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>59</CS_ID>
+			<NameR>Антисептическое средство растительного происхождения</NameR>
+			<NameE>Antiseptic phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>60</CS_ID>
+			<NameR>Антитиреоидное средство</NameR>
+			<NameE>Antithyroidal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>61</CS_ID>
+			<NameR>Холинэстеразы ингибитор</NameR>
+			<NameE>Cholineesterase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>62</CS_ID>
+			<NameR>Антиэстрогенное средство</NameR>
+			<NameE>Antiestrogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>63</CS_ID>
+			<NameR>Аппетита стимулятор растительного происхождения (горечь)</NameR>
+			<NameE>Appetite stimulator phytogenic (bitter)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>64</CS_ID>
+			<NameR>Бензодиазепинов антагонист</NameR>
+			<NameE>Benzodiazepine antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>65</CS_ID>
+			<NameR>Бета-адреноблокатор</NameR>
+			<NameE>Beta-adrenoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>66</CS_ID>
+			<NameR>Бета-адреноблокатор с СМА</NameR>
+			<NameE>Beta-adrenoblocker with instrict sympathomimetic activity</NameE>
+		</entry>
+		<entry>
+			<CS_ID>67</CS_ID>
+			<NameR>Бронходилатирующее средство - бета-адреномиметик</NameR>
+			<NameE>Bronchodilator - beta-adrenoreceptors agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>69</CS_ID>
+			<NameR>Бета1-адреноблокатор селективный</NameR>
+			<NameE>Beta1-adrenoblocker selective</NameE>
+		</entry>
+		<entry>
+			<CS_ID>70</CS_ID>
+			<NameR>Бета1-адреноблокатор селективный с СМА</NameR>
+			<NameE>Beta1-adrenoblocker selective with instrict sympathomimetic activity</NameE>
+		</entry>
+		<entry>
+			<CS_ID>71</CS_ID>
+			<NameR>Бронходилатирующее средство - бета2-адреномиметик селективный</NameR>
+			<NameE>Bronchodilator - beta2-adrenoreceptors agonist selective</NameE>
+		</entry>
+		<entry>
+			<CS_ID>72</CS_ID>
+			<NameR>Биологически-активная пищевая добавка</NameR>
+			<NameE>Bioactive food supplement</NameE>
+		</entry>
+		<entry>
+			<CS_ID>73</CS_ID>
+			<NameR>Биостимулирующее средство</NameR>
+			<NameE>Biostimulator agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>74</CS_ID>
+			<NameR>Блокатор &quot;медленных&quot; кальциевых каналов</NameR>
+			<NameE>SCCB</NameE>
+		</entry>
+		<entry>
+			<CS_ID>76</CS_ID>
+			<NameR>Бронходилатирующее средство растительного происхождения</NameR>
+			<NameE>Bronchodilator phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>77</CS_ID>
+			<NameR>Вазодилатирующее средство</NameR>
+			<NameE>Vasodilator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>78</CS_ID>
+			<NameR>Гипертензивное средство</NameR>
+			<NameE>Antihypotensive</NameE>
+		</entry>
+		<entry>
+			<CS_ID>79</CS_ID>
+			<NameR>Веносклерозирующее средство</NameR>
+			<NameE>Veinsclerosing agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>80</CS_ID>
+			<NameR>Венотонизирующее средство</NameR>
+			<NameE>Veintonic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>81</CS_ID>
+			<NameR>Венотонизирующее средство растительного происхождения</NameR>
+			<NameE>Veintonic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>82</CS_ID>
+			<NameR>Ветрогонное средство</NameR>
+			<NameE>Carminative agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>83</CS_ID>
+			<NameR>Ветрогонное средство растительного происхождения</NameR>
+			<NameE>Carminative agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>84</CS_ID>
+			<NameR>Витамины</NameR>
+			<NameE>Vitamine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>85</CS_ID>
+			<NameR>Ганглиоблокатор</NameR>
+			<NameE>Ganglioblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>87</CS_ID>
+			<NameR>Гемопоэза стимулятор</NameR>
+			<NameE>Hemopoetic stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>90</CS_ID>
+			<NameR>Гемостатическое средство</NameR>
+			<NameE>Hemostatic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>92</CS_ID>
+			<NameR>Гепатопротекторное средство растительного происхождения</NameR>
+			<NameE>Hepatoprotector phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>93</CS_ID>
+			<NameR>Гипоазотемическое средство</NameR>
+			<NameE>Hypoasotemic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>94</CS_ID>
+			<NameR>Гипоазотемическое средство растительного происхождения</NameR>
+			<NameE>Hypoasotemic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>95</CS_ID>
+			<NameR>Гиполипидемическое средство</NameR>
+			<NameE>Hypolipidemic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>96</CS_ID>
+			<NameR>Гиполипидемическое средство животного происхождения</NameR>
+			<NameE>Hypolipidemic agent animal genesis</NameE>
+		</entry>
+		<entry>
+			<CS_ID>97</CS_ID>
+			<NameR>Гиполипидемическое средство растительного происхождения</NameR>
+			<NameE>Hypolipidemic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>98</CS_ID>
+			<NameR>Гипотензивное средство комбинированное</NameR>
+			<NameE>Antihypertensive agent combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>99</CS_ID>
+			<NameR>Гипофиза стимулятор</NameR>
+			<NameE>Hypophis stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>100</CS_ID>
+			<NameR>Глюкокортикостероид</NameR>
+			<NameE>Glucocorticosteroid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>101</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения</NameR>
+			<NameE>Glucocorticosteroid local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>102</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения местнораздражающее средство</NameR>
+			<NameE>Glucocorticosteroid local irritant agent local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>103</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения противомикробное средство</NameR>
+			<NameE>Glucocorticosteroid local antimicrobial agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>104</CS_ID>
+			<NameR>Гомеопатическое средство</NameR>
+			<NameE>Homoeopathic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>106</CS_ID>
+			<NameR>Дегидратирующее средство</NameR>
+			<NameE>Dehydrating agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>107</CS_ID>
+			<NameR>Дезинтоксикационное средство</NameR>
+			<NameE>Disintoxicant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>108</CS_ID>
+			<NameR>Дезинфицирующее и моющее средство</NameR>
+			<NameE>Disinfectant and detersive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>109</CS_ID>
+			<NameR>Дезинфицирующее и стерилизующее средство</NameR>
+			<NameE>Disinfectant and sterilizing agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>110</CS_ID>
+			<NameR>Дезинфицирующее средство</NameR>
+			<NameE>Disinfectant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>111</CS_ID>
+			<NameR>Дерматопротекторное средство</NameR>
+			<NameE>Dermatoprotector</NameE>
+		</entry>
+		<entry>
+			<CS_ID>112</CS_ID>
+			<NameR>Дерматопротекторное средство растительного происхождения</NameR>
+			<NameE>Dermatoprotector phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>113</CS_ID>
+			<NameR>Диагностическое средство</NameR>
+			<NameE>Diagnostic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>114</CS_ID>
+			<NameR>Диагностикум</NameR>
+			<NameE>Diagnosticum</NameE>
+		</entry>
+		<entry>
+			<CS_ID>115</CS_ID>
+			<NameR>Диуретическое калийсберегающее средство</NameR>
+			<NameE>Diuretic potassium-sparing</NameE>
+		</entry>
+		<entry>
+			<CS_ID>116</CS_ID>
+			<NameR>Диуретическое средство комбинированное</NameR>
+			<NameE>Diuretic combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>117</CS_ID>
+			<NameR>Диуретическое средство</NameR>
+			<NameE>Diuretic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>118</CS_ID>
+			<NameR>Диуретическое средство растительного происхождения</NameR>
+			<NameE>Diuretic phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>119</CS_ID>
+			<NameR>Добавка в парентеральное питание</NameR>
+			<NameE>Supplement to parenteral nutrition</NameE>
+		</entry>
+		<entry>
+			<CS_ID>122</CS_ID>
+			<NameR>Желчегонное средство</NameR>
+			<NameE>Choleretic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>123</CS_ID>
+			<NameR>Желчегонное средство растительного происхождения</NameR>
+			<NameE>Choleretic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>124</CS_ID>
+			<NameR>Заменитель сахара</NameR>
+			<NameE>Sugar substitute (sweetener)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>125</CS_ID>
+			<NameR>Заменитель синовиальной жидкости</NameR>
+			<NameE>Synovial fluid substitute</NameE>
+		</entry>
+		<entry>
+			<CS_ID>126</CS_ID>
+			<NameR>Радиофармацевтическое терапевтическое средство</NameR>
+			<NameE>Therapeutic radiopharmaceutical agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>128</CS_ID>
+			<NameR>Иммунодепрессивное средство</NameR>
+			<NameE>Immunosuppressant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>129</CS_ID>
+			<NameR>Иммуномодулирующее средство</NameR>
+			<NameE>Immunomodulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>131</CS_ID>
+			<NameR>Иммуностимулирующее средство</NameR>
+			<NameE>Immunostimulant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>132</CS_ID>
+			<NameR>Иммуностимулирующее средство растительного происхождения</NameR>
+			<NameE>Immunomodulator phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>134</CS_ID>
+			<NameR>Инсектицидное средство</NameR>
+			<NameE>Insecticide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>135</CS_ID>
+			<NameR>Гипогликемическое средство - инсулин длительного действия</NameR>
+			<NameE>Hypoglycemic agent - insulin prolonged action</NameE>
+		</entry>
+		<entry>
+			<CS_ID>137</CS_ID>
+			<NameR>Гипогликемическое средство - инсулин короткого действия</NameR>
+			<NameE>Hypoglycemic agent - insulin short action</NameE>
+		</entry>
+		<entry>
+			<CS_ID>138</CS_ID>
+			<NameR>Гипогликемическое средство - инсулин средней продолжительности действия</NameR>
+			<NameE>Hypoglycemic agent - insulin averaged time action</NameE>
+		</entry>
+		<entry>
+			<CS_ID>140</CS_ID>
+			<NameR>Гипогликемии средство лечения</NameR>
+			<NameE>Hypoglycemia treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>141</CS_ID>
+			<NameR>Кардиоплегическое средство</NameR>
+			<NameE>Cardioplegic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>142</CS_ID>
+			<NameR>Кардиотоническое средство</NameR>
+			<NameE>Cardiotonic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>143</CS_ID>
+			<NameR>Кардиотоническое средство растительного происхождения</NameR>
+			<NameE>Cardiotonic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>146</CS_ID>
+			<NameR>Кератолитическое средство</NameR>
+			<NameE>Keratolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>147</CS_ID>
+			<NameR>Комплексообразующее средство</NameR>
+			<NameE>Chelating agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>148</CS_ID>
+			<NameR>Контрастное средство для УЗИ</NameR>
+			<NameE>Contrast medium for ultrasound</NameE>
+		</entry>
+		<entry>
+			<CS_ID>149</CS_ID>
+			<NameR>Контрастное средство для МРТ</NameR>
+			<NameE>Contrast medium for MRT</NameE>
+		</entry>
+		<entry>
+			<CS_ID>150</CS_ID>
+			<NameR>Контрацептивное внутриматочное средство</NameR>
+			<NameE>Contraceptive itrauterine device</NameE>
+		</entry>
+		<entry>
+			<CS_ID>152</CS_ID>
+			<NameR>Контрацептивное средство</NameR>
+			<NameE>Contraceptive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>153</CS_ID>
+			<NameR>Коронародилатирующее средство</NameR>
+			<NameE>Vasodilator of coronary artery</NameE>
+		</entry>
+		<entry>
+			<CS_ID>155</CS_ID>
+			<NameR>Противоподагрическое средство - ксантиноксидазы ингибитор</NameR>
+			<NameE>Antigout agent - xantinoxydase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>156</CS_ID>
+			<NameR>Лактации стимулятор</NameR>
+			<NameE>Lactation stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>157</CS_ID>
+			<NameR>Лейкопоэза стимулятор</NameR>
+			<NameE>Leucopoetic stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>158</CS_ID>
+			<NameR>Противовоспалительное антибронхоконстрикторное средство - лейкотриеновых рецепторов блокатор</NameR>
+			<NameE>Antiinflammatory antibronchconstrictor agent - leucotriene receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>159</CS_ID>
+			<NameR>Лечебно-профилактическое косметическое средство</NameR>
+			<NameE>Remedy cosmetic for treatment and prophylactic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>160</CS_ID>
+			<NameR>Лечебно-профилактическое средство</NameR>
+			<NameE>Remedy for treatment and prophylactic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>161</CS_ID>
+			<NameR>Лечебно-профилактическое стоматологическое средство</NameR>
+			<NameE>Remedy stomatological for treatment and prophylactic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>165</CS_ID>
+			<NameR>М-холиноблокатор</NameR>
+			<NameE>Muscarinic cholinoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>167</CS_ID>
+			<NameR>МИБП</NameR>
+			<NameE>Medical immunobiological agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>168</CS_ID>
+			<NameR>Местноанестезирующее средство</NameR>
+			<NameE>Anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>170</CS_ID>
+			<NameR>Местнонекротизирующее средство</NameR>
+			<NameE>Necrotic agent local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>171</CS_ID>
+			<NameR>Местнораздражающее средство</NameR>
+			<NameE>Irritant agent local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>172</CS_ID>
+			<NameR>Местнораздражающее средство природного происхождения</NameR>
+			<NameE>Irritant agent local natural genesis</NameE>
+		</entry>
+		<entry>
+			<CS_ID>173</CS_ID>
+			<NameR>Метаболическое средство</NameR>
+			<NameE>Metabolic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>174</CS_ID>
+			<NameR>МИБП - диагностикум</NameR>
+			<NameE>Medical immunobiological agent - diagnosticum</NameE>
+		</entry>
+		<entry>
+			<CS_ID>178</CS_ID>
+			<NameR>Минералокортикостероид</NameR>
+			<NameE>Mineralocorticosteroid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>179</CS_ID>
+			<NameR>Миорелаксант недеполяризующий периферического действия</NameR>
+			<NameE>Muscle relaxant non-depolarizing peripheral acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>180</CS_ID>
+			<NameR>Моющее средство</NameR>
+			<NameE>Detersive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>181</CS_ID>
+			<NameR>Отхаркивающее муколитическое средство</NameR>
+			<NameE>Expectorant agent - mucolytic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>182</CS_ID>
+			<NameR>Мультиминерал</NameR>
+			<NameE>Multimineral</NameE>
+		</entry>
+		<entry>
+			<CS_ID>185</CS_ID>
+			<NameR>Средство для ингаляционной анестезии</NameR>
+			<NameE>Anaestesia inhalation</NameE>
+		</entry>
+		<entry>
+			<CS_ID>186</CS_ID>
+			<NameR>Средство для неингаляционной общей анестезии</NameR>
+			<NameE>Anaestesia noninhalation</NameE>
+		</entry>
+		<entry>
+			<CS_ID>187</CS_ID>
+			<NameR>Ноотропное средство</NameR>
+			<NameE>Nootrop</NameE>
+		</entry>
+		<entry>
+			<CS_ID>188</CS_ID>
+			<NameR>Нормотимическое средство</NameR>
+			<NameE>Normotiming agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>189</CS_ID>
+			<NameR>НПВП</NameR>
+			<NameE>NSAID</NameE>
+		</entry>
+		<entry>
+			<CS_ID>190</CS_ID>
+			<NameR>Общетонизирующее средство</NameR>
+			<NameE>General tonic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>191</CS_ID>
+			<NameR>Общетонизирующее средство растительного происхождения</NameR>
+			<NameE>General tonic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>193</CS_ID>
+			<NameR>Отхаркивающее средство</NameR>
+			<NameE>Expectorant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>194</CS_ID>
+			<NameR>Отхаркивающее средство растительного происхождения</NameR>
+			<NameE>Expectorant agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>196</CS_ID>
+			<NameR>Пеногаситель</NameR>
+			<NameE>Lung foam removing agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>197</CS_ID>
+			<NameR>Пищеварительное средство</NameR>
+			<NameE>Digestive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>199</CS_ID>
+			<NameR>Пищеварительное ферментное средство</NameR>
+			<NameE>Digestive agent enzymatic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>200</CS_ID>
+			<NameR>Плазмозамещающее средство</NameR>
+			<NameE>Plasma-substituting agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>201</CS_ID>
+			<NameR>Поливитаминное средство</NameR>
+			<NameE>Multivitamine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>202</CS_ID>
+			<NameR>Эректильной дисфункции средство лечения</NameR>
+			<NameE>Erection dysfunction treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>212</CS_ID>
+			<NameR>Гестаген</NameR>
+			<NameE>Progestogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>213</CS_ID>
+			<NameR>Протеолиза ингибитор</NameR>
+			<NameE>Proteolysis inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>214</CS_ID>
+			<NameR>Протеолитическое средство</NameR>
+			<NameE>Proteolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>216</CS_ID>
+			<NameR>Противоаллергическое средство</NameR>
+			<NameE>Antiallergic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>219</CS_ID>
+			<NameR>Противовирусное средство</NameR>
+			<NameE>Antiviral agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>220</CS_ID>
+			<NameR>Противовирусное средство растительного происхождения</NameR>
+			<NameE>Antiviral agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>221</CS_ID>
+			<NameR>Противовоспалительное средство</NameR>
+			<NameE>Antiinflammatory agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>222</CS_ID>
+			<NameR>Противовоспалительное средство для местного применения</NameR>
+			<NameE>Antiinflammatory agent local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>223</CS_ID>
+			<NameR>Противовоспалительное средство растительного происхождения</NameR>
+			<NameE>Antiinflammatory agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>224</CS_ID>
+			<NameR>Антигельминтное средство</NameR>
+			<NameE>Antihelmintic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>225</CS_ID>
+			<NameR>Геморроя средство лечения</NameR>
+			<NameE>Antihemorrhoidal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>226</CS_ID>
+			<NameR>Геморроя средство лечения растительного происхождения</NameR>
+			<NameE>Antihemorrhoidal agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>227</CS_ID>
+			<NameR>Противоглаукомное средство</NameR>
+			<NameE>Antiglaucomic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>229</CS_ID>
+			<NameR>Противогрибковое средство</NameR>
+			<NameE>Antifungal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>231</CS_ID>
+			<NameR>Противодиарейное средство</NameR>
+			<NameE>Antidiarrheal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>232</CS_ID>
+			<NameR>Противокариесное средство</NameR>
+			<NameE>Anticariogenic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>233</CS_ID>
+			<NameR>Катаракты средство лечения</NameR>
+			<NameE>Cataract treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>235</CS_ID>
+			<NameR>Противоклимактерическое средство</NameR>
+			<NameE>Anticlimacteric agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>236</CS_ID>
+			<NameR>Противоклимактерическое средство растительного происхождения</NameR>
+			<NameE>Anticlimacteric agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>238</CS_ID>
+			<NameR>Противоконгестивное средство</NameR>
+			<NameE>Anticongestive nasal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>239</CS_ID>
+			<NameR>Противолейшманиозное средство</NameR>
+			<NameE>Antileishmoidal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>240</CS_ID>
+			<NameR>Противолепрозное средство</NameR>
+			<NameE>Antileprotic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>241</CS_ID>
+			<NameR>Противомалярийное средство</NameR>
+			<NameE>Antimalarial agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>242</CS_ID>
+			<NameR>Противомигренозное средство</NameR>
+			<NameE>Antimigrains agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>245</CS_ID>
+			<NameR>Противомикробное средство комбинированное</NameR>
+			<NameE>Antimicrobial agent combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>246</CS_ID>
+			<NameR>Противомикробное средство</NameR>
+			<NameE>Antimicrobial agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>247</CS_ID>
+			<NameR>Противомикробное средство растительного происхождения</NameR>
+			<NameE>Antimicrobial agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>248</CS_ID>
+			<NameR>Противомикробное средство комбинированное (противомикробное средство м-холиноблокатор)</NameR>
+			<NameE>Antimicrobial agent muscarinic cholinoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>249</CS_ID>
+			<NameR>Противомикробное средство - нитрофуран</NameR>
+			<NameE>Antimicrobial agent - nitrofurane</NameE>
+		</entry>
+		<entry>
+			<CS_ID>250</CS_ID>
+			<NameR>Противомикробное средство - оксихинолин</NameR>
+			<NameE>Antimicrobial agent - oxyquinoline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>251</CS_ID>
+			<NameR>Противомикробное средство - сульфаниламид</NameR>
+			<NameE>Antimicrobial agent - sulfanilamide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>252</CS_ID>
+			<NameR>Противомикробное средство - фолиевой кислоты синтеза ингибитор</NameR>
+			<NameE>Antimicrobial agent - folic acid synthesis inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>253</CS_ID>
+			<NameR>Противомикробное средство - фторхинолон</NameR>
+			<NameE>Antimicrobial agent - fluoroquinolone</NameE>
+		</entry>
+		<entry>
+			<CS_ID>254</CS_ID>
+			<NameR>Противомикробное средство - хиноксалин</NameR>
+			<NameE>Antimicrobial agent - quinoxaline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>255</CS_ID>
+			<NameR>Противомикробное средство - хинолон</NameR>
+			<NameE>Antimicrobial agent - quinolone</NameE>
+		</entry>
+		<entry>
+			<CS_ID>256</CS_ID>
+			<NameR>Противоопухолевое средство</NameR>
+			<NameE>Antineoplastic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>259</CS_ID>
+			<NameR>Противопаркинсоническое средство</NameR>
+			<NameE>Antiparkinsonial agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>262</CS_ID>
+			<NameR>Противоподагрическое средство</NameR>
+			<NameE>Antigout agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>263</CS_ID>
+			<NameR>Противопротозойное средство</NameR>
+			<NameE>Antiprotozoal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>264</CS_ID>
+			<NameR>Псориаза средство лечения</NameR>
+			<NameE>Psoriasis treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>265</CS_ID>
+			<NameR>Противорвотное средство</NameR>
+			<NameE>Antiemetic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>268</CS_ID>
+			<NameR>Противосеборейное средство</NameR>
+			<NameE>Antiseborrheic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>269</CS_ID>
+			<NameR>Противосифилитическое средство</NameR>
+			<NameE>Antisiphylitic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>270</CS_ID>
+			<NameR>Противоэпилептическое средство</NameR>
+			<NameE>Antiepileptic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>271</CS_ID>
+			<NameR>Противотуберкулезное средство</NameR>
+			<NameE>Antitubercular agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>273</CS_ID>
+			<NameR>Язвы пептической средство лечения</NameR>
+			<NameE>Antiulcerant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>274</CS_ID>
+			<NameR>Язвы пептической средство лечения растительного происхождения</NameR>
+			<NameE>Antiulcerant agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>278</CS_ID>
+			<NameR>Психостимулирующее средство</NameR>
+			<NameE>Psychostimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>279</CS_ID>
+			<NameR>Радиопротекторное средство</NameR>
+			<NameE>Radioprotector</NameE>
+		</entry>
+		<entry>
+			<CS_ID>280</CS_ID>
+			<NameR>Раствор для перитонеального диализа</NameR>
+			<NameE>Solution for peritoneal dialysis</NameE>
+		</entry>
+		<entry>
+			<CS_ID>282</CS_ID>
+			<NameR>Растительного происхождения средство</NameR>
+			<NameE>Phytogenic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>283</CS_ID>
+			<NameR>Рвотное средство</NameR>
+			<NameE>Emetic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>285</CS_ID>
+			<NameR>Репарации тканей стимулятор</NameR>
+			<NameE>Tissues reparation stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>286</CS_ID>
+			<NameR>Регидратирующее средство</NameR>
+			<NameE>Fluid replenisher</NameE>
+		</entry>
+		<entry>
+			<CS_ID>287</CS_ID>
+			<NameR>Регидратирующее средство для перорального приема</NameR>
+			<NameE>Fluid replenisher oral</NameE>
+		</entry>
+		<entry>
+			<CS_ID>289</CS_ID>
+			<NameR>Рентгеноконтрастное средство</NameR>
+			<NameE>Radiographic contrast agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>290</CS_ID>
+			<NameR>Репеллентное средство</NameR>
+			<NameE>Repellent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>291</CS_ID>
+			<NameR>Ретинопротектор</NameR>
+			<NameE>Retinoprotector</NameE>
+		</entry>
+		<entry>
+			<CS_ID>292</CS_ID>
+			<NameR>Родентицидное средство</NameR>
+			<NameE>Rodenticide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>293</CS_ID>
+			<NameR>Родовой деятельности стимулятор</NameR>
+			<NameE>Uterus activity stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>295</CS_ID>
+			<NameR>Роста волос стимулятор</NameR>
+			<NameE>Hair growing stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>296</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения</NameR>
+			<NameE>Hypoglycemic agent oral</NameE>
+		</entry>
+		<entry>
+			<CS_ID>297</CS_ID>
+			<NameR>Седативное средство</NameR>
+			<NameE>Sedative agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>298</CS_ID>
+			<NameR>Седативное средство растительного происхождения</NameR>
+			<NameE>Sedative agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>299</CS_ID>
+			<NameR>Серотониновых рецепторов стимулятор</NameR>
+			<NameE>Serotonine receptors agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>300</CS_ID>
+			<NameR>Гипотензивное средство - симпатолитик</NameR>
+			<NameE>Sympatholytic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>301</CS_ID>
+			<NameR>Слабительное средство</NameR>
+			<NameE>Laxative agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>302</CS_ID>
+			<NameR>Слабительное средство растительного происхождения</NameR>
+			<NameE>Laxative agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>303</CS_ID>
+			<NameR>Снотворное средство</NameR>
+			<NameE>Hypnotic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>304</CS_ID>
+			<NameR>Соматостатин</NameR>
+			<NameE>Somatostatin</NameE>
+		</entry>
+		<entry>
+			<CS_ID>305</CS_ID>
+			<NameR>Гормон роста</NameR>
+			<NameE>Growth hormone</NameE>
+		</entry>
+		<entry>
+			<CS_ID>306</CS_ID>
+			<NameR>Спазмолитическое средство</NameR>
+			<NameE>Spasmolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>307</CS_ID>
+			<NameR>Спазмолитическое средство растительного происхождения</NameR>
+			<NameE>Spasmolytic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>308</CS_ID>
+			<NameR>Простаты гиперплазии доброкачественной средство лечения растительного происхождения</NameR>
+			<NameE>Prostate hyperplasia benignant treatment agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>309</CS_ID>
+			<NameR>Алкоголизма средство лечения</NameR>
+			<NameE>Alcohole dependance treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>310</CS_ID>
+			<NameR>Абстиненции алкогольной средство лечения</NameR>
+			<NameE>Alcohole abstinence treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>311</CS_ID>
+			<NameR>Алопеции средство лечения</NameR>
+			<NameE>Allopecia treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>312</CS_ID>
+			<NameR>Гипергидроза средство лечения</NameR>
+			<NameE>Hyperhydrosis treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>313</CS_ID>
+			<NameR>Метгемоглобинемии средство лечения</NameR>
+			<NameE>Methemoglobinemia treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>314</CS_ID>
+			<NameR>Нефролитиаза средство лечения</NameR>
+			<NameE>Nephrourolitiasis treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>315</CS_ID>
+			<NameR>Порфирии острой средство лечения</NameR>
+			<NameE>Porfiria acute treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>316</CS_ID>
+			<NameR>Почечной недостаточности средство лечения</NameR>
+			<NameE>Renal insufficiency treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>317</CS_ID>
+			<NameR>Предменструального синдрома средство лечения</NameR>
+			<NameE>Premenstrual syndrome treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>318</CS_ID>
+			<NameR>Рассеянного склероза средство лечения</NameR>
+			<NameE>Sclerosis dissemenata treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>319</CS_ID>
+			<NameR>Холелитиаза средство лечения</NameR>
+			<NameE>Cholelytiasis treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>320</CS_ID>
+			<NameR>Простатита хронического средство лечения</NameR>
+			<NameE>Prostatitis chronic treatment</NameE>
+		</entry>
+		<entry>
+			<CS_ID>321</CS_ID>
+			<NameR>Средство медназначения</NameR>
+			<NameE>Medical purpose agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>323</CS_ID>
+			<NameR>Питания парентерального средство</NameR>
+			<NameE>Nutrition parenteral agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>325</CS_ID>
+			<NameR>Питания средство</NameR>
+			<NameE>Nutrition agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>326</CS_ID>
+			<NameR>Питания детского средство</NameR>
+			<NameE>Nutrition agent for children</NameE>
+		</entry>
+		<entry>
+			<CS_ID>327</CS_ID>
+			<NameR>Спаечной болезни средство профилактики</NameR>
+			<NameE>Intraabdominal commisures prophylaxis agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>329</CS_ID>
+			<NameR>Питания углеводного средство</NameR>
+			<NameE>Carbohydrate nutrition agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>331</CS_ID>
+			<NameR>Противоопухолевое средство - стероидов синтеза ингибитор</NameR>
+			<NameE>Antineoplastic agent - steroides synthesis inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>332</CS_ID>
+			<NameR>Сурфактант</NameR>
+			<NameE>Surfactant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>333</CS_ID>
+			<NameR>Тиреоидное средство</NameR>
+			<NameE>Thyreoidal therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>335</CS_ID>
+			<NameR>ТТГ-рилизинг-гормона аналог</NameR>
+			<NameE>TSH releasing hormone analog</NameE>
+		</entry>
+		<entry>
+			<CS_ID>336</CS_ID>
+			<NameR>Утеротонизирующее средство</NameR>
+			<NameE>Oxytonic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>337</CS_ID>
+			<NameR>Ферментное средство</NameR>
+			<NameE>Enzyme therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>338</CS_ID>
+			<NameR>Фибринолитическое средство</NameR>
+			<NameE>Fibrinolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>339</CS_ID>
+			<NameR>Фолликулостимулирующее средство</NameR>
+			<NameE>Follicle-stimulating agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>340</CS_ID>
+			<NameR>Фотосенсибилизирующее средство</NameR>
+			<NameE>Photosensitising agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>341</CS_ID>
+			<NameR>Фотосенсибилизирующее средство растительного происхождения</NameR>
+			<NameE>Photosensitising agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>342</CS_ID>
+			<NameR>Энтеросорбирующее средство</NameR>
+			<NameE>Enterosorbent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>343</CS_ID>
+			<NameR>Эстроген</NameR>
+			<NameE>Estrogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>347</CS_ID>
+			<NameR>Аппетита стимулятор</NameR>
+			<NameE>Appetite stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>348</CS_ID>
+			<NameR>Вспомогательное вещество</NameR>
+			<NameE>Adjuvant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>349</CS_ID>
+			<NameR>Пластырь</NameR>
+			<NameE>Plaster</NameE>
+		</entry>
+		<entry>
+			<CS_ID>352</CS_ID>
+			<NameR>Противоплазмодийное средство</NameR>
+			<NameE>Antiplazmoidal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>354</CS_ID>
+			<NameR>Рилизинг фактор</NameR>
+			<NameE>Releasing factor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>355</CS_ID>
+			<NameR>ЛГ-рилизинг гормон</NameR>
+			<NameE>LH-releasing hormone</NameE>
+		</entry>
+		<entry>
+			<CS_ID>357</CS_ID>
+			<NameR>Предстерилизационной очистки средство</NameR>
+			<NameE>Prestrerilisating cleaning agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>715</CS_ID>
+			<NameR>Костной резорбции ингибитор - эстрогеновых рецепторов модулятор</NameR>
+			<NameE>Osteoresorbtion inhibitor - estrogen receptors modulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>718</CS_ID>
+			<NameR>Гепатопротекторное средство</NameR>
+			<NameE>Hepatoprotector</NameE>
+		</entry>
+		<entry>
+			<CS_ID>719</CS_ID>
+			<NameR>Противопаркинсоническое средство комбинированное (дофамина предшественник декарбоксилазы периферической ингибитор)</NameR>
+			<NameE>Antiparkinsonial agent (dophamine precursor decarboxylase peripheral inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>720</CS_ID>
+			<NameR>Противопаркинсоническое средство - КОМТ ингибитор</NameR>
+			<NameE>Antiparkinsonial agent - COMT blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>721</CS_ID>
+			<NameR>Противопаркинсоническое средство - МАО ингибитор</NameR>
+			<NameE>Antiparkinsonial agent - MAO inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>722</CS_ID>
+			<NameR>Холиноблокатор центральный</NameR>
+			<NameE>Cholinergic antagonist central acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>724</CS_ID>
+			<NameR>Эктопаразитов средство уничтожения</NameR>
+			<NameE>Ectoparasiticides agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>727</CS_ID>
+			<NameR>Гемостатическое средство для местного применения</NameR>
+			<NameE>Hemostatic agent local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>728</CS_ID>
+			<NameR>Антидот</NameR>
+			<NameE>Antidote</NameE>
+		</entry>
+		<entry>
+			<CS_ID>729</CS_ID>
+			<NameR>Контрацептивное средство для местного применения</NameR>
+			<NameE>Contraceptive agent local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>735</CS_ID>
+			<NameR>Опиоидных рецепторов антагонист</NameR>
+			<NameE>Opioid receptors antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>736</CS_ID>
+			<NameR>Растворитель</NameR>
+			<NameE>Solvent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>737</CS_ID>
+			<NameR>Антибиотик-цефалоспорин бета-лактамаз ингибитор</NameR>
+			<NameE>Antibiotic-cephalocporine beta-lactamase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>738</CS_ID>
+			<NameR>Антикоагулянтное средство непрямого действия</NameR>
+			<NameE>Anticoagulant indirect</NameE>
+		</entry>
+		<entry>
+			<CS_ID>739</CS_ID>
+			<NameR>Бета-лактамаз ингибитор</NameR>
+			<NameE>Beta-lactamase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>740</CS_ID>
+			<NameR>Гемоконсервант</NameR>
+			<NameE>Hemoconservant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>741</CS_ID>
+			<NameR>Гипофиза гормон</NameR>
+			<NameE>Pituitary hormone</NameE>
+		</entry>
+		<entry>
+			<CS_ID>742</CS_ID>
+			<NameR>Дигиталиса антидот</NameR>
+			<NameE>Digitalis antidote</NameE>
+		</entry>
+		<entry>
+			<CS_ID>743</CS_ID>
+			<NameR>Кальциево-фосфорного обмена регулятор</NameR>
+			<NameE>Calcium-phosphorus metabolism regulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>745</CS_ID>
+			<NameR>Кардиотоническое средство - сердечный гликозид</NameR>
+			<NameE>Cardiotonic agent - cardiac glycoside</NameE>
+		</entry>
+		<entry>
+			<CS_ID>746</CS_ID>
+			<NameR>Костной резорбции ингибитор - бисфосфонат</NameR>
+			<NameE>Osteoresorbtion inhibitor - bisphosphonate</NameE>
+		</entry>
+		<entry>
+			<CS_ID>748</CS_ID>
+			<NameR>М- и н-холиномиметик</NameR>
+			<NameE>Muscarinic and nicotinic cholinoreceptors agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>749</CS_ID>
+			<NameR>М-холиномиметик</NameR>
+			<NameE>Muscarinic cholinoreceptors agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>752</CS_ID>
+			<NameR>Противорвотное средство - дофаминовых рецепторов блокатор центральный</NameR>
+			<NameE>Antiemetic agent - dophamine receptors blocker central</NameE>
+		</entry>
+		<entry>
+			<CS_ID>753</CS_ID>
+			<NameR>Противорвотное средство - серотониновых рецепторов антагонист</NameR>
+			<NameE>Antiemetic agent - serotonine receptors antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>755</CS_ID>
+			<NameR>Гастропротекторное средство - простагландина E1 аналог синтетический</NameR>
+			<NameE>Gastroprotector - PgE1 analog synthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>756</CS_ID>
+			<NameR>Желез желудка секрецию понижающее средство - протонного насоса ингибитор</NameR>
+			<NameE>Antiulcerant agent - proton pump inhibiting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>757</CS_ID>
+			<NameR>Родовой деятельности стимулятор - препарат окситоцина</NameR>
+			<NameE>Uterus activity stimulator - oxytocine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>758</CS_ID>
+			<NameR>Питания парентерального средство - аминокислоты</NameR>
+			<NameE>Nutrition parenteral agent - aminoacid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>760</CS_ID>
+			<NameR>Холинэстеразы реактиватор</NameR>
+			<NameE>Cholineesterase reactivator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>761</CS_ID>
+			<NameR>Железа препарат</NameR>
+			<NameE>Iron therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>762</CS_ID>
+			<NameR>Гистамина препарат</NameR>
+			<NameE>Histamine therapeunic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>764</CS_ID>
+			<NameR>Калия и магния препарат</NameR>
+			<NameE>Potassium and magnesium therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>765</CS_ID>
+			<NameR>Калия препарат</NameR>
+			<NameE>Potassium therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>766</CS_ID>
+			<NameR>Кремния препарат</NameR>
+			<NameE>Silicon therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>768</CS_ID>
+			<NameR>Магния препарат</NameR>
+			<NameE>Magnesium therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>769</CS_ID>
+			<NameR>Золота препарат</NameR>
+			<NameE>Aurum therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>770</CS_ID>
+			<NameR>Язвы пептической средство лечения - висмута препарат</NameR>
+			<NameE>Antiulcerant agent - bismuth therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>771</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство H1-гистаминовых рецепторов блокатор витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic H1-histamine receptors blocker vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>772</CS_ID>
+			<NameR>Никотиновой зависимости средство лечения</NameR>
+			<NameE>Nicotine withdrawal treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>773</CS_ID>
+			<NameR>Тироксина синтеза регулятор - йода препарат</NameR>
+			<NameE>Thyroxine synthesis regulator - iodide therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>774</CS_ID>
+			<NameR>Фтора препарат</NameR>
+			<NameE>Fluor therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>775</CS_ID>
+			<NameR>Цинка препарат</NameR>
+			<NameE>Zinc therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>776</CS_ID>
+			<NameR>Радиофармацевтического средство - реагент для получения</NameR>
+			<NameE>Radiopharmaceutical agent (reagent for preparing)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>777</CS_ID>
+			<NameR>Антигестаген</NameR>
+			<NameE>Antiprogestogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>778</CS_ID>
+			<NameR>Липаз ЖКТ ингибитор</NameR>
+			<NameE>Lipase GIT inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>779</CS_ID>
+			<NameR>Хрома препарат</NameR>
+			<NameE>Chrom therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>781</CS_ID>
+			<NameR>Селена препарат</NameR>
+			<NameE>Selene therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>782</CS_ID>
+			<NameR>М- и н-холиноблокатор</NameR>
+			<NameE>Muscarinic and nicotinic cholinoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>783</CS_ID>
+			<NameR>Гомеопатическое средство - вспомогательное вещество</NameR>
+			<NameE>Homeopathic agent - adjuvant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>785</CS_ID>
+			<NameR>Питания энтерального средство</NameR>
+			<NameE>Nutrition enteral agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>786</CS_ID>
+			<NameR>Соматостатина аналог синтетический</NameR>
+			<NameE>Somatostatin (synthetic analog)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>787</CS_ID>
+			<NameR>Крови препарат</NameR>
+			<NameE>Blood therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>789</CS_ID>
+			<NameR>Вспомогательное вещество растительного происхождения</NameR>
+			<NameE>Adjuvant agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>791</CS_ID>
+			<NameR>Антибиотик-азалид</NameR>
+			<NameE>Antibiotic-azalid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>792</CS_ID>
+			<NameR>Антибиотик-пенициллин биосинтетический</NameR>
+			<NameE>Antibiotic-penicilline biosynthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>793</CS_ID>
+			<NameR>Антибиотик-монобактам</NameR>
+			<NameE>Antibiotic-monobactam</NameE>
+		</entry>
+		<entry>
+			<CS_ID>794</CS_ID>
+			<NameR>Антацидное средство местноанестезирующее средство</NameR>
+			<NameE>Antacid local anesthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>795</CS_ID>
+			<NameR>Антацидное средство ветрогонное средство</NameR>
+			<NameE>Antacid carminative agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>796</CS_ID>
+			<NameR>Миорелаксант центрального действия</NameR>
+			<NameE>Muscle relaxant central acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>797</CS_ID>
+			<NameR>Миорелаксант</NameR>
+			<NameE>Muscle relaxant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>798</CS_ID>
+			<NameR>Противоподагрическое средство комбинированное (ксантиноксидазы ингибитор урикозурическое средство)</NameR>
+			<NameE>Antigout agent (xantinoxydase inhibitor uricosuric)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>799</CS_ID>
+			<NameR>Противоподагрическое средство (урикозурическое)</NameR>
+			<NameE>Antigout (uricosuric) agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>801</CS_ID>
+			<NameR>Антидепрессант анксиолитическое средство (транквилизатор)</NameR>
+			<NameE>Antidepressant tranquilizer</NameE>
+		</entry>
+		<entry>
+			<CS_ID>802</CS_ID>
+			<NameR>Антибиотик комбинированный (пенициллины полусинтетические)</NameR>
+			<NameE>Antibiotic combined (penicillines hemisynthetic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>803</CS_ID>
+			<NameR>Противомикробное средство комбинированное (пенициллин полусинтетический противомикробное и противопротозойное средство)</NameR>
+			<NameE>Antimicrobial agent combined (penicilline hemisynthetic antimicrobial and antiprotozoal agent)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>804</CS_ID>
+			<NameR>Противоопухолевое средство - эстрогенов синтеза ингибитор</NameR>
+			<NameE>Antineoplastic agent - estrogen synthesis inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>806</CS_ID>
+			<NameR>Железа препарат витамин</NameR>
+			<NameE>Iron therapeutic agent vitamine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>807</CS_ID>
+			<NameR>Кардиотоническое средство негликозидной структуры</NameR>
+			<NameE>Cardiotonic agent non-glycoside</NameE>
+		</entry>
+		<entry>
+			<CS_ID>808</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП антацидное средство)</NameR>
+			<NameE>Analgetic not-opioid (NSAID antacid)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>810</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП психостимулирующее средство витамин)</NameR>
+			<NameE>Analgetic not-opioid (NSAID psychostimulant vitamin)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>811</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП анальгезирующее ненаркотическое средство психостимулирующее средство витамин)</NameR>
+			<NameE>Analgetic not-opioid (NSAID analgetic-antipyretic psychostimulant vitamin)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>812</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП анальгезирующее ненаркотическое средство витамин)</NameR>
+			<NameE>Analgetic not-opioid (NSAID analgetic-antipyretic vitamin)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>813</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (противокашлевое опиоидное средство НПВП анальгезирующее ненаркотическое средство психостимулирующее средство)</NameR>
+			<NameE>Analgetic (analgetic opioid NSAID analgetic-antipyretic psychostimulant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>814</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП психостимулирующее средство)</NameR>
+			<NameE>Analgetic not-opioid (NSAID psychostimulant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>815</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП анальгезирующее ненаркотическое средство психостимулирующее средство)</NameR>
+			<NameE>Analgetic not-opioid (NSAID analgetic-antipyretic psychostimulant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>816</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП анальгезирующее ненаркотическое средство)</NameR>
+			<NameE>Analgetic not-opioid (NSAID analgetic-antipyretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>817</CS_ID>
+			<NameR>Противочесоточное средство</NameR>
+			<NameE>Antiscabies agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>818</CS_ID>
+			<NameR>Антибиотик полипептидной структуры</NameR>
+			<NameE>Antibiotic polypeptide structure</NameE>
+		</entry>
+		<entry>
+			<CS_ID>819</CS_ID>
+			<NameR>Антибиотик комбинированный (антибиотик полипептидный антибиотик-аминогликозид)</NameR>
+			<NameE>Antibiotic combined (aminoglycoside antibiotic polypeptide)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>820</CS_ID>
+			<NameR>Антибиотик комбинированный (антибиотик полипептидный антибиотик-аминогликозид антибиотик циклический полипептид)</NameR>
+			<NameE>Antibiotic combined (aminoglycoside antibiotic cyclic polypeptide antibiotic polypeptide)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>821</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения противогрибковое средство</NameR>
+			<NameE>Glucocorticosteroid local antifungal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>824</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотик-аминогликозид противогрибковое средство</NameR>
+			<NameE>Glucocorticosteroid local aminoglycoside antifungal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>825</CS_ID>
+			<NameR>Дофаминовых рецепторов агонист</NameR>
+			<NameE>Dopamine agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>826</CS_ID>
+			<NameR>Анальгезирующее наркотическое средство: опиоидных рецепторов агонист-антагонист</NameR>
+			<NameE>Analgetic opioid (opioids agonist-antagonist)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>827</CS_ID>
+			<NameR>Противоопухолевое средство - гонадотропин-рилизинг гормона аналог</NameR>
+			<NameE>Antineoplastic agent - gonadotropin-releasing hormone analog</NameE>
+		</entry>
+		<entry>
+			<CS_ID>828</CS_ID>
+			<NameR>Антибиотик-гликопептид</NameR>
+			<NameE>Antibiotic-glycopeptide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>829</CS_ID>
+			<NameR>Антисептическое и вяжущее средство</NameR>
+			<NameE>Antiseptic and astringent agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>830</CS_ID>
+			<NameR>Антисептическое кишечное и вяжущее средство</NameR>
+			<NameE>Antiseptic intestinal and abstringent agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>831</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотик-тетрациклин</NameR>
+			<NameE>Glucocorticosteroid local antibiotic-tetracycline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>833</CS_ID>
+			<NameR>Глюкокортикостероид местный антибиотик-аминогликозид</NameR>
+			<NameE>Antibiotic-aminoglycoside glucocorticosteroid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>834</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотики (аминогликозид и циклический полипептид)</NameR>
+			<NameE>Glucocorticosteroid local antibiotic combined (aminoglycoside antibiotic cyclic polypeptide)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>835</CS_ID>
+			<NameR>Эстрогенов аналог нестероидной структуры</NameR>
+			<NameE>Estrogen analog nonsteroidal</NameE>
+		</entry>
+		<entry>
+			<CS_ID>836</CS_ID>
+			<NameR>Противотуберкулезное средство комбинированное</NameR>
+			<NameE>Antitubercular agent combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>837</CS_ID>
+			<NameR>Эректильной дисфункции средство лечения - альфа-адреноблокатор</NameR>
+			<NameE>Erection dysfunction treatment agent - alfa-adrenoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>839</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (бета-адреноблокатор диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (beta-adrenoblocker diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>840</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство противокашлевое опиоидное средство)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic antitussive agent)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>841</CS_ID>
+			<NameR>Антибиотик-полипептид циклический</NameR>
+			<NameE>Antibiotic-cyclic polypeptide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>842</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее опиоидное средство анальгезирующее ненаркотическое средство психостимулирующее средство)</NameR>
+			<NameE>Analgetic (analgetic opioid analgetic-antipyretic psychostimulant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>843</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее опиоидное средство НПВП психостимулирующее средство барбитурат)</NameR>
+			<NameE>Analgetic (analgetic opioid analgetic-antipyretic psychostimulant barbiturate)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>844</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство психостимулирующее средство)</NameR>
+			<NameE>Analgetic not-opioid (analgetic-antipyretic psychostimulant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>846</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство психостимулирующее средство альфа-адреномиметик)</NameR>
+			<NameE>Analgetic not-opioid (analgetic-antipyretic psychostimulant vasoconstrictor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>847</CS_ID>
+			<NameR>Противопаркинсоническое средство - дофамина предшественник</NameR>
+			<NameE>Antiparkinsonial agent - dophamine precursor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>848</CS_ID>
+			<NameR>Дыхания стимулятор рефлекторного действия</NameR>
+			<NameE>Breathing stimulator reflex acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>849</CS_ID>
+			<NameR>Коронародилатирующее средство рефлекторного действия</NameR>
+			<NameE>Vasodilator of coronary artery reflex acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>852</CS_ID>
+			<NameR>Противомикробное и противопротозойное средство</NameR>
+			<NameE>Antimicrobial and antiprotozoal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>853</CS_ID>
+			<NameR>Противомикробное средство комбинированное (противомикробное и противопротозойное средство противогрибковое средство)</NameR>
+			<NameE>Antimicrobial agent combined (antimicrobial and antiprotozoal agent antifungal agent)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>856</CS_ID>
+			<NameR>Антибиотик-аминогликозид анаболическое стероидное средство</NameR>
+			<NameE>Antibiotic-aminoglycoside anabolic steroid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>860</CS_ID>
+			<NameR>Противоглаукомное средство комбинированное (м-холиномиметик бета-адреноблокатор)</NameR>
+			<NameE>Antiglaucomic agent (muscarinic cholinoreceptors agonist beta-adrenoblocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>861</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (симпатолитик артериодилататор)</NameR>
+			<NameE>Antihypertensive agent combined (sympatholytic arteriodilatator)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>862</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (симпатолитик артериодилататор диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (sympatholytic arteriodilatator diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>863</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (симпатолитик артериодилататор диуретик калия препарат)</NameR>
+			<NameE>Antihypertensive agent combined (sympatholytic arteriodilatator diuretic potassium therapeutic agent)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>864</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (симпатолитик альфа-адреноблокатор диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (sympatholytic alfa-adrenoblocker diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>865</CS_ID>
+			<NameR>Антибиотик трициклической структуры</NameR>
+			<NameE>Antibiotic tricyclic structure</NameE>
+		</entry>
+		<entry>
+			<CS_ID>866</CS_ID>
+			<NameR>Противомикробное и противовоспалительное кишечное средство</NameR>
+			<NameE>Antimicrobial and antiinflammatory intestinal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>869</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотики (аминогликозид циклический полипептид) альфа-адреномиметик</NameR>
+			<NameE>Glucocorticosteroid local (aminoglycoside antibiotic cyclic polypeptide) vasoconstrictor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>871</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения кератолитическое средство</NameR>
+			<NameE>Glucocorticosteroid local keratolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>874</CS_ID>
+			<NameR>Противоклимактерическое средство комбинированное (эстроген гестаген)</NameR>
+			<NameE>Anticlimacteric agent (estrogen progestogen)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>875</CS_ID>
+			<NameR>Противоклимактерическое средство комбинированное (эстроген андроген)</NameR>
+			<NameE>Anticlimacteric agent (estrogen androgen)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>876</CS_ID>
+			<NameR>Противоклимактерическое средство комбинированное (эстроген антиандроген)</NameR>
+			<NameE>Anticlimacteric agent (estrogen antiandrogen)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>877</CS_ID>
+			<NameR>Контрацептивное средство комбинированное (эстроген гестаген)</NameR>
+			<NameE>Contraceptive agent (estrogen progestogen)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>878</CS_ID>
+			<NameR>Контрацептивное средство комбинированное (эстроген антиандроген)</NameR>
+			<NameE>Contraceptive agent (estrogen antiandrogen)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>879</CS_ID>
+			<NameR>Миорелаксант центрального действия анальгезирующее ненаркотическое средство</NameR>
+			<NameE>Muscle relaxant central acting analgetic-antipyretic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>880</CS_ID>
+			<NameR>Противокашлевое средство комбинированное (противокашлевое опиоидное средство симпатомиметическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>Antitussive agent (antitussive bronchodilatator H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>882</CS_ID>
+			<NameR>Противомикробное средство комбинированное (антибиотик-циклический полипептид фолиевой кислоты синтеза ингибитор)</NameR>
+			<NameE>Antimicrobial agent combined (antibiotic-cyclic polypeptide folic acid synthesis inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>884</CS_ID>
+			<NameR>Лютеинизирующее средство</NameR>
+			<NameE>Luteinizing agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>885</CS_ID>
+			<NameR>Антибиотик комбинированный (антибиотики: аминогликозид полиен циклический полипептид)</NameR>
+			<NameE>Antibiotic combined (aminoglycoside antibiotic cyclic polypeptide polyene)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>886</CS_ID>
+			<NameR>Антибиотик комбинированный (антибиотики: аминогликозид полипептид циклический местноанестезирующее средство)</NameR>
+			<NameE>Antibiotic combined (aminoglycoside antibiotic cyclic polypeptide) anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>887</CS_ID>
+			<NameR>Антибиотик комбинированный (макролид тетрациклин)</NameR>
+			<NameE>Antibiotic combined (macrolide tetracycline)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>888</CS_ID>
+			<NameR>Антибиотик комбинированный (антибиотик муколитик)</NameR>
+			<NameE>Antibiotic mucolytic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>889</CS_ID>
+			<NameR>Отхаркивающее средство комбинированное (отхаркивающее муколитическое средство симпатомиметическое средство)</NameR>
+			<NameE>Expectorant agent (mucolytic bronchodilatator)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>890</CS_ID>
+			<NameR>Антибиотик-аминогликозид местноанестезирующее средство</NameR>
+			<NameE>Antibiotic-aminoglycoside anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>892</CS_ID>
+			<NameR>Противоконгестивное средство растительного происхождения</NameR>
+			<NameE>Anticongestive nasal agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>894</CS_ID>
+			<NameR>Симпатомиметическое средство</NameR>
+			<NameE>Sympathomimetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>896</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (диуретик АПФ ингибитор)</NameR>
+			<NameE>Antihypertensive agent combined (diuretic ACE inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>897</CS_ID>
+			<NameR>Гемостатическое средство - ингибитор фибринолиза</NameR>
+			<NameE>Hemostatic agent - fibrinolysis inibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>898</CS_ID>
+			<NameR>Антисептическое и местнораздражающее средство</NameR>
+			<NameE>Antiseptic and irritant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>899</CS_ID>
+			<NameR>Противоопухолевое средство - андроген</NameR>
+			<NameE>Antineoplastic agent - androgen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>900</CS_ID>
+			<NameR>Противоопухолевое средство - фермент</NameR>
+			<NameE>Antineoplastic agent - enzyme</NameE>
+		</entry>
+		<entry>
+			<CS_ID>901</CS_ID>
+			<NameR>Противоопухолевое средство - алкилирующее соединение</NameR>
+			<NameE>Antineoplastic agent - alkylating agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>902</CS_ID>
+			<NameR>Противоопухолевое средство - антиметаболит</NameR>
+			<NameE>Antineoplastic agent - antimetabolite</NameE>
+		</entry>
+		<entry>
+			<CS_ID>903</CS_ID>
+			<NameR>Противоопухолевое средство - антиандроген</NameR>
+			<NameE>Antineoplastic agent - antiandrogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>904</CS_ID>
+			<NameR>Противоопухолевое средство - антибиотик</NameR>
+			<NameE>Antineoplastic agent - antibiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>905</CS_ID>
+			<NameR>Противовирусное средство для местного применения</NameR>
+			<NameE>Antiviral agent local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>907</CS_ID>
+			<NameR>Опиоидных рецепторов агонист-антагонист</NameR>
+			<NameE>Opioid receptors partial agonist-antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>908</CS_ID>
+			<NameR>Противоопухолевое средство - антиэстроген</NameR>
+			<NameE>Antineoplastic agent - antiestrogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>909</CS_ID>
+			<NameR>Противоопухолевое средство - эстроген</NameR>
+			<NameE>Antineoplastic agent - estrogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>914</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство альфа-адреномиметик витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic alfa-adrenomimetic vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>916</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (НПВП симпатомиметическое средство)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (sympathomimetic NSAID)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>917</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (НПВП симпатомиметическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (sympathomimetic H1-histamine receptors blocker NSAID)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>918</CS_ID>
+			<NameR>Антисептическое средство местноанестезирующее средство</NameR>
+			<NameE>Antiseptic anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>919</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство симпатомиметическое средство противокашлевое опиоидное средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic sympathomimetic antitussive H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>920</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство альфа-адреномиметик H1-гистаминовых рецепторов блокатор витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic sympathomimetic H1-histamine receptors blocker vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>922</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство альфа-адреномиметик H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic alfa-adrenomimetic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>923</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство альфа-адреномиметик H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic psychostimulant alfa-adrenomimetic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>924</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (бета-адреноблокатор БМКК)</NameR>
+			<NameE>Antihypertensive agent combined (beta-adrenoblocker SCCB)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>925</CS_ID>
+			<NameR>Дальнозоркости средство лечения</NameR>
+			<NameE>Hyperopia treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>926</CS_ID>
+			<NameR>Протектор тканей глаза</NameR>
+			<NameE>Protector of eye tissues</NameE>
+		</entry>
+		<entry>
+			<CS_ID>928</CS_ID>
+			<NameR>Местноанестезирующее средство противомикробное средство</NameR>
+			<NameE>Anaesthetic local antimicrobial agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>929</CS_ID>
+			<NameR>Местноанестезирующее средство противомикробное средство м-холиноблокатор</NameR>
+			<NameE>Anaesthetic local antimicrobial agent m-cholinergic antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>931</CS_ID>
+			<NameR>Противоаллергическое средство комбинированное (H1-гистаминовых рецепторов блокатор симпатомиметическое средство)</NameR>
+			<NameE>Antiallergic agent (H1-histamine receptors blocker vasoconstrictor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>932</CS_ID>
+			<NameR>Бронходилатирующее средство комбинированное (бета2-адреномиметик селективный стабилизатор мембран тучных клеток)</NameR>
+			<NameE>Antiallergic agent (beta2-adrenoreceptors agonist mast cell membranes stabilizer)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>933</CS_ID>
+			<NameR>Противоаллергическое средство - стабилизатор мембран тучных клеток</NameR>
+			<NameE>Antiallergic agent - mast cell membranes stabilizer</NameE>
+		</entry>
+		<entry>
+			<CS_ID>934</CS_ID>
+			<NameR>Моторики ЖКТ стимулятор - ацетилхолина выброса стимулятор</NameR>
+			<NameE>GIT motility stimulator - acetylcholine release stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>935</CS_ID>
+			<NameR>Плазмозамещающее и газотранспортное средство</NameR>
+			<NameE>Plasma-substituting and gas-transporting agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>936</CS_ID>
+			<NameR>Пищеварительное ферментное средство растительного происхождения</NameR>
+			<NameE>Digestive agent enzymatic phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>937</CS_ID>
+			<NameR>Противомикробное и противопротозойное средство - нитрофуран</NameR>
+			<NameE>Antimicrobial and antiprotozoal agent - nitrofurane</NameE>
+		</entry>
+		<entry>
+			<CS_ID>938</CS_ID>
+			<NameR>Противомикробное и противопротозойное средство - оксихинолин</NameR>
+			<NameE>Antimicrobial and antiprotozoal agent - oxyquinoline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>939</CS_ID>
+			<NameR>Антибиотик-рифамицин</NameR>
+			<NameE>Antibiotic-ryfamycin</NameE>
+		</entry>
+		<entry>
+			<CS_ID>940</CS_ID>
+			<NameR>Эубиотик</NameR>
+			<NameE>Eubiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>941</CS_ID>
+			<NameR>МИБП - вакцина</NameR>
+			<NameE>Medical immunobiological agent - vaccine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>942</CS_ID>
+			<NameR>МИБП - аллерген</NameR>
+			<NameE>Medical immunobiological agent - allergen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>943</CS_ID>
+			<NameR>МИБП - анатоксин</NameR>
+			<NameE>Medical immunobiological agent - anatoxine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>944</CS_ID>
+			<NameR>МИБП - бактериофаг</NameR>
+			<NameE>Medical immunobiological agent - bacteriophage</NameE>
+		</entry>
+		<entry>
+			<CS_ID>945</CS_ID>
+			<NameR>МИБП - глобулин</NameR>
+			<NameE>Medical immunobiological agent - immunoglobuline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>946</CS_ID>
+			<NameR>Цитокин</NameR>
+			<NameE>Cytokine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>947</CS_ID>
+			<NameR>МИБП - плазма</NameR>
+			<NameE>Medical immunobiological agent - plasma</NameE>
+		</entry>
+		<entry>
+			<CS_ID>948</CS_ID>
+			<NameR>МИБП - сыворотка</NameR>
+			<NameE>Medical immunobiological agent - serum immune</NameE>
+		</entry>
+		<entry>
+			<CS_ID>949</CS_ID>
+			<NameR>Глюкокортикостероидное средство комбинированное для местного применения</NameR>
+			<NameE>Glucocorticosteroid local combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>950</CS_ID>
+			<NameR>Антибиотик местноанестезирующее средство</NameR>
+			<NameE>Antibiotic anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>951</CS_ID>
+			<NameR>МИБП - питательная среда</NameR>
+			<NameE>Medical immunobiological agent - nutrient medium</NameE>
+		</entry>
+		<entry>
+			<CS_ID>952</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения группы бигуанидов</NameR>
+			<NameE>Hypoglycemic agent oral (biguanid)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>953</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения группы сульфонилмочевины II поколения</NameR>
+			<NameE>Hypoglycemic agent oral (sulfonilurea, II generation)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>954</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения группы сульфонилмочевины I поколения</NameR>
+			<NameE>Hypoglycemic agent oral (sulfonilurea, I generation)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>955</CS_ID>
+			<NameR>МИБП - растворитель</NameR>
+			<NameE>Medical immunobiological agent - solvent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>956</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения комбинированное (бигуанид производное сульфонилмочевины)</NameR>
+			<NameE>Hypoglycemic agent oral (biguanid sulfonilurea)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>958</CS_ID>
+			<NameR>Кальция препарат</NameR>
+			<NameE>Calcium therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>959</CS_ID>
+			<NameR>Болезни Гоше средство лечения</NameR>
+			<NameE>Goshe disease treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>961</CS_ID>
+			<NameR>Простаты гиперплазии доброкачественной средство лечения</NameR>
+			<NameE>Prostate hyperplasia benignant treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>963</CS_ID>
+			<NameR>Вазодилатирующее средство - простагландина E1 аналог синтетический</NameR>
+			<NameE>Vasodilator - PgE1</NameE>
+		</entry>
+		<entry>
+			<CS_ID>964</CS_ID>
+			<NameR>Родовой деятельности стимулятор - простагландина F2 аналог синтетический</NameR>
+			<NameE>Uterus activity stimulator - PgF2 analog synthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>965</CS_ID>
+			<NameR>Родовой деятельности стимулятор - простагландина E2 аналог синтетический</NameR>
+			<NameE>Uterus activity stimulator - PgE2 analog synthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>966</CS_ID>
+			<NameR>Фибринолитическое средство - активатор плазминогена</NameR>
+			<NameE>Fibrinolytic agent - plasminogen activity stimulating</NameE>
+		</entry>
+		<entry>
+			<CS_ID>967</CS_ID>
+			<NameR>Альфа1-адреноблокатор</NameR>
+			<NameE>Alfa1-adrenoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>968</CS_ID>
+			<NameR>Биостимулирующее средство природного происхождения</NameR>
+			<NameE>Biostimulator agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>969</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (бета1-адреноблокатор селективный диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (beta1-adrenoblocker selective diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>971</CS_ID>
+			<NameR>Противокашлевое опиоидное средство</NameR>
+			<NameE>Antitussive agent central acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>972</CS_ID>
+			<NameR>Кератопротекторное средство</NameR>
+			<NameE>Keratoprotector</NameE>
+		</entry>
+		<entry>
+			<CS_ID>973</CS_ID>
+			<NameR>Вазодилатирующее средство - нитрат</NameR>
+			<NameE>Vasodilator - nitrate</NameE>
+		</entry>
+		<entry>
+			<CS_ID>974</CS_ID>
+			<NameR>Бронходилатирующее средство комбинированное (бета2-адреномиметик селективный м-холиноблокатор)</NameR>
+			<NameE>Bronchodilator (beta2-adrenoreceptors agonist muscarinic cholinoblocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>975</CS_ID>
+			<NameR>Репарации тканей стимулятор природного происхождения</NameR>
+			<NameE>Tissues reparation stimulator natural</NameE>
+		</entry>
+		<entry>
+			<CS_ID>977</CS_ID>
+			<NameR>Эректильной дисфункции средство лечения - ФДЭ5-ингибитор</NameR>
+			<NameE>Erection dysfunction treatment agent - phosphodiesterase-5 inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>978</CS_ID>
+			<NameR>Гастропротекторное средство</NameR>
+			<NameE>Gastroprotector</NameE>
+		</entry>
+		<entry>
+			<CS_ID>979</CS_ID>
+			<NameR>Бронходилатирующее средство комбинированное (бронходилатирующее средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>Bronchodilator (phosphodiesterase inhinitor H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>980</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство психостимулирующее средство витамин)</NameR>
+			<NameE>Analgetic (analgetic-antipyretic psychostimulant vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>981</CS_ID>
+			<NameR>Гонадотропин-рилизинг гормона аналог</NameR>
+			<NameE>Gonadotropin-releasing hormone analog</NameE>
+		</entry>
+		<entry>
+			<CS_ID>982</CS_ID>
+			<NameR>Антибиотик-оксазолидинон</NameR>
+			<NameE>Antibiotic - oxazolidone</NameE>
+		</entry>
+		<entry>
+			<CS_ID>983</CS_ID>
+			<NameR>Миорелаксант деполяризующий периферического действия</NameR>
+			<NameE>Muscle relaxant depolarizing peripheral acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>984</CS_ID>
+			<NameR>Миорелаксант периферического действия</NameR>
+			<NameE>Muscle relaxant peripheral acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>985</CS_ID>
+			<NameR>Анальгезирующее опиоидное средство: опиоидных рецепторов агонист-антагонист</NameR>
+			<NameE>Analgetic (opioids agonist-antagonist)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>986</CS_ID>
+			<NameR>Мозговой кровоток улучшающее средство</NameR>
+			<NameE>Vasodilatator of cerebral arteries</NameE>
+		</entry>
+		<entry>
+			<CS_ID>987</CS_ID>
+			<NameR>Анальгезирующее средство со смешанным механизмом действия</NameR>
+			<NameE>Analgetic opioid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>988</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотик полициклической структуры</NameR>
+			<NameE>Glucocorticosteroid local antibiotic polycyclic structure</NameE>
+		</entry>
+		<entry>
+			<CS_ID>989</CS_ID>
+			<NameR>Антибиотик полициклической структуры</NameR>
+			<NameE>Antibiotic polycyclic structure</NameE>
+		</entry>
+		<entry>
+			<CS_ID>990</CS_ID>
+			<NameR>Местноанестезирующее средство альфа- и бета-адреномиметик</NameR>
+			<NameE>Anaesthetic local vasoconstrictor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>992</CS_ID>
+			<NameR>Местноанестезирующее и спазмолитическое средство</NameR>
+			<NameE>Anaesthetic local spasmolytic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>993</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство местноанестезирующее средство спазмолитическое средство антацид)</NameR>
+			<NameE>Analgetic not-opioid (analgetic-antipyretic anesthetic local spasmolytic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>994</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство спазмолитические средства барбитурат)</NameR>
+			<NameE>Analgetic not-opioid (analgetic-antipyretic spasmolytic barbiturate)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>997</CS_ID>
+			<NameR>Антибиотик-карбапенем</NameR>
+			<NameE>Antibiotic-carbapenem</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1000</CS_ID>
+			<NameR>Ожирения средство лечения</NameR>
+			<NameE>Obesity treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1002</CS_ID>
+			<NameR>Противоглаукомное средство - карбоангидразы ингибитор</NameR>
+			<NameE>Antiglaucomic agent - cardoanhydrase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1003</CS_ID>
+			<NameR>Противоопухолевое средство - протеинтирозинкиназы ингибитор</NameR>
+			<NameE>Antineoplastic agent - protein-tyrosine kinase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1005</CS_ID>
+			<NameR>Антитела моноклональные</NameR>
+			<NameE>Monoclonal antibodies</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1008</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1009</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic psychostimulant H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1010</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотик</NameR>
+			<NameE>Glucocorticosteroid local antibiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1011</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство симпатомиметическое средство)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic alfa-adrenomimetic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1015</CS_ID>
+			<NameR>Вяжущее средство растительного происхождения</NameR>
+			<NameE>Astringent agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1016</CS_ID>
+			<NameR>Гемостатическое средство растительного происхождения</NameR>
+			<NameE>Hemostatic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1017</CS_ID>
+			<NameR>Потогонное средство растительного происхождения</NameR>
+			<NameE>Diaphoretic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1018</CS_ID>
+			<NameR>Поливитаминное средство растительного происхождения</NameR>
+			<NameE>Multivitamine phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1019</CS_ID>
+			<NameR>Гипотензивное средство растительного происхождения</NameR>
+			<NameE>Antihypertensive agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1020</CS_ID>
+			<NameR>Антигельминтное средство растительного происхождения</NameR>
+			<NameE>Antihelmintic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1021</CS_ID>
+			<NameR>Обволакивающее средство растительного происхождения</NameR>
+			<NameE>Coating agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1022</CS_ID>
+			<NameR>Противоопухолевое средство - алкалоид</NameR>
+			<NameE>Antineoplastic agent - alkaloid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1023</CS_ID>
+			<NameR>Противомикробное и противопротозойное средство растительного происхождения</NameR>
+			<NameE>Antimicrobial and antiprotozoal agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1024</CS_ID>
+			<NameR>Гипогликемическое средство растительного происхождения</NameR>
+			<NameE>Hypoglycemic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1025</CS_ID>
+			<NameR>Антикоагулянтное средство растительного происхождения</NameR>
+			<NameE>Anticoagulant phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1027</CS_ID>
+			<NameR>Антидепрессант растительного происхождения</NameR>
+			<NameE>Antidepressant phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1028</CS_ID>
+			<NameR>Антиангинальное средство</NameR>
+			<NameE>Antianginal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1029</CS_ID>
+			<NameR>Слуха нарушений средство лечения</NameR>
+			<NameE>Hearing impairment treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1032</CS_ID>
+			<NameR>Десенсибилизирующее неспецифическое средство</NameR>
+			<NameE>Desensitizing agent nonspecific</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1033</CS_ID>
+			<NameR>Абстиненции опиатной средство лечения</NameR>
+			<NameE>Opioid abstinence treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1034</CS_ID>
+			<NameR>Носа заболеваний средство лечения</NameR>
+			<NameE>Nasal diseases treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1036</CS_ID>
+			<NameR>Противокашлевое средство комбинированное (противокашлевое средство центрального действия симпатомиметическое средство)</NameR>
+			<NameE>Antitussive agent (antitussive bronchodilatator)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1038</CS_ID>
+			<NameR>Витамин - кальциево-фосфорного обмена регулятор</NameR>
+			<NameE>Vitamine - calcium-phosphorus metabolism regulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1039</CS_ID>
+			<NameR>Противокашлевое средство комбинированное (противокашлевое опиоидное средство отхаркивающее средство)</NameR>
+			<NameE>Antitussive agent (antitussive expectorant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1040</CS_ID>
+			<NameR>Противокашлевое средство комбинированное (противокашлевое опиоидное средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>Antitussive agent (antitussive H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1041</CS_ID>
+			<NameR>Антибиотик-кетолид</NameR>
+			<NameE>Antibiotic-ketolide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1042</CS_ID>
+			<NameR>Антитромботическое средство</NameR>
+			<NameE>Antithrombotic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1044</CS_ID>
+			<NameR>5-альфа редуктазы ингибитор</NameR>
+			<NameE>5-alfa reductase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1045</CS_ID>
+			<NameR>Гипогликемическое средство - инсулина короткого действия аналог</NameR>
+			<NameE>Hypoglycemic agent - insulin short action analog</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1047</CS_ID>
+			<NameR>Гипогликемическое средство - инсулина длительного действия аналог</NameR>
+			<NameE>Hypoglycemic agent - insulin prolonged action analog</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1048</CS_ID>
+			<NameR>Поливитаминное средство минералы</NameR>
+			<NameE>Multivitamine minerals</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1049</CS_ID>
+			<NameR>Поливитаминное средство прочие препараты</NameR>
+			<NameE>Multivitamine other agents</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1050</CS_ID>
+			<NameR>Нефролитиаза средство лечения растительного происхождения</NameR>
+			<NameE>Nephrourolitiasis treatment agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1051</CS_ID>
+			<NameR>Противоглаукомное средство - бета-адреноблокатор</NameR>
+			<NameE>Antiglaucomic agent - beta-adrenoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1052</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения группы сульфонилмочевины III поколения</NameR>
+			<NameE>Hypoglycemic agent oral (sulfonilurea, III generation)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1053</CS_ID>
+			<NameR>Паратиреоидного гормона аналог</NameR>
+			<NameE>Parathyroidal hormone analog</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1054</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотик местноанестезирующее средство</NameR>
+			<NameE>Glucocorticosteroid local antibiotic anaestetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1055</CS_ID>
+			<NameR>Отхаркивающее средство комбинированное (отхаркивающее муколитическое средство бета2-адреномиметик селективный)</NameR>
+			<NameE>Expectorant agent (mucolitic beta2-adrenoreceptors agonist)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1057</CS_ID>
+			<NameR>Венотонизирующе средство антикоагулянт прямой для местного применения</NameR>
+			<NameE>Veintonic agent phytogenic anticoagulant direct local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1059</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее опиоидное средство анальгезирующее ненаркотическое средство)</NameR>
+			<NameE>Analgetic (analgetic opioid analgetic-antipyretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1060</CS_ID>
+			<NameR>Антигипоксантное средство</NameR>
+			<NameE>Antihypoxant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1062</CS_ID>
+			<NameR>Радиопротекторное средство - препарат йода</NameR>
+			<NameE>Radioprotector - iodide therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1064</CS_ID>
+			<NameR>Гомеопатическое монокомпонентное средство</NameR>
+			<NameE>Homoeopathic agent monocomponent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1065</CS_ID>
+			<NameR>Простатита хронического средство лечения растительного происхождения</NameR>
+			<NameE>Prostatitis chronic treatment agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1066</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (ангиотензина II рецепторов антагонист диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (angiotensine II receptors antagonist diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1067</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (АПФ ингибитор БМКК)</NameR>
+			<NameE>Antihypertensive agent combined (ACE inhibitor SCCB)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1070</CS_ID>
+			<NameR>Противомикробное средство комбинированное (антибиотик-аминогликозид противомикробное и противопротозойное средство противогрибковое средство глюкокортикостероид)</NameR>
+			<NameE>Antimicrobial agent combined (antibiotic-aminoglycoside antimicrobial and antiprotozoal agent antifungal agent glucocorticosteroid)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1072</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее средство спазмолитическое средство комбинированное</NameR>
+			<NameE>Analgetic (analgetic opioid analgetic-antipyretic psychostimulant spasmolytic barbiturate)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1074</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство анксиолитическое средство)</NameR>
+			<NameE>Analgetic (analgetic-antipyretic tranquilizer)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1075</CS_ID>
+			<NameR>Противовирусное иммуностимулирующее средство - индуктор образования интерферонов</NameR>
+			<NameE>Antiviral immunostimulating agent - interferone inductor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1076</CS_ID>
+			<NameR>Бронходилатирующее средство комбинированное (бета2-адреномиметик селективный глюкокортикостероид местный)</NameR>
+			<NameE>Bronchodilator (beta2-adrenoreceptors agonist glucocorticosteroid local)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1077</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее опиоидное средство анальгезирующее ненаркотическое средство спазмолитическое средство)</NameR>
+			<NameE>Analgetic (analgetic opioid analgetic-antipyretic spasmolytic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1078</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство спазмолитическое средство)</NameR>
+			<NameE>Analgetic not-opioid (analgetic-antipyretic spasmolytic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1079</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство психостимулирующее средство спазмолитическое средство)</NameR>
+			<NameE>Analgetic not-opioid (analgetic-antipyretic psychostimulant spasmplytic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1080</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП барбитурат)</NameR>
+			<NameE>Analgetic not-opioid (NSAID barbiturate)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1083</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее опиоидное средство НПВП психостимулирующее средство)</NameR>
+			<NameE>Analgetic (analgetic opioid NSAID psychostimulant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1084</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП психостимулирующее средство барбитурат)</NameR>
+			<NameE>Analgetic not-opioid (NSAID psychostimulant barbiturate)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1085</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство витамин)</NameR>
+			<NameE>Analgetic not-opioid (analgetic-antipyretic vitamin)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1086</CS_ID>
+			<NameR>Противоглаукомное средство комбинированное (м-холиномиметик вазоконстриктор)</NameR>
+			<NameE>Antiglaucomic agent (muscarinic cholinoreceptors agonist vasoconstrictor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1087</CS_ID>
+			<NameR>Противоглаукомное средство - альфа- и бета-адреноблокатор</NameR>
+			<NameE>Antiglaucomic agent - alfa- and beta-adrenoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1088</CS_ID>
+			<NameR>Противоглаукомное средство - простагландина F2-альфа аналог синтетический</NameR>
+			<NameE>Antiglaucomic agent - PgF2alfa analog synthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1089</CS_ID>
+			<NameR>Противоглаукомное средство - м-холиномиметик</NameR>
+			<NameE>Antiglaucomic agent - muscarinic cholinoreceptors agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1091</CS_ID>
+			<NameR>Отхаркивающее средство комбинированное</NameR>
+			<NameE>Expectorant agent combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1092</CS_ID>
+			<NameR>Бронходилатирующее средство</NameR>
+			<NameE>Bronchodilator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1093</CS_ID>
+			<NameR>Бронходилатирующее средство комбинированное</NameR>
+			<NameE>Bronchodilator combined agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1094</CS_ID>
+			<NameR>Спазмолитическое средство комбинированное</NameR>
+			<NameE>Spasmolytic agent combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1098</CS_ID>
+			<NameR>Токолитическое средство - бета2-адреномиметик селективный</NameR>
+			<NameE>Tocolytic agent - beta2-adrenoreceptors agonist selective</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1099</CS_ID>
+			<NameR>Противоконгестивное средство - альфа-адреномиметик</NameR>
+			<NameE>Anticongestive nasal agent - vasoconstrictor (alfa-adrenoceptor agonist)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1100</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее опиоидное средство НПВП)</NameR>
+			<NameE>Analgetic (analgetic opioid NSAID)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1101</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство H1-гистаминовых рецепторов блокатор отхаркивающее муколитическое средство)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic mucolitic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1102</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (НПВП H1-гистаминовых рецепторов блокатор витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (NSAID H1-histamine receptors blocker vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1103</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство альфа-адреномиметик отхаркивающее средство витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic psychostimulant alfa-adrenomimetic expectorant vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1105</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения</NameR>
+			<NameE>ARD and influenza symptoms relieving agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1107</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство симпатомиметическое средство противокашлевое опиоидное средство отхаркивающее средство)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic sympathomimetic antitussive expectorant)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1108</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (альфа-адреномиметик отхаркивающие муколитические средства H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (alfa-adrenomimetic expectorant mucolitic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1110</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство противокашлевое опиоидное средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic antitussive H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1111</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство симпатомиметическое средство противокашлевое опиоидное средство)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic sympathomimetic antitussive)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1112</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство противокашлевое опиоидное средство витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic antitussive agent vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1114</CS_ID>
+			<NameR>Гиполипидемическое средство - ГМГ-КоА-редуктазы ингибитор</NameR>
+			<NameE>Hypolipidemic agent - HMG-CoA-reductase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1115</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное</NameR>
+			<NameE>Analgetic not-opioid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1117</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство симпатомиметическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic sympathomimetic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1118</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (противокашлевое опиоидное средство симпатомиметическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (antitussive agent alfa-adrenomimetic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1122</CS_ID>
+			<NameR>Противовоспалительное антибронхоконстрикторное средство</NameR>
+			<NameE>Antiinflammatory antibronchconstrictor agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1123</CS_ID>
+			<NameR>Противоопухолевое средство - гестаген</NameR>
+			<NameE>Antineoplastic agent - progestogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1124</CS_ID>
+			<NameR>Гипогликемическое средство - комбинация инсулинов короткой и средней продолжительности действия</NameR>
+			<NameE>Hypoglycemic agent - combination of insulins with short and averaged time action</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1125</CS_ID>
+			<NameR>Противорвотное средство - нейрокининовых рецепторов блокатор</NameR>
+			<NameE>Antiemetic agent - neurokinine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1126</CS_ID>
+			<NameR>Электролитов баланс восстанавливающее средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1127</CS_ID>
+			<NameR>Кальция и магния препарат</NameR>
+			<NameE>Calcium and magnesium therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1129</CS_ID>
+			<NameR>Хирургической десмургии средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1130</CS_ID>
+			<NameR>Гиперфосфатемии средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1131</CS_ID>
+			<NameR>Витамина K аналог синтетический</NameR>
+			<NameE>Vitamine K analog synthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1132</CS_ID>
+			<NameR>Противомикробное средство комбинированное (противомикробное средство анестетик местный)</NameR>
+			<NameE>Antimicrobial agent combined (antimicrobial agent anaestetic local)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1133</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (НПВП витамин)</NameR>
+			<NameE>NSAID vitamin</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1135</CS_ID>
+			<NameR>Противокашлевое средство периферического действия</NameR>
+			<NameE>Antitussive agent periferal acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1136</CS_ID>
+			<NameR>Противокашлевое средство комбинированное (противокашлевое средство центрального действия отхаркивающее средство)</NameR>
+			<NameE>Expectorant agent antitussive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1137</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство противокашлевое опиоидное средство альфа-адреномиметик H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic alfa-adrenomimetic antitussive H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1138</CS_ID>
+			<NameR>Железа препарат поливитамины</NameR>
+			<NameE>Iron therapeutic agent multivitamine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1139</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство симпатомиметическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic not-opioid psychostimulant sympathomimetic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1140</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее средство со смешанным механизмом действия анальгезирующее ненаркотическое средство)</NameR>
+			<NameE>Analgetic (analgetic opioid analgetic not-opioid)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1141</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее опиоидное средство НПВП анальгезирующее ненаркотическое средство психостимулирующее средство барбитурат)</NameR>
+			<NameE>Analgetic (analgetic opioid NSAID analgetic-antipyretic psychostimulant barbiturate)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1142</CS_ID>
+			<NameR>Противопаркинсоническое средство комбинированное (дофамина предшественник декарбоксилазы периферической ингибитор КОМТ ингибитор)</NameR>
+			<NameE>Antiparkinsonial agent (dophamine precursor decarboxylase peripheral inhibitor COMT inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1143</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство H1-гистаминовых рецепторов блокатор витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic not-opioid psychostimulant sympathomimetic H1-histamine receptors blocker vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1144</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>Analgetic not-opioid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1145</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство отхаркивающее муколитическое средство)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic not-opioid psychostimulant expectorant agent - mucolytic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1146</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство альфа-адреномиметик)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic alfa-adrenomimetic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1147</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотик-аминогликозид</NameR>
+			<NameE>Glucocorticosteroid local aminoglycoside</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1148</CS_ID>
+			<NameR>Противомикробное средство комбинированное (фторхинолон противомикробное и противопротозойное средство)</NameR>
+			<NameE>Antimicrobial combined agent (fluoroquinolone antimicrobial anf antiprotozal agent)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1149</CS_ID>
+			<NameR>Противоаллергическое средство комбинированное (H1-гистаминовых рецепторов блокатор альфа-адреномиметик)</NameR>
+			<NameE>Antiallergic agent (H1-histamine receptors blocker alfa-adrenomimetic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1150</CS_ID>
+			<NameR>Язвы пептической средство лечения - регуляторный пептид</NameR>
+			<NameE>Antiulcerant agent - regulatory peptide</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1151</CS_ID>
+			<NameR>Противомикробное средство - сульфон</NameR>
+			<NameE>Abtumicrobal agent - sulfon</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1154</CS_ID>
+			<NameR>Антисептическое и противовоспалительное средство растительного происхождения</NameR>
+			<NameE>Antiseptic and antiinflammotory agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1155</CS_ID>
+			<NameR>Противокашлевое средство центрального действия</NameR>
+			<NameE>Antitussive agent central acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1156</CS_ID>
+			<NameR>Противомикробное и противогрибковое средство</NameR>
+			<NameE>Antimicrobal and antifungal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1157</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство спазмолитическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>Analgetic not-opioid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1158</CS_ID>
+			<NameR>Противоглаукомное средство комбинированное (простагландина F2-альфа аналог синтетический бета-адреноблокатор)</NameR>
+			<NameE>Antiglaucomic agent (PgF2alfa analog beta-adrenoblocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1159</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (НПВП альфа-адреномиметик H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (NSAID alfa-adrenomimetic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1160</CS_ID>
+			<NameR>Остеопороза средство лечения</NameR>
+			<NameE>Osteoporosis treatment</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1161</CS_ID>
+			<NameR>Антигельминтное и противопротозойное средство</NameR>
+			<NameE>Antihelmintic and antiprotozoal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1162</CS_ID>
+			<NameR>НПВП гастропротекторное средство - простагландина E1 аналог синтетический</NameR>
+			<NameE>NSAID gastroprotective agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1163</CS_ID>
+			<NameR>Венотонизирующее и венопротекторное средство</NameR>
+			<NameE>Veintonic and veinprotective agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1164</CS_ID>
+			<NameR>Антибиотик-аминогликозид абсорбирующее средство</NameR>
+			<NameE>Absorbent antibiotic-aminoglycoside</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1165</CS_ID>
+			<NameR>Антибиотик-тетрациклин отхаркивающее муколитическое средство</NameR>
+			<NameE>Expectorant agent - mucolytic antibiotic-tetracycline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1166</CS_ID>
+			<NameR>Иммунодепрессивное средство - антитела моноклональные</NameR>
+			<NameE>Immunodepressive agent - monoclonal antibodies</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1167</CS_ID>
+			<NameR>Протеиназ ингибитор</NameR>
+			<NameE>Proteinase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1168</CS_ID>
+			<NameR>Гипогликемическое средство - комбинация аналогов инсулинов короткой и средней продолжительности действия</NameR>
+			<NameE>Hypoglycemic agent - combination of insulin's analogs with short and averaged time ac</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1169</CS_ID>
+			<NameR>Сыпи угревой средство лечения</NameR>
+			<NameE>Acne treatment drug</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1170</CS_ID>
+			<NameR>Мастопатии средство лечения растительного происхождения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1171</CS_ID>
+			<NameR>Витамин - антидот антагонистов фолиевой кислоты (модификатор биологического действия фторурацила)</NameR>
+			<NameE>Vitamine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1172</CS_ID>
+			<NameR>Противовирусное [ВИЧ] средство</NameR>
+			<NameE>Antiviral [HIV] agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1174</CS_ID>
+			<NameR>Тромбина ингибитор прямой</NameR>
+			<NameE>Trombine inhubitor direct</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1175</CS_ID>
+			<NameR>Противовирусное и иммуностимулирующее средство</NameR>
+			<NameE>Antiviral and immunostimulant agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1176</CS_ID>
+			<NameR>Радиофармацевтическое диагностическое средство</NameR>
+			<NameE>Diagnostic radiopharmaceutical agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1177</CS_ID>
+			<NameR>Симпатомиметическое средство центрального действия</NameR>
+			<NameE>Sympathomimetic centrally acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1178</CS_ID>
+			<NameR>Радиофармацевтическое диагностическое и терапевтическое средство</NameR>
+			<NameE>Therapeutic and diagnostic radiopharmaceutical agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1179</CS_ID>
+			<NameR>Антиангинальное средство растительного происхождения</NameR>
+			<NameE>Antianginal phytogenic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1180</CS_ID>
+			<NameR>Гиполипидемическое средство комбинированное (ГМГ-КоА-редуктазы ингибитор холестерина абсорбции ингибитор)</NameR>
+			<NameE>Hypolipidemic combined agent (HMG-CoA-reductase inhibitor cholesterine absorbtion inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1181</CS_ID>
+			<NameR>Остеопороза средство лечения комбинированное (костной резорбции ингибитор кальциево-фосфорного обмена регулятор)</NameR>
+			<NameE>Osteoporosis treatment (osteoresorbtion inhibitor calcium-phosphorus metabolism regulator)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1182</CS_ID>
+			<NameR>Гиполипидемическое средство - холестерина абсорбции ингибитор</NameR>
+			<NameE>Hypolipidemic agent - cholesterine absorbtion inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1183</CS_ID>
+			<NameR>Гиполипидемическое средство - фибрат</NameR>
+			<NameE>Hypolipidemic agent - fibrate</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1184</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (БМКК ангиотензина II рецепторов антагонист)</NameR>
+			<NameE>Antihypertensive agent combined (SCCB angiotensine II receptors antagonist)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1185</CS_ID>
+			<NameR>Раствор для гемодиализа</NameR>
+			<NameE>Solution fot hemodyalisis</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1186</CS_ID>
+			<NameR>Гиперрубцевания средство лечения</NameR>
+			<NameE>Cicatrizant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1189</CS_ID>
+			<NameR>Гипогликемическое средство - глюкагоноподобного полипептида рецепторов агонист</NameR>
+			<NameE>Hypoglycemic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1190</CS_ID>
+			<NameR>Гонадотропин-рилизинг гормона антагонист</NameR>
+			<NameE>Gonadotropin-releasing hormone antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1191</CS_ID>
+			<NameR>Эстроген эубиотик</NameR>
+			<NameE>Estrogen medical immunobiological agent - eubiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1192</CS_ID>
+			<NameR>Репарации тканей стимулятор НПВП</NameR>
+			<NameE>Tissues reparation stimulator NSAID</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1193</CS_ID>
+			<NameR>Комплексообразующее средство для снижения токсичности химиотерапии</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1194</CS_ID>
+			<NameR>Иммуноглобулин</NameR>
+			<NameE>Immunobiological agent - immunoglobuline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1197</CS_ID>
+			<NameR>Иммунодепрессивное средство - иммуноглобулин</NameR>
+			<NameE>Immunosuppressant - immunoglobuline</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1198</CS_ID>
+			<NameR>Носа заболеваний средство лечения растительного происхождения</NameR>
+			<NameE>Nasal diseases treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1199</CS_ID>
+			<NameR>Рефлюкс-эзофагита средство лечения комбинированное (протонного насоса ингибитор дофаминовых рецепторов блокатор центральный)</NameR>
+			<NameE>Reflux-esophagite treatment (proton pump inhibiting dophamine receptors blocker central</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1201</CS_ID>
+			<NameR>Гонадотропных гормонов секреции ингибитор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1202</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения цитокин</NameR>
+			<NameE>Glucocorticosteroid local cytokine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1203</CS_ID>
+			<NameR>Противоаллергическое средство комбинированное (H1-гистаминовых рецепторов блокатор цитокин)</NameR>
+			<NameE>Antiallergic agent (H1-histamine receptors blocker cytokine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1204</CS_ID>
+			<NameR>Репарации тканей стимулятор растительного происхождения</NameR>
+			<NameE>Tissues reparation stimulator phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1208</CS_ID>
+			<NameR>Гипогликемическое средство - дипептидилпептидазы-4 ингибитор</NameR>
+			<NameE>Hypolipidemic drug - dipeptidilpeptidaze-4 inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1209</CS_ID>
+			<NameR>Радиофармацевтического препарата прекурсор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1210</CS_ID>
+			<NameR>Противопаркинсоническое средство - дофамина агонист</NameR>
+			<NameE>Antiparkinsonial agent - dophamine agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1211</CS_ID>
+			<NameR>Противомикробное средство комбинированное (противомикробное и противопротозойное средство противогрибковое средство ГКС)</NameR>
+			<NameE>Antimicrobial agent combined (antimicrobial and antiprotozoal agent antifungal agent glucocorticosteroid)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1212</CS_ID>
+			<NameR>Гипотензивное гиполипидемическое средство</NameR>
+			<NameE>Antihypertensive agent hypolipidemic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1213</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения комбинированное (дипептидилпептидазы-4-ингибитор бигуанид)</NameR>
+			<NameE>Hypolipidemic agent oral (dipeptidilpeptidaze-4 inhibitor biguanid)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1216</CS_ID>
+			<NameR>Антибактериальный препарат для системного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1217</CS_ID>
+			<NameR>Антибиотик антисептическое средство местноанестезирующее средство</NameR>
+			<NameE>Antibiotic antiseptic anaesthetic local agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1218</CS_ID>
+			<NameR>Родовой деятельности стимулятор - простагландина E1 аналог синтетический</NameR>
+			<NameE>Uterus activity stimulator - PgE1 analog synthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1219</CS_ID>
+			<NameR>Иммунодепрессивное средство - кальциневрина ингибитор</NameR>
+			<NameE>Immunosuppressant - calcineurin inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1220</CS_ID>
+			<NameR>Рефлюкс-эзофагита средство лечения</NameR>
+			<NameE>Reflux-esophagite treatment</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1221</CS_ID>
+			<NameR>Противоопухолевое средство - вакцина</NameR>
+			<NameE>Antineoplastic agent - vaccine</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1222</CS_ID>
+			<NameR>Антипаратиреоидное средство</NameR>
+			<NameE>Antiparathyroid agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1223</CS_ID>
+			<NameR>Противодиарейное средство растительного происхождения</NameR>
+			<NameE>Antidiarrheal agent plant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1224</CS_ID>
+			<NameR>Родентицидное средство - антикоагулянтное средство непрямого действия</NameR>
+			<NameE>Anticoagulant indirect</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1225</CS_ID>
+			<NameR>Клетки человека</NameR>
+			<NameE>Human cells</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1226</CS_ID>
+			<NameR>Ноотропное средство растительного происхождения</NameR>
+			<NameE>Nootrop agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1227</CS_ID>
+			<NameR>Абстиненции опиатной средство лечения растительного происхождения</NameR>
+			<NameE>Opiod abstinence treatment agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1228</CS_ID>
+			<NameR>Мозговой кровоток улучшающее средство ноотропное средство</NameR>
+			<NameE>Vasodilatator of cerebral arteries nootrop agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1229</CS_ID>
+			<NameR>Регулятор моторики ЖКТ растительного происхождения</NameR>
+			<NameE>GIT motility regulator phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1230</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения комбинированное</NameR>
+			<NameE>Hypoglycemic agent oral combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1231</CS_ID>
+			<NameR>Антисептическое и противовоспалительное средство</NameR>
+			<NameE>Antiseptic and antiinflammatory agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1232</CS_ID>
+			<NameR>Офтальмологических заболеваний средство диагностики (м-холиноблокатор альфа-адреномиметик)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1233</CS_ID>
+			<NameR>Железа препарат прочие препараты</NameR>
+			<NameE>Iron therapeutic agent other agents</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1234</CS_ID>
+			<NameR>Антибиотик антисептическое средство</NameR>
+			<NameE>Antibiotic antiseptic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1235</CS_ID>
+			<NameR>Антиастеническое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1236</CS_ID>
+			<NameR>Антикоагулянтное средство прямого действия для местного применения прочие препараты</NameR>
+			<NameE>Anticoagulant direct local other agents</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1237</CS_ID>
+			<NameR>Антиангинальное средство - калиевых каналов активатор</NameR>
+			<NameE>Antianginal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1238</CS_ID>
+			<NameR>Противомикробное средство комбинированное (противомикробное и противопротозойное средство противогрибковое средство обезболивающее)</NameR>
+			<NameE>Antimicrobial agent combined (antimicrobial and antiprotozoal agent antifungal agent analgetic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1239</CS_ID>
+			<NameR>Родовой деятельности подавляющее средство - блокатор окситоциновых рецепторов</NameR>
+			<NameE>Uterus activity stimulator - oxytocine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1240</CS_ID>
+			<NameR>Брадикининовых B2-рецепторов антагонист селективный</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1241</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (ренина ингибитор диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (renin inhibitor diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1242</CS_ID>
+			<NameR>Остеопороза средство лечения комбинированное (костной резорбции ингибитор кальциево-фосфорного обмена регулятор кальция препарат)</NameR>
+			<NameE>Osteoporosis treatment (osteoresorbtion inhibitor calcium-phosphorus metabolism regulator calcium therapeutic agent)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1243</CS_ID>
+			<NameR>Гормона роста аналог</NameR>
+			<NameE>Growth hormone analogue</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1244</CS_ID>
+			<NameR>Антисептическое средство местноанестезирующее средство противовоспалительное средство</NameR>
+			<NameE>Antiseptic anaesthetic local antiinflammatory agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1245</CS_ID>
+			<NameR>Витамины группы B прочие препараты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1246</CS_ID>
+			<NameR>Витамины группы B</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1247</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения местноанестезирующее средство</NameR>
+			<NameE>Glucocorticosteroid local anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1248</CS_ID>
+			<NameR>Интерлейкина ингибитор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1249</CS_ID>
+			<NameR>Ферментопатий наследственных средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1251</CS_ID>
+			<NameR>Раствор для гемофильтрации</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1252</CS_ID>
+			<NameR>Тромбоцитемии эссенциальной средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1253</CS_ID>
+			<NameR>Тирозинемии наследственной средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1254</CS_ID>
+			<NameR>Ренина ингибитор</NameR>
+			<NameE>Renin inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1255</CS_ID>
+			<NameR>Противоглаукомное средство комбинированное (карбоангидразы ингибитор бета-адреноблокатор)</NameR>
+			<NameE>Antiglaucomic agent (cardoanhydrase inhibitor beta-adrenoblocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1256</CS_ID>
+			<NameR>Гипотензивное средство - эндотелиновых А рецепторов антагонист селективный</NameR>
+			<NameE>Antihypertensive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1258</CS_ID>
+			<NameR>Противоглаукомное средство - альфа2-адреномиметик селективный</NameR>
+			<NameE>Antiglaucomic agent - alfa2-adrenoceptor agonist)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1259</CS_ID>
+			<NameR>Противоаллергическое средство комбинированное (H1-гистаминовых рецепторов блокатор симпатомиметическое средство цитокин)</NameR>
+			<NameE>Antiallergic agent (H1-histamine receptors blocker vasoconstrictor cytokine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1260</CS_ID>
+			<NameR>Местнораздражающее средство растительного происхождения</NameR>
+			<NameE>Irritant agent local phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1261</CS_ID>
+			<NameR>Ангиотензина II рецепторов модулятор</NameR>
+			<NameE>Angiotensin II receptors modulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1262</CS_ID>
+			<NameR>Гипотрихоза средство лечения</NameR>
+			<NameE>Hypotrichosis treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1263</CS_ID>
+			<NameR>Экземы средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1264</CS_ID>
+			<NameR>Противовоспалительное средство - ФДЭ4-ингибитор</NameR>
+			<NameE>Antiinflammatory agent - phosphodiesterase-4 inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1265</CS_ID>
+			<NameR>Противоглаукомное средство комбинированное (альфа2-адреномиметик селективный бета-адреноблокатор)</NameR>
+			<NameE>Antiglaucomic agent (alfa2-adrenoceptor agonist beta-adrenoblocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1266</CS_ID>
+			<NameR>НПВП H2-гистаминовых рецепторов блокатор</NameR>
+			<NameE>NSAID H2-histamine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1267</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (БМКК ангиотензина II рецепторов антагонист диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (SCCB angiotensin II receptors antagonist diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1268</CS_ID>
+			<NameR>НПВП протонного насоса ингибитор</NameR>
+			<NameE>NSAID proton pump inhibiting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1269</CS_ID>
+			<NameR>Эякуляции преждевременной средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1270</CS_ID>
+			<NameR>Фолликулостимулирующее средство лютеинизирующее средство</NameR>
+			<NameE>Follicle-stimulating agent luteinizing agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1271</CS_ID>
+			<NameR>Эстроген гестаген эубиотик</NameR>
+			<NameE>Estrogen progestogen eubiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1272</CS_ID>
+			<NameR>Гормона роста рецепторов антагонист</NameR>
+			<NameE>Grows hormone receptor antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1273</CS_ID>
+			<NameR>Гастропротекторное средство - простагландина E2 аналог синтетический</NameR>
+			<NameE>Gastroprotector - PgE2 analog synthetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1274</CS_ID>
+			<NameR>Эстрогеновых рецепторов модулятор селективный</NameR>
+			<NameE>Estrogen receptors modulator selective</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1275</CS_ID>
+			<NameR>Прогестероновых рецепторов модулятор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1276</CS_ID>
+			<NameR>Гипотензивное средство - гуанилатциклазы стимулятор</NameR>
+			<NameE>Antihypertensive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1277</CS_ID>
+			<NameR>Фактора некроза опухоли-альфа (ФНО-альфа) ингибиторы</NameR>
+			<NameE>Tumor necrosis factor-alfa inhibitors</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1278</CS_ID>
+			<NameR>Противоопухолевое</NameR>
+			<NameE>Antineoplastic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1279</CS_ID>
+			<NameR>Противоопухолевое средство - антитела моноклональные</NameR>
+			<NameE>Antineoplastic agent - monoclonal antibodies</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1280</CS_ID>
+			<NameR>Анестетики, другие местные анестетики</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1281</CS_ID>
+			<NameR>Общетонизирующее средство природного происхождения</NameR>
+			<NameE>General tonic agent phytogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1282</CS_ID>
+			<NameR>Прогестаген</NameR>
+			<NameE>Progestogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1283</CS_ID>
+			<NameR>Противоклимактерическое средство (эстроген прогестаген)</NameR>
+			<NameE>Anticlimacteric agent (estrogen progestogen)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1284</CS_ID>
+			<NameR>Радиофармацевтический препарат</NameR>
+			<NameE>Radiopharmaceutical agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1285</CS_ID>
+			<NameR>Антиацидотическое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1286</CS_ID>
+			<NameR>Бронходилатирующее средство - фосфодиэстеразы ингибитор</NameR>
+			<NameE>Bronchodilator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1287</CS_ID>
+			<NameR>Другие препараты, влияющие на пищеварительную систему и метаболические процессы, ферменты</NameR>
+			<NameE>Other alimentary tract and metabolism products, enzymes</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1288</CS_ID>
+			<NameR>Средство комбинированное (блокатор &quot;медленных&quot; кальциевых каналов АПФ ингибитор ГМГ-КоА-редуктазы ингибитор)</NameR>
+			<NameE>Combined agent (SCCB ACE inhibitor HMG-CoA-reductase inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1289</CS_ID>
+			<NameR>Противоаллергическое средство комбинированное (H1-гистаминовых рецепторов блокатор глюкокортикостероид для местного применения)</NameR>
+			<NameE>Antiallergic agent combined (H1-histamine receptors blocker glucocorticosteroid local)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1290</CS_ID>
+			<NameR>Прокинетик</NameR>
+			<NameE>Propulsives</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1291</CS_ID>
+			<NameR>Нестероидный противовоспалительный препарат</NameR>
+			<NameE>NSAID</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1292</CS_ID>
+			<NameR>Противовоспалительное кишечное средство</NameR>
+			<NameE>Antiinflammatory intestinal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1293</CS_ID>
+			<NameR>Противоопухолевое и иммуномодулирующее средство</NameR>
+			<NameE>Antineoplastic agent and immunomodulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1294</CS_ID>
+			<NameR>Средство для лечения урологических заболеваний</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1295</CS_ID>
+			<NameR>Психостимулирующее и ноотропное средство</NameR>
+			<NameE>Psychostimulator and nootrop</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1296</CS_ID>
+			<NameR>Средства, препятствующие новообразованию сосудов</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1297</CS_ID>
+			<NameR>Противовоспалительное средство для наружного применения</NameR>
+			<NameE>Antiinflammatory agent external</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1298</CS_ID>
+			<NameR>Лекарственные средства для лечения алкогольной зависимости</NameR>
+			<NameE>Drugs used in alcohol dependence</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1299</CS_ID>
+			<NameR>Гипотензивное средство - эндотелиновых рецепторов антагонист</NameR>
+			<NameE>Antihypertensive agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1300</CS_ID>
+			<NameR>Гормональные препараты для системного применения (исключая половые гормоны и инсулины). Препараты для лечения заболеваний щитовидной железы. Препараты йода</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1301</CS_ID>
+			<NameR>Бронхиальной астмы средство лечения</NameR>
+			<NameE>Asthma treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1302</CS_ID>
+			<NameR>Другие препараты, влияющие на липидный обмен. Моноклональные антитела</NameR>
+			<NameE>Monoclonal antibodies</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1303</CS_ID>
+			<NameR>МИБП - эубиотик</NameR>
+			<NameE>Medical immunobiological agent - eubiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1304</CS_ID>
+			<NameR>Противоопухолевое и иммуномодулирующее средство - антитела моноклональные</NameR>
+			<NameE>Antineoplastic agent and immunomodulator - monoclonal antibodies</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1305</CS_ID>
+			<NameR>Бронхолитическое средство комбинированное (бета2-адреномиметик длительного действия м-холиноблокатор)</NameR>
+			<NameE>Bronchodilator agent combined - beta2-adrenoreceptors agonist prolonged action muscarinic cholinoblocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1306</CS_ID>
+			<NameR>Эритемы лица при розацеа средство лечения - альфа2-адреномиметик селективный</NameR>
+			<NameE>Alfa2-adrenoceptor agonist selective</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1307</CS_ID>
+			<NameR>Противопаркинсоническое средство, дофаминовых рецепторов агонист</NameR>
+			<NameE>Antiparkinsonial agent - dopamine agonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1308</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство отхаркивающее средство альфа-адреномиметик)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic expectorant alfa-adrenomimetic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1309</CS_ID>
+			<NameR>Бронходилатирующее средство - бета2-адреномиметик длительного действия</NameR>
+			<NameE>Bronchodilator agent - beta2-adrenoreceptors agonist prolonged action</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1310</CS_ID>
+			<NameR>Прямые ингибиторы фактора Ха</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1311</CS_ID>
+			<NameR>Другие офтальмологические средства</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1312</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения - ингибитор натрийзависимого переносчика глюкозы 2 типа</NameR>
+			<NameE>Hypoglycemic agent oral - inhibitor of sodium-dependent glucose transporter of type 2</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1313</CS_ID>
+			<NameR>Гемостатики местные в комбинации</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1314</CS_ID>
+			<NameR>Анальгетическое спазмолитическое средство комбинированное</NameR>
+			<NameE>Analgetic and spasmolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1315</CS_ID>
+			<NameR>Противоопухолевое средство, антитела моноклональные</NameR>
+			<NameE>Antineoplastic agent - monoclonal antibodies</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1316</CS_ID>
+			<NameR>Иммуностимуляторы, колониестимулирующий фактор, лейкопоэза стимулятор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1317</CS_ID>
+			<NameR>Гипогликемическое средство - комбинация аналогов инсулинов средней продолжительности или длительного и короткого действия</NameR>
+			<NameE>Hypoglycemic agent - combination of insulins with averaged time action or long and short action</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1318</CS_ID>
+			<NameR>Другие антагонисты гормонов и их прочие аналоги</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1319</CS_ID>
+			<NameR>Деменции средство лечения, холинэстеразы ингибитор</NameR>
+			<NameE>Cholineesterase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1320</CS_ID>
+			<NameR>Противоэпилептическое средство, барбитураты и их производные</NameR>
+			<NameE>Antiepileptic agent - barbiturates and their derivatives</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1322</CS_ID>
+			<NameR>Противоанемическое средство, препарат железа для парентерального введения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1323</CS_ID>
+			<NameR>Вакцина для профилактики заболеваний, вызванных менингококком серогрупп A, C, W135, и Y</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1324</CS_ID>
+			<NameR>Витаминно-минеральный комплекс с пробиотиком. Средство, регулирующее метаболические процессы</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1325</CS_ID>
+			<NameR>Противоязвенное средство, антисептическое кишечное и вяжущее средство</NameR>
+			<NameE>Antiseptic intestinal and astringent agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1326</CS_ID>
+			<NameR>Анальгезирующее средство (анальгезирующее ненаркотическое средство НПВП спазмолитическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>Analgetic (analgetic not-opioid NSAID spasmolytic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1327</CS_ID>
+			<NameR>Триазеновый алкилирующий препарат</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1328</CS_ID>
+			<NameR>Противоконгестивное средство - вазоконстриктор (альфа-адреномиметик)</NameR>
+			<NameE>Anticongestive nasal agent (alfa-adrenoreceptors agonist)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1329</CS_ID>
+			<NameR>Регенерации тканей стимулятор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1330</CS_ID>
+			<NameR>Контрацептивное средство комбинированное (эстроген гестаген кальция левомефолат)</NameR>
+			<NameE>Contraceptive agent combined (estrogen progestogen calcium levomefolate)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1331</CS_ID>
+			<NameR>Эндотелиновых А рецепторов антагонист селективный</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1332</CS_ID>
+			<NameR>Селективный иммунодепрессант</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1333</CS_ID>
+			<NameR>Пневмококковый очищенный полисахаридный антиген конъюгированный</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1334</CS_ID>
+			<NameR>Противовоспалительное, антибактериальное, противогрибковое средство</NameR>
+			<NameE>Antiinflammatory, antibacterial, antifungal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1335</CS_ID>
+			<NameR>H1-гистаминовых рецепторов блокатор</NameR>
+			<NameE>H1-histamine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1336</CS_ID>
+			<NameR>Противовирусное, противоопухолевое средство</NameR>
+			<NameE>Antiviral, antineoplastic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1337</CS_ID>
+			<NameR>Иммуностимулирующее средство бактериального происхождения</NameR>
+			<NameE>Immunostimulant bacteriogenic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1338</CS_ID>
+			<NameR>Протонного насоса ингибитор</NameR>
+			<NameE>Proton pump inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1340</CS_ID>
+			<NameR>Анальгезирующее средство (анальгезирующее ненаркотическое средство НПВП психостимулирующее средство спазмолитическое средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>Analgetic (analgetic not-opioid NSAID psychostimulator spasmolytic H1-histamine receptors blocker)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1341</CS_ID>
+			<NameR>Ингибиторы агрегации тромбоцитов, исключая гепарин</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1342</CS_ID>
+			<NameR>Осмотическое слабительное средство</NameR>
+			<NameE>Laxative agent osmotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1343</CS_ID>
+			<NameR>Соматотропный гормон</NameR>
+			<NameE>Somatotropin</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1344</CS_ID>
+			<NameR>Противовирусное [ВИЧ] средство, ингибитор протеазы</NameR>
+			<NameE>Antiviral [HIV] agent, protease inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1345</CS_ID>
+			<NameR>Вакцина для профилактики полиомиелита</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1346</CS_ID>
+			<NameR>Гемостатическое средство. ингибитор фибринолиза - ингибитор перехода плазминогена в плазмин</NameR>
+			<NameE>Hemostatic agent - fibrinolysis inibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1347</CS_ID>
+			<NameR>Местноанестезирующее и антиаритмическое средство</NameR>
+			<NameE>Anaesthetic local and antiarrhythmic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1348</CS_ID>
+			<NameR>Поливитамин мультиминерал прочие препараты</NameR>
+			<NameE>Multivitamine multimineral other agents</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1349</CS_ID>
+			<NameR>Гемостатическое средство, ингибитор фибринолиза</NameR>
+			<NameE>Hemostatic agent - fibrinolysis inibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1350</CS_ID>
+			<NameR>Эритропоэза стимулятор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1351</CS_ID>
+			<NameR>Препараты для лечения заболеваний печени</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1352</CS_ID>
+			<NameR>Дезинфицирующее средство (кожный антисептик)</NameR>
+			<NameE>Disinfectant dermal agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1353</CS_ID>
+			<NameR>Цитокин, рассеянного склероза средство лечения</NameR>
+			<NameE>Cytokine, sclerosis dissemenata treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1354</CS_ID>
+			<NameR>Муколитическое средство</NameR>
+			<NameE>Mucolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1355</CS_ID>
+			<NameR>Средство, влияющее на метаболические процессы, поливитаминно-минеральный комплекс</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1356</CS_ID>
+			<NameR>Средство, регулирующее метаболические процессы в ЦНС</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1357</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (ренина ингибитор БМКК)</NameR>
+			<NameE>Antihypertensive agent combined (renin inhibitor SCCB)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1358</CS_ID>
+			<NameR>Противовирусный препарат, активный в отношении ВИЧ-1</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1359</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибиотик-аминогликозид противогрибковое средство репарации тканей стимулятор</NameR>
+			<NameE>Glucocorticosteroid local antibiotic-aminoglycoside antifungal agent tissues reparation stimulator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1360</CS_ID>
+			<NameR>Вакцина против гепатита В рекомбинантная</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1361</CS_ID>
+			<NameR>5-альфа редуктазы двойной ингибитор</NameR>
+			<NameE>5-alfa reductase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1362</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения комбинированный</NameR>
+			<NameE>Glucocorticosteroid local combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1363</CS_ID>
+			<NameR>Глюкокортикостероид антибиотики (аминогликозид и циклический полипептид)</NameR>
+			<NameE>Glucocorticosteroid antibiotic combined (aminoglycoside antibiotic cyclic polypeptide)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1364</CS_ID>
+			<NameR>Противоопухолевое средство - протеинкиназы ингибитор</NameR>
+			<NameE>Antineoplastic agent - protein kinase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1365</CS_ID>
+			<NameR>Иммуностимулирующий препарат на основе бактериальных лизатов</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1366</CS_ID>
+			<NameR>Антихолинэстеразные средства</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1367</CS_ID>
+			<NameR>Пробиотик</NameR>
+			<NameE>Probiotic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1370</CS_ID>
+			<NameR>Вазодилатирующее средство - простагландин E1</NameR>
+			<NameE>Vasodilator - PgE1</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1371</CS_ID>
+			<NameR>Противовоспалительный анальгезирующий антисептик местный</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1372</CS_ID>
+			<NameR>Антибиотик для местного применения</NameR>
+			<NameE>Antibiotic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1373</CS_ID>
+			<NameR>Противовирусное и иммуномодулирующее средство</NameR>
+			<NameE>Antiviral and immunomodulator agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1374</CS_ID>
+			<NameR>Адаптогенное средство (мелатониновых рецепторов агонист)</NameR>
+			<NameE>Adaptogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1375</CS_ID>
+			<NameR>Препараты для лечения заболеваний нервной системы прочие</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1376</CS_ID>
+			<NameR>Сыпи угревой средство лечения. Ретиноид</NameR>
+			<NameE>Acne treatment drug. retinoid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1378</CS_ID>
+			<NameR>Антианемическое средство. Железа препарат</NameR>
+			<NameE>Iron therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1379</CS_ID>
+			<NameR>Бета-адреноблокатор неселективный</NameR>
+			<NameE>Beta-adrenoblocker non selective</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1380</CS_ID>
+			<NameR>Анксиолитическое средство, производное бензодиазепина</NameR>
+			<NameE>Anxiolytic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1381</CS_ID>
+			<NameR>Противогрибковое средство комбинированное</NameR>
+			<NameE>Antifungal agent combined</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1382</CS_ID>
+			<NameR>Противовирусное средство. Противовоспалительное средство.</NameR>
+			<NameE>Antiviral agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1383</CS_ID>
+			<NameR>H1-гистаминовых рецепторов антагонист</NameR>
+			<NameE>H1-histamine receptors antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1384</CS_ID>
+			<NameR>Иммунодепрессивное средство - рассеянного склероза средство лечения</NameR>
+			<NameE>Immunosuppressant - sclerosis dissemenata treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1385</CS_ID>
+			<NameR>Антидот миорелаксантов селективный</NameR>
+			<NameE>Muscle relaxant antidote selective</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1386</CS_ID>
+			<NameR>Антианемические препараты другие</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1387</CS_ID>
+			<NameR>Прочие препараты для лечения заболеваний полости рта</NameR>
+			<NameE>Other preparations for the treatment of diseases of the oral cavity</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1388</CS_ID>
+			<NameR>Электролиты в комбинации с другими препаратами</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1389</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство симпатомиметическое средство противокашлевое опиоидное средство витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic sympathomimetic antitussive vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1390</CS_ID>
+			<NameR>Противокашлевые препараты другие</NameR>
+			<NameE>Antitussive agents other</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1391</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (бета1-адреноблокатор селективный БМКК)</NameR>
+			<NameE>Antihypertensive agent combined (beta1-adrenoblocker selective SCCB)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1392</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство альфа-адреномиметик H1-гистаминовых рецепторов блокатор витамин)</NameR>
+			<NameE>ARD and influenza symptoms relieving agent (analgetic-antipyretic psychostimulant alfa-adrenomimetic H1-histamine receptors blocker vitamine)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1393</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (АПФ ингибитор БМКК диуретик)</NameR>
+			<NameE>Antihypertensive agent combined (ACE inhibitor SCCB diuretic)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1394</CS_ID>
+			<NameR>Анксиолитическое средство, седативное средство, снотворное средство</NameR>
+			<NameE>Anxiolytic, sedative, hypnotic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1395</CS_ID>
+			<NameR>Антисептическое средство репарации тканей стимулятор местноанестезирующее средство</NameR>
+			<NameE>Antiseptic tissues reparation stimulator anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1396</CS_ID>
+			<NameR>Препараты для лечения гиперкалиемии и гиперфосфатемии</NameR>
+			<NameE>Drugs for treatment of hyperkalemia and hyperphosphatemia</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1397</CS_ID>
+			<NameR>Противомикробное средство комбинированное (антибиотик противомикробное и противопротозойное средство противогрибковое средство глюкокортикостероид)</NameR>
+			<NameE>Antimicrobial agent combined (antibiotic antimicrobial and antiprotozoal antifungal glucocorticosteroid)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1399</CS_ID>
+			<NameR>Иммунодепрессивное средство - антитела моноклональные к интерлейкину-1бета</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1400</CS_ID>
+			<NameR>Ингибитор пропротеиновой конвертазы субтилизин-кексина типа 9 - моноклональное антитело</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1401</CS_ID>
+			<NameR>Окситоцин и его аналоги</NameR>
+			<NameE>Oxytocine and its analogues</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1402</CS_ID>
+			<NameR>Ангионевротического наследственного отека средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1403</CS_ID>
+			<NameR>Адреномиметики в комбинации с антихолинергиками</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1404</CS_ID>
+			<NameR>H1-гистаминовых рецепторов блокатор цитокин</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1405</CS_ID>
+			<NameR>Прочие средства способствующие рубцеванию</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1406</CS_ID>
+			<NameR>Иммуноглобулин человека нормальный</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1407</CS_ID>
+			<NameR>Анксиолитическое средство, седативное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1408</CS_ID>
+			<NameR>Снотворное и седативное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1409</CS_ID>
+			<NameR>Прочие средства, применяемые в гинекологии</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1410</CS_ID>
+			<NameR>Антибактериальные средства синтетические другие</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1411</CS_ID>
+			<NameR>Антибиотик-карбапенем почечной дегидропептидазы блокатор</NameR>
+			<NameE>Antibiotic-carbapenem pochechnoy dehydropeptidase blokator</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1412</CS_ID>
+			<NameR>Растворы влияющие на водно-электролитный баланс</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1414</CS_ID>
+			<NameR>Бета2-адреномиметик длительного действия</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1415</CS_ID>
+			<NameR>Антиоксидантное средство витамин</NameR>
+			<NameE>Antioxidant vitamin</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1416</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (БМКК диуретик)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1417</CS_ID>
+			<NameR>Противомикробное средство комбинированное (противомикробное и противопротозойное средство противогрибковое средство противовирусное)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1418</CS_ID>
+			<NameR>Гонадотропины и другие стимуляторы овуляции</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1419</CS_ID>
+			<NameR>Антибактериальные препараты прочие</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1420</CS_ID>
+			<NameR>H2-гистаминовых рецепторов блокаторы</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1421</CS_ID>
+			<NameR>Противоопухолевый препарат, ингибитор протеинкиназы</NameR>
+			<NameE>Antineoplastic agent, protein kinase inhibitors</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1422</CS_ID>
+			<NameR>МИБП - противовирусное и противоопухолевое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1423</CS_ID>
+			<NameR>Прочие средства, влияющие на пищеварительную систему и метаболизм</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1424</CS_ID>
+			<NameR>C1-ингибитор плазматический</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1425</CS_ID>
+			<NameR>Нестероидное противовоспалительное средство для местного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1426</CS_ID>
+			<NameR>Витамин - средство, применяющееся при нарушении липидного обмена</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1427</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (ангиотензина II рецепторов антагонист ренина ингибитор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1428</CS_ID>
+			<NameR>Иммунодепрессанты, селективные иммунодепрессанты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1429</CS_ID>
+			<NameR>Интерлейкин</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1430</CS_ID>
+			<NameR>Противокашлевое средство отхаркивающее средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1431</CS_ID>
+			<NameR>Противомикробное средство для наружного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1432</CS_ID>
+			<NameR>Противоэпилептическое средство, прочие противоэпилептические средства</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1433</CS_ID>
+			<NameR>Анальгезирующее опиоидное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1434</CS_ID>
+			<NameR>Анальгетическое опиоидное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1435</CS_ID>
+			<NameR>Противогрибковое средство комбинированное (противогрибковое средство противомикробное и противопротозойное средство цитокин)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1436</CS_ID>
+			<NameR>Другие средства для системного применения при обструктивных заболеваниях дыхательных путей</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1437</CS_ID>
+			<NameR>Антиандроген эстроген</NameR>
+			<NameE>Antiandrogen estrogen</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1438</CS_ID>
+			<NameR>Иммуностимулятор-интерфероны</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1439</CS_ID>
+			<NameR>Противоглаукомное средство комбинированное (альфа2-адреномиметик неселективный бета-адреноблокатор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1440</CS_ID>
+			<NameR>Анксиолитическое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1441</CS_ID>
+			<NameR>Мочеиспускания и недержания мочи средство лечения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1442</CS_ID>
+			<NameR>Растворитель для приготовления лекарственных форм для инъекций</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1443</CS_ID>
+			<NameR>Прочие препараты для лечения заболеваний костно-мышечной системы</NameR>
+			<NameE>Other drugs for disorders of the musculo-skeletal system</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1444</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (анальгезирующее ненаркотическое средство психостимулирующее средство H1-гистаминовых рецепторов блокатор витамин противокашлевое опиодное средство)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1445</CS_ID>
+			<NameR>Вакцина менингококковая</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1446</CS_ID>
+			<NameR>Прочие препараты для желудочно-кишечного тракта и обмена веществ, аминокислоты и их производные</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1448</CS_ID>
+			<NameR>Местноанестезирующее средство природного происхождения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1449</CS_ID>
+			<NameR>Прочие противоэпилептические препараты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1450</CS_ID>
+			<NameR>Гистамина препарат ноотропное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1451</CS_ID>
+			<NameR>Противовирусное средство комбинированное (цитокин H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1452</CS_ID>
+			<NameR>Лейкопоэза стимулятор, иммуномодулирующее средство, противовирусное [ВИЧ] средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1453</CS_ID>
+			<NameR>Ингибитор пропротеиновой конвертазы субтилизин-кексин типа 9 (PCSK9)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1454</CS_ID>
+			<NameR>Противоопухолевое средство - антрациклины и связанные с ними вещества</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1455</CS_ID>
+			<NameR>Ингибиторы янус- киназы (JAK)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1456</CS_ID>
+			<NameR>Противоопухолевое средство - гистондеацетилазы ингибитор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1457</CS_ID>
+			<NameR>Вазопрессин и его аналоги</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1458</CS_ID>
+			<NameR>Противоклимактерическое средство комбинированное (эстроген прогестаген)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1459</CS_ID>
+			<NameR>Гипотензивное средство комбинированное (бета1-адреноблокатор селективный АПФ ингибитор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1460</CS_ID>
+			<NameR>Ранозаживляющее и противовоспалительное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1461</CS_ID>
+			<NameR>Прочие эстрогены</NameR>
+			<NameE>Other estrogens</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1462</CS_ID>
+			<NameR>Противопаркинсоническое средство - дофаминовых рецепторов агонист</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1463</CS_ID>
+			<NameR>Гиполипидемическое средство комбинированное (ГМГ-КоА-редуктазы ингибитор антиагрегатное средство)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1465</CS_ID>
+			<NameR>Иммуномодулирующее и противовоспалительное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1466</CS_ID>
+			<NameR>Гипофиза гормон задней доли</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1467</CS_ID>
+			<NameR>Глюкокортикостероид для местного применения антибактериальное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1468</CS_ID>
+			<NameR>НПВП антисептическое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1469</CS_ID>
+			<NameR>Антибиотик-ансамицин</NameR>
+			<NameE>Antibiotic-ansamycin</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1470</CS_ID>
+			<NameR>Антитромботическое средство, антагонисты витамина К</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1471</CS_ID>
+			<NameR>Глюкокортикостероиды в комбинации с антибиотиками</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1472</CS_ID>
+			<NameR>Дерматологические препараты другие</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1473</CS_ID>
+			<NameR>Растительного происхождения средство для регенерации фоторецепторов сетчатки</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1474</CS_ID>
+			<NameR>МИБП - пробиотик</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1475</CS_ID>
+			<NameR>Прочие анальгетики и антипиретики</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1476</CS_ID>
+			<NameR>Гепатопротекторное и желчегонное средство растительного происхождения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1477</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения (производное сульфонилмочевины II поколения бигуанид)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1478</CS_ID>
+			<NameR>Бета-адреноблокаторы, другие комбинации</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1479</CS_ID>
+			<NameR>Средство для устранения головокружения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1480</CS_ID>
+			<NameR>Радиофармацевтическое диагностическое средство. Радиофармацевтическое терапевтическое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1481</CS_ID>
+			<NameR>Препараты для лечения заболеваний горла</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1482</CS_ID>
+			<NameR>Эстроген противомикробное средство - оксихинолин</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1483</CS_ID>
+			<NameR>Нейропротекторное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1484</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения (ингибитор натрийзависимого переносчика глюкозы 2 типа дипептидилпептидазы-4 ингибитор)</NameR>
+			<NameE>Hypoglycemic agent oral (inhibitor of sodium-dependent glucose transporter of type 2 dipeptidilpeptidaze-4 inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1485</CS_ID>
+			<NameR>Противовоспалительное средство природного происхождения для местного применения</NameR>
+			<NameE>Anti-inflammatory agent of natural origin for topical application</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1486</CS_ID>
+			<NameR>Гипогликемические и другие средства в комбинациях</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1487</CS_ID>
+			<NameR>Противоопухолевое средство - гонадотропин-рилизинг гормона антагонист</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1488</CS_ID>
+			<NameR>Стоматологические препараты; прочие препараты для лечения полости рта</NameR>
+			<NameE>Dental preparations; other preparations for oral cavity</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1489</CS_ID>
+			<NameR>Препараты для лечения функциональных нарушений ЖКТ. Белладонна и ее производные. Сумма алкалоидов белладонны</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1490</CS_ID>
+			<NameR>Препараты для лечения гинекологических заболеваний</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1491</CS_ID>
+			<NameR>Регуляторы водно-электролитного баланса и кислотно-щелочного состояния</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1492</CS_ID>
+			<NameR>Поливитамин мультиминерал</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1493</CS_ID>
+			<NameR>Противоаллергическое средство для местного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1494</CS_ID>
+			<NameR>Вазодилатирующее средство антиоксидантное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1495</CS_ID>
+			<NameR>Гипогликемическое средство - аналог глюкагоноподобного пептида-1</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1496</CS_ID>
+			<NameR>Анальгезирующее средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1497</CS_ID>
+			<NameR>Ингибиторы дипептидилпептидазы-4 (ДПП-4)</NameR>
+			<NameE>Inhibitors dipeptidilpeptidaze-4 (DPP)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1498</CS_ID>
+			<NameR>Блокатор калиевых каналов</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1499</CS_ID>
+			<NameR>Ингибиторы дигидрооротатдегидрогеназы низкомолекулярные</NameR>
+			<NameE>Inhibitors dihydroorotatedehydrogenase low-moleculart</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1500</CS_ID>
+			<NameR>Противоопухолевое средство - фактора роста фибробластов 2 типа рецепторов ингибитор</NameR>
+			<NameE>Antineoplastic agent - fibroblast growth factor type 2 receptor inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1501</CS_ID>
+			<NameR>Антикоагулянтное средство прямого действия - селективный ингибитор фактора свертывания крови Ха (Fxa)</NameR>
+			<NameE>Anticoagulant direct</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1502</CS_ID>
+			<NameR>Другие лекарственные препараты системного действия, применяемые при обструктивных заболеваниях дыхательных путей</NameR>
+			<NameE>Other systemic drugs for obstructive airway diseases</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1503</CS_ID>
+			<NameR>Препарат, улучшающий матаболизм и энергообеспечение тканей, уменьшающий гипоксию тканей</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1504</CS_ID>
+			<NameR>Комбинированные антигистаминные препараты</NameR>
+			<NameE>Сombinations of antihistamines</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1505</CS_ID>
+			<NameR>Препараты, применяемые при алкогольной зависимости</NameR>
+			<NameE>Drugs used in alcohol dependence</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1506</CS_ID>
+			<NameR>Прочие препараты для местного применения при суставной и мышечной боли. Диметилсульфоксид</NameR>
+			<NameE>Other topical products for joint and muscular pain</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1507</CS_ID>
+			<NameR>Селективные блокаторы кальциевых каналов с преимущественным влиянием на сосуды</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1508</CS_ID>
+			<NameR>Прочие препараты для лечения обструктивных заболеваний дыхательных путей для системного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1509</CS_ID>
+			<NameR>Противопаркинсоническое средство, в том числе дофаминергический препарат</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1511</CS_ID>
+			<NameR>Иммуносупрессоры, ингибиторы интерлейкина</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1512</CS_ID>
+			<NameR>НПВП миорелаксант центрального действия</NameR>
+			<NameE>NSAID muscle relaxant central acting</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1513</CS_ID>
+			<NameR>Противопаркинсонический препарат - селективный ингибитор МАО типа В</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1514</CS_ID>
+			<NameR>Иммуномодулирующее и гепатопротекторное средство</NameR>
+			<NameE>Immunomodulatory and hepatoprotective agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1515</CS_ID>
+			<NameR>Миотропный спазмолитик</NameR>
+			<NameE>Myotropic spasmolytic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1516</CS_ID>
+			<NameR>Дерматотропное, антисептик и дезинфицирующее средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1517</CS_ID>
+			<NameR>Препараты для лечения функциональных нарушений ЖКТ. Спазмолитики в комбинации с анальгетиками. Белладонна и ее производные в комбинации с анальгетиками</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1518</CS_ID>
+			<NameR>Альфа2-адреномиметик центральный</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1519</CS_ID>
+			<NameR>Антикоагулянт-гепарин и его производные</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1520</CS_ID>
+			<NameR>Гипогликемическое средство - комбинация аналога инсулина длительного действия и глюкагоноподобного полипептида рецепторов агониста</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1521</CS_ID>
+			<NameR>Интерферон альфа</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1522</CS_ID>
+			<NameR>Другие психостимуляторы и ноотропные препараты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1523</CS_ID>
+			<NameR>Прочие противоопухолевые препараты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1524</CS_ID>
+			<NameR>Нестероидное противовоспалительное и противоревматическое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1525</CS_ID>
+			<NameR>Микроорганизмы, продуцирующие молочную кислоту, в комбинации с другими препаратами</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1526</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (анальгезирующее ненаркотическое средство м-холиноблокатор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1527</CS_ID>
+			<NameR>Противоаллергическое средство комбинированное (H1-гистаминовых рецепторов блокатор лейкотриеновых рецепторов блокатор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1528</CS_ID>
+			<NameR>Иммуномодулирующее средство, интерфероны</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1529</CS_ID>
+			<NameR>Муколитическое отхаркивающее средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1532</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения (ингибитор натрийзависимого переносчика глюкозы 2 типа бигуанид)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1533</CS_ID>
+			<NameR>Альфа1-адреноблокатор 5-альфа редуктазы ингибитор</NameR>
+			<NameE>Alfa1-adrenoblocker 5-alfa reductase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1534</CS_ID>
+			<NameR>Противоопухолевые, иммуномодуляторы - интерфероны</NameR>
+			<NameE>Antineoplastic, immunomodulating agents - interferons</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1535</CS_ID>
+			<NameR>Отхаркивающее, муколитическое средство противоаллергическое средство - H1-гистаминовых рецепторов блокатор</NameR>
+			<NameE>Expectorant agent, mucolytic antiallergic agent - H1-histamine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1536</CS_ID>
+			<NameR>Средство комбинированное (диуретик АПФ ингибитор ГМГ-КоА-редуктазы ингибитор)</NameR>
+			<NameE>Agent combined (diuretic ACE inhibitor HMG-CoA-reductase inhibitor)</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1537</CS_ID>
+			<NameR>Витамин D и его аналоги</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1538</CS_ID>
+			<NameR>Иммуномодулирующее средство, стимулятор гемопоэза, регенерант, репарант</NameR>
+			<NameE>Immunomodulator, hemopoetic stimulator, regenerant, reparant</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1539</CS_ID>
+			<NameR>Лейкотриеновых рецепторов блокатор Н1-гистаминовых рецепторов блокатор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1540</CS_ID>
+			<NameR>Противоэпилептическое средство, производное карбоксамида</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1541</CS_ID>
+			<NameR>Иммуномодулирующее средство, репарации тканей стимулятор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1542</CS_ID>
+			<NameR>Нестероидный противовоспалительный препарат для наружного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1543</CS_ID>
+			<NameR>Противогрибковые препараты для системного применения. Производные триазола</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1544</CS_ID>
+			<NameR>Иммунодепрессанты, ингибиторы интерлейкина</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1545</CS_ID>
+			<NameR>Прочие лекарственные препараты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1546</CS_ID>
+			<NameR>Нестероидный противовоспалительный препарат комбинированный (НПВП Витамины группы В)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1547</CS_ID>
+			<NameR>Противовоспалительное средство местноанестезирующее средство</NameR>
+			<NameE>Antiinflammatory agent anaesthetic local</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1548</CS_ID>
+			<NameR>Другие препараты, применяемые в урологии</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1549</CS_ID>
+			<NameR>Анальгетики и антипиретики. Анилиды. Парацетамол</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1550</CS_ID>
+			<NameR>Противомикробные препараты для системного применения. Другие антибактериальные препараты. Производные имидазола. Метронидазол</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1551</CS_ID>
+			<NameR>Гиперкалиемии средство лечения</NameR>
+			<NameE>Drugs for treatment of hyperkalemia</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1552</CS_ID>
+			<NameR>Прочие лекарственные препараты для лечения функциональных расстройств желудочно-кишечного тракта</NameR>
+			<NameE>Other drugs for functional gastrointestinal disorders</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1553</CS_ID>
+			<NameR>Антидепрессант, селективный ингибитор обратного захвата серотонина</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1554</CS_ID>
+			<NameR>Другие противоопухолевые препараты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1555</CS_ID>
+			<NameR>Препараты для лечения печени и желчевыводящих путей в комбинации</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1556</CS_ID>
+			<NameR>Обезболивающее и жаропонижающее средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1557</CS_ID>
+			<NameR>Средство анальгетическое</NameR>
+			<NameE>Analgetic</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1558</CS_ID>
+			<NameR>Другие противомикробные, противопаразитарные и противоглистные средства</NameR>
+			<NameE>Other chemotherapeutics, antiparasitic and anthelmintics products</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1561</CS_ID>
+			<NameR>Другие противогрибковые препараты системного действия</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1562</CS_ID>
+			<NameR>Препараты для лечения заболеваний пищеварительного тракта и нарушений обмена веществ - ферменты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1563</CS_ID>
+			<NameR>Препараты для лечения частого мочеиспускания и недержания мочи, спазмолитическое средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1564</CS_ID>
+			<NameR>Адренергические и дофаминергические средства</NameR>
+			<NameE>Adrenergic and dopaminergic agents</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1565</CS_ID>
+			<NameR>БМКК H1-гистаминовых рецепторов блокатор</NameR>
+			<NameE>SCCB H1-histamine receptors blocker</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1566</CS_ID>
+			<NameR>Моторики ЖКТ стимулятор - ацетилхолинэстеразы ингибитор</NameR>
+			<NameE>GIT motility stimulator - acetylcholineesterase inhibitor</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1567</CS_ID>
+			<NameR>Противовоспалительные и противоревматические препараты. Нестероидные противовоспалительные и противоревматические препараты. Производные уксусной кислоты. Диклофенак.</NameR>
+			<NameE>Antiinflammatory and antirheumatic products. Antiinflammatory and antirheumatic products, non-steroids. Acetic acid derivatives. Diclofenac</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1568</CS_ID>
+			<NameR>Средства для лечения геморроя и анальных трещин для местного применения - глюкокортикостероиды</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1569</CS_ID>
+			<NameR>Другие иммунодепрессанты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1570</CS_ID>
+			<NameR>Психолептики, антипсихотические средства, производные бутирофенона</NameR>
+			<NameE>Psycholeptics, antipsychotics, butyrophenone derivatives</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1571</CS_ID>
+			<NameR>Противовирусное средство для системного применения, противовирусное средство прямого действия</NameR>
+			<NameE>Antivirals for systemic use, direct acting antivirals</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1572</CS_ID>
+			<NameR>Препараты для лечения заболеваний органов чувств. Препараты для лечения заболеваний глаз. Противовоспалительные препараты. Кортикостероиды. Гидрокортизон.</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1573</CS_ID>
+			<NameR>Регенерации тканей стимулятор растительного происхождения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1574</CS_ID>
+			<NameR>Интравагальные контрацептивы, вагинальное кольцо с комбинацией эстрогена и гестагена</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1575</CS_ID>
+			<NameR>Препараты для лечения обструктивных заболеваний дыхательных путей, адреномиметики в комбинации с антихолинэргическими и глюкокортикостероидными срествами</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1576</CS_ID>
+			<NameR>Производные бензодиазепина</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1577</CS_ID>
+			<NameR>Железа препарат для парентерального введения</NameR>
+			<NameE>Iron therapeutic agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1578</CS_ID>
+			<NameR>Гиполипидемическое средство - ГМГ-КоА-редуктазы ингибиторы в других комбинациях</NameR>
+			<NameE>Hypolipidemic agent - HMG-CoA-reductase inhibitor, other combinations</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1579</CS_ID>
+			<NameR>Другие периферические вазодилататоры, используемые при лечении заболеваний сердца</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1580</CS_ID>
+			<NameR>Психолептики. Прочие снотворные и седативные препараты. Валерианы экстракт</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1581</CS_ID>
+			<NameR>Аминокислоты и их производные</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1582</CS_ID>
+			<NameR>Спазмолитики в комбинации с психотропными препаратами</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1583</CS_ID>
+			<NameR>Селективный агонист имидазолиновых рецепторов</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1584</CS_ID>
+			<NameR>Препараты для лечения заболеваний костей-другие препараты, влияющие на структуру и минерализацию кости. Антитела моноклональные.</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1585</CS_ID>
+			<NameR>Анальгезирующее средство комбинированное (нестероидное противовоспалительное средство H1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1588</CS_ID>
+			<NameR>Антинеопластические препараты. Антиметаболиты. Пиримидиновые аналоги. Трифлуридин в комбинации с другими препаратами</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1589</CS_ID>
+			<NameR>Нефроуролитиаза средство лечения</NameR>
+			<NameE>Nephrourolitiasis treatment agent</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1590</CS_ID>
+			<NameR>Прочие препараты для лечения заболеваний ЖКТ и нарушения обмена веществ</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1591</CS_ID>
+			<NameR>ОРЗ и &quot;простуды&quot; симптомов средство устранения (витамин кальциево-фосфорного обмена регулятор анальгезирующее ненаркотическое средство ангиопротектор альфа-адреномиметик Н1-гистаминовых рецепторов блокатор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1592</CS_ID>
+			<NameR>Иммунодепрессивное средство - ингибитор фактора некроза опухоли альфа</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1593</CS_ID>
+			<NameR>Гиполипидемическое средство, ГМГ-КоА-редуктазы ингибитор фибрат</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1594</CS_ID>
+			<NameR>Половые гормоны и модуляторы половой системы, эстрогены, комбинации с другими препаратами</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1595</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения, дипептидилпептидазы-4 ингибитор</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1596</CS_ID>
+			<NameR>Пищеварительный тракт и продукты метаболизма - ферменты</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1597</CS_ID>
+			<NameR>Нестероидный противовоспалительный препарат (НПВП) витамин</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1598</CS_ID>
+			<NameR>Ингибиторы пролактина</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1599</CS_ID>
+			<NameR>Другие препараты для лечения простудных заболеваний</NameR>
+			<NameE>Other cold preparations</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1600</CS_ID>
+			<NameR>Антианемические препараты, витамин B12 (цианокобаламин и его аналоги), цианокобаламин</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1601</CS_ID>
+			<NameR>Антибиотик-рифаксимин</NameR>
+			<NameE>Antibiotic-rifaximin</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1602</CS_ID>
+			<NameR>Противомикробные препараты для системного применения. Препараты, активные в отношении микобактерий. Противотуберкулезные препараты. Гидразиды. Изониазид.</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1603</CS_ID>
+			<NameR>Прочие лекарственные препараты для местного применения в полости рта</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1604</CS_ID>
+			<NameR>Гипотензивное средство для лечения легочной артериальной гипертензии</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1605</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения, дипептидилпептидазы-4-ингибитор и гипогликемическое средство группы бигуанидов для перорального применения в наборе</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1606</CS_ID>
+			<NameR>Антибактериальные препараты - производные хинолона</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1607</CS_ID>
+			<NameR>Гормоны гипофиза и гипоталамуса и их аналоги. Гормоны передней доли гипофиза и их аналоги. Другие гормоны передней доли гипофиза и их аналоги.</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1608</CS_ID>
+			<NameR>Прочие препараты для лечения заболеваний органов дыхания</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1609</CS_ID>
+			<NameR>Железа сульфат в комбинации с фолиевой кислотой</NameR>
+			<NameE>Iron in combination with folic acid</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1610</CS_ID>
+			<NameR>Деконгестанты и другие назальные лекарственные препараты для местного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1611</CS_ID>
+			<NameR>Альфа-адренорецепторов антагонист</NameR>
+			<NameE>Alfa-adrenoreceptors antagonist</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1612</CS_ID>
+			<NameR>Средства, действующие на ренин-ангиотензиновую систему, антагонисты рецепторов ангиотензина II, другие комбинации</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1613</CS_ID>
+			<NameR>Противомикробные препараты и антисептики, применяемые в гинекологии. Противомикробные препараты и антисептики, кроме комбинаций с кортикостероидами. Производные имидазола.</NameR>
+			<NameE>Gynecological antiinfectives and antiseptics. Antiinfectives and antiseptics, excl. Combinations with corticosteroids. Imidazole derivatives.</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1614</CS_ID>
+			<NameR>Противоопухолевый препарат - ингибитор тирозинкиназы Брутона</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1615</CS_ID>
+			<NameR>Противоопухолевое средство - антиметаболит, иммунодепрессивное средство</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1616</CS_ID>
+			<NameR>Половые гормоны и модуляторы половой системы, природные и полусинтетические эстрогены</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1617</CS_ID>
+			<NameR>Половые гормоны и модуляторы половой системы, стимуляторы овуляции синтетические</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1618</CS_ID>
+			<NameR>Средство комбинированное (блокатор &quot;медленных&quot; кальциевых каналов ангиотензина II рецепторов антагонист ГМГ-КоА-редуктазы ингибитор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1619</CS_ID>
+			<NameR>Противомикробное средство для системного применения, иммуноглобулин специфический, антитела моноклональные</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1620</CS_ID>
+			<NameR>Противовирусные препараты для системного применения, противовирусные препараты прямого действия, противовирусные препараты прочие. Умифеновир.</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1621</CS_ID>
+			<NameR>Адренергические средства и другие препараты для лечения обструктивных заболеваний дыхательных путей.</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1622</CS_ID>
+			<NameR>Бронхолитическое средство комбинированное (бета2-адреномиметик селективный м-холиноблокатор)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1623</CS_ID>
+			<NameR>Гипогликемическое средство для перорального применения комбинированное (дипептидилпептидазы-4-ингибитор тиазолидиндион)</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1624</CS_ID>
+			<NameR>Противовирусное химиотерапевтическое средство для наружного применения</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1626</CS_ID>
+			<NameR>Детоксицирующие средства, включая антидоты. Препараты для лечения заболеваний желудочно-кишечного тракта и обмена веществ.</NameR>
+			<NameE>~</NameE>
+		</entry>
+		<entry>
+			<CS_ID>1627</CS_ID>
+			<NameR>Противовоспалительное средство, обладающее симптомно-модифицирующим эффектом замедленного действия</NameR>
+			<NameE>~</NameE>
+		</entry>
+	</entries>
+</book>

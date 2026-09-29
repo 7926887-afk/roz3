@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="b78d2762-1f0e-4cf7-a7d7-1952aa6046de">
+		<Name>Новый</Name>
+		<Code>1</Code>
+		<Description>Новый</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ded71155-4cfa-4875-9375-b470b5d58a9c">
+		<Name>Выдан</Name>
+		<Code>2</Code>
+		<Description>Выдан</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="10c7aaed-be0f-4836-9815-59796b0cc51d">
+		<Name>Отменён</Name>
+		<Code>3</Code>
+		<Description>Отменён</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="24092ab2-8a5a-4e9e-be4d-2e6d46cba85d">
+		<Name>ГотовКВыдаче</Name>
+		<Code>5</Code>
+		<Description>Готов к выдаче</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="085cb155-6816-4a4d-b610-ba3be28ed399">
+		<Name>ОжидаетПодтвержденияКлиентом</Name>
+		<Code>7</Code>
+		<Description>Ожидает подтверждения клиентом</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5b1ce735-52a5-449c-9188-abcf25dd690c">
+		<Name>ПодтверждёнКлиентом</Name>
+		<Code>8</Code>
+		<Description>Подтверждён клиентом</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="08ccd680-f94d-4218-a7d4-f9237d661f58">
+		<Name>ОтменёнНаСайте</Name>
+		<Code>9</Code>
+		<Description>Отменён на сайте</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d5420b75-803e-4655-8def-f318a20d6341">
+		<Name>ОтменёнРезерв</Name>
+		<Code>10</Code>
+		<Description>Отменён резерв</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

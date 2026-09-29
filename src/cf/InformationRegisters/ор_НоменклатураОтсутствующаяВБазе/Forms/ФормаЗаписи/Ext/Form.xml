@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<ScaleVariant>NormalIfPossible</ScaleVariant>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КатегорииНоменклатуры" id="1">
+			<DataPath>Запись.КатегорияНоменклатуры</DataPath>
+			<ContextMenu name="КатегорииНоменклатурыКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КатегорииНоменклатурыРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">КатегорияНоменклатурыПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="НаименованиеПоставщика" id="4">
+			<DataPath>Запись.НаименованиеПоставщика</DataPath>
+			<ContextMenu name="НаименованиеПоставщикаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеПоставщикаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ШаблонКраткогоНаименованияНоменклатуры" id="13">
+			<DataPath>Запись.ШаблонКраткогоНаименованияНоменклатуры</DataPath>
+			<ContextMenu name="ШаблонКраткогоНаименованияНоменклатурыКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ШаблонКраткогоНаименованияНоменклатурыРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="Creating">ПравилоИменованияСоздание</Event>
+			</Events>
+		</InputField>
+		<InputField name="ШаблонПолногоНаименованияНоменклатуры" id="16">
+			<DataPath>Запись.ШаблонПолногоНаименованияНоменклатуры</DataPath>
+			<ContextMenu name="ШаблонПолногоНаименованияНоменклатурыКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ШаблонПолногоНаименованияНоменклатурыРасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="Creating">ПравилоИменованияСоздание</Event>
+			</Events>
+		</InputField>
+		<InputField name="ШаблонНаименованияХарактеристики" id="19">
+			<DataPath>Запись.ШаблонНаименованияХарактеристики</DataPath>
+			<ContextMenu name="ШаблонНаименованияХарактеристикиКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ШаблонНаименованияХарактеристикиРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="Creating">ПравилоИменованияСоздание</Event>
+			</Events>
+		</InputField>
+		<InputField name="ШаблонНаименованияХарактеристикиДляПечати" id="22">
+			<DataPath>Запись.ШаблонНаименованияХарактеристикиДляПечати</DataPath>
+			<ContextMenu name="ШаблонНаименованияХарактеристикиДляПечатиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ШаблонНаименованияХарактеристикиДляПечатиРасширеннаяПодсказка" id="24"/>
+			<Events>
+				<Event name="Creating">ПравилоИменованияСоздание</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ор_НоменклатураОтсутствующаяВБазе</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСерия" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа серия</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСерияExtendedTooltip" id="17"/>
+			<ChildItems>
+				<InputField name="Серия" id="1">
+					<DataPath>Запись.Серия</DataPath>
+					<ContextMenu name="СерияКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СерияExtendedTooltip" id="18"/>
+				</InputField>
+				<CheckBoxField name="Фальсифицирован" id="5">
+					<DataPath>Запись.Фальсифицирован</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фальсифицирована</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФальсифицированКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ФальсифицированExtendedTooltip" id="19"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НаименованиеНоменклатуры" id="3">
+			<DataPath>Запись.НаименованиеНоменклатуры</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НаименованиеНоменклатурыКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеНоменклатурыExtendedTooltip" id="20"/>
+		</InputField>
+		<InputField name="НаименованиеПроизводителя" id="7">
+			<DataPath>Запись.НаименованиеПроизводителя</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производитель</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НаименованиеПроизводителяКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НаименованиеПроизводителяExtendedTooltip" id="21"/>
+		</InputField>
+		<InputField name="СтранаПроизводителя" id="9">
+			<DataPath>Запись.СтранаПроизводителя</DataPath>
+			<ContextMenu name="СтранаПроизводителяКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="СтранаПроизводителяExtendedTooltip" id="22"/>
+		</InputField>
+		<UsualGroup name="ГруппаПисьмо" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа письмо</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПисьмоExtendedTooltip" id="23"/>
+			<ChildItems>
+				<InputField name="НомерПисьма" id="11">
+					<DataPath>Запись.НомерПисьма</DataPath>
+					<ContextMenu name="НомерПисьмаКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="НомерПисьмаExtendedTooltip" id="24"/>
+				</InputField>
+				<InputField name="ДатаПисьма" id="13">
+					<DataPath>Запись.ДатаПисьма</DataPath>
+					<ContextMenu name="ДатаПисьмаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДатаПисьмаExtendedTooltip" id="25"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ор_ФальсификатыЛекарственныхСредств</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

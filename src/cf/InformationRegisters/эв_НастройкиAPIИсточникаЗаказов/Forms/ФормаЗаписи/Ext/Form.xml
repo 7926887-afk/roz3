@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ИсточникЗаказов" id="1">
+			<DataPath>Запись.ИсточникЗаказов</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИсточникЗаказовКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИсточникЗаказовРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Адрес" id="4">
+			<DataPath>Запись.Адрес</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>https://api.megapteka.dev/exch/v4/prices</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="АдресКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="auth_token" id="7">
+			<DataPath>Запись.auth_token</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>cc68e1ffc04c07275a5aacc0ccc8876cf58108da57ebf19674013d0332ef8590</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>cc68e1ffc04c07275a5aacc0ccc8876cf58108da57ebf19674013d0332ef8590</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="auth_tokenКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="auth_tokenРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="merchant" id="10">
+			<DataPath>Запись.merchant</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>evalar</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>evalar</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="merchantКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="merchantРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Логин" id="13">
+			<DataPath>Запись.Логин</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЛогинКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Пароль" id="16">
+			<DataPath>Запись.Пароль</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПарольКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="АСНА" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АСНА</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АСНА</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="АСНАРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="АдресФТП" id="27">
+					<DataPath>Запись.АдресФТП</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ftp.fttech.ru:2222</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="АдресФТПКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="АдресФТПРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ПапкаФТП" id="30">
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>\Org_BCVC\BCVC_1</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ПапкаФТПКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ПапкаФТПРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ЛогинФТП" id="21">
+					<DataPath>Запись.ЛогинФТП</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЛогинФТПКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ЛогинФТПРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ПарольФТП" id="24">
+					<DataPath>Запись.ПарольФТП</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПарольФТПКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПарольФТПРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.эв_НастройкиAPIИсточникаЗаказов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка работы информационного киоска</v8:content>
+		</v8:item>
+	</Title>
+	<Width>60</Width>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаИнформационныйКиоск" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки отображения информации в информационном киоске</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа SMS сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаИнформационныйКиоскExtendedTooltip" id="82"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАкции" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа акции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАкцииExtendedTooltip" id="83"/>
+					<ChildItems>
+						<CheckBoxField name="ор_ИнформационныйКиоскПоказыватьАкции" id="38">
+							<DataPath>НаборКонстант.ор_ИнфоКиоскПоказыватьАкции</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ор_ИнформационныйКиоскПоказыватьАкцииКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ор_ИнформационныйКиоскПоказыватьАкцииExtendedTooltip" id="84"/>
+							<Events>
+								<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияАкции" id="61">
+							<Width>60</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка управляет возможностью просмотра акций (автоматических скидок), которые проходят в магазине</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияАкцииКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ДекорацияАкцииExtendedTooltip" id="85"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнформацияПоКарте" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация по карте</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация по карте</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнформацияПоКартеExtendedTooltip" id="86"/>
+					<ChildItems>
+						<CheckBoxField name="ор_ИнформационныйКиоскПоказыватьИнформациюПоКарте" id="40">
+							<DataPath>НаборКонстант.ор_ИнфоКиоскПоказыватьИнформациюПоКарте</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показывать информацию по дисконтной карте</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ор_ИнформационныйКиоскПоказыватьИнформациюПоКартеКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ор_ИнформационныйКиоскПоказыватьИнформациюПоКартеExtendedTooltip" id="87"/>
+							<Events>
+								<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияИнформацияПоКарте" id="59">
+							<Width>60</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка управляет возможностью просмотра информации по дисконтной карте</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияИнформацияПоКартеКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ДекорацияИнформацияПоКартеExtendedTooltip" id="88"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнформацияОМагазине" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация о магазине</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация о магазине</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнформацияОМагазинеExtendedTooltip" id="89"/>
+					<ChildItems>
+						<CheckBoxField name="ор_ИнформационныйКиоскПоказыватьИнформациюОМагазине" id="42">
+							<DataPath>НаборКонстант.ор_ИнфоКиоскПоказыватьИнформациюОМагазине</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ор_ИнформационныйКиоскПоказыватьИнформациюОМагазинеКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="ор_ИнформационныйКиоскПоказыватьИнформациюОМагазинеExtendedTooltip" id="90"/>
+							<Events>
+								<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияИнформацияОМагазине" id="57">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включение настройки позволяет пользователю просматривать информацию о магазине.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияИнформацияОМагазинеКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ДекорацияИнформацияОМагазинеExtendedTooltip" id="91"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКорзина" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корзина</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа корзина</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКорзинаExtendedTooltip" id="92"/>
+					<ChildItems>
+						<CheckBoxField name="ор_ИнформационныйКиоскПоказыватьКорзину" id="44">
+							<DataPath>НаборКонстант.ор_ИнфоКиоскПоказыватьКорзину</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ор_ИнформационныйКиоскПоказыватьКорзинуКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ор_ИнформационныйКиоскПоказыватьКорзинуExtendedTooltip" id="93"/>
+							<Events>
+								<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияКорзина" id="55">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включение настройки позволяет покупателю оформлять заказ.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияКорзинаКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ДекорацияКорзинаExtendedTooltip" id="94"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОстаткиВДругихМагазинах" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остатки в других магазинах</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа остатки в других магазинах</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОстаткиВДругихМагазинахExtendedTooltip" id="95"/>
+					<ChildItems>
+						<CheckBoxField name="ор_ИнформационныйКиоскПоказыватьОстаткиВДругихМагазинах" id="46">
+							<DataPath>НаборКонстант.ор_ИнфоКиоскПоказыватьОстаткиВДругихМагазинах</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показывать остатки по другим магазинам</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ор_ИнформационныйКиоскПоказыватьОстаткиВДругихМагазинахКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ор_ИнформационныйКиоскПоказыватьОстаткиВДругихМагазинахExtendedTooltip" id="96"/>
+							<Events>
+								<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияОстаткиВДругихМагазинах" id="53">
+							<Width>60</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включение настройки делает доступной для пользователя возможность просмотра остатков товара по другим магазинам.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОстаткиВДругихМагазинахКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ДекорацияОстаткиВДругихМагазинахExtendedTooltip" id="97"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройкаПараметровКиоска" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка параметров киоска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройка параметров киоска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>60</Width>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаНастройкаПараметровКиоскаExtendedTooltip" id="98"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЗаполнениеКаталогаИнформационногоКиоска" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение каталога информационного киоска</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа заполнение каталога информационного киоска</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗаполнениеКаталогаИнформационногоКиоскаExtendedTooltip" id="99"/>
+					<ChildItems>
+						<CheckBoxField name="ор_ИнформационныйКиоскВКаталогеОтображатьПрайсЛист" id="78">
+							<DataPath>НаборКонстант.ор_ИнфоКиоскВКаталогеОтображатьПрайсЛист</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заполнять каталог информационного киоска содержимым справочника Прайс-лист</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ор_ИнформационныйКиоскВКаталогеОтображатьПрайсЛистКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ор_ИнформационныйКиоскВКаталогеОтображатьПрайсЛистExtendedTooltip" id="100"/>
+							<Events>
+								<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияЗаполнениеКиоска" id="80">
+							<Width>60</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включение настройки позволяет отображать в каталоге информационного киоска содержимое справочника Прайс-лист информационного киоска.
+Если настройка отключена - отображается содержимое справочника Номенклатура.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияЗаполнениеКиоскаКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ДекорацияЗаполнениеКиоскаExtendedTooltip" id="101"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВремяБездействия" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время бездействия</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа время бездействия</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВремяБездействияExtendedTooltip" id="102"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРазмещенияВремяБездействия" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Время бездействия</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа размещения время бездействия</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>60</Width>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРазмещенияВремяБездействияExtendedTooltip" id="103"/>
+							<ChildItems>
+								<InputField name="ор_ИнформационныйКиоскВремяБездействия" id="65">
+									<DataPath>НаборКонстант.ор_ИнфоКиоскВремяБездействия</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="ор_ИнформационныйКиоскВремяБездействияКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ор_ИнформационныйКиоскВремяБездействияExtendedTooltip" id="104"/>
+									<Events>
+										<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ДекорацияМилиСекунд" id="69">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>сек</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияМилиСекундКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ДекорацияМилиСекундExtendedTooltip" id="105"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияВремяБездействия" id="67">
+							<Width>60</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Время, по истечении которого киоск вернётся в состояние, равносильное его первому запуску. Если значение равно 0, то киоск будет обновляться каждые 300 сек.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияВремяБездействияКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ДекорацияВремяБездействияExtendedTooltip" id="106"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКонтрагентПоУмолчанию" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент по умолчанию</v8:content>
+						</v8:item>
+					</Title>
+					<Width>60</Width>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтрагентПоУмолчаниюРасширеннаяПодсказка" id="107"/>
+					<ChildItems>
+						<InputField name="ор_ИнфоКиоскКонтрагентПоУмолчанию" id="73">
+							<DataPath>НаборКонстант.ор_ИнфоКиоскКонтрагентПоУмолчанию</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контрагент по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ор_ИнфоКиоскКонтрагентПоУмолчаниюКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ор_ИнфоКиоскКонтрагентПоУмолчаниюРасширеннаяПодсказка" id="108"/>
+							<Events>
+								<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+							</Events>
+						</InputField>
+						<LabelDecoration name="ДекорацияКонтрагентПоУмолчанию" id="75">
+							<Width>60</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбранный контрагент будет использоваться в документе Заказ покупателя как покупатель по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияКонтрагентПоУмолчаниюКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ДекорацияКонтрагентПоУмолчаниюРасширеннаяПодсказка" id="109"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ПрефиксВнутреннегоШтрихкодаШтучногоТовара</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,1214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="2157">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="2172"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела9" id="1561">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление маркировкой МДЛП</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОписаниеРаздела9КонтекстноеМеню" id="1562"/>
+					<ExtendedTooltip name="ОписаниеРаздела9ExtendedTooltip" id="2173"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="2160">
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="2175"/>
+					<ChildItems>
+						<Button name="Справка" id="2161">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="2176"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратов" id="2291">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркировка МДЛП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вести сведения для мониторинга движения лекарственных препаратов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовРасширеннаяПодсказка" id="2292"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовПервая" id="2293">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вести сведения для мониторинга движения лекарственных препаратов первая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вести сведения для мониторинга движения лекарственных препаратов первая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовПерваяРасширеннаяПодсказка" id="2294"/>
+					<ChildItems>
+						<CheckBoxField name="ВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратов" id="2295">
+							<DataPath>НаборКонстант.ВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратов</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возможность ведения  учета маркируемых товаров.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовКонтекстноеМеню" id="2296"/>
+							<ExtendedTooltip name="ВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовРасширеннаяПодсказка" id="2297"/>
+							<Events>
+								<Event name="OnChange">ВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьМестаДеятельностиОрганизаций" id="2322">
+							<DataPath>НаборКонстант.ор_МДЛПИспользоватьМестаДеятельностиОрганизаций</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке флага идентификаторы субъектов МДЛП заполняются в разрезе мест деятельности.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ИспользоватьМестаДеятельностиОрганизацийКонтекстноеМеню" id="2323"/>
+							<ExtendedTooltip name="ИспользоватьМестаДеятельностиОрганизацийРасширеннаяПодсказка" id="2324"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьМестаДеятельностиОрганизацийПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="КонтролироватьЗаполнениеТоваровВУведомлениях" id="2328">
+							<DataPath>НаборКонстант.ор_МДЛПКонтролироватьЗаполнениеТоваровВУведомлениях</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке флага включается проверка заполнения номенклатуры и характеристики при проведении уведомлений.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="КонтролироватьЗаполнениеТоваровВУведомленияхКонтекстноеМеню" id="2329"/>
+							<ExtendedTooltip name="КонтролироватьЗаполнениеТоваровВУведомленияхРасширеннаяПодсказка" id="2330"/>
+							<Events>
+								<Event name="OnChange">КонтролироватьЗаполнениеТоваровВУведомленияхПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ОтпарвлятьДанныеМаркировкиЧерезОФД" id="2347">
+							<DataPath>НаборКонстант.ор_МДЛПОтправлятьДанныеМаркировкиЧерезОФД</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправлять данные о розничных продажах через ККТ</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке флага данные о маркируемых товарах при розничной продаже будут передаваться в систему маркировки через ККТ.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ОтпарвлятьДанныеМаркировкиЧерезОФДКонтекстноеМеню" id="2348"/>
+							<ExtendedTooltip name="ОтпарвлятьДанныеМаркировкиЧерезОФДРасширеннаяПодсказка" id="2349"/>
+							<Events>
+								<Event name="OnChange">ОтпарвлятьДанныеМаркировкиЧерезОФДПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="ЗагрузитьНомераУпаковок" id="2376">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЗагрузитьНомераУпаковок</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ЗагрузитьНомераУпаковокРасширеннаяПодсказка" id="2377">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Загрузка номеров упаковок, выгруженных из Розница 8. Аптека, редакция 2.3</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовПравая" id="2301">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вести сведения для мониторинга движения лекарственных препаратов правая</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вести сведения для мониторинга движения лекарственных препаратов правая</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВестиСведенияДляМониторингаДвиженияЛекарственныхПрепаратовПраваяРасширеннаяПодсказка" id="2302"/>
+					<ChildItems>
+						<InputField name="ДатаНачалаМаркировкиТоваров" id="2313">
+							<DataPath>НаборКонстант.ор_МДЛПДатаНачалаМаркировкиТоваров</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+							<Width>9</Width>
+							<ContextMenu name="ДатаНачалаМаркировкиТоваровКонтекстноеМеню" id="2314"/>
+							<ExtendedTooltip name="ДатаНачалаМаркировкиТоваровРасширеннаяПодсказка" id="2315">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дата, начиная с которой выполняется контроль обязательного заполнения данных серийных номеров упаковок при обороте маркируемого товара</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ор_МДЛПДатаНачалаМаркировкиТоваровПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Button name="ОткрытьПанельМаркировкиМДЛП" id="2311">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьПанельМаркировкиМДЛП</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьПанельМаркировкиМДЛПРасширеннаяПодсказка" id="2312">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройка и выполение обмена.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+						<InputField name="КонтрольСтатусовКИЗПриПробитииЧерезРМК" id="2353">
+							<DataPath>НаборКонстант.ор_МДЛПКонтрольСтатусовКИЗПриПробитииЧерезРМК</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка завершения операций по обмену данными с системой МДЛП. В розничной продаже разрешены КИЗ со статусом "В обороте". При установке значения "Предупреждать" выводится сообщение о наличии КИЗ с некорректными статусами, после которого можно продолжить </v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="КонтрольСтатусовКИЗПриПробитииЧерезРМККонтекстноеМеню" id="2354"/>
+							<ExtendedTooltip name="КонтрольСтатусовКИЗПриПробитииЧерезРМКРасширеннаяПодсказка" id="2355"/>
+							<Events>
+								<Event name="OnChange">КонтрольСтатусовКИЗПриПробитииЧерезРМКПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="КонтролироватьКодыМаркировкиСредствамиККТ" id="2365">
+							<DataPath>НаборКонстант.ор_МДЛПКонтролироватьКодыМаркировкиСредствамиККТ</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ContextMenu name="КонтролироватьКодыМаркировкиСредствамиККТКонтекстноеМеню" id="2366"/>
+							<ExtendedTooltip name="КонтролироватьКодыМаркировкиСредствамиККТРасширеннаяПодсказка" id="2367"/>
+							<Events>
+								<Event name="OnChange">ор_МДЛПКонтролироватьКодыМаркировкиСредствамиККТПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="Группа1" id="2371">
+							<Group>HorizontalIfPossible</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>WeakSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2372"/>
+							<ChildItems>
+								<LabelDecoration name="ОтступГруппаКонтрольСредствамиККТ" id="2373">
+									<Width>1</Width>
+									<Height>1</Height>
+									<ContextMenu name="ОтступГруппаКонтрольСредствамиККТКонтекстноеМеню" id="2374"/>
+									<ExtendedTooltip name="ОтступГруппаКонтрольСредствамиККТРасширеннаяПодсказка" id="2375"/>
+								</LabelDecoration>
+								<RadioButtonField name="ор_МДЛПРежимКонтроляКМСредствамиККТ" id="2368">
+									<DataPath>НаборКонстант.ор_МДЛПРежимКонтроляКМСредствамиККТ</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>При сканировании</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Перед пробитием чека</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ор_МДЛПРежимКонтроляКМСредствамиККТКонтекстноеМеню" id="2369"/>
+									<ExtendedTooltip name="ор_МДЛПРежимКонтроляКМСредствамиККТРасширеннаяПодсказка" id="2370"/>
+									<Events>
+										<Event name="OnChange">ор_МДЛПРежимКонтроляКМСредствамиККТПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="РегистрироватьGTINПриПодбореНомеровУпаковок" id="2359">
+							<DataPath>НаборКонстант.ор_МДЛПРегистрироватьGTINПриПодбореНомеровУпаковок</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установке флага в форме ввода номеров упаковок перед переносом данных в документ будет производиться автоматическая регистрация GTIN в регистре "Штрихкоды".</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="РегистрироватьGTINПриПодбореНомеровУпаковокКонтекстноеМеню" id="2360"/>
+							<ExtendedTooltip name="РегистрироватьGTINПриПодбореНомеровУпаковокРасширеннаяПодсказка" id="2361"/>
+							<Events>
+								<Event name="OnChange">ор_МДЛПРегистрироватьGTINПриПодбореНомеровУпаковокПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРазрешительныйРежим" id="2393">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Розничные продажи, разрешительный режим</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Button</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаРазрешительныйРежимРасширеннаяПодсказка" id="2394"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРазрешительныйРежимКолонки" id="2399">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разрешительный режим колонки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разрешительный режим колонки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРазрешительныйРежимКолонкиРасширеннаяПодсказка" id="2400"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРазрешительныйРежимЛево" id="2395">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа разрешительный режим лево</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа разрешительный режим лево</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>42</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРазрешительныйРежимЛевоРасширеннаяПодсказка" id="2396"/>
+							<ChildItems>
+								<InputField name="ор_МДЛПДатаНачалаРазрешительногоРежима" id="2378">
+									<DataPath>НаборКонстант.ор_МДЛПДатаНачалаРазрешительногоРежима</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата начала разрешительного режима</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата, начиная с которой выполняется проверки разрешительного режима при продаже маркируемого товара.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ор_МДЛПДатаНачалаРазрешительногоРежимаКонтекстноеМеню" id="2379"/>
+									<ExtendedTooltip name="ор_МДЛПДатаНачалаРазрешительногоРежимаРасширеннаяПодсказка" id="2380"/>
+									<Events>
+										<Event name="OnChange">ор_МДЛПДатаНачалаРазрешительногоРежимаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="ОткрытьТокеныАвторизацииИСМП" id="2385">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьТокеныАвторизацииИСМП</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьТокеныАвторизацииИСМПРасширеннаяПодсказка" id="2386">
+										<Height>2</Height>
+									</ExtendedTooltip>
+								</Button>
+								<Button name="ОткрытьСписокCDNПлощадок" id="2383">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьСписокCDNПлощадок</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьСписокCDNПлощадокРасширеннаяПодсказка" id="2384"/>
+								</Button>
+								<Button name="НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима" id="2426">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежимаРасширеннаяПодсказка" id="2427">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>60</MaxWidth>
+									</ExtendedTooltip>
+								</Button>
+								<InputField name="ор_МДЛПДатаНачалаДействияТСПИоТ" id="2445">
+									<DataPath>НаборКонстант.ор_МДЛПДатаНачалаДействияТСПИоТ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата начала ТС ПИоТ</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ор_МДЛПДатаНачалаДействияТСПИоТКонтекстноеМеню" id="2446"/>
+									<ExtendedTooltip name="ор_МДЛПДатаНачалаДействияТСПИоТРасширеннаяПодсказка" id="2447">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Дата начала ипользования ТС ПИоТ для проверок разрешительного режима</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">ор_МДЛПДатаНачалаДействияТСПИоТПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="НастройкиПодключенияТСПИоТ" id="2449">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.НастройкиПодключенияТСПИоТ</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="НастройкиПодключенияТСПИоТРасширеннаяПодсказка" id="2450">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>60</MaxWidth>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРазрешительныйРежимПраво" id="2397">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа разрешительный режим лево</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа разрешительный режим лево</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРазрешительныйРежимПравоРасширеннаяПодсказка" id="2398"/>
+							<ChildItems>
+								<InputField name="ор_МДЛПДатаНачалаЛокальногоРазрешительногоРежима" id="2423">
+									<DataPath>НаборКонстант.ор_МДЛПДатаНачалаЛокальногоРазрешительногоРежима</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата обязательной локальной проверки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ор_МДЛПДатаНачалаЛокальногоРазрешительногоРежимаКонтекстноеМеню" id="2424"/>
+									<ExtendedTooltip name="ор_МДЛПДатаНачалаЛокальногоРазрешительногоРежимаРасширеннаяПодсказка" id="2425"/>
+									<Events>
+										<Event name="OnChange">ор_МДЛПДатаНачалаЛокальногоРазрешительногоРежимаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="РежимРаботыСТестовымКонтуромИСМП" id="2390">
+									<DataPath>НаборКонстант.РежимРаботыСТестовымКонтуромИСМП</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тестовый контур</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ContextMenu name="РежимРаботыСТестовымКонтуромИСМПКонтекстноеМеню" id="2391"/>
+									<ExtendedTooltip name="РежимРаботыСТестовымКонтуромИСМПРасширеннаяПодсказка" id="2392">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>60</MaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Режим работы с тестовым контуром ГИС МТ. Используется для обучения пользователей.
+Рекомендуется использовать только на учебной базе или на копии рабочей базы.
+Работа с тестовыми контурами операторов ЭДО не поддерживается.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">РежимРаботыСТестовымКонтуромИСМППриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelField name="ПредставлениеАварийногоРежима" id="2387">
+									<DataPath>ПредставлениеАварийногоРежима</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аварийный режим - особый режим работы разрешительного режима ККТ, который может быть объявлен только оператором ГИС МТ. Необходимо использовать только по согласованию с оператором.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ContextMenu name="ПредставлениеАварийногоРежимаКонтекстноеМеню" id="2388"/>
+									<ExtendedTooltip name="ПредставлениеАварийногоРежимаРасширеннаяПодсказка" id="2389"/>
+									<Events>
+										<Event name="URLProcessing">ПредставлениеАварийногоРежимаОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРазрешительныйРежимНастройки" id="2421">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разрешительный режим настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разрешительный режим настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРазрешительныйРежимНастройкиРасширеннаяПодсказка" id="2422"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЧастотаОбновленияПлощадок" id="2401">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не рекомендуется настраивать чаще чем 6 часов.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЧастотаОбновленияПлощадокРасширеннаяПодсказка" id="2402"/>
+							<ChildItems>
+								<InputField name="ЧастотаОбновленияCDNПлощадок" id="2403">
+									<DataPath>ЧастотаОбновленияCDNПлощадок</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>часов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+									<Width>7</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>12</MaxWidth>
+									<DropListButton>true</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChooseType>false</ChooseType>
+									<MinValue xsi:type="xs:decimal">6</MinValue>
+									<MaxValue xsi:type="xs:decimal">1000</MaxValue>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>6 часов</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">6</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>8 часов</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">8</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>12 часов</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">12</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>24 часа</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">24</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>36 часов</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">36</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ЧастотаОбновленияCDNПлощадокКонтекстноеМеню" id="2404"/>
+									<ExtendedTooltip name="ЧастотаОбновленияCDNПлощадокРасширеннаяПодсказка" id="2405"/>
+									<Events>
+										<Event name="OnChange">ЧастотаОбновленияCDNПлощадокПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВремяБлокировкиПлощадок" id="2406">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не рекомендуется настраивать больше чем 15 минут.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВремяБлокировкиПлощадокРасширеннаяПодсказка" id="2407"/>
+							<ChildItems>
+								<InputField name="ВремяБлокировкиCDNПлощадок" id="2408">
+									<DataPath>ВремяБлокировкиCDNПлощадок</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>минут при недоступности</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+									<Width>7</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>12</MaxWidth>
+									<DropListButton>true</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<MaxValue xsi:type="xs:decimal">1000</MaxValue>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>5 минут</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">5</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>10 минут</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">10</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>15 минут</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">15</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВремяБлокировкиCDNПлощадокКонтекстноеМеню" id="2409"/>
+									<ExtendedTooltip name="ВремяБлокировкиCDNПлощадокРасширеннаяПодсказка" id="2410"/>
+									<Events>
+										<Event name="OnChange">ВремяБлокировкиCDNПлощадокПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВремяОтветаПлощадки" id="2411">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не рекомендуется настраивать меньше чем 1,5 секунды.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВремяОтветаПлощадкиРасширеннаяПодсказка" id="2412"/>
+							<ChildItems>
+								<InputField name="ВремяОтветаCDNПлощадокПриПробитииЧека" id="2413">
+									<DataPath>ВремяОтветаCDNПлощадокПриПробитииЧека</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>секунд</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+									<Width>7</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>12</MaxWidth>
+									<DropListButton>true</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<MaxValue xsi:type="xs:decimal">1000</MaxValue>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>1,5 секунды</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1.5</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>2 секунды</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>3 секунды</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">3</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>5 секунд</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">5</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВремяОтветаCDNПлощадокПриПробитииЧекаКонтекстноеМеню" id="2414"/>
+									<ExtendedTooltip name="ВремяОтветаCDNПлощадокПриПробитииЧекаРасширеннаяПодсказка" id="2415"/>
+									<Events>
+										<Event name="OnChange">ВремяОтветаCDNПлощадокПриПробитииЧекаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСрокДействияИдентификатора" id="2416">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По истечении указанного времени идентификатор разрешительного режима получается вновь.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСрокДействияИдентификатораРасширеннаяПодсказка" id="2417"/>
+							<ChildItems>
+								<InputField name="СрокДействияИдентификатораРазрешительногоРежима" id="2418">
+									<DataPath>СрокДействияИдентификатораРазрешительногоРежима</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>секунд</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+									<Width>7</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>12</MaxWidth>
+									<DropListButton>true</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<MaxValue xsi:type="xs:decimal">100000</MaxValue>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>5 минут</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">300</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>10 минут</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">600</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>1 час</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">3600</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>6 часов</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">21600</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>24 часа</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">86400</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СрокДействияИдентификатораРазрешительногоРежимаКонтекстноеМеню" id="2419"/>
+									<ExtendedTooltip name="СрокДействияИдентификатораРазрешительногоРежимаРасширеннаяПодсказка" id="2420"/>
+									<Events>
+										<Event name="OnChange">СрокДействияИдентификатораРазрешительногоРежимаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьСинхронизациюДанных</Field>
+				<Field>НаборКонстант.ПрефиксВнутреннегоШтрихкодаШтучногоТовара</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ЗапретПоРабочемуМесту" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрет по рабочему месту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗапретПоМагазину" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрет по магазину</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредставлениеАварийногоРежима" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление аварийного режима</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыАварийногоРежима" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры аварийного режима</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЦветГиперссылки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет гиперссылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВремяОтветаCDNПлощадокПриПробитииЧека" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидать ответа от сервиса ГИС МТ в течение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>8</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяБлокировкиCDNПлощадок" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блокировать CDN-площадки на</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СрокДействияИдентификатораРазрешительногоРежима" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок действия идентификатора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЧастотаОбновленияCDNПлощадок" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновлять список CDN-площадок каждые</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НижняяГраницаSKUВесовыхТоваров</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">НаборКонстант.НижняяГраницаДиапазонаSKUВесовогоТовара</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">99999</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВерхняяГраницаSKUВесовыхТоваров</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">НаборКонстант.ВерхняяГраницаДиапазонаSKUВесовогоТовара</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">99999</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьПанельМаркировкиМДЛП" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель маркировки МДЛП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть панель маркировки МДЛП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПанельМаркировкиМДЛП</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьНомераУпаковок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить номера упаковок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить номера упаковок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьНомераУпаковок</Action>
+		</Command>
+		<Command name="ОткрытьСписокCDNПлощадок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>CDN-площадки ГИС МТ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр и актуализация активных геораспределенных площадок для обращения к ГИС МТ при розничной продаже.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокCDNПлощадок</Action>
+		</Command>
+		<Command name="ОткрытьТокеныАвторизацииИСМП" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токены авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр и актуализация токенов авторизации.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьТокеныАвторизацииИСМП</Action>
+		</Command>
+		<Command name="НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения к ЛМ ЧЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения к Локальным модулям "Честный знак" для локальной проверки разрешительного режима.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкиПодключенияКЛокальномуМодулюРазрешительногоРежима</Action>
+		</Command>
+		<Command name="НастройкиПодключенияТСПИоТ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения к ТС ПИоТ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подключения к Техническим средствам получения информации о товаре (ТС ПИоТ) для проверки разрешительного режима.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкиПодключенияТСПИоТ</Action>
+		</Command>
+	</Commands>
+</Form>

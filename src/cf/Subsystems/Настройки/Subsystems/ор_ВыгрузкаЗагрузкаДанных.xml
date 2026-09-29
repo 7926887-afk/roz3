@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Subsystem uuid="585b3612-7121-4d9f-a39b-3aed1c71b6de">
+		<Properties>
+			<Name>ор_ВыгрузкаЗагрузкаДанных</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка/загрузка данных</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ор_НастройкиЗагрузкиДанныхИзТабличногоДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ор_ВариантыИспользованияНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ор_ТипыПрикладныхОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ор_СтатусыОшибок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ор_ЗагрузкаДанныхИзТабличногоДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ор_ГрупповаяЗагрузкаДанныхИзЭлектронныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ор_ВыгрузкаДанныхВФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ор_ИсторияЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ор_НастройкиГрупповойЗагрузкиДанныхИзЭлектронныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ор_ИспользованиеЗагрузкиВыгрузкиИзТабличныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ЗагрузкаИзЭлектронныхДокументовВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ЗагрузкаИзЭлектронныхДокументовОтраслеваяСпецификаСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ЗагрузкаИзЭлектронныхДокументовОтраслеваяСпецификаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ор_ЗагрузкаИзЭлектронныхДокументовКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ор_АвтоматическаяЗагрузкаИзЭлектронныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ор_ПравоРазрешитьСокращениеИсторииЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ор_НастройкиКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ор_ПрайсЛистыПоставщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ор_ПрайсЛистыПоставщиков</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

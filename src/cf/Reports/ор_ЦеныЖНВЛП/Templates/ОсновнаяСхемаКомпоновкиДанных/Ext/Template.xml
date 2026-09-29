@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ячейка</dataPath>
+			<field>Ячейка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦен</dataPath>
+			<field>ВидЦен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаПоМагазину</dataPath>
+			<field>ЦенаПоМагазину</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаБазырасчётаБезНДС</dataPath>
+			<field>ЦенаБазырасчётаБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена базы расчёта без НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаРасчётаНаценкиБезНДС</dataPath>
+			<field>ЦенаРасчётаНаценкиБезНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена расчёта наценки без НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНаценки</dataPath>
+			<field>СуммаНаценки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма наценки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентНаценки</dataPath>
+			<field>ПроцентНаценки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент наценки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВидыЦенор_ПараметрыРасчетаФормул.ВидЦенБазыРасчета КАК ор_ВидЦенБазыРасчета,
+	ВидыЦенор_ПараметрыРасчетаФормул.ВидЦенДляРасчетаНаценки КАК ор_ВидЦенДляРасчетаНаценки,
+	ВидыЦенор_ПараметрыРасчетаФормул.Ссылка КАК ВидЦены,
+	ВидыЦенор_ПараметрыРасчетаФормул.СистемаНалогообложения КАК ор_СистемаНалогообложения
+ПОМЕСТИТЬ ПараметрыДляРасчетаФормул
+ИЗ
+	Справочник.ВидыЦен.ор_ПараметрыРасчетаФормул КАК ВидыЦенор_ПараметрыРасчетаФормул
+ГДЕ
+	ВидыЦенор_ПараметрыРасчетаФормул.ВариантРасчета = ЗНАЧЕНИЕ(Перечисление.ор_ВидыДополнительныхАлгоритмовРасчетаЦен.ЖНВЛП)
+	И ВидыЦенор_ПараметрыРасчетаФормул.Ссылка = &amp;ВидЦен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Номенклатура.Ссылка КАК Номенклатура
+ПОМЕСТИТЬ НоменклатураЖНВЛП
+ИЗ
+	Справочник.Номенклатура КАК Номенклатура
+ГДЕ
+	Номенклатура.ор_ЖНВЛС
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураЖНВЛП.Номенклатура КАК Номенклатура,
+	ХарактеристикиНоменклатуры.Ссылка КАК Характеристика,
+	ВЫБОР
+		КОГДА ХарактеристикиНоменклатуры.Ссылка = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+				ИЛИ ХарактеристикиНоменклатуры.ор_Производитель = ЗНАЧЕНИЕ(Справочник.ор_Производители.ПустаяСсылка)
+			ТОГДА НоменклатураЖНВЛП.Номенклатура.ор_Производитель
+		ИНАЧЕ ХарактеристикиНоменклатуры.ор_Производитель
+	КОНЕЦ КАК Производитель
+ПОМЕСТИТЬ НоменклатураХарактеристикиЖНВЛП
+ИЗ
+	НоменклатураЖНВЛП КАК НоменклатураЖНВЛП
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+		ПО НоменклатураЖНВЛП.Номенклатура = ХарактеристикиНоменклатуры.Владелец
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураХарактеристикиЖНВЛП.Номенклатура КАК Номенклатура,
+	НоменклатураХарактеристикиЖНВЛП.Характеристика КАК Характеристика,
+	НоменклатураХарактеристикиЖНВЛП.Производитель КАК Производитель,
+	ЕСТЬNULL(ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница, ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка)) КАК СтруктурнаяЕдиница
+ПОМЕСТИТЬ ЗапасыНаСкладах
+ИЗ
+	НоменклатураХарактеристикиЖНВЛП КАК НоменклатураХарактеристикиЖНВЛП
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ЗапасыНаСкладах.Остатки(
+				,
+				(Номенклатура, Характеристика) В
+					(ВЫБРАТЬ
+						НоменклатураХарактеристикиЖНВЛП.Номенклатура КАК Номенклатура,
+						НоменклатураХарактеристикиЖНВЛП.Характеристика КАК Характеристика
+					ИЗ
+						НоменклатураХарактеристикиЖНВЛП КАК НоменклатураХарактеристикиЖНВЛП)) КАК ЗапасыНаСкладахОстатки
+		ПО НоменклатураХарактеристикиЖНВЛП.Номенклатура = ЗапасыНаСкладахОстатки.Номенклатура
+			И НоменклатураХарактеристикиЖНВЛП.Характеристика = ЗапасыНаСкладахОстатки.Характеристика
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;УчитыватьОстатки
+				ТОГДА ЗапасыНаСкладахОстатки.КоличествоОстаток &gt; 0
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЦеныНоменклатурыСрезПоследних.Номенклатура КАК Номенклатура,
+	ЦеныНоменклатурыСрезПоследних.Характеристика КАК Характеристика,
+	ЦеныНоменклатурыСрезПоследних.Цена КАК ЦенаПоМагазину,
+	ЦеныНоменклатурыСрезПоследних.ВидЦен КАК ВидЦен
+ПОМЕСТИТЬ РозничныеЦены
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+			,
+			(Номенклатура, Характеристика) В
+				(ВЫБРАТЬ
+					ЗапасыНаСкладах.Номенклатура КАК Номенклатура,
+					ЗапасыНаСкладах.Характеристика КАК Характеристика
+				ИЗ
+					ЗапасыНаСкладах КАК ЗапасыНаСкладах)) КАК ЦеныНоменклатурыСрезПоследних
+ГДЕ
+	ЦеныНоменклатурыСрезПоследних.ВидЦен = &amp;ВидЦен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЦеныНоменклатурыСрезПоследних.Номенклатура КАК Номенклатура,
+	ЦеныНоменклатурыСрезПоследних.Характеристика КАК Характеристика,
+	ЦеныНоменклатурыСрезПоследних.ВидЦен КАК ВидЦеныБазыРасчёта,
+	ЦеныНоменклатурыСрезПоследних.Цена КАК ЦеныБазыРасчёта
+ПОМЕСТИТЬ ВидыЦенБазыРасчета
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+			,
+			ВидЦен В
+					(ВЫБРАТЬ
+						ПараметрыДляРасчетаФормул.ор_ВидЦенБазыРасчета КАК ор_ВидЦенБазыРасчета
+					ИЗ
+						ПараметрыДляРасчетаФормул КАК ПараметрыДляРасчетаФормул)
+				И (Номенклатура, Характеристика) В
+					(ВЫБРАТЬ
+						ЗапасыНаСкладах.Номенклатура КАК Номенклатура,
+						ЗапасыНаСкладах.Характеристика КАК Характеристика
+					ИЗ
+						ЗапасыНаСкладах КАК ЗапасыНаСкладах)) КАК ЦеныНоменклатурыСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЦеныНоменклатурыСрезПоследних.Номенклатура КАК Номенклатура,
+	ЦеныНоменклатурыСрезПоследних.Характеристика КАК Характеристика,
+	ЦеныНоменклатурыСрезПоследних.ВидЦен КАК ВидЦеныДляРасчетаНаценки,
+	ЦеныНоменклатурыСрезПоследних.Цена КАК ЦеныРасчётаНаценки
+ПОМЕСТИТЬ ВидыЦенДляРасчетаНаценки
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+			,
+			ВидЦен В
+					(ВЫБРАТЬ
+						ПараметрыДляРасчетаФормул.ор_ВидЦенДляРасчетаНаценки КАК ор_ВидЦенДляРасчетаНаценки
+					ИЗ
+						ПараметрыДляРасчетаФормул КАК ПараметрыДляРасчетаФормул)
+				И (Номенклатура, Характеристика) В
+					(ВЫБРАТЬ
+						ЗапасыНаСкладах.Номенклатура КАК Номенклатура,
+						ЗапасыНаСкладах.Характеристика КАК Характеристика
+					ИЗ
+						ЗапасыНаСкладах КАК ЗапасыНаСкладах)) КАК ЦеныНоменклатурыСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РозничныеЦены.Номенклатура КАК Номенклатура,
+	РозничныеЦены.Характеристика КАК Характеристика,
+	РозничныеЦены.ВидЦен КАК ВидЦеныПоМагазину,
+	ЕСТЬNULL(РозничныеЦены.ЦенаПоМагазину, 0) КАК ЦенаПоМагазину,
+	ВидыЦенБазыРасчета.ВидЦеныБазыРасчёта КАК ВидЦеныБазыРасчёта,
+	ЕСТЬNULL(ВидыЦенБазыРасчета.ЦеныБазыРасчёта, 0) КАК ЦеныБазыРасчёта,
+	ВидыЦенДляРасчетаНаценки.ВидЦеныДляРасчетаНаценки КАК ВидЦеныДляРасчетаНаценки,
+	ЕСТЬNULL(ВидыЦенДляРасчетаНаценки.ЦеныРасчётаНаценки, 0) КАК ЦеныРасчётаНаценки,
+	ПараметрыДляРасчетаФормул.ор_СистемаНалогообложения КАК ор_СистемаНалогообложения
+ПОМЕСТИТЬ ВсеЦеныБезПроцентаЖНВЛП
+ИЗ
+	РозничныеЦены КАК РозничныеЦены
+		ЛЕВОЕ СОЕДИНЕНИЕ ВидыЦенБазыРасчета КАК ВидыЦенБазыРасчета
+		ПО РозничныеЦены.Номенклатура = ВидыЦенБазыРасчета.Номенклатура
+			И РозничныеЦены.Характеристика = ВидыЦенБазыРасчета.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ ВидыЦенДляРасчетаНаценки КАК ВидыЦенДляРасчетаНаценки
+		ПО РозничныеЦены.Номенклатура = ВидыЦенДляРасчетаНаценки.Номенклатура
+			И РозничныеЦены.Характеристика = ВидыЦенДляРасчетаНаценки.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ ПараметрыДляРасчетаФормул КАК ПараметрыДляРасчетаФормул
+		ПО РозничныеЦены.ВидЦен = ПараметрыДляРасчетаФормул.ВидЦены
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВсеЦеныБезПроцентаЖНВЛП.Номенклатура КАК Номенклатура,
+	ВсеЦеныБезПроцентаЖНВЛП.Характеристика КАК Характеристика,
+	ВсеЦеныБезПроцентаЖНВЛП.ЦенаПоМагазину КАК ЦенаПоМагазину,
+	ВсеЦеныБезПроцентаЖНВЛП.ЦеныБазыРасчёта КАК ЦеныБазыРасчёта,
+	ВсеЦеныБезПроцентаЖНВЛП.ЦеныРасчётаНаценки КАК ЦеныРасчётаНаценки,
+	ВЫБОР
+		КОГДА ВсеЦеныБезПроцентаЖНВЛП.ВидЦеныБазыРасчёта.ЦенаВключаетНДС
+			ТОГДА ВЫРАЗИТЬ(ВсеЦеныБезПроцентаЖНВЛП.ЦеныБазыРасчёта / 1.1 КАК ЧИСЛО(15, 2))
+		ИНАЧЕ ВсеЦеныБезПроцентаЖНВЛП.ЦеныБазыРасчёта
+	КОНЕЦ КАК ЦенаБазырасчётаБезНДС,
+	ВЫБОР
+		КОГДА ВсеЦеныБезПроцентаЖНВЛП.ВидЦеныДляРасчетаНаценки.ЦенаВключаетНДС
+			ТОГДА ВЫРАЗИТЬ(ВсеЦеныБезПроцентаЖНВЛП.ЦеныРасчётаНаценки / 1.1 КАК ЧИСЛО(15, 2))
+		ИНАЧЕ ВсеЦеныБезПроцентаЖНВЛП.ЦеныРасчётаНаценки
+	КОНЕЦ КАК ЦенаРасчётаНаценкиБезНДС,
+	ВсеЦеныБезПроцентаЖНВЛП.ор_СистемаНалогообложения КАК ор_СистемаНалогообложения,
+	ВЫБОР
+		КОГДА ВсеЦеныБезПроцентаЖНВЛП.ВидЦеныПоМагазину.ЦенаВключаетНДС
+			ТОГДА ВЫРАЗИТЬ(ВсеЦеныБезПроцентаЖНВЛП.ЦенаПоМагазину / 1.1 КАК ЧИСЛО(15, 2))
+		ИНАЧЕ ВсеЦеныБезПроцентаЖНВЛП.ЦенаПоМагазину
+	КОНЕЦ КАК ЦенаПоМагазинуБезНДС
+ПОМЕСТИТЬ ПодготовленныеЦеныДляФормул
+ИЗ
+	ВсеЦеныБезПроцентаЖНВЛП КАК ВсеЦеныБезПроцентаЖНВЛП
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗапасыНаСкладах.Номенклатура КАК Номенклатура,
+	ЗапасыНаСкладах.Характеристика КАК Характеристика,
+	ЕСТЬNULL(ПодготовленныеЦеныДляФормул.ЦенаПоМагазину, 0) КАК ЦенаПоМагазину,
+	ЕСТЬNULL(ПодготовленныеЦеныДляФормул.ЦенаБазырасчётаБезНДС, 0) КАК ЦенаБазырасчётаБезНДС,
+	ЕСТЬNULL(ПодготовленныеЦеныДляФормул.ЦенаРасчётаНаценкиБезНДС, 0) КАК ЦенаРасчётаНаценкиБезНДС,
+	ЕСТЬNULL(ПодготовленныеЦеныДляФормул.ЦенаПоМагазинуБезНДС, 0) КАК ЦенаПоМагазинуБезНДС,
+	ПодготовленныеЦеныДляФормул.ор_СистемаНалогообложения КАК ор_СистемаНалогообложения
+ПОМЕСТИТЬ ВсяНоменклатураСЦенамиИБез
+ИЗ
+	ЗапасыНаСкладах КАК ЗапасыНаСкладах
+		ЛЕВОЕ СОЕДИНЕНИЕ ПодготовленныеЦеныДляФормул КАК ПодготовленныеЦеныДляФормул
+		ПО ЗапасыНаСкладах.Номенклатура = ПодготовленныеЦеныДляФормул.Номенклатура
+			И ЗапасыНаСкладах.Характеристика = ПодготовленныеЦеныДляФормул.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВсяНоменклатураСЦенамиИБез.Номенклатура КАК Номенклатура,
+	ВсяНоменклатураСЦенамиИБез.Характеристика КАК Характеристика,
+	ВсяНоменклатураСЦенамиИБез.ЦенаПоМагазину КАК ЦенаПоМагазину,
+	ВсяНоменклатураСЦенамиИБез.ЦенаБазырасчётаБезНДС КАК ЦенаБазырасчётаБезНДС,
+	ВсяНоменклатураСЦенамиИБез.ЦенаРасчётаНаценкиБезНДС КАК ЦенаРасчётаНаценкиБезНДС,
+	ВЫБОР
+		КОГДА ВсяНоменклатураСЦенамиИБез.ор_СистемаНалогообложения = ЗНАЧЕНИЕ(Перечисление.ТипыСистемНалогообложенияККТ.ОСН)
+			ТОГДА ВсяНоменклатураСЦенамиИБез.ЦенаПоМагазинуБезНДС - ВсяНоменклатураСЦенамиИБез.ЦенаБазырасчётаБезНДС
+		ИНАЧЕ ВЫРАЗИТЬ(ВсяНоменклатураСЦенамиИБез.ЦенаПоМагазинуБезНДС - ВсяНоменклатураСЦенамиИБез.ЦенаБазырасчётаБезНДС * 1.1 КАК ЧИСЛО(15, 2))
+	КОНЕЦ КАК СуммаНаценки
+ПОМЕСТИТЬ ВсяНоменклатураСОтносительнойНаценкой
+ИЗ
+	ВсяНоменклатураСЦенамиИБез КАК ВсяНоменклатураСЦенамиИБез
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВсяНоменклатураСОтносительнойНаценкой.Номенклатура КАК Номенклатура,
+	ВсяНоменклатураСОтносительнойНаценкой.Характеристика КАК Характеристика,
+	ВсяНоменклатураСОтносительнойНаценкой.ЦенаПоМагазину КАК ЦенаПоМагазину,
+	ВсяНоменклатураСОтносительнойНаценкой.ЦенаБазырасчётаБезНДС КАК ЦенаБазырасчётаБезНДС,
+	ВсяНоменклатураСОтносительнойНаценкой.ЦенаРасчётаНаценкиБезНДС КАК ЦенаРасчётаНаценкиБезНДС,
+	ВсяНоменклатураСОтносительнойНаценкой.СуммаНаценки КАК СуммаНаценки,
+	ВЫБОР
+		КОГДА ВсяНоменклатураСОтносительнойНаценкой.ЦенаРасчётаНаценкиБезНДС = 0
+			ТОГДА 0
+		ИНАЧЕ ВЫРАЗИТЬ(ВсяНоменклатураСОтносительнойНаценкой.СуммаНаценки / ВсяНоменклатураСОтносительнойНаценкой.ЦенаРасчётаНаценкиБезНДС * 100 КАК ЧИСЛО(15, 2))
+	КОНЕЦ КАК ПроцентНаценки
+ИЗ
+	ВсяНоменклатураСОтносительнойНаценкой КАК ВсяНоменклатураСОтносительнойНаценкой</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>УчитыватьОстатки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Только остатки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ВидЦен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид цен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦен</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Цены ЖНВЛП</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаБазырасчётаБезНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаРасчётаНаценкиБезНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаПоМагазину</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентНаценки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаНаценки</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">СтруктурнаяЕдиница</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>754ad726-739b-4a1c-a243-3df7bb5eeb64</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Номенклатура.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>43855c0a-1acb-4313-b7ba-05953f516870</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>УчитыватьОстатки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>850f9ce6-8b18-49e7-bcd5-c8edb3d46578</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидЦен</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>6710ad7b-445e-49aa-9fb2-363000c7eb16</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПроцентНаценки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаНаценки</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ЦенаБазырасчётаБезНДС</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>-</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовБежевый</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

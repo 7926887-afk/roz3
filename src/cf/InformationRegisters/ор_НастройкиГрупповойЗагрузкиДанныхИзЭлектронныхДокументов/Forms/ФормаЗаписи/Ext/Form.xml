@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<ScaleVariant>NormalIfPossible</ScaleVariant>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="25">
+			<DataPath>Запись.Наименование</DataPath>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<UsualGroup name="ГруппаПараметры" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛево" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<InputField name="Контрагент" id="1">
+							<DataPath>Запись.Контрагент</DataPath>
+							<ContextMenu name="КонтрагентКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="НастройкаЗагрузки" id="4">
+							<DataPath>Запись.НастройкаЗагрузки</DataPath>
+							<ContextMenu name="НастройкаЗагрузкиКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НастройкаЗагрузкиРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Каталог" id="7">
+							<DataPath>Запись.Каталог</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="КаталогКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КаталогРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="StartChoice">КаталогНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраво" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<CheckBoxField name="ПроводитьДокументы" id="22">
+							<DataPath>Запись.ПроводитьДокументы</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПроводитьДокументыКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПроводитьДокументыРасширеннаяПодсказка" id="24"/>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьРегламентноеЗадание" id="10">
+							<DataPath>Запись.ИспользоватьРегламентноеЗадание</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ИспользоватьРегламентноеЗаданиеКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ИспользоватьРегламентноеЗаданиеРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьРегламентноеЗаданиеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="НастроитьРасписаниеРегламентногоЗадания" id="36">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьРасписаниеРегламентногоЗадания</CommandName>
+							<ExtendedTooltip name="НастроитьРасписаниеРегламентногоЗаданияРасширеннаяПодсказка" id="37"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДействияСФайлом" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действия с файлом</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДействияСФайломРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="ДействияСФайлами" id="16">
+					<DataPath>Запись.ДействияСФайлами</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<DropListButton>false</DropListButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChooseType>false</ChooseType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Ничего не делать</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Переместить при удачной загрузке</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">3</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Переместить</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удалить при удачной загрузке</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">4</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удалить</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ДействияСФайламиКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДействияСФайламиРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">ДействияСФайламиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КаталогПеремещения" id="19">
+					<DataPath>Запись.КаталогПеремещения</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="КаталогПеремещенияКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КаталогПеремещенияРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="StartChoice">КаталогПеремещенияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ор_НастройкиГрупповойЗагрузкиДанныхИзЭлектронныхДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьРасписаниеРегламентногоЗадания" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламетного задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание регламентного задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КонтактныеФормыВремя</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастроитьРасписаниеРегламентногоЗадания</Action>
+		</Command>
+	</Commands>
+</Form>

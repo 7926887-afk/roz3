@@ -1,0 +1,1788 @@
+﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+	<column>
+		<Name xsi:type="xs:string">Наименование</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>150</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<row>
+		<Value>фибринолитическое</Value>
+	</row>
+	<row>
+		<Value>противовирусное</Value>
+	</row>
+	<row>
+		<Value>противовоспалительное</Value>
+	</row>
+	<row>
+		<Value>жаропонижающее</Value>
+	</row>
+	<row>
+		<Value>иммуномодулирующее</Value>
+	</row>
+	<row>
+		<Value>антибактериальное</Value>
+	</row>
+	<row>
+		<Value>бактериостатическое</Value>
+	</row>
+	<row>
+		<Value>наркозное ингаляционное</Value>
+	</row>
+	<row>
+		<Value>кардиостимулирующее</Value>
+	</row>
+	<row>
+		<Value>иммуностимулирующее</Value>
+	</row>
+	<row>
+		<Value>антиангинальное</Value>
+	</row>
+	<row>
+		<Value>сосудорасширяющее</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит кальция</Value>
+	</row>
+	<row>
+		<Value>контрастное</Value>
+	</row>
+	<row>
+		<Value>стимулирующее клеточный метаболизм</Value>
+	</row>
+	<row>
+		<Value>ранозаживляющее</Value>
+	</row>
+	<row>
+		<Value>репаративное</Value>
+	</row>
+	<row>
+		<Value>бронходилатирующее</Value>
+	</row>
+	<row>
+		<Value>рентгеноконтрастное</Value>
+	</row>
+	<row>
+		<Value>антиагрегационное</Value>
+	</row>
+	<row>
+		<Value>ангиопротективное</Value>
+	</row>
+	<row>
+		<Value>бактерицидное</Value>
+	</row>
+	<row>
+		<Value>анальгезирующее</Value>
+	</row>
+	<row>
+		<Value>токолитическое</Value>
+	</row>
+	<row>
+		<Value>венотонизирующее</Value>
+	</row>
+	<row>
+		<Value>противоотечное</Value>
+	</row>
+	<row>
+		<Value>ингибирующее костную резорбцию</Value>
+	</row>
+	<row>
+		<Value>эстроген-гестагенное</Value>
+	</row>
+	<row>
+		<Value>контрацептивное</Value>
+	</row>
+	<row>
+		<Value>гестагенное</Value>
+	</row>
+	<row>
+		<Value>сосудосуживающее</Value>
+	</row>
+	<row>
+		<Value>антиандрогенное</Value>
+	</row>
+	<row>
+		<Value>противоопухолевое</Value>
+	</row>
+	<row>
+		<Value>противоязвенное</Value>
+	</row>
+	<row>
+		<Value>гипосекреторное</Value>
+	</row>
+	<row>
+		<Value>антигипертензивное</Value>
+	</row>
+	<row>
+		<Value>диуретическое</Value>
+	</row>
+	<row>
+		<Value>эстрогенное</Value>
+	</row>
+	<row>
+		<Value>гипогликемическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит йода</Value>
+	</row>
+	<row>
+		<Value>антиоксидантное</Value>
+	</row>
+	<row>
+		<Value>общеукрепляющее</Value>
+	</row>
+	<row>
+		<Value>противопаркинсоническое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит энергетических субстратов в организме</Value>
+	</row>
+	<row>
+		<Value>гипопролактинемическое</Value>
+	</row>
+	<row>
+		<Value>антидепрессивное</Value>
+	</row>
+	<row>
+		<Value>спазмолитическое</Value>
+	</row>
+	<row>
+		<Value>миотропное</Value>
+	</row>
+	<row>
+		<Value>антипсихотическое</Value>
+	</row>
+	<row>
+		<Value>антиастеническое</Value>
+	</row>
+	<row>
+		<Value>противоаллергическое</Value>
+	</row>
+	<row>
+		<Value>противоэпилептическое</Value>
+	</row>
+	<row>
+		<Value>противосудорожное</Value>
+	</row>
+	<row>
+		<Value>нормотимическое</Value>
+	</row>
+	<row>
+		<Value>ветрогонное</Value>
+	</row>
+	<row>
+		<Value>местноанестезирующее</Value>
+	</row>
+	<row>
+		<Value>слабительное</Value>
+	</row>
+	<row>
+		<Value>отхаркивающее</Value>
+	</row>
+	<row>
+		<Value>антиабстинентное</Value>
+	</row>
+	<row>
+		<Value>антиалкогольное</Value>
+	</row>
+	<row>
+		<Value>гипотензивное</Value>
+	</row>
+	<row>
+		<Value>антиаритмическое</Value>
+	</row>
+	<row>
+		<Value>мембраностабилизирующее</Value>
+	</row>
+	<row>
+		<Value>адсорбирующее</Value>
+	</row>
+	<row>
+		<Value>гипохолестеринемическое</Value>
+	</row>
+	<row>
+		<Value>гиполипидемическое</Value>
+	</row>
+	<row>
+		<Value>повышающее неспецифическую резистентность организма</Value>
+	</row>
+	<row>
+		<Value>нормализующее микрофлору кишечника</Value>
+	</row>
+	<row>
+		<Value>альфа-адренолитическое</Value>
+	</row>
+	<row>
+		<Value>успокаивающее</Value>
+	</row>
+	<row>
+		<Value>анорексигенное</Value>
+	</row>
+	<row>
+		<Value>противогрибковое</Value>
+	</row>
+	<row>
+		<Value>гемостатическое</Value>
+	</row>
+	<row>
+		<Value>антикоагулянтное</Value>
+	</row>
+	<row>
+		<Value>наркозное</Value>
+	</row>
+	<row>
+		<Value>противоподагрическое</Value>
+	</row>
+	<row>
+		<Value>обволакивающее</Value>
+	</row>
+	<row>
+		<Value>антацидное</Value>
+	</row>
+	<row>
+		<Value>цитостатическое</Value>
+	</row>
+	<row>
+		<Value>иммунодепрессивное</Value>
+	</row>
+	<row>
+		<Value>антигистаминное</Value>
+	</row>
+	<row>
+		<Value>анксиолитическое</Value>
+	</row>
+	<row>
+		<Value>миорелаксирующее</Value>
+	</row>
+	<row>
+		<Value>гипертензивное</Value>
+	</row>
+	<row>
+		<Value>улучшающее мозговое и коронарное кровообращение</Value>
+	</row>
+	<row>
+		<Value>коронародилатирующее</Value>
+	</row>
+	<row>
+		<Value>аналептическое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее метаболизм мозга и миокарда</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит кальция и витамина D3</Value>
+	</row>
+	<row>
+		<Value>противоревматическое</Value>
+	</row>
+	<row>
+		<Value>муколитическое</Value>
+	</row>
+	<row>
+		<Value>противозудное</Value>
+	</row>
+	<row>
+		<Value>дезинфицирующее</Value>
+	</row>
+	<row>
+		<Value>противокашлевое</Value>
+	</row>
+	<row>
+		<Value>противошоковое</Value>
+	</row>
+	<row>
+		<Value>антиэкссудативное</Value>
+	</row>
+	<row>
+		<Value>кератолитическое</Value>
+	</row>
+	<row>
+		<Value>ноотропное</Value>
+	</row>
+	<row>
+		<Value>вазодилатирующее</Value>
+	</row>
+	<row>
+		<Value>кардиотоническое</Value>
+	</row>
+	<row>
+		<Value>бронхолитическое</Value>
+	</row>
+	<row>
+		<Value>противотуберкулезное</Value>
+	</row>
+	<row>
+		<Value>антисеротониновое</Value>
+	</row>
+	<row>
+		<Value>андрогенное</Value>
+	</row>
+	<row>
+		<Value>анаболическое</Value>
+	</row>
+	<row>
+		<Value>сорбирующее</Value>
+	</row>
+	<row>
+		<Value>противопаразитарное</Value>
+	</row>
+	<row>
+		<Value>антисептическое</Value>
+	</row>
+	<row>
+		<Value>регенерирующее</Value>
+	</row>
+	<row>
+		<Value>местнораздражающее</Value>
+	</row>
+	<row>
+		<Value>улучшающее местное кровообращение</Value>
+	</row>
+	<row>
+		<Value>нейролептическое</Value>
+	</row>
+	<row>
+		<Value>транквилизирующее</Value>
+	</row>
+	<row>
+		<Value>вазоконстрикторное</Value>
+	</row>
+	<row>
+		<Value>гипергликемическое</Value>
+	</row>
+	<row>
+		<Value>гонадотропное</Value>
+	</row>
+	<row>
+		<Value>лютеинизирующее</Value>
+	</row>
+	<row>
+		<Value>антиатеросклеротическое</Value>
+	</row>
+	<row>
+		<Value>антикатарактное</Value>
+	</row>
+	<row>
+		<Value>антибактериальное широкого спектра</Value>
+	</row>
+	<row>
+		<Value>противоглаукомное</Value>
+	</row>
+	<row>
+		<Value>антиконгестивное</Value>
+	</row>
+	<row>
+		<Value>фунгицидное</Value>
+	</row>
+	<row>
+		<Value>противосеборейное</Value>
+	</row>
+	<row>
+		<Value>цитопротективное</Value>
+	</row>
+	<row>
+		<Value>радиопротективное</Value>
+	</row>
+	<row>
+		<Value>калийсберегающее</Value>
+	</row>
+	<row>
+		<Value>гастропротективное</Value>
+	</row>
+	<row>
+		<Value>комедонолитическое</Value>
+	</row>
+	<row>
+		<Value>некротизирующее (местное)</Value>
+	</row>
+	<row>
+		<Value>гепатопротективное</Value>
+	</row>
+	<row>
+		<Value>стимулирующее сперматогенез</Value>
+	</row>
+	<row>
+		<Value>повышающее либидо</Value>
+	</row>
+	<row>
+		<Value>улучшающее эректильную функцию</Value>
+	</row>
+	<row>
+		<Value>обезболивающее</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит аминокислот</Value>
+	</row>
+	<row>
+		<Value>гидратирующее</Value>
+	</row>
+	<row>
+		<Value>эстроген-прогестогенное</Value>
+	</row>
+	<row>
+		<Value>соматотропное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит фолиевой кислоты</Value>
+	</row>
+	<row>
+		<Value>противомалярийное</Value>
+	</row>
+	<row>
+		<Value>противопедикулезное</Value>
+	</row>
+	<row>
+		<Value>недеполяризующее</Value>
+	</row>
+	<row>
+		<Value>антипрогестагенное</Value>
+	</row>
+	<row>
+		<Value>венопротективное</Value>
+	</row>
+	<row>
+		<Value>антигонадотропное</Value>
+	</row>
+	<row>
+		<Value>урикозурическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит магния и витамина B6</Value>
+	</row>
+	<row>
+		<Value>дезинтоксикационное</Value>
+	</row>
+	<row>
+		<Value>центральное</Value>
+	</row>
+	<row>
+		<Value>стимулирующее родовую деятельность</Value>
+	</row>
+	<row>
+		<Value>противорвотное</Value>
+	</row>
+	<row>
+		<Value>дерматопротективное</Value>
+	</row>
+	<row>
+		<Value>вяжущее</Value>
+	</row>
+	<row>
+		<Value>антигельминтное</Value>
+	</row>
+	<row>
+		<Value>нейропротективное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит гормонов щитовидной железы</Value>
+	</row>
+	<row>
+		<Value>стимулирующее обменные процессы</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит калия</Value>
+	</row>
+	<row>
+		<Value>антипролиферативное</Value>
+	</row>
+	<row>
+		<Value>антигипоксическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит ферментов поджелудочной железы</Value>
+	</row>
+	<row>
+		<Value>плазмозамещающее</Value>
+	</row>
+	<row>
+		<Value>тиреоидное</Value>
+	</row>
+	<row>
+		<Value>желчегонное</Value>
+	</row>
+	<row>
+		<Value>нормализующее функции кишечника</Value>
+	</row>
+	<row>
+		<Value>холелитолитическое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее остеогенез</Value>
+	</row>
+	<row>
+		<Value>улучшающее микроциркуляцию</Value>
+	</row>
+	<row>
+		<Value>противопротозойное</Value>
+	</row>
+	<row>
+		<Value>антихолинэстеразное</Value>
+	</row>
+	<row>
+		<Value>повышающее выработку сурфактанта</Value>
+	</row>
+	<row>
+		<Value>повышающее умственную работоспособность</Value>
+	</row>
+	<row>
+		<Value>ускоряющее заживление ран</Value>
+	</row>
+	<row>
+		<Value>симпатомиметическое</Value>
+	</row>
+	<row>
+		<Value>ощелачивающее мочу</Value>
+	</row>
+	<row>
+		<Value>D-витаминоподобное</Value>
+	</row>
+	<row>
+		<Value>регулирующее кальций-фосфорный обмен</Value>
+	</row>
+	<row>
+		<Value>антитиреоидное</Value>
+	</row>
+	<row>
+		<Value>секретолитическое</Value>
+	</row>
+	<row>
+		<Value>секретомоторное</Value>
+	</row>
+	<row>
+		<Value>дезодорирующее</Value>
+	</row>
+	<row>
+		<Value>диагностическое</Value>
+	</row>
+	<row>
+		<Value>противопсориатическое</Value>
+	</row>
+	<row>
+		<Value>фунгистатическое</Value>
+	</row>
+	<row>
+		<Value>нормализующее липидный и углеводный обмен</Value>
+	</row>
+	<row>
+		<Value>дофаминергическое</Value>
+	</row>
+	<row>
+		<Value>антипротеазное</Value>
+	</row>
+	<row>
+		<Value>антифибринолитическое</Value>
+	</row>
+	<row>
+		<Value>прогестагенное</Value>
+	</row>
+	<row>
+		<Value>утеротонизирующее</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит магния и калия</Value>
+	</row>
+	<row>
+		<Value>улучшающее мозговое кровообращение</Value>
+	</row>
+	<row>
+		<Value>анальгезирующее (опиоидное)</Value>
+	</row>
+	<row>
+		<Value>повышающее сопротивляемость организма</Value>
+	</row>
+	<row>
+		<Value>уменьшающее ломкость и проницаемость сосудов</Value>
+	</row>
+	<row>
+		<Value>алкилирующее</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и микроэлементов</Value>
+	</row>
+	<row>
+		<Value>прижигающее</Value>
+	</row>
+	<row>
+		<Value>нормализующее микрофлору влагалища</Value>
+	</row>
+	<row>
+		<Value>адреномиметическое</Value>
+	</row>
+	<row>
+		<Value>натрийуретическое</Value>
+	</row>
+	<row>
+		<Value>артериодилатирующее</Value>
+	</row>
+	<row>
+		<Value>антидиарейное</Value>
+	</row>
+	<row>
+		<Value>антитромботическое</Value>
+	</row>
+	<row>
+		<Value>угнетающее секрецию органов ЖКТ</Value>
+	</row>
+	<row>
+		<Value>дофаминомиметическое</Value>
+	</row>
+	<row>
+		<Value>лейкопоэтическое</Value>
+	</row>
+	<row>
+		<Value>симпатолитическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит железа</Value>
+	</row>
+	<row>
+		<Value>гемопоэтическое</Value>
+	</row>
+	<row>
+		<Value>липотропное</Value>
+	</row>
+	<row>
+		<Value>противоастматическое</Value>
+	</row>
+	<row>
+		<Value>кардиопротективное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит железа и фолиевой кислоты</Value>
+	</row>
+	<row>
+		<Value>вазопротективное</Value>
+	</row>
+	<row>
+		<Value>хондростимулирующее</Value>
+	</row>
+	<row>
+		<Value>альфа-адреномиметическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит фолиниевой кислоты</Value>
+	</row>
+	<row>
+		<Value>антиазотемическое</Value>
+	</row>
+	<row>
+		<Value>адренолитическое</Value>
+	</row>
+	<row>
+		<Value>холеретическое</Value>
+	</row>
+	<row>
+		<Value>холекинетическое</Value>
+	</row>
+	<row>
+		<Value>снижающее проницаемость капилляров</Value>
+	</row>
+	<row>
+		<Value>тромболитическое</Value>
+	</row>
+	<row>
+		<Value>адаптогенное</Value>
+	</row>
+	<row>
+		<Value>регулирующее окислительно-восстановительные процессы</Value>
+	</row>
+	<row>
+		<Value>нормализующее физиологический сон</Value>
+	</row>
+	<row>
+		<Value>гистаминоподобное</Value>
+	</row>
+	<row>
+		<Value>нормализующее КЩС</Value>
+	</row>
+	<row>
+		<Value>гипокальциемическое</Value>
+	</row>
+	<row>
+		<Value>метаболическое</Value>
+	</row>
+	<row>
+		<Value>десенсибилизирующее</Value>
+	</row>
+	<row>
+		<Value>регулирующее функции женских половых органов</Value>
+	</row>
+	<row>
+		<Value>антиклимактерическое</Value>
+	</row>
+	<row>
+		<Value>противоанемическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит макро- и микроэлементов</Value>
+	</row>
+	<row>
+		<Value>регулирующее гормональный баланс</Value>
+	</row>
+	<row>
+		<Value>эстрогенподобное</Value>
+	</row>
+	<row>
+		<Value>антиспастическое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее эстрогеногенез</Value>
+	</row>
+	<row>
+		<Value>тиреостимулирующее</Value>
+	</row>
+	<row>
+		<Value>хондропротективное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и минеральных веществ</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и железа</Value>
+	</row>
+	<row>
+		<Value>противочесоточное</Value>
+	</row>
+	<row>
+		<Value>отвлекающее</Value>
+	</row>
+	<row>
+		<Value>общетонизирующее</Value>
+	</row>
+	<row>
+		<Value>нормализующее обменные процессы</Value>
+	</row>
+	<row>
+		<Value>стимулирующее энергетический обмен</Value>
+	</row>
+	<row>
+		<Value>регулирующее тканевой обмен</Value>
+	</row>
+	<row>
+		<Value>противомигренозное</Value>
+	</row>
+	<row>
+		<Value>сурфактантоподобное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина B6 и микроэлементов</Value>
+	</row>
+	<row>
+		<Value>нормализующее функции органов ЖКТ</Value>
+	</row>
+	<row>
+		<Value>вазопрессиноподобное</Value>
+	</row>
+	<row>
+		<Value>стимулирующее тонус и моторику ЖКТ</Value>
+	</row>
+	<row>
+		<Value>противогеморроидальное</Value>
+	</row>
+	<row>
+		<Value>капилляропротективное</Value>
+	</row>
+	<row>
+		<Value>кератопротективное</Value>
+	</row>
+	<row>
+		<Value>стимулирующее потенцию</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит эстрогенов</Value>
+	</row>
+	<row>
+		<Value>противогерпетическое</Value>
+	</row>
+	<row>
+		<Value>поливитаминное</Value>
+	</row>
+	<row>
+		<Value>глюкокортикоидное</Value>
+	</row>
+	<row>
+		<Value>антипротеолитическое</Value>
+	</row>
+	<row>
+		<Value>противоикотное</Value>
+	</row>
+	<row>
+		<Value>тимолептическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит минеральных веществ</Value>
+	</row>
+	<row>
+		<Value>каталептогенное</Value>
+	</row>
+	<row>
+		<Value>ретинопротективное</Value>
+	</row>
+	<row>
+		<Value>н-холиномиметическое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее рост волос</Value>
+	</row>
+	<row>
+		<Value>предупреждающее бронхоспазм</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит фактора свертывания VIII</Value>
+	</row>
+	<row>
+		<Value>нефролитолитическое</Value>
+	</row>
+	<row>
+		<Value>нормализующее менструальную функцию</Value>
+	</row>
+	<row>
+		<Value>трихомонацидное</Value>
+	</row>
+	<row>
+		<Value>фотосенсибилизирующее</Value>
+	</row>
+	<row>
+		<Value>регулирующее обмен кальция</Value>
+	</row>
+	<row>
+		<Value>нормализующее биосинтез гемоглобина</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит аминокислот и электролитов</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов C и P</Value>
+	</row>
+	<row>
+		<Value>улучшающее периферическое кровообращение</Value>
+	</row>
+	<row>
+		<Value>стимулирующее эпителизацию</Value>
+	</row>
+	<row>
+		<Value>нейромедиаторное</Value>
+	</row>
+	<row>
+		<Value>церебропротективное</Value>
+	</row>
+	<row>
+		<Value>психостимулирующее</Value>
+	</row>
+	<row>
+		<Value>повышающее сократимость гладких мышц</Value>
+	</row>
+	<row>
+		<Value>антидизурическое</Value>
+	</row>
+	<row>
+		<Value>регулирующее тонус моче- и желчевыводящих путей</Value>
+	</row>
+	<row>
+		<Value>нормализующее функции поджелудочной железы</Value>
+	</row>
+	<row>
+		<Value>корректирующее метаболизм костной и соединительной ткани</Value>
+	</row>
+	<row>
+		<Value>корректирующее функции мочеполовой системы</Value>
+	</row>
+	<row>
+		<Value>стимулирующее функцию мужских половых желез</Value>
+	</row>
+	<row>
+		<Value>трофическое</Value>
+	</row>
+	<row>
+		<Value>лимфодренажное</Value>
+	</row>
+	<row>
+		<Value>улучшающее тканевой метаболизм</Value>
+	</row>
+	<row>
+		<Value>стимулирующее регенерацию нервной ткани</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит цинка</Value>
+	</row>
+	<row>
+		<Value>нормализующее функции предстательной железы</Value>
+	</row>
+	<row>
+		<Value>антистрессовое</Value>
+	</row>
+	<row>
+		<Value>вегетотропное</Value>
+	</row>
+	<row>
+		<Value>бета-адренолитическое</Value>
+	</row>
+	<row>
+		<Value>м-холиномиметическое</Value>
+	</row>
+	<row>
+		<Value>ингибирующее желудочно-кишечные липазы</Value>
+	</row>
+	<row>
+		<Value>стимулирующее перистальтику кишечника</Value>
+	</row>
+	<row>
+		<Value>стимулирующее регенерацию хрящевой ткани</Value>
+	</row>
+	<row>
+		<Value>противолепрозное</Value>
+	</row>
+	<row>
+		<Value>гипоурикемическое</Value>
+	</row>
+	<row>
+		<Value>ганглиоблокирующее</Value>
+	</row>
+	<row>
+		<Value>н-холинолитическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит белков</Value>
+	</row>
+	<row>
+		<Value>противомикробное</Value>
+	</row>
+	<row>
+		<Value>холинолитическое</Value>
+	</row>
+	<row>
+		<Value>холиномиметическое</Value>
+	</row>
+	<row>
+		<Value>подсушивающее</Value>
+	</row>
+	<row>
+		<Value>протеолитическое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее окислительно-восстановительные процессы</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина B1</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина E</Value>
+	</row>
+	<row>
+		<Value>минералокортикоидное</Value>
+	</row>
+	<row>
+		<Value>лактотропное</Value>
+	</row>
+	<row>
+		<Value>снотворное</Value>
+	</row>
+	<row>
+		<Value>седативное</Value>
+	</row>
+	<row>
+		<Value>противогрибковое широкого спектра</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит магния</Value>
+	</row>
+	<row>
+		<Value>снижающее цитотоксичность оксазафосфоринов</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина B6</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина A</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина D</Value>
+	</row>
+	<row>
+		<Value>комплексообразующее</Value>
+	</row>
+	<row>
+		<Value>мидриатическое</Value>
+	</row>
+	<row>
+		<Value>соматостатиноподобное</Value>
+	</row>
+	<row>
+		<Value>блокирующее бензодиазепиновые рецепторы</Value>
+	</row>
+	<row>
+		<Value>блокирующее опиатные рецепторы</Value>
+	</row>
+	<row>
+		<Value>веносклерозирующее</Value>
+	</row>
+	<row>
+		<Value>стимулирующее нервно-мышечную передачу</Value>
+	</row>
+	<row>
+		<Value>некролитическое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее метаболизм в ЦНС</Value>
+	</row>
+	<row>
+		<Value>гипоазотемическое</Value>
+	</row>
+	<row>
+		<Value>фолликулостимулирующее</Value>
+	</row>
+	<row>
+		<Value>нормализующее водно-электролитный баланс</Value>
+	</row>
+	<row>
+		<Value>общеанестезирующее</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит аминокислот, углеводов и электролитов</Value>
+	</row>
+	<row>
+		<Value>нормализующее белковый обмен</Value>
+	</row>
+	<row>
+		<Value>нефропротективное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит холина</Value>
+	</row>
+	<row>
+		<Value>келлоидолитическое</Value>
+	</row>
+	<row>
+		<Value>нормализующее реологические свойства крови</Value>
+	</row>
+	<row>
+		<Value>антиэстрогенное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит селена</Value>
+	</row>
+	<row>
+		<Value>газотранспортное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит электролитов</Value>
+	</row>
+	<row>
+		<Value>стимулирующее жировой обмен</Value>
+	</row>
+	<row>
+		<Value>угнетающее секрецию потовых желез</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит белков, жиров и углеводов</Value>
+	</row>
+	<row>
+		<Value>эритропоэтическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина B2</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина C</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина PP (B3)</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов группы B</Value>
+	</row>
+	<row>
+		<Value>гемоконсервирующее</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина B12</Value>
+	</row>
+	<row>
+		<Value>детоксицирующее</Value>
+	</row>
+	<row>
+		<Value>нормализующее липидный обмен</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит жирных кислот</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов A, D, C</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов</Value>
+	</row>
+	<row>
+		<Value>нормализующее функции почек</Value>
+	</row>
+	<row>
+		<Value>нормализующее функции респираторной системы</Value>
+	</row>
+	<row>
+		<Value>противовоспалительное местное</Value>
+	</row>
+	<row>
+		<Value>противогрибковое местное</Value>
+	</row>
+	<row>
+		<Value>дерматотропное</Value>
+	</row>
+	<row>
+		<Value>питающее</Value>
+	</row>
+	<row>
+		<Value>моющее</Value>
+	</row>
+	<row>
+		<Value>смазывающее</Value>
+	</row>
+	<row>
+		<Value>стимулирующее кровообращение</Value>
+	</row>
+	<row>
+		<Value>простатотропное</Value>
+	</row>
+	<row>
+		<Value>антикатаболическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит хрома</Value>
+	</row>
+	<row>
+		<Value>гипотермическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит биологически активных веществ</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит марганца</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит ниацина</Value>
+	</row>
+	<row>
+		<Value>амилолитическое</Value>
+	</row>
+	<row>
+		<Value>липолитическое</Value>
+	</row>
+	<row>
+		<Value>смягчающее</Value>
+	</row>
+	<row>
+		<Value>болеутоляющее</Value>
+	</row>
+	<row>
+		<Value>ингибирующее обратную транскриптазу ВИЧ</Value>
+	</row>
+	<row>
+		<Value>рассасывающее</Value>
+	</row>
+	<row>
+		<Value>улучшающее функционирование сердечно-сосудистой системы</Value>
+	</row>
+	<row>
+		<Value>улучшающее пищеварение</Value>
+	</row>
+	<row>
+		<Value>нормализующее половую функцию</Value>
+	</row>
+	<row>
+		<Value>стимулирующее функцию надпочечника</Value>
+	</row>
+	<row>
+		<Value>нормализующее биологические ритмы</Value>
+	</row>
+	<row>
+		<Value>снижающее никотиновую зависимость</Value>
+	</row>
+	<row>
+		<Value>антимикотическое</Value>
+	</row>
+	<row>
+		<Value>серотонинергическое</Value>
+	</row>
+	<row>
+		<Value>антимутагенное</Value>
+	</row>
+	<row>
+		<Value>ферментное</Value>
+	</row>
+	<row>
+		<Value>корректирующее метаболизм костной и хрящевой ткани</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит жирорастворимых витаминов</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит глутамина</Value>
+	</row>
+	<row>
+		<Value>профибринолитическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов А, группы В, С, Е</Value>
+	</row>
+	<row>
+		<Value>корректирующее функции мочевыделительной системы</Value>
+	</row>
+	<row>
+		<Value>противоклимактерическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит кальция и фосфора</Value>
+	</row>
+	<row>
+		<Value>диуретическое мягкое</Value>
+	</row>
+	<row>
+		<Value>индуктор интерферона</Value>
+	</row>
+	<row>
+		<Value>корректирующее функции половой системы</Value>
+	</row>
+	<row>
+		<Value>м-холиноблокирующее</Value>
+	</row>
+	<row>
+		<Value>кератопластическое</Value>
+	</row>
+	<row>
+		<Value>регулирующее периферическое кровообращение</Value>
+	</row>
+	<row>
+		<Value>противоишемическое</Value>
+	</row>
+	<row>
+		<Value>регулирующее метаболические процессы в ЦНС</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит полиненасыщенных жирных кислот</Value>
+	</row>
+	<row>
+		<Value>блокирующее гистаминовые H2-рецепторы</Value>
+	</row>
+	<row>
+		<Value>улучшающее зрение</Value>
+	</row>
+	<row>
+		<Value>противопростудное</Value>
+	</row>
+	<row>
+		<Value>улучшающее мозговое и периферическое кровообращение</Value>
+	</row>
+	<row>
+		<Value>регулирующее аппетит</Value>
+	</row>
+	<row>
+		<Value>тонизирующее</Value>
+	</row>
+	<row>
+		<Value>вазодилатирующее периферическое</Value>
+	</row>
+	<row>
+		<Value>антибактериальное местное</Value>
+	</row>
+	<row>
+		<Value>прокинетическое</Value>
+	</row>
+	<row>
+		<Value>восстанавливающее эректильную функцию</Value>
+	</row>
+	<row>
+		<Value>улучшающее память</Value>
+	</row>
+	<row>
+		<Value>нормализующее моторику кишечника</Value>
+	</row>
+	<row>
+		<Value>формирующее развитие специфического иммунитета</Value>
+	</row>
+	<row>
+		<Value>повышающее либидо и потенцию</Value>
+	</row>
+	<row>
+		<Value>повышающее специфический и неспецифический иммунитет</Value>
+	</row>
+	<row>
+		<Value>корректирующее гормональные нарушения, климактерический и предменструальный синдромы</Value>
+	</row>
+	<row>
+		<Value>простагландиноподобное</Value>
+	</row>
+	<row>
+		<Value>капилляроукрепляющее</Value>
+	</row>
+	<row>
+		<Value>обезболивающее местное</Value>
+	</row>
+	<row>
+		<Value>секретостимулирующее</Value>
+	</row>
+	<row>
+		<Value>противоотечное местное</Value>
+	</row>
+	<row>
+		<Value>антигестагенное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит селена, бета-каротина, ликопина</Value>
+	</row>
+	<row>
+		<Value>генопротекторное</Value>
+	</row>
+	<row>
+		<Value>антиагрегантное</Value>
+	</row>
+	<row>
+		<Value>гипоаммониемическое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее гемопоэз</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и минеральных веществ у мужчин</Value>
+	</row>
+	<row>
+		<Value>улучшающее обмен веществ в тканях</Value>
+	</row>
+	<row>
+		<Value>восполняющее абсолютный или относительный дефицит витамина Е, микроэлементов и аминокислот</Value>
+	</row>
+	<row>
+		<Value>Bc-витаминоподобное</Value>
+	</row>
+	<row>
+		<Value>антиамнестическое</Value>
+	</row>
+	<row>
+		<Value>способствующее росту волос и ногтей</Value>
+	</row>
+	<row>
+		<Value>ингибирующее протеинтирозинкиназу</Value>
+	</row>
+	<row>
+		<Value>ингибирующее синтез эстрогенов</Value>
+	</row>
+	<row>
+		<Value>нормализующее обмен веществ в предстательной железе</Value>
+	</row>
+	<row>
+		<Value>кальциймиметическое</Value>
+	</row>
+	<row>
+		<Value>снижающее уровень паратиреоидного гормона</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит слезной жидкости</Value>
+	</row>
+	<row>
+		<Value>увлажняющее роговицу</Value>
+	</row>
+	<row>
+		<Value>стимулирующее клеточный метаболизм и окислительно-восстановительные процессы</Value>
+	</row>
+	<row>
+		<Value>регенерирующее хрящевую ткань</Value>
+	</row>
+	<row>
+		<Value>повышающее половую активность и потенцию</Value>
+	</row>
+	<row>
+		<Value>мочегонное</Value>
+	</row>
+	<row>
+		<Value>бактерицидное широкого спектра</Value>
+	</row>
+	<row>
+		<Value>антихеликобактерное</Value>
+	</row>
+	<row>
+		<Value>ингибирующее протонный насос</Value>
+	</row>
+	<row>
+		<Value>улучшающее мукоцилиарный клиренс</Value>
+	</row>
+	<row>
+		<Value>антисекреторное</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит полиненасыщенных жирных кислот, витаминов С и Е</Value>
+	</row>
+	<row>
+		<Value>цитотоксическое</Value>
+	</row>
+	<row>
+		<Value>улучшающее функционирование легких и бронхов</Value>
+	</row>
+	<row>
+		<Value>улучшающее функционирование зрительного аппарата</Value>
+	</row>
+	<row>
+		<Value>улучшающее функционирование поджелудочной железы</Value>
+	</row>
+	<row>
+		<Value>улучшающее функционирование половой системы у мужчин</Value>
+	</row>
+	<row>
+		<Value>нейрометаболическое</Value>
+	</row>
+	<row>
+		<Value>средство для лечения деменции</Value>
+	</row>
+	<row>
+		<Value>мумифицирующее</Value>
+	</row>
+	<row>
+		<Value>хлоруретическое</Value>
+	</row>
+	<row>
+		<Value>нейромодулирующее</Value>
+	</row>
+	<row>
+		<Value>антибактериальное широкого спектра (бактерицидное)</Value>
+	</row>
+	<row>
+		<Value>ощелачивающее кровь</Value>
+	</row>
+	<row>
+		<Value>ингибирующее ангиогенез</Value>
+	</row>
+	<row>
+		<Value>бета-адреномиметическое</Value>
+	</row>
+	<row>
+		<Value>противопеллагрическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит полиненасыщенных жирных кислот, витаминов E и D</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и макро- и микроэлементов</Value>
+	</row>
+	<row>
+		<Value>м-н-холиномиметическое</Value>
+	</row>
+	<row>
+		<Value>контрацептивное с антиминералкортикоидным и антиандрогенным компонентами</Value>
+	</row>
+	<row>
+		<Value>нейропротекторное</Value>
+	</row>
+	<row>
+		<Value>гистаминергическое</Value>
+	</row>
+	<row>
+		<Value>гомеопатическое</Value>
+	</row>
+	<row>
+		<Value>гепатопротекторное</Value>
+	</row>
+	<row>
+		<Value>корректирующее метаболизм хрящевой ткани</Value>
+	</row>
+	<row>
+		<Value>антибрадикининовое</Value>
+	</row>
+	<row>
+		<Value>стимулирующее тромбопоэз</Value>
+	</row>
+	<row>
+		<Value>энтеросорбирующее</Value>
+	</row>
+	<row>
+		<Value>увлажняющее слизистую носа</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит лютеина, цинка, антоцианов, витамина А</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит цинка, селена, витамина С, магния, гистидина</Value>
+	</row>
+	<row>
+		<Value>ингибирующее ФДЭ-5</Value>
+	</row>
+	<row>
+		<Value>н-ацетилхолинорецепторов агонист (частичный) и антагонист</Value>
+	</row>
+	<row>
+		<Value>тканеспецифическое</Value>
+	</row>
+	<row>
+		<Value>ингибирующее АПФ</Value>
+	</row>
+	<row>
+		<Value>селективное b1-адреноблокирующее</Value>
+	</row>
+	<row>
+		<Value>альфа- и бета-адреноблокирующее</Value>
+	</row>
+	<row>
+		<Value>регулирующее тонус и моторику ЖКТ</Value>
+	</row>
+	<row>
+		<Value>ингибирующее H+,K+-АТФ-азу</Value>
+	</row>
+	<row>
+		<Value>блокирующее АТ1-рецепторы</Value>
+	</row>
+	<row>
+		<Value>церебровазодилатирующее</Value>
+	</row>
+	<row>
+		<Value>ингибирующее кальциневрин</Value>
+	</row>
+	<row>
+		<Value>психометаболическое</Value>
+	</row>
+	<row>
+		<Value>анальгезирующее центральное</Value>
+	</row>
+	<row>
+		<Value>ингибирующее ГМГ-КоА-редуктазу</Value>
+	</row>
+	<row>
+		<Value>ингибирующее МАО-В</Value>
+	</row>
+	<row>
+		<Value>корректирующее расстройства мочеиспускания или дизурию</Value>
+	</row>
+	<row>
+		<Value>бета-адреноблокирующее</Value>
+	</row>
+	<row>
+		<Value>противоопухолевое антиметаболическое</Value>
+	</row>
+	<row>
+		<Value>ингибирующее секрецию гонадотропинов</Value>
+	</row>
+	<row>
+		<Value>восполнение дефицита сурфактанта</Value>
+	</row>
+	<row>
+		<Value>ингибирующее фосфодиэстеразу 4 типа</Value>
+	</row>
+	<row>
+		<Value>ингибирующее рецепторы тирозинкиназы</Value>
+	</row>
+	<row>
+		<Value>антигипоксантное</Value>
+	</row>
+	<row>
+		<Value>улучшающее энергетический метаболизм</Value>
+	</row>
+	<row>
+		<Value>нейротрофическое</Value>
+	</row>
+	<row>
+		<Value>ингибирующее карбоангидразу</Value>
+	</row>
+	<row>
+		<Value>очищающее полость носа</Value>
+	</row>
+	<row>
+		<Value>понижающее внутриглазное давление</Value>
+	</row>
+	<row>
+		<Value>ингибирующее протеолиз</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов, макро- и микроэлементов, липоевой и янтарной кислот</Value>
+	</row>
+	<row>
+		<Value>блокирующее кальциевые каналы</Value>
+	</row>
+	<row>
+		<Value>антидиуретическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов, макро- и микроэлементов, биологически активных веществ</Value>
+	</row>
+	<row>
+		<Value>антиацидемическое</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит макро- и микроэлементов, пребиотиков</Value>
+	</row>
+	<row>
+		<Value>противоугревое</Value>
+	</row>
+	<row>
+		<Value>гипофосфатемическое</Value>
+	</row>
+	<row>
+		<Value>противомикробное широкого спектра</Value>
+	</row>
+	<row>
+		<Value>миотропное спазмолитическое</Value>
+	</row>
+	<row>
+		<Value>противоопухолевое, ингибитор синтеза эстрогенов</Value>
+	</row>
+	<row>
+		<Value>противоопухолевое, ингибитор тирозинкиназы</Value>
+	</row>
+	<row>
+		<Value>противоопухолевое, аналог гонадотропин-рилизинг гормона</Value>
+	</row>
+	<row>
+		<Value>вазодилатирующее в отношении легочного артериального русла</Value>
+	</row>
+	<row>
+		<Value>кераторегулирующее</Value>
+	</row>
+	<row>
+		<Value>ингибирующее фактор Ха</Value>
+	</row>
+	<row>
+		<Value>обстипационное</Value>
+	</row>
+	<row>
+		<Value>бета1-адреноблокирующее</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и биологически активных веществ</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит фолата</Value>
+	</row>
+	<row>
+		<Value>антибактериальное местное, широкого спектра</Value>
+	</row>
+	<row>
+		<Value>блокирующее обратный захват серотонина</Value>
+	</row>
+	<row>
+		<Value>альфа-адреноблокирующее</Value>
+	</row>
+	<row>
+		<Value>восполнение дефицита идуронат-2-сульфатазы</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит лютеина, зеаксантина, антоцианов</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и витаминоподобных веществ</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит биологически активных веществ, витамина Е и селена</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит биологически активных веществ, витамина В6 и магния</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит биологически активных веществ, витаминов Е и А, цинка и селена</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит пробиотических молочно-кислых микроорганизмов</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витаминов и пробиотических микроорганизмов</Value>
+	</row>
+	<row>
+		<Value>коронародилатирующее (рефлекторное)</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит масляной кислоты и инулина</Value>
+	</row>
+	<row>
+		<Value>антиретровирусное</Value>
+	</row>
+	<row>
+		<Value>иммунизирующее</Value>
+	</row>
+	<row>
+		<Value>регидратирующее</Value>
+	</row>
+	<row>
+		<Value>радиотерапевтическое</Value>
+	</row>
+	<row>
+		<Value>регулирующее функции ЖКТ</Value>
+	</row>
+	<row>
+		<Value>способствующее росту волос</Value>
+	</row>
+	<row>
+		<Value>контрацептивное с антиандрогенным компонентом</Value>
+	</row>
+	<row>
+		<Value>очищающее слизистую оболочку глотки</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит незаменимых жирных кислот</Value>
+	</row>
+	<row>
+		<Value>H1-антигистаминное</Value>
+	</row>
+	<row>
+		<Value>анальгезирующее местное</Value>
+	</row>
+	<row>
+		<Value>мобилизирующее гемопоэтические стволовые клетки</Value>
+	</row>
+	<row>
+		<Value>ингибирующее глюкозилцерамидсинтазу</Value>
+	</row>
+	<row>
+		<Value>восполняющее дефицит витамина С, флавоноидов, лизина</Value>
+	</row>
+	<row>
+		<Value>улучшающее функциональное состояние сердечно-сосудистой системы</Value>
+	</row>
+	<row>
+		<Value>очищающее</Value>
+	</row>
+	<row>
+		<Value>интерферониндуцирующее</Value>
+	</row>
+	<row>
+		<Value>нормализующее вестибулярную функцию</Value>
+	</row>
+	<row>
+		<Value>м-холинолитическое</Value>
+	</row>
+	<row>
+		<Value>профилактическое</Value>
+	</row>
+	<row>
+		<Value>бета2-адреномиметическое</Value>
+	</row>
+	<row>
+		<Value>глюкокортикоидное (местное)</Value>
+	</row>
+	<row>
+		<Value>блокирующее АТ1-рецепторы ангиотензина II</Value>
+	</row>
+	<row>
+		<Value>регулирующее метаболические процессы в миокарде</Value>
+	</row>
+	<row>
+		<Value>ингибирующее неоангиогенез</Value>
+	</row>
+	<row>
+		<Value>снижающее массу тела</Value>
+	</row>
+	<row>
+		<Value>антидеполяризующее</Value>
+	</row>
+	<row>
+		<Value>ингибирующее ЦОГ</Value>
+	</row>
+	<row>
+		<Value>антидофаминовое</Value>
+	</row>
+	<row>
+		<Value>возбуждающее I1-имидазолиновые рецепторы</Value>
+	</row>
+	<row>
+		<Value>блокирующее рецепторы АТII</Value>
+	</row>
+	<row>
+		<Value>блокирующее лейкотриеновые рецепторы</Value>
+	</row>
+</ValueTree>

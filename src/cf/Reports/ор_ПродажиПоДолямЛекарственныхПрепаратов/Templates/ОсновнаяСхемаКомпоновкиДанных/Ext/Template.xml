@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИнформационнаяБаза</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Запрос</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Номенклатура</dcscor:choiceParameter>
+							<dcscor:value>Номенклатура</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерКИЗ</dataPath>
+			<field>НомерКИЗ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер КИЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПервичныхУпаковок</dataPath>
+			<field>КоличествоПервичныхУпаковок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество первичных упаковок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПродажи</dataPath>
+			<field>ДатаПродажи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата продажи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПродажи</dataPath>
+			<field>ДокументПродажи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ продажи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолныйКодМаркировки</dataPath>
+			<field>ПолныйКодМаркировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОстаток</dataPath>
+			<field>КоличествоОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество остаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИнформационнаяБаза</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЧекККМ.Ссылка КАК ДокументПродажи,
+	ТаблицаТовары.Номенклатура КАК Номенклатура,
+	ТаблицаТовары.Характеристика КАК Характеристика,
+	СУММА(ТаблицаТовары.Количество) КАК Количество,
+	ТаблицаТовары.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ЕСТЬNULL(НомераУпаковок.НомерКИЗ, "") КАК НомерКИЗ,
+	ЕСТЬNULL(НомераУпаковок.ПолныйКодМаркировки, "") КАК ПолныйКодМаркировки
+ПОМЕСТИТЬ ОсновныеДанные
+ИЗ
+	Документ.ЧекККМ.Запасы КАК ТаблицаТовары
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЧекККМ КАК ЧекККМ
+		ПО ТаблицаТовары.Ссылка = ЧекККМ.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЧекККМ.ор_НомераУпаковок КАК НомераУпаковок
+		ПО ТаблицаТовары.ор_ИдентификаторСтроки = НомераУпаковок.ИдентификаторСтроки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+		ПО ТаблицаТовары.Характеристика = ХарактеристикиНоменклатуры.Ссылка
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА ЧекККМ.Дата &gt;= &amp;НачалоПериода
+			ИНАЧЕ ЧекККМ.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+		КОНЕЦ
+	И НЕ ЧекККМ.ОперацияСДенежнымиСредствами
+	И ЧекККМ.Проведен
+	И ХарактеристикиНоменклатуры.ор_МаркируемыйТовар
+{ГДЕ
+	ЧекККМ.Организация.*,
+	ТаблицаТовары.СтруктурнаяЕдиница.*}
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаТовары.Номенклатура,
+	ТаблицаТовары.Характеристика,
+	ТаблицаТовары.ЕдиницаИзмерения,
+	ЧекККМ.Ссылка,
+	ЕСТЬNULL(НомераУпаковок.НомерКИЗ, ""),
+	ЕСТЬNULL(НомераУпаковок.ПолныйКодМаркировки, "")
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОсновныеДанные.НомерКИЗ КАК НомерКИЗ
+ПОМЕСТИТЬ НомераПроданныхУпаковок
+ИЗ
+	ОсновныеДанные КАК ОсновныеДанные
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОсновныеДанные.НомерКИЗ КАК НомерУпаковки,
+	ВЫБОР
+		КОГДА СУММА(Доли.ДоляУпаковки) &gt;= 1
+			ТОГДА 1
+		ИНАЧЕ СУММА(Доли.ДоляУпаковки)
+	КОНЕЦ КАК ДоляУпаковки
+ПОМЕСТИТЬ ОстаткиДолейУпаковок
+ИЗ
+	НомераПроданныхУпаковок КАК ОсновныеДанные
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДолиУпаковокМДЛП КАК Доли
+		ПО ОсновныеДанные.НомерКИЗ = Доли.НомерУпаковки
+
+СГРУППИРОВАТЬ ПО
+	ОсновныеДанные.НомерКИЗ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОсновныеДанные.НомерКИЗ КАК НомерУпаковки,
+	ВЫБОР
+		КОГДА СУММА(Доли.ДоляУпаковки) &gt;= 1
+			ТОГДА 1
+		ИНАЧЕ СУММА(Доли.ДоляУпаковки)
+	КОНЕЦ КАК ДоляУпаковкиРеестра
+ПОМЕСТИТЬ ОстаткиДолейУпаковокРеестра
+ИЗ
+	НомераПроданныхУпаковок КАК ОсновныеДанные
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РеестрВыбытияУпаковокМДЛП КАК Доли
+		ПО ОсновныеДанные.НомерКИЗ = Доли.НомерУпаковки
+ГДЕ
+	Доли.СтатусВыбытия &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыВыбытияУпаковокМДЛП.ОтклоненВыводИзОборота)
+
+СГРУППИРОВАТЬ ПО
+	ОсновныеДанные.НомерКИЗ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОсновныеДанные.НомерКИЗ КАК НомерУпаковки,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ОстаткиДолейУпаковок.ДоляУпаковки, 1) &gt; ЕСТЬNULL(ОстаткиДолейУпаковокРеестра.ДоляУпаковкиРеестра, 1)
+			ТОГДА ЕСТЬNULL(ОстаткиДолейУпаковокРеестра.ДоляУпаковкиРеестра, 1)
+		ИНАЧЕ ЕСТЬNULL(ОстаткиДолейУпаковок.ДоляУпаковки, 1)
+	КОНЕЦ КАК ОстатокДоляУпаковки
+ПОМЕСТИТЬ НомераУпаковок
+ИЗ
+	НомераПроданныхУпаковок КАК ОсновныеДанные
+		ЛЕВОЕ СОЕДИНЕНИЕ ОстаткиДолейУпаковок КАК ОстаткиДолейУпаковок
+		ПО ОсновныеДанные.НомерКИЗ = ОстаткиДолейУпаковок.НомерУпаковки
+		ЛЕВОЕ СОЕДИНЕНИЕ ОстаткиДолейУпаковокРеестра КАК ОстаткиДолейУпаковокРеестра
+		ПО ОсновныеДанные.НомерКИЗ = ОстаткиДолейУпаковокРеестра.НомерУпаковки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЧекККМПродажи.Дата КАК ДатаПродажи,
+	ОсновныеДанные.ДокументПродажи КАК ДокументПродажи,
+	ОсновныеДанные.Номенклатура КАК Номенклатура,
+	ОсновныеДанные.Характеристика КАК Характеристика,
+	ОсновныеДанные.Количество КАК Количество,
+	ОсновныеДанные.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ОсновныеДанные.НомерКИЗ КАК НомерКИЗ,
+	ЕдиницыИзмерения.ор_КоличествоПервичныхУпаковок КАК КоличествоПервичныхУпаковок,
+	ОсновныеДанные.ПолныйКодМаркировки КАК ПолныйКодМаркировки,
+	ЕдиницыИзмерения.ор_КоличествоПервичныхУпаковок - НомераУпаковок.ОстатокДоляУпаковки / ВЫБОР
+		КОГДА ЕдиницыИзмерения.Коэффициент = 0
+			ТОГДА 1
+		ИНАЧЕ ЕдиницыИзмерения.Коэффициент
+	КОНЕЦ КАК КоличествоОстаток
+ИЗ
+	ОсновныеДанные КАК ОсновныеДанные
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ЕдиницыИзмерения КАК ЕдиницыИзмерения
+		ПО ОсновныеДанные.ЕдиницаИзмерения = ЕдиницыИзмерения.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЧекККМ КАК ЧекККМПродажи
+		ПО ОсновныеДанные.ДокументПродажи = ЧекККМПродажи.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ НомераУпаковок КАК НомераУпаковок
+		ПО ОсновныеДанные.НомерКИЗ = НомераУпаковок.НомерУпаковки
+ГДЕ
+	ЕдиницыИзмерения.ор_КоличествоПервичныхУпаковок &gt; 1
+	И ОсновныеДанные.Количество &gt; 0</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПроданныеДоли</dataPath>
+		<expression>Формат(Количество, "ЧН=") + " / " + Формат(КоличествоПервичныхУпаковок, "ЧН=") </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Доли</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДолиНаОстатке</dataPath>
+		<expression>Формат(КоличествоОстаток, "ЧН=") + " / " + Формат(КоличествоПервичныхУпаковок, "ЧН=")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Остаток</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>БыстрыйВыбор</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПродажиПоДолямЛекарственныхПрепаратов</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Продажи по долям лекарственных препаратов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПродажи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерКИЗ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроданныеДоли</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДолиНаОстатке</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Организации.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>ee8f0693-5ba0-44b2-88e4-c1cd1c78cef1</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтруктурнаяЕдиница</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СтруктурныеЕдиницы.ОсновнойСклад</dcsset:right>
+					<dcsset:userSettingID>30ec3343-f300-417e-bdea-66eb428e3513</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Номенклатура.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>08a2044c-966b-4869-a055-d47625ede78d</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcscor:value>
+					<dcsset:userSettingID>83ff165c-2bd8-4796-85a4-15a0316d4887</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>34efc69c-7686-4c5e-86a7-bea9987bec12</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовБежевый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">SeparatelyAndInTotalsOnly</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ДатаПродажи</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

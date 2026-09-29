@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="64592673-624e-4a13-849a-95a7336cfdc5">
+		<Name>Оптовая</Name>
+		<Code>00-000001</Code>
+		<Description>Оптовая цена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8bca46a0-8263-420a-a040-bf6859b1a450">
+		<Name>Учетная</Name>
+		<Code>00-000002</Code>
+		<Description>Учетная цена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="71893f16-3830-4db6-a6b3-3a2c9b5827f6">
+		<Name>ЦенаПоставщика</Name>
+		<Code>00-000101</Code>
+		<Description>Цена поставщика</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="da29bfb8-f0ce-4141-b194-674b78867cfc">
+		<Name>ЦенаПроизводителя</Name>
+		<Code>00-000102</Code>
+		<Description>Цена производителя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

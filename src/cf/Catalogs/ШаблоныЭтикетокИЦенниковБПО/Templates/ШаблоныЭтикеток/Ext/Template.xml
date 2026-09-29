@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>4</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>1</index>
+			<column>
+				<formatIndex>2</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<c>
+				<c>
+					<f>1</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШаблонЦенникМалый</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Formatting Width="58" Height="40"&gt;
+	&lt;Text FieldName="0a750c7e-cd83-4a96-b03a-db046e65e2da" Left="2" Top="7" Width="56" Height="14" FontName="Arial" FontSize="10" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="true" TypeFill="Parameter" Value="Номенклатура"/&gt;
+	&lt;Text FieldName="6897bd06-07c0-41aa-b0c9-ac8cc2825a16" Left="2" Top="21" Width="34" Height="10" FontName="Arial" FontSize="18" FontStyle="Bold" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Right" VAlign="Center" Multiline="false" Format="ЧЦ='12'; ЧДЦ='2'; ЧРД=','; ЧН='0.00'" TypeFill="Parameter" Value="Цена"/&gt;
+	&lt;Barcode FieldName="87fc9c5d-ae15-48a4-bf69-3d56050b80ec" Left="26" Top="31" Width="32" Height="9" Type="EAN13" PrintHRI="true" FontSize="16" CheckSymbol="false" TypeFill="Parameter" Value="Штрихкод"/&gt;
+	&lt;Text FieldName="eaba6d94-64c0-43a0-ad7a-6c5d5539564c" Left="36" Top="21" Width="22" Height="4" FontName="Arial" FontSize="8" FontStyle="Underline" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Left" VAlign="Top" Multiline="false" TypeFill="Constant" Value="руб"/&gt;
+	&lt;Text FieldName="e5b5c498-eafe-4c7b-87cd-0818bb6d41a4" Left="2" Top="2" Width="56" Height="4" FontName="Arial" FontSize="8" FontStyle="Bold Underline" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="false" TypeFill="Parameter" Value="Организация"/&gt;
+	&lt;Text FieldName="359f9eb7-c752-4d50-aa5a-ed6c58227f42" Left="2" Top="35" Width="18" Height="5" FontName="Arial" FontSize="6" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Left" VAlign="Center" Multiline="false" Format="ДФ='dd.MM.yyyy'" TypeFill="Parameter" Value="ДатаЦены"/&gt;
+	&lt;Text FieldName="c750502d-3013-4ecd-a71e-fd6f05787786" Left="36" Top="25" Width="22" Height="6" FontName="Arial" FontSize="8" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Left" VAlign="Bottom" Multiline="false" TypeFill="Parameter" Value="ЕдиницаИзмерения"/&gt;
+&lt;/Formatting&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>58X40</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>1</index>
+		<row>
+			<c>
+				<c>
+					<f>1</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШаблонЭтикеткаБольшой</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Formatting Width="58" Height="40"&gt;
+	&lt;Text FieldName="0a750c7e-cd83-4a96-b03a-db046e65e2da" Left="2" Top="10" Width="56" Height="15" FontName="Arial" FontSize="10" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="true" TypeFill="Parameter" Value="Номенклатура"/&gt;
+	&lt;Text FieldName="e5b5c498-eafe-4c7b-87cd-0818bb6d41a4" Left="2" Top="2" Width="56" Height="7" FontName="Arial" FontSize="8" FontStyle="Bold Underline" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="false" TypeFill="Parameter" Value="Организация"/&gt;
+	&lt;Barcode FieldName="87fc9c5d-ae15-48a4-bf69-3d56050b80ec" Left="9" Top="26" Width="42" Height="14" Type="EAN13" PrintHRI="true" FontSize="16" CheckSymbol="true" TypeFill="Parameter" Value="Штрихкод"/&gt;
+&lt;/Formatting&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>58X40</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>2</index>
+		<row>
+			<c>
+				<c>
+					<f>1</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШаблонЭтикеткаМалый</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Formatting Width="30" Height="20"&gt;
+	&lt;Barcode FieldName="87fc9c5d-ae15-48a4-bf69-3d56050b80ec" Left="2" Top="7" Width="28" Height="13" Type="EAN13" PrintHRI="false" TypeFill="Parameter" Value="Штрихкод"/&gt;
+	&lt;Text FieldName="e5b5c498-eafe-4c7b-87cd-0818bb6d41a4" Left="2" Top="1" Width="28" Height="5" FontName="Arial" FontSize="6" FontStyle="Bold" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Top" Multiline="false" TypeFill="Parameter" Value="Организация"/&gt;
+&lt;/Formatting&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>30x20</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<c>
+					<f>1</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШаблонЦенникАкционный</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Formatting Width="67" Height="60"&gt;
+	&lt;Text FieldName="0a750c7e-cd83-4a96-b03a-db046e65e2da" Left="2" Top="7" Width="64" Height="17" FontName="Arial" FontSize="10" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="true" TypeFill="Parameter" Value="Номенклатура"/&gt;
+	&lt;Text FieldName="e5b5c498-eafe-4c7b-87cd-0818bb6d41a4" Left="2" Top="2" Width="64" Height="4" FontName="Arial" FontSize="8" FontStyle="Bold Underline" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="false" TypeFill="Parameter" Value="Организация"/&gt;
+	&lt;Text FieldName="4b6676ff-c5e7-4e59-a2cf-3abbdc766ea2" Left="2" Top="25" Width="64" Height="7" FontName="Arial" FontSize="8" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Top" Multiline="false" TypeFill="Parameter" Value="Характеристика"/&gt;
+	&lt;Text FieldName="4ae76b8d-97f5-418d-89a1-87b46d9e846f" Left="2" Top="32" Width="51" Height="10" FontName="Arial" FontSize="8" FontStyle="Strikeout" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="false" TypeFill="Parameter" Value="СтараяЦена"/&gt;
+	&lt;Text FieldName="6897bd06-07c0-41aa-b0c9-ac8cc2825a16" Left="2" Top="43" Width="51" Height="16" FontName="Arial" FontSize="16" FontStyle="Bold" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Center" VAlign="Center" Multiline="false" TypeFill="Parameter" Value="Цена"/&gt;
+	&lt;Text FieldName="6a835ed5-1dae-4c5c-b09d-1664383bc944" Left="55" Top="43" Width="11" Height="16" FontName="Arial" FontSize="14" FontStyle="Bold" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Left" VAlign="Center" Multiline="false" TypeFill="Constant" Value="руб."/&gt;
+	&lt;Text FieldName="82724126-c861-4cea-bd1d-cabfae5ccd9e" Left="55" Top="32" Width="11" Height="10" FontName="Arial" FontSize="8" Background="{&amp;quot;#&amp;quot;,9cd510c7-abfc-11d4-9434-004095e12fc7,2,
+{3,3,
+{-10}
+}
+}" Align="Left" VAlign="Center" Multiline="false" TypeFill="Constant" Value="руб."/&gt;
+&lt;/Formatting&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>67х60</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>4</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ор_ШаблонСтеллажнаяКарточка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Formatting Width="90" Height="45"&gt;
+	&lt;Text FieldName="b74e7926-f623-4ce4-afdd-63b05c6a72bd" Left="29" Top="13" Width="61.5" Height="5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Center" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Номенклатура.Наименование"/&gt;
+	&lt;Text FieldName="f4192934-14d9-4bba-8f08-78a1c459ef51" Left="15" Top="19" Width="75.5" Height="5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Center" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Характеристика.Наименование"/&gt;
+	&lt;Text FieldName="a1e1e1f3-2d4b-40ce-aea5-62960394fe7b" Left="20" Top="25" Width="70.5" Height="5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Center" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Характеристика.ор_СрокГодности"/&gt;
+	&lt;Text FieldName="433d6769-c221-4513-86ce-a31b62ba2227" Left="25" Top="31.5" Width="65.5" Height="4.5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Center" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="ОстатокНаСкладе"/&gt;
+	&lt;Text FieldName="5c666fe8-fd7c-4674-9f05-3456a0f9d304" Left="2" Top="13" Width="27.5" Height="5.5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Left" VAlign="Top" Multiline="false" TypeFill="Constant" Value="Наименование:"/&gt;
+	&lt;Text FieldName="86fbefa4-8ae0-4a01-aa10-d891dc05ecce" Left="2" Top="19" Width="13.5" Height="5.5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Left" VAlign="Top" Multiline="false" TypeFill="Constant" Value="Серия:"/&gt;
+	&lt;Text FieldName="81515c83-4e96-4993-abff-104687606a6c" Left="2" Top="25" Width="18" Height="5.5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Left" VAlign="Top" Multiline="false" TypeFill="Constant" Value="Годен до:"/&gt;
+	&lt;Text FieldName="d23a8846-ecd4-4fc2-9999-3b5ba748107b" Left="2" Top="31" Width="22" Height="4.5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Left" VAlign="Top" Multiline="false" TypeFill="Constant" Value="Количество:"/&gt;
+	&lt;Text FieldName="c90d413d-f58e-4e67-8411-e36133380bfd" Left="14" Top="37" Width="76.5" Height="5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Center" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Цена"/&gt;
+	&lt;Text FieldName="e07b47ae-30ca-481e-b41a-1b9834798d07" Left="2" Top="37" Width="11" Height="5.5" FontName="Arial" FontSize="9" FontStyle="Bold" Align="Left" VAlign="Top" Multiline="false" TypeFill="Constant" Value="Цена:"/&gt;
+	&lt;Text FieldName="b3fc8d6c-6e0f-4580-ad74-b21cfd3f6d94" Left="2" Top="2" Width="88" Height="8" FontName="Arial" FontSize="14" FontStyle="Bold" Align="Center" VAlign="Top" Multiline="false" TypeFill="Constant" Value="СТЕЛЛАЖНАЯ КАРТОЧКА"/&gt;
+&lt;/Formatting&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>90х45</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>5</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ор_ЦенникАптечный</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Formatting Width="90" Height="50"&gt;
+	&lt;Text FieldName="9814d0d4-344d-4fbe-8881-e1f44ed4b70d" Left="1" Top="1" Width="89" Height="5" FontName="Arial" FontSize="8" Align="Center" VAlign="Top" Multiline="true" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Организация.НаименованиеПолное"/&gt;
+	&lt;Text FieldName="ca610d3d-7131-4c5d-b806-a04d4b68a319" Left="1" Top="6" Width="89" Height="8" FontName="Arial" FontSize="12" FontStyle="Bold" Align="Center" VAlign="Top" Multiline="false" TypeFill="Parameter" Value="Номенклатура.Наименование"/&gt;
+	&lt;Text FieldName="1941e1e5-079b-4cfe-9715-2bd0151669ec" Left="1" Top="14" Width="45" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" TypeFill="Parameter" Value="Характеристика.ор_Производитель"/&gt;
+	&lt;Text FieldName="cc8618cc-1c11-4918-9db3-bbc3fd20849b" Left="46" Top="14" Width="44" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" TypeFill="Parameter" Value="Характеристика.ор_СтранаПроисхождения"/&gt;
+	&lt;Text FieldName="260a9a5c-8849-47fe-80b9-da193a4644fb" Left="1" Top="19" Width="89" Height="5" FontName="Arial" FontSize="8" Align="Center" VAlign="Top" Multiline="false" Format="ЧДЦ='2'" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Номенклатура.ор_ФормаВыпуска"/&gt;
+	&lt;Text FieldName="af70bbc6-f9cf-4eab-969b-328194439bec" Left="37" Top="24" Width="53" Height="11" FontName="Arial" FontSize="20" FontStyle="Bold" Align="Left" VAlign="Top" Multiline="false" Format="ЧДЦ='2'" TypeFill="Parameter" Value="Цена"/&gt;
+	&lt;Text FieldName="ef0da8cc-e4e9-4151-955e-467a0aeb36a3" Left="1" Top="35" Width="11" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Border="Top" BorderWidth="1" BorderStyle="Solid" TypeFill="Constant" Value="Серия:"/&gt;
+	&lt;Text FieldName="eeb0772a-8450-4aad-91af-80c9b9913989" Left="12" Top="35" Width="48" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Border="Top" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Характеристика.ор_СерияПроизводителя"/&gt;
+	&lt;Text FieldName="fe5e750b-90fb-4cf8-8b31-b6c2de027329" Left="60" Top="35" Width="5" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Border="Top" BorderWidth="1" BorderStyle="Solid" TypeFill="Constant" Value="до:"/&gt;
+	&lt;Text FieldName="e3ad33f7-39d5-4acc-af84-ff22d87243d5" Left="65" Top="35" Width="25" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Border="Top" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="Характеристика.ор_СрокГодности"/&gt;
+	&lt;Text FieldName="9b977928-7b1d-4062-a58c-c9e10cfc1ae6" Left="1" Top="40" Width="19" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Constant" Value="Накладн. №:"/&gt;
+	&lt;Text FieldName="a6206337-92ec-450c-8daf-d426be4b727f" Left="20" Top="40" Width="40" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="ПриходнаяНакладная.Номер"/&gt;
+	&lt;Text FieldName="6c2dd600-e171-4460-bfe4-6f686a337bc3" Left="60" Top="40" Width="6" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Constant" Value="от:"/&gt;
+	&lt;Text FieldName="b99529a4-1be8-4c97-a74f-51d87327d153" Left="66" Top="40" Width="24" Height="5" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Format="ДФ='dd.MM.yyyy'" Border="Bottom" BorderWidth="1" BorderStyle="Solid" TypeFill="Parameter" Value="ПриходнаяНакладная.Дата"/&gt;
+	&lt;Text FieldName="8640043a-e92b-4fea-aba2-5e6eae20b524" Left="1" Top="46" Width="13" Height="4" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" TypeFill="Constant" Value="Подпись"/&gt;
+	&lt;Text FieldName="0519c916-5e2b-4d44-9f62-b4fed1323e43" Left="60" Top="46" Width="30" Height="4" FontName="Arial" FontSize="8" Align="Left" VAlign="Top" Multiline="false" Format="ДФ='dd.MM.yyyy'" TypeFill="Parameter" Value="ТекущееВремя"/&gt;
+	&lt;Image FieldName="b9be21ee-0a25-4f17-9e5d-0853558a7d56" Left="32" Top="26" Width="5" Height="7" TypeFill="Constant" Value="iVBORw0KGgoAAAANSUhEUgAAAFwAAAB8CAYAAADkQ9duAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABUbSURBVHhe7Z13qCxF2sYv+Icg5pxzTmAWvNeMEQOCqBgxIaLfggqC4B8iipgxgJizm9zPsJ8LZswBc06Ys36uOVvrr/DpfU7d6q6e6XPOzL1nGpqemU5VT7311ptnWuiw/frrr8H33377LcxKe4eu933rtL7v/P3GFHC+DxPgufb5b1363u+9nQD/5ZdfAvuwUrraV3fsF7Qu983WgP/888+hae8CXL/3dgIcyv7qq6/Cjz/+GN9/0//eFJ588snw9NNPhyeeeCI8++yzE7o///zz4YUXXggvvvhieOmll8Irr7wSXnvttfD666+HN954I/z0008RcNqZbrC+H374YaZz/K7NP+sZHOlvHfssDUQnwHk4nfr666/Dp59+GtZbb72w9NJLh3nmmSfMPffcYdq0aZO2zznnnGGuueaK7+X98847b1hzzTXD9OnTw7777htOOeWUcMvNt8RB+f7772fChd/+/cW/IwE5uGJH3CDC8gFJ16wJBRwKERXQ0OWXX37SAG4azDnmmCOw+zV8X3TRRcMaa6wRNt9887DLLruE++67L7z99ttjMPr222/HDMh3330XCcoH4ZtvvokzJycgTCjgmlq8BEqAouaff/4w33zzhcUWWyx2erJ2KDzdoXaoPh0crltggQXi72uttVY45phjwv333z+GvYjanZrpL0DT1zppbEIBF9A0ACoYFgrPAewUz0BAGLAdXbvCCiuEPffcM1xx+RXhww8/rHCjX1A5FA7boa8DYym8mBHXcdVVV42doDMLLrhgpK7J2kXdPqP4LWUtAMwMXHjhhSPYXOMDtNxyy4XDDjssXHXlVQH2wibhQEB/9tln8eOksxSt9Fo8h5XCGXQIgT0FmN8WWmihyGJ0jiO/H3XUUVHiYYPKRVx8HgjgagjHTz75JKyyyipRSpgsCSWl6pSVIK3kKJz2QeUMhGYB10nS0azkecsss0y47LLLqlnMgskGP590CpeGKZYC4DSyH8AFjI65xS4HqEBLz+k5KVsRqFyfGwx/DqxR348++ujwxf9/EcFGOmOHvwM6fB3+7vJ+Tvbn3k5yeFfAmbbqNNQ4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"/&gt;
+&lt;/Formatting&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>90х50</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>0</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>7</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>3</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>3</defaultFormatIndex>
+	<height>6</height>
+	<vgRows>6</vgRows>
+	<format>
+		<width>215</width>
+	</format>
+	<format>
+		<width>1370</width>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+	<format>
+		<width>366</width>
+	</format>
+</document>

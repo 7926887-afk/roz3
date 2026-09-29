@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор характеристики подарка</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<Group>Vertical</Group>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<ConversationsRepresentation>DontShow</ConversationsRepresentation>
+	<ShowCommandBar>true</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="31">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="32"/>
+			</Button>
+			<Button name="ФормаВыбрать" id="29">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выдать</v8:content>
+					</v8:item>
+				</Title>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="30"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ТекстВопроса" id="43">
+			<DataPath>ТекстВопроса</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+			<ContextMenu name="ТекстВопросаКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ТекстВопросаРасширеннаяПодсказка" id="45"/>
+		</LabelField>
+		<UsualGroup name="ГруппаУправленияСписком" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа управления списком</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа управления списком</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаУправленияСпискомРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<CheckBoxField name="ПоказыватьТолькоХарактеристикиПодарковВНаличии" id="40">
+					<DataPath>ПоказыватьТолькоХарактеристикиПодарковВНаличии</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристики на остатке</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включить/отключить отбор товаров с ненулевым остатком</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ПоказыватьТолькоХарактеристикиПодарковВНаличииКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ПоказыватьТолькоХарактеристикиПодарковВНаличииРасширеннаяПодсказка" id="42"/>
+					<Events>
+						<Event name="OnChange">ПоказыватьТолькоХарактеристикиПодарковВНаличииПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<SearchStringAddition name="ДополнениеСтрокаПоиска" id="37">
+					<AdditionSource>
+						<Item>СписокХарактеристик</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнение строка поиска</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДополнениеСтрокаПоискаКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДополнениеСтрокаПоискаРасширеннаяПодсказка" id="39"/>
+				</SearchStringAddition>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСписокХарактеристик" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа список характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ShowAsCard>true</ShowAsCard>
+			<ExtendedTooltip name="ГруппаСписокХарактеристикРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Table name="СписокХарактеристик" id="1">
+					<CommandBarLocation>None</CommandBarLocation>
+					<SelectionMode>SingleRow</SelectionMode>
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СписокХарактеристик</DataPath>
+					<RowPictureDataPath>~СписокХарактеристик.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>ListSettings</ExcludedCommand>
+						<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+					</CommandSet>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="СписокХарактеристикКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СписокХарактеристикКоманднаяПанель" id="3"/>
+					<ExtendedTooltip name="СписокХарактеристикРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="СписокХарактеристикСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>СписокХарактеристик</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокХарактеристикСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="СписокХарактеристикСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокХарактеристикСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>СписокХарактеристик</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокХарактеристикСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="СписокХарактеристикСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокХарактеристикУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>СписокХарактеристик</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокХарактеристикУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="СписокХарактеристикУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокХарактеристикВыбор</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="СписокХарактеристикХарактеристика" id="23">
+							<DataPath>СписокХарактеристик.Характеристика</DataPath>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<Width>25</Width>
+							<ContextMenu name="СписокХарактеристикХарактеристикаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="СписокХарактеристикХарактеристикаРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<LabelField name="СписокХарактеристикЦена" id="26">
+							<DataPath>СписокХарактеристик.Цена</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Цена, ₽</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>10</MaxWidth>
+							<ContextMenu name="СписокХарактеристикЦенаКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СписокХарактеристикЦенаРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+						<LabelField name="СписокХарактеристикДоступно" id="17">
+							<DataPath>СписокХарактеристик.Доступно</DataPath>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=3</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СписокХарактеристикДоступноКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="СписокХарактеристикДоступноРасширеннаяПодсказка" id="19"/>
+						</LabelField>
+						<LabelField name="СписокХарактеристикВРезерве" id="14">
+							<DataPath>СписокХарактеристик.ВРезерве</DataPath>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=3</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СписокХарактеристикВРезервеКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="СписокХарактеристикВРезервеРасширеннаяПодсказка" id="16"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоКассира</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокХарактеристик" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокХарактеристик.ВидНоменклатуры</Field>
+				<Field>~СписокХарактеристик.Организация</Field>
+				<Field>~СписокХарактеристик.ОсобенностьУчета</Field>
+				<Field>СписокХарактеристик.Доступно</Field>
+				<Field>СписокХарактеристик.Характеристика</Field>
+				<Field>СписокХарактеристик.Цена</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СпрНоменклатура.Ссылка КАК Номенклатура,
+	СпрНоменклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения
+ПОМЕСТИТЬ ТаблицаНоменклатура
+ИЗ
+	Справочник.Номенклатура КАК СпрНоменклатура
+ГДЕ
+	СпрНоменклатура.Ссылка = &amp;Номенклатура
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаНоменклатура.Номенклатура КАК Номенклатура,
+	ЕСТЬNULL(ЦеныНоменклатуры.Характеристика, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) КАК Характеристика,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ЦеныНоменклатуры.ЕдиницаИзмерения, ЗНАЧЕНИЕ(Справочник.ЕдиницыИзмерения.ПустаяСсылка)) = ЗНАЧЕНИЕ(Справочник.ЕдиницыИзмерения.ПустаяСсылка)
+			ТОГДА ТаблицаНоменклатура.ЕдиницаИзмерения
+		ИНАЧЕ ЕСТЬNULL(ЦеныНоменклатуры.ЕдиницаИзмерения, ЗНАЧЕНИЕ(Справочник.ЕдиницыИзмерения.ПустаяСсылка))
+	КОНЕЦ КАК Упаковка,
+	МАКСИМУМ(ЕСТЬNULL(ЦеныНоменклатуры.Период, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0))) КАК Период,
+	ЕСТЬNULL(ЦеныНоменклатуры.ВидЦен, ЗНАЧЕНИЕ(Справочник.ВидыЦен.ПустаяСсылка)) КАК ВидЦен
+ПОМЕСТИТЬ ТаблицаМаксПериодЦен
+ИЗ
+	ТаблицаНоменклатура КАК ТаблицаНоменклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+		ПО ТаблицаНоменклатура.Номенклатура = ЦеныНоменклатуры.Номенклатура
+ГДЕ
+	ЦеныНоменклатуры.Период &lt;= &amp;Дата
+	И ЦеныНоменклатуры.ВидЦен = &amp;ВидЦены
+	И ЦеныНоменклатуры.Актуальность
+	И ЕСТЬNULL(ЦеныНоменклатуры.Характеристика, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) &lt;&gt; ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаНоменклатура.Номенклатура,
+	ЕСТЬNULL(ЦеныНоменклатуры.Характеристика, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)),
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ЦеныНоменклатуры.ЕдиницаИзмерения, ЗНАЧЕНИЕ(Справочник.ЕдиницыИзмерения.ПустаяСсылка)) = ЗНАЧЕНИЕ(Справочник.ЕдиницыИзмерения.ПустаяСсылка)
+			ТОГДА ТаблицаНоменклатура.ЕдиницаИзмерения
+		ИНАЧЕ ЕСТЬNULL(ЦеныНоменклатуры.ЕдиницаИзмерения, ЗНАЧЕНИЕ(Справочник.ЕдиницыИзмерения.ПустаяСсылка))
+	КОНЕЦ,
+	ЕСТЬNULL(ЦеныНоменклатуры.ВидЦен, ЗНАЧЕНИЕ(Справочник.ВидыЦен.ПустаяСсылка))
+
+ИНДЕКСИРОВАТЬ ПО
+	Период,
+	ВидЦен,
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаМаксПериодЦен.Номенклатура КАК Номенклатура,
+	ТаблицаМаксПериодЦен.Характеристика КАК Характеристика,
+	ТаблицаМаксПериодЦен.Упаковка КАК Упаковка,
+	ТаблицаМаксПериодЦен.Период КАК Период,
+	ТаблицаМаксПериодЦен.ВидЦен КАК ВидЦен,
+	ЕСТЬNULL(ЦеныНоменклатуры.Цена, 0) КАК Цена,
+	ВЫБОР
+		КОГДА ЦеныНоменклатуры.ВалютаЦены &lt;&gt; ЗНАЧЕНИЕ(Справочник.Валюты.ПустаяСсылка)
+			ТОГДА ЦеныНоменклатуры.ВалютаЦены
+		ИНАЧЕ ЦеныНоменклатуры.ВидЦен.ВалютаЦены
+	КОНЕЦ КАК ВалютаЦены
+ПОМЕСТИТЬ ТаблицаИтоговыхЦен
+ИЗ
+	ТаблицаМаксПериодЦен КАК ТаблицаМаксПериодЦен
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры КАК ЦеныНоменклатуры
+		ПО ТаблицаМаксПериодЦен.Период = ЦеныНоменклатуры.Период
+			И ТаблицаМаксПериодЦен.ВидЦен = ЦеныНоменклатуры.ВидЦен
+			И ТаблицаМаксПериодЦен.Номенклатура = ЦеныНоменклатуры.Номенклатура
+			И ТаблицаМаксПериодЦен.Характеристика = ЦеныНоменклатуры.Характеристика
+
+ИНДЕКСИРОВАТЬ ПО
+	ВалютаЦены
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Курсы.Валюта КАК Валюта,
+	Курсы.Курс КАК Курс,
+	Курсы.Кратность КАК Кратность
+ПОМЕСТИТЬ КурсыВалют
+ИЗ
+	РегистрСведений.КурсыВалют.СрезПоследних(
+			&amp;Дата,
+			Валюта В
+				(ВЫБРАТЬ
+					Таблица.ВалютаЦены
+				ИЗ
+					ТаблицаИтоговыхЦен КАК Таблица)) КАК Курсы
+
+ИНДЕКСИРОВАТЬ ПО
+	Валюта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаИтоговыхЦен.Номенклатура КАК Номенклатура,
+	ТаблицаИтоговыхЦен.Характеристика КАК Характеристика,
+	ТаблицаИтоговыхЦен.Период КАК Период,
+	ТаблицаИтоговыхЦен.ВидЦен КАК ВидЦен,
+	ТаблицаИтоговыхЦен.Цена * ЕСТЬNULL(КурсыВалют.Курс, 1) * ЕСТЬNULL(КурсыВалют.Кратность, 1) КАК Цена,
+	ВЫБОР
+		КОГДА ТаблицаИтоговыхЦен.Упаковка ССЫЛКА Справочник.ЕдиницыИзмерения
+			ТОГДА ЕСТЬNULL(ЕдиницыИзмерения.Коэффициент, 1)
+		ИНАЧЕ 1
+	КОНЕЦ КАК КоэффициентУпаковки
+ПОМЕСТИТЬ ТаблицаКоэффициентыУпаковок
+ИЗ
+	ТаблицаИтоговыхЦен КАК ТаблицаИтоговыхЦен
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ЕдиницыИзмерения КАК ЕдиницыИзмерения
+		ПО ТаблицаИтоговыхЦен.Упаковка = ЕдиницыИзмерения.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ КурсыВалют КАК КурсыВалют
+		ПО ТаблицаИтоговыхЦен.ВалютаЦены = КурсыВалют.Валюта
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СтруктурныеЕдиницы.Ссылка КАК Склад,
+	СтруктурныеЕдиницы.ТипСтруктурнойЕдиницы КАК ТипСтруктурнойЕдиницы
+ПОМЕСТИТЬ ДанныеТорговогоОбъекта
+ИЗ
+	Справочник.СтруктурныеЕдиницы КАК СтруктурныеЕдиницы
+ГДЕ
+	НЕ СтруктурныеЕдиницы.ПометкаУдаления
+	И СтруктурныеЕдиницы.Ссылка = &amp;ТорговыйОбъект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СтруктурныеЕдиницы.Ссылка КАК Склад
+ПОМЕСТИТЬ ТаблицаСклады
+ИЗ
+	ДанныеТорговогоОбъекта КАК ДанныеТорговогоОбъекта
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СтруктурныеЕдиницы КАК СтруктурныеЕдиницы
+		ПО ДанныеТорговогоОбъекта.Склад = СтруктурныеЕдиницы.Родитель
+ГДЕ
+	ДанныеТорговогоОбъекта.ТипСтруктурнойЕдиницы = ЗНАЧЕНИЕ(Перечисление.ТипыСтруктурныхЕдиниц.МагазинГруппаСкладов)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СтруктурныеЕдиницы.Ссылка
+ИЗ
+	ДанныеТорговогоОбъекта КАК ДанныеТорговогоОбъекта
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СтруктурныеЕдиницы КАК СтруктурныеЕдиницы
+		ПО ДанныеТорговогоОбъекта.Склад = СтруктурныеЕдиницы.Ссылка
+ГДЕ
+	(ДанныеТорговогоОбъекта.ТипСтруктурнойЕдиницы = ЗНАЧЕНИЕ(Перечисление.ТипыСтруктурныхЕдиниц.Склад)
+			ИЛИ ДанныеТорговогоОбъекта.ТипСтруктурнойЕдиницы = ЗНАЧЕНИЕ(Перечисление.ТипыСтруктурныхЕдиниц.Розница))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОстаткиТоваров.Номенклатура КАК Номенклатура,
+	ОстаткиТоваров.Характеристика КАК Характеристика,
+	СУММА(ОстаткиТоваров.Количество) КАК Количество,
+	СУММА(ОстаткиТоваров.Резерв) КАК Резерв
+ПОМЕСТИТЬ ТаблицаОстатки
+ИЗ
+	РегистрСведений.ОстаткиТоваров КАК ОстаткиТоваров
+ГДЕ
+	ОстаткиТоваров.СтруктурнаяЕдиница В
+			(ВЫБРАТЬ
+				ТаблицаСклады.Склад КАК Склад
+			ИЗ
+				ТаблицаСклады КАК ТаблицаСклады)
+
+СГРУППИРОВАТЬ ПО
+	ОстаткиТоваров.Номенклатура,
+	ОстаткиТоваров.Характеристика
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаКоэффициентыУпаковок.Номенклатура КАК Номенклатура,
+	ТаблицаКоэффициентыУпаковок.Характеристика КАК Характеристика,
+	ТаблицаКоэффициентыУпаковок.Цена КАК Цена,
+	ЕСТЬNULL(ТаблицаОстатки.Резерв, 0) / ТаблицаКоэффициентыУпаковок.КоэффициентУпаковки КАК ВРезерве,
+	ЕСТЬNULL(ТаблицаОстатки.Количество, 0) / ТаблицаКоэффициентыУпаковок.КоэффициентУпаковки КАК Доступно
+ИЗ
+	ТаблицаКоэффициентыУпаковок КАК ТаблицаКоэффициентыУпаковок
+		ЛЕВОЕ СОЕДИНЕНИЕ ТаблицаОстатки КАК ТаблицаОстатки
+		ПО ТаблицаКоэффициентыУпаковок.Номенклатура = ТаблицаОстатки.Номенклатура
+			И ТаблицаКоэффициентыУпаковок.Характеристика = ТаблицаОстатки.Характеристика</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номенклатура</dcssch:dataPath>
+					<dcssch:field>Номенклатура</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Характеристика</dcssch:dataPath>
+					<dcssch:field>Характеристика</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Валюта</dcssch:dataPath>
+					<dcssch:field>Валюта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВРезерве</dcssch:dataPath>
+					<dcssch:field>ВРезерве</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В резерве</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Доступно</dcssch:dataPath>
+					<dcssch:field>Доступно</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступно</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Цена</dcssch:dataPath>
+					<dcssch:field>Цена</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ВидЦены</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид цены</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Дата</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТорговыйОбъект</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Торговый объект</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Номенклатура</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПоказыватьТолькоХарактеристикиПодарковВНаличии" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать только характеристики подарков в наличии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстВопроса" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст вопроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выбрать</Action>
+			<ActionPurpose>Finish</ActionPurpose>
+		</Command>
+	</Commands>
+</Form>

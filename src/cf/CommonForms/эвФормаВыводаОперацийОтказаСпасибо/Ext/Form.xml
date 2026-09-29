@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<EnterKeyBehavior>DefaultButton</EnterKeyBehavior>
+	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowTitle>false</ShowTitle>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация3" id="24">
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="26"/>
+		</LabelDecoration>
+		<LabelDecoration name="ТекстЗаголовка" id="1">
+			<Font bold="true" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СПИСАНИЕ БОНУСОВ ЗАПРЕЩЕНО</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<ContextMenu name="ТекстЗаголовкаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТекстЗаголовкаРасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация1" id="9">
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+		<LabelField name="ТекстОшибки" id="15">
+			<DataPath>ТекстОшибки</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Height>2</Height>
+			<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+			<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="17"/>
+		</LabelField>
+		<LabelDecoration name="Декорация2" id="12">
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаКнопки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<Button name="Закрыть" id="4">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОК</v8:content>
+						</v8:item>
+					</Title>
+					<ButtonImportance>Main</ButtonImportance>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="5"/>
+				</Button>
+				<Button name="ПолнаяОплата" id="18">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолнаяОплата</CommandName>
+					<BackColor>style:ImportantColor</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ПолнаяОплатаРасширеннаяПодсказка" id="19"/>
+				</Button>
+				<Button name="ОтменаЧека" id="22">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтменаЧека</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отказ от покупки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтменаЧекаРасширеннаяПодсказка" id="23"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТекстОшибки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидДействия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид действия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолнаяОплата" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полная оплата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полная оплата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолнаяОплата</Action>
+		</Command>
+		<Command name="ОтменаЧека" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена чека</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена чека</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменаЧека</Action>
+		</Command>
+	</Commands>
+</Form>

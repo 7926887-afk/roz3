@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИнформационнаяБаза</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ТоварыНаСкладах</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameters">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Ссылка.ТипСтруктурнойЕдиницы</dcscor:choiceParameter>
+							<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСтруктурныхЕдиниц.Склад</dcscor:value>
+							<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСтруктурныхЕдиниц.Розница</dcscor:value>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item>
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыборГруппИЭлементов</dcscor:parameter>
+					<dcscor:value xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d6p1:FoldersAndItemsUse">Items</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<presentationExpression>ПРЕДСТАВЛЕНИЕ(ВЫБОР
+    КОГДА Характеристика  = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка) ТОГДА
+        "&lt;без характеристики&gt;"
+    ИНАЧЕ
+        Характеристика КОНЕЦ)</presentationExpression>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Номенклатура</dcscor:choiceParameter>
+							<dcscor:value>Номенклатура</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МинимальныйОстаток</dataPath>
+			<field>МинимальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальный остаток</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОстаток</dataPath>
+			<field>КоличествоОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество остаток</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПревышениеНедостача</dataPath>
+			<field>ПревышениеНедостача</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Превышение недостача</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ячейка</dataPath>
+			<field>Ячейка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураКатегорияНоменклатуры</dataPath>
+			<field>НоменклатураКатегорияНоменклатуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория номенклатуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИнформационнаяБаза</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Организации.Ссылка КАК Организация,
+	СтруктурныеЕдиницы.Ссылка КАК Склад,
+	СправочникНоменклатура.Ссылка КАК Номенклатура,
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка) КАК Характеристика,
+	СправочникНоменклатура.ор_МинимальныйОстаток КАК МинимальныйОстаток
+ПОМЕСТИТЬ ТаблицаНоменклатуры
+ИЗ
+	Справочник.Номенклатура КАК СправочникНоменклатура,
+	Справочник.СтруктурныеЕдиницы КАК СтруктурныеЕдиницы,
+	Справочник.Организации КАК Организации
+ГДЕ
+	НЕ СправочникНоменклатура.ЭтоГруппа
+	И НЕ СправочникНоменклатура.ПометкаУдаления
+	И СправочникНоменклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Запас)
+	И НЕ СтруктурныеЕдиницы.ПометкаУдаления
+	И (СтруктурныеЕдиницы.ТипСтруктурнойЕдиницы = ЗНАЧЕНИЕ(Перечисление.ТипыСтруктурныхЕдиниц.Склад)
+			ИЛИ СтруктурныеЕдиницы.ТипСтруктурнойЕдиницы = ЗНАЧЕНИЕ(Перечисление.ТипыСтруктурныхЕдиниц.Розница))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаНоменклатуры.Организация КАК Организация,
+	ТаблицаНоменклатуры.Склад КАК Склад,
+	ТаблицаНоменклатуры.Номенклатура КАК Номенклатура,
+	ЕСТЬNULL(ор_МинимальныйОстаток.Характеристика, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) КАК Характеристика,
+	ВЫБОР
+		КОГДА ор_МинимальныйОстаток.МинимальныйУровеньЗапаса ЕСТЬ NULL
+			ТОГДА ТаблицаНоменклатуры.МинимальныйОстаток
+		ИНАЧЕ ор_МинимальныйОстаток.МинимальныйУровеньЗапаса
+	КОНЕЦ КАК МинимальныйОстаток,
+	ЕСТЬNULL(ЗапасыНаСкладахОстатки.КоличествоОстаток, 0) КАК КоличествоОстаток
+ПОМЕСТИТЬ ТаблицаМинмальныхОстатковБезХарактеристик
+ИЗ
+	ТаблицаНоменклатуры КАК ТаблицаНоменклатуры
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УправлениеЗапасами КАК ор_МинимальныйОстаток
+		ПО (ТаблицаНоменклатуры.Склад = ор_МинимальныйОстаток.Склад
+				ИЛИ ор_МинимальныйОстаток.Склад = ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка))
+			И ТаблицаНоменклатуры.Номенклатура = ор_МинимальныйОстаток.Номенклатура
+			И (ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка) = ор_МинимальныйОстаток.Характеристика)
+			И ТаблицаНоменклатуры.Организация = ор_МинимальныйОстаток.Организация
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ЗапасыНаСкладах.Остатки(
+				,
+				(Организация, СтруктурнаяЕдиница, Номенклатура) В
+					(ВЫБРАТЬ
+						ТаблицаНоменклатуры.Организация КАК Организация,
+						ТаблицаНоменклатуры.Склад КАК СтруктурнаяЕдиница,
+						ТаблицаНоменклатуры.Номенклатура КАК Номенклатура
+					ИЗ
+						ТаблицаНоменклатуры КАК ТаблицаНоменклатуры)) КАК ЗапасыНаСкладахОстатки
+		ПО ТаблицаНоменклатуры.Организация = ЗапасыНаСкладахОстатки.Организация
+			И ТаблицаНоменклатуры.Склад = ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница
+			И ТаблицаНоменклатуры.Номенклатура = ЗапасыНаСкладахОстатки.Номенклатура
+ГДЕ
+	ВЫБОР
+			КОГДА ор_МинимальныйОстаток.МинимальныйУровеньЗапаса ЕСТЬ NULL
+				ТОГДА ТаблицаНоменклатуры.МинимальныйОстаток
+			ИНАЧЕ ор_МинимальныйОстаток.МинимальныйУровеньЗапаса
+		КОНЕЦ &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаНоменклатуры.Организация КАК Организация,
+	ТаблицаНоменклатуры.Склад КАК Склад,
+	ТаблицаНоменклатуры.Номенклатура КАК Номенклатура,
+	ЕСТЬNULL(ор_МинимальныйОстаток.Характеристика, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)) КАК Характеристика,
+	ЕСТЬNULL(ор_МинимальныйОстаток.МинимальныйУровеньЗапаса, 0) КАК МинимальныйОстаток
+ПОМЕСТИТЬ ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладуИБез
+ИЗ
+	ТаблицаНоменклатуры КАК ТаблицаНоменклатуры
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УправлениеЗапасами КАК ор_МинимальныйОстаток
+		ПО ТаблицаНоменклатуры.Склад = ор_МинимальныйОстаток.Склад
+			И ТаблицаНоменклатуры.Номенклатура = ор_МинимальныйОстаток.Номенклатура
+			И ТаблицаНоменклатуры.Организация = ор_МинимальныйОстаток.Организация
+ГДЕ
+	ор_МинимальныйОстаток.Характеристика &lt;&gt; ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+	И ор_МинимальныйОстаток.МинимальныйУровеньЗапаса &gt; 0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаНоменклатуры.Организация,
+	ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка),
+	ТаблицаНоменклатуры.Номенклатура,
+	ЕСТЬNULL(ор_МинимальныйОстаток.Характеристика, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)),
+	ЕСТЬNULL(ор_МинимальныйОстаток.МинимальныйУровеньЗапаса, 0)
+ИЗ
+	ТаблицаНоменклатуры КАК ТаблицаНоменклатуры
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УправлениеЗапасами КАК ор_МинимальныйОстаток
+		ПО (ор_МинимальныйОстаток.Склад = ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка))
+			И ТаблицаНоменклатуры.Номенклатура = ор_МинимальныйОстаток.Номенклатура
+			И ТаблицаНоменклатуры.Организация = ор_МинимальныйОстаток.Организация
+ГДЕ
+	ор_МинимальныйОстаток.Характеристика &lt;&gt; ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+	И ор_МинимальныйОстаток.МинимальныйУровеньЗапаса &gt; 0
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаНоменклатуры.Организация,
+	ТаблицаНоменклатуры.Номенклатура,
+	ЕСТЬNULL(ор_МинимальныйОстаток.Характеристика, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)),
+	ЕСТЬNULL(ор_МинимальныйОстаток.МинимальныйУровеньЗапаса, 0)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ТаблицаНоменклатуры.Организация КАК Организация,
+	ТаблицаНоменклатуры.Склад КАК Склад,
+	ТаблицаНоменклатуры.Номенклатура КАК Номенклатура,
+	ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладуИБез.Характеристика КАК Характеристика
+ПОМЕСТИТЬ ТаблицаНоменклатурыСХарактеристикойМинОстатка
+ИЗ
+	ТаблицаНоменклатуры КАК ТаблицаНоменклатуры
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладуИБез КАК ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладуИБез
+		ПО ТаблицаНоменклатуры.Номенклатура = ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладуИБез.Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаНоменклатуры.Организация КАК Организация,
+	ТаблицаНоменклатуры.Склад КАК Склад,
+	ТаблицаНоменклатуры.Номенклатура КАК Номенклатура,
+	ТаблицаНоменклатуры.Характеристика КАК Характеристика,
+	ЕСТЬNULL(ВЫБОР
+			КОГДА ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.МинимальныйОстаток &gt; 0
+				ТОГДА ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.МинимальныйОстаток
+			ИНАЧЕ ТаблицаМинмальныхОстатковСХарактеристикамиБезСклада.МинимальныйОстаток
+		КОНЕЦ, 0) КАК МинимальныйОстаток,
+	ЕСТЬNULL(ЗапасыНаСкладахОстатки.КоличествоОстаток, 0) КАК КоличествоОстаток
+ПОМЕСТИТЬ ТаблицаМинмальныхОстатковСХарактеристиками
+ИЗ
+	ТаблицаНоменклатурыСХарактеристикойМинОстатка КАК ТаблицаНоменклатуры
+		ЛЕВОЕ СОЕДИНЕНИЕ ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладуИБез КАК ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу
+		ПО ТаблицаНоменклатуры.Организация = ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.Организация
+			И ТаблицаНоменклатуры.Номенклатура = ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.Номенклатура
+			И ТаблицаНоменклатуры.Характеристика = ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.Характеристика
+			И ТаблицаНоменклатуры.Склад = ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.Склад
+		ЛЕВОЕ СОЕДИНЕНИЕ ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладуИБез КАК ТаблицаМинмальныхОстатковСХарактеристикамиБезСклада
+		ПО ТаблицаНоменклатуры.Организация = ТаблицаМинмальныхОстатковСХарактеристикамиБезСклада.Организация
+			И ТаблицаНоменклатуры.Номенклатура = ТаблицаМинмальныхОстатковСХарактеристикамиБезСклада.Номенклатура
+			И ТаблицаНоменклатуры.Характеристика = ТаблицаМинмальныхОстатковСХарактеристикамиБезСклада.Характеристика
+			И (ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка) = ТаблицаМинмальныхОстатковСХарактеристикамиБезСклада.Склад)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ЗапасыНаСкладах.Остатки(
+				,
+				(Организация, СтруктурнаяЕдиница, Номенклатура, Характеристика) В
+					(ВЫБРАТЬ
+						ТаблицаНоменклатурыСХарактеристикойМинОстатка.Организация КАК Организация,
+						ТаблицаНоменклатурыСХарактеристикойМинОстатка.Склад КАК СтруктурнаяЕдиница,
+						ТаблицаНоменклатурыСХарактеристикойМинОстатка.Номенклатура КАК Номенклатура,
+						ТаблицаНоменклатурыСХарактеристикойМинОстатка.Характеристика КАК Характеристика
+					ИЗ
+						ТаблицаНоменклатурыСХарактеристикойМинОстатка КАК ТаблицаНоменклатурыСХарактеристикойМинОстатка)) КАК ЗапасыНаСкладахОстатки
+		ПО ТаблицаНоменклатуры.Организация = ЗапасыНаСкладахОстатки.Организация
+			И ТаблицаНоменклатуры.Склад = ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница
+			И ТаблицаНоменклатуры.Номенклатура = ЗапасыНаСкладахОстатки.Номенклатура
+			И ТаблицаНоменклатуры.Характеристика = ЗапасыНаСкладахОстатки.Характеристика
+ГДЕ
+	ВЫБОР
+			КОГДА ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.МинимальныйОстаток &gt; 0
+				ТОГДА ТаблицаМинмальныхОстатковСХарактеристикамиПоСкладу.МинимальныйОстаток
+			ИНАЧЕ ТаблицаМинмальныхОстатковСХарактеристикамиБезСклада.МинимальныйОстаток
+		КОНЕЦ &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаМинмальныхОстатковСХарактеристиками.Организация КАК Организация,
+	ТаблицаМинмальныхОстатковСХарактеристиками.Склад КАК Склад,
+	ТаблицаМинмальныхОстатковСХарактеристиками.Номенклатура КАК Номенклатура,
+	СУММА(ТаблицаМинмальныхОстатковСХарактеристиками.КоличествоОстаток) КАК КоличествоОстаток
+ПОМЕСТИТЬ ТаблицаОстатковПоХарактеристикам
+ИЗ
+	ТаблицаМинмальныхОстатковСХарактеристиками КАК ТаблицаМинмальныхОстатковСХарактеристиками
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаМинмальныхОстатковСХарактеристиками.Организация,
+	ТаблицаМинмальныхОстатковСХарактеристиками.Склад,
+	ТаблицаМинмальныхОстатковСХарактеристиками.Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаМинмальныхОстатковБезХарактеристик.Организация КАК Организация,
+	ТаблицаМинмальныхОстатковБезХарактеристик.Склад КАК Склад,
+	ТаблицаМинмальныхОстатковБезХарактеристик.Номенклатура КАК Номенклатура,
+	ТаблицаМинмальныхОстатковБезХарактеристик.Характеристика КАК Характеристика,
+	ТаблицаМинмальныхОстатковБезХарактеристик.МинимальныйОстаток КАК МинимальныйОстаток,
+	ТаблицаМинмальныхОстатковБезХарактеристик.КоличествоОстаток - ЕСТЬNULL(ТаблицаОстатковПоХарактеристикам.КоличествоОстаток, 0) КАК КоличествоОстаток
+ПОМЕСТИТЬ ТаблицаОбъединенная
+ИЗ
+	ТаблицаМинмальныхОстатковБезХарактеристик КАК ТаблицаМинмальныхОстатковБезХарактеристик
+		ЛЕВОЕ СОЕДИНЕНИЕ ТаблицаОстатковПоХарактеристикам КАК ТаблицаОстатковПоХарактеристикам
+		ПО ТаблицаМинмальныхОстатковБезХарактеристик.Организация = ТаблицаОстатковПоХарактеристикам.Организация
+			И ТаблицаМинмальныхОстатковБезХарактеристик.Склад = ТаблицаОстатковПоХарактеристикам.Склад
+			И ТаблицаМинмальныхОстатковБезХарактеристик.Номенклатура = ТаблицаОстатковПоХарактеристикам.Номенклатура
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаМинмальныхОстатковСХарактеристиками.Организация,
+	ТаблицаМинмальныхОстатковСХарактеристиками.Склад,
+	ТаблицаМинмальныхОстатковСХарактеристиками.Номенклатура,
+	ТаблицаМинмальныхОстатковСХарактеристиками.Характеристика,
+	ТаблицаМинмальныхОстатковСХарактеристиками.МинимальныйОстаток,
+	ТаблицаМинмальныхОстатковСХарактеристиками.КоличествоОстаток
+ИЗ
+	ТаблицаМинмальныхОстатковСХарактеристиками КАК ТаблицаМинмальныхОстатковСХарактеристиками
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаОбъединения.Организация КАК Организация,
+	ТаблицаОбъединения.Склад КАК Склад,
+	ТаблицаОбъединения.Номенклатура КАК Номенклатура,
+	ТаблицаОбъединения.Характеристика КАК Характеристика,
+	СУММА(ТаблицаОбъединения.МинимальныйОстаток) КАК МинимальныйОстаток,
+	СУММА(ТаблицаОбъединения.КоличествоОстаток) КАК КоличествоОстаток,
+	СУММА(ТаблицаОбъединения.КоличествоОстаток - ТаблицаОбъединения.МинимальныйОстаток) КАК ПревышениеНедостача,
+	ТаблицаОбъединения.Номенклатура.КатегорияНоменклатуры КАК НоменклатураКатегорияНоменклатуры
+ИЗ
+	ТаблицаОбъединенная КАК ТаблицаОбъединения
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаОбъединения.Организация,
+	ТаблицаОбъединения.Склад,
+	ТаблицаОбъединения.Номенклатура,
+	ТаблицаОбъединения.Характеристика,
+	ТаблицаОбъединения.Номенклатура.КатегорияНоменклатуры</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоОстаток</dataPath>
+		<expression>Сумма(КоличествоОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МинимальныйОстаток</dataPath>
+		<expression>Сумма(МинимальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПревышениеНедостача</dataPath>
+		<expression>Сумма(ПревышениеНедостача)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоМинимальнымОстаткам</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по минимальным остаткам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>КоличествоОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>МинимальныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ПревышениеНедостача</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>cdd32e10-15f9-4b4d-bea4-df96a416b11b</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>0592358a-68d2-4126-a6c1-74ac5d726826</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4ca77569-fe0e-4211-82fb-634badb0cb18</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">НоменклатураКатегорияНоменклатуры</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9c549d89-a43e-43c5-b748-127a9a13dedb</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>2ee39ba5-1451-42f7-9874-5298b7b8214b</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовБежевый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Together</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Склад</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Склад</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоОстаток</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>МинимальныйОстаток</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПревышениеНедостача</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Организация</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Организация</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Номенклатура</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Характеристика</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

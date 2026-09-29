@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Subsystem uuid="194a52d9-154f-4cc7-bc45-ac45ddb81be4">
+		<Properties>
+			<Name>РазрешительныйРежим</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешительный режим</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛПВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛПКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкиРазрешительногоРежимаМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияCDNПлощадокМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛПКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.АварийныйРежимМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛПВебКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛПГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СобытияФормРазрешительныйРежимМДЛПКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ДанныеКлючаСессииГИСМТРозницаМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.CDNПлощадкиСОшибкамиОбменаМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СобытияФормРазрешительныйРежимМДЛПКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМаршрутизаторМДЛПСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМаршрутизаторМДЛПСлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛПКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РазрешительныйРежимМДЛПКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиПодключенияЛокальныхМодулейМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДанныеКлючаСессииМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РезультатыПроверкиКМРазрешительныйРежимМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СобытияФормРазрешительныйРежимМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СобытияФормРазрешительныйРежимМДЛППереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ДокументКонтроляКМРазрешительныйРежимМДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВерсииФорматаОбменаЛокальногоМодуляМДЛП</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ТСПИоТ</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

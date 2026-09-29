@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<ScaleVariant>NormalIfPossible</ScaleVariant>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДатаСтатус" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дата статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дата статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаСтатусРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="ДатаЗагрузки" id="4">
+					<DataPath>Запись.ДатаЗагрузки</DataPath>
+					<ContextMenu name="ДатаЗагрузкиКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаЗагрузкиРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<PictureField name="КартинкаСтатус" id="35">
+					<DataPath>КартинкаСтатус</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.КоллекцияВидыСобытийЖурналаРегистрации</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаСтатусКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="КартинкаСтатусРасширеннаяПодсказка" id="37"/>
+				</PictureField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НастройкаЗагрузки" id="1">
+			<DataPath>Запись.НастройкаЗагрузки</DataPath>
+			<ContextMenu name="НастройкаЗагрузкиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НастройкаЗагрузкиРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Контрагент" id="19">
+			<DataPath>Запись.Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<CheckBoxField name="ФоноваяЗагрузка" id="16">
+			<DataPath>Запись.ФоноваяЗагрузка</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Switcher</CheckBoxType>
+			<ContextMenu name="ФоноваяЗагрузкаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ФоноваяЗагрузкаРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаОписаниеСобытия" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание события</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа описание события</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаОписаниеСобытияРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<InputField name="ИмяЗагружаемогоФайла" id="7">
+					<DataPath>Запись.ИмяЗагружаемогоФайла</DataPath>
+					<ContextMenu name="ИмяЗагружаемогоФайлаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИмяЗагружаемогоФайлаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Объект" id="13">
+					<DataPath>Запись.Объект</DataPath>
+					<ContextMenu name="ОбъектКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="Сообщение" id="28">
+					<DataPath>Запись.Сообщение</DataPath>
+					<Height>9</Height>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="СообщениеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СообщениеРасширеннаяПодсказка" id="30"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ор_ИсторияЗагрузки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КартинкаСтатус" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

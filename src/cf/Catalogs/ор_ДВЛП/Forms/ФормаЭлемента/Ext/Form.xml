@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="НаименованиеАнглийское" id="7">
+			<DataPath>Объект.НаименованиеАнглийское</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеАнглийскоеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НаименованиеАнглийскоеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НаименованиеЛатинское" id="10">
+			<DataPath>Объект.НаименованиеЛатинское</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="НаименованиеЛатинскоеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НаименованиеЛатинскоеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ГруппаДействующегоВещества" id="13">
+			<DataPath>Объект.ГруппаДействующегоВещества</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="ГруппаДействующегоВеществаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ГруппаДействующегоВеществаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<Table name="АТХКлассификация" id="16">
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.АТХКлассификация</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="АТХКлассификацияКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="АТХКлассификацияКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="АТХКлассификацияРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="АТХКлассификацияСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>АТХКлассификация</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="АТХКлассификацияСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="АТХКлассификацияСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="АТХКлассификацияСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>АТХКлассификация</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="АТХКлассификацияСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="АТХКлассификацияСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="АТХКлассификацияУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>АТХКлассификация</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="АТХКлассификацияУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="АТХКлассификацияУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="АТХКлассификацияНомерСтроки" id="29">
+					<DataPath>Объект.АТХКлассификация.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="АТХКлассификацияНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="АТХКлассификацияНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="АТХКлассификацияАТХ" id="32">
+					<DataPath>Объект.АТХКлассификация.АТХ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="АТХКлассификацияАТХКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="АТХКлассификацияАТХРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<LabelField name="АТХКлассификацияАТХКодРаздела" id="35">
+					<DataPath>Объект.АТХКлассификация.АТХ.КодРаздела</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="АТХКлассификацияАТХКодРазделаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="АТХКлассификацияАТХКодРазделаРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ор_ДВЛП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПараметрыПодключаемыхКоманд" id="2">
+			<Type/>
+		</Attribute>
+	</Attributes>
+</Form>

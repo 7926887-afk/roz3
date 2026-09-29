@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="34">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="36"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="35">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="37"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номенклатура" id="11">
+			<DataPath>Запись.Номенклатура</DataPath>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="38"/>
+			<Events>
+				<Event name="OnChange">НоменклатураПриИзменении</Event>
+				<Event name="StartChoice">НоменклатураНачалоВыбора</Event>
+				<Event name="Clearing">НоменклатураОчистка</Event>
+			</Events>
+		</InputField>
+		<InputField name="Производитель" id="13">
+			<DataPath>Запись.Производитель</DataPath>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="ПроизводительКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПроизводительРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Запись.Наименование</DataPath>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="НаименованиеПроизводителя" id="5">
+			<DataPath>Запись.НаименованиеПроизводителя</DataPath>
+			<ContextMenu name="НаименованиеПроизводителяКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="НаименованиеПроизводителяРасширеннаяПодсказка" id="41"/>
+		</InputField>
+		<InputField name="МНН" id="15">
+			<DataPath>Запись.МНН</DataPath>
+			<ContextMenu name="МННКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="МННРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="ШтрихКод" id="1">
+			<DataPath>Запись.ШтрихКод</DataPath>
+			<ContextMenu name="ШтрихКодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ШтрихКодРасширеннаяПодсказка" id="43"/>
+		</InputField>
+		<UsualGroup name="Группа3" id="33">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<InputField name="КоличествоВУпаковке" id="19">
+					<DataPath>Запись.КоличествоВУпаковке</DataPath>
+					<ContextMenu name="КоличествоВУпаковкеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КоличествоВУпаковкеРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ФормаВыпускаПолное" id="17">
+			<DataPath>Запись.ФормаВыпускаПолное</DataPath>
+			<ContextMenu name="ФормаВыпускаПолноеКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ФормаВыпускаПолноеРасширеннаяПодсказка" id="47"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="31">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="ИдРЛС" id="9">
+					<DataPath>Запись.ИдРЛС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер РЛС</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ИдРЛСКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ИдРЛСРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Цена" id="21">
+			<DataPath>Запись.Цена</DataPath>
+			<ContextMenu name="ЦенаКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="ДатаРегистрацииЦены" id="53">
+			<DataPath>Запись.ДатаРегистрацииЦены</DataPath>
+			<ContextMenu name="ДатаРегистрацииЦеныКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ДатаРегистрацииЦеныРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<CheckBoxField name="Действует" id="29">
+			<DataPath>Запись.Действует</DataPath>
+			<ContextMenu name="ДействуетКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ДействуетРасширеннаяПодсказка" id="52"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ор_РеестрЦенПроизводителейНаЖНВЛП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

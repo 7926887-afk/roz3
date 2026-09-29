@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<DataProcessor uuid="6fb006fa-cdcb-482d-bf3d-9e9f2d5b198d">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПроверкаИПодборПродукцииИС" category="Object">
+				<xr:TypeId>a76e1717-9676-4d42-9f43-e61124ec51ed</xr:TypeId>
+				<xr:ValueId>623cfd14-6bd9-424a-a048-d499baccb932</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПроверкаИПодборПродукцииИС" category="Manager">
+				<xr:TypeId>be49fd47-eca6-43ab-8582-e97cd6bd378a</xr:TypeId>
+				<xr:ValueId>378a16d0-102e-40c5-8c39-add0f591c44a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПроверкаИПодборПродукцииИС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a62f9989-798c-47c1-9851-e8d002f9f61f</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ПроверкаИПодбор</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>
