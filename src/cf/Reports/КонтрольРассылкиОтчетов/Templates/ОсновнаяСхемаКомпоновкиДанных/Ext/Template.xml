@@ -551,7 +551,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:AppearanceCheckBox"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>StdPicture.AppearanceCheckBox</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -587,7 +590,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:AppearanceCross"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>StdPicture.AppearanceCross</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>

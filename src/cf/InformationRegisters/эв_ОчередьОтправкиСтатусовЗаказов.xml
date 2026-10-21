@@ -36,13 +36,13 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Очередь отправки статусов заказов</v8:content>
+					<v8:content>Очередь отправки статусов заказов (Эвалар)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm/>
+			<DefaultRecordForm>InformationRegister.эв_ОчередьОтправкиСтатусовЗаказов.Form.ФормаЗаписи</DefaultRecordForm>
 			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
@@ -505,6 +505,7 @@
 					<TypeReductionMode>TransformValues</TypeReductionMode>
 				</Properties>
 			</Dimension>
+			<Form>ФормаЗаписи</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

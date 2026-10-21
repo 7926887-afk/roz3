@@ -10209,6 +10209,7 @@
 			<ScheduledJob>эв_ОбменОстаткамиПолнымиПорталов</ScheduledJob>
 			<ScheduledJob>эв_ОбработкаОчередиСтатусовПорталов</ScheduledJob>
 			<ScheduledJob>эв_СнятиеПросроченныхРезервовПорталов</ScheduledJob>
+			<ScheduledJob>эв_ОбработкаОчередиСтатусовЗаказов</ScheduledJob>
 			<SettingsStorage>БуферОбмена</SettingsStorage>
 			<SettingsStorage>БуферыОбменаНовостей</SettingsStorage>
 			<SettingsStorage>НастройкиНовостей</SettingsStorage>
@@ -17774,10 +17775,10 @@
 			<InformationRegister>эв_НастройкиAPIИсточникаЗаказов</InformationRegister>
 			<InformationRegister>эв_ВыгруженныеОстаткиПорталов</InformationRegister>
 			<InformationRegister>эв_КодыСтатусовПорталов</InformationRegister>
-			<InformationRegister>эв_КодыНоменклатурыПорталов</InformationRegister>
 			<InformationRegister>эв_ОчередьОтправкиСтатусовЗаказов</InformationRegister>
 			<InformationRegister>эв_ИсторияСтатусовЗаказов</InformationRegister>
 			<InformationRegister>эв_ЛогиHTTPПорталов</InformationRegister>
+			<InformationRegister>эв_ОчередьУстановккиСтатусовЗаказов</InformationRegister>
 			<AccumulationRegister>АвансовыеПлатежиИностранцевПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>БухгалтерскиеВзаиморасчетыССотрудниками</AccumulationRegister>

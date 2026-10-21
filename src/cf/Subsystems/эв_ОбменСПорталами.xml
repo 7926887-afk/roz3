@@ -23,19 +23,17 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.эв_СнятиеПросроченныхРезервовПорталов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаГраницыЗагрузкиЗаказовАсна</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.эв_ОбменСПорталамиВключен</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">536217ba-6ab2-4327-9dcd-3d90475160b9</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.эв_ИсточникиЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПокупателя</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.эв_ТипыСообщенийЛога</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">6ee13fe7-1c58-4d9f-8d65-29622fa9babd</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.эв_ВидыСтатусовОчередиЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ЛогиHTTPПорталов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ИсторияСтатусовЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ОчередьОтправкиСтатусовЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_КодыСтатусовПорталов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_КодыНоменклатурыПорталов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ВыгруженныеОстаткиПорталов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_НастройкиAPIИсточникаЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ОчередьУстановккиСтатусовЗаказов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

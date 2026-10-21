@@ -2256,7 +2256,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -2312,7 +2315,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -2400,7 +2406,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -2628,7 +2637,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -2932,7 +2944,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -4233,7 +4248,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -4297,7 +4315,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -4989,7 +5010,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>РазмерКартинки</dcscor:parameter>
@@ -5489,7 +5513,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5518,7 +5545,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5542,7 +5572,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5571,7 +5604,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5600,7 +5636,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5624,7 +5663,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5653,7 +5695,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5682,7 +5727,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -5711,7 +5759,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6053,7 +6104,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6082,7 +6136,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6106,7 +6163,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6135,7 +6195,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6164,7 +6227,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6188,7 +6254,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6217,7 +6286,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6246,7 +6318,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6275,7 +6350,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6526,7 +6604,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6555,7 +6636,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6579,7 +6663,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6608,7 +6695,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6637,7 +6727,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6661,7 +6754,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6690,7 +6786,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6719,7 +6818,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -6748,7 +6850,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7063,7 +7168,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7087,7 +7195,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7112,7 +7223,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7136,7 +7250,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7161,7 +7278,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7185,7 +7305,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7436,7 +7559,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7460,7 +7586,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7485,7 +7614,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7509,7 +7641,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7534,7 +7669,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7558,7 +7696,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7633,7 +7774,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7657,7 +7801,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7682,7 +7829,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7706,7 +7856,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7731,7 +7884,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7755,7 +7911,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -7968,7 +8127,10 @@
 								</dcscor:item>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Картинка</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:Папка"/>
+									<dcscor:value xmlns:d10p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d10p1:Picture">
+										<d10p1:Ref>CommonPicture.Папка</d10p1:Ref>
+										<d10p1:LoadTransparent>true</d10p1:LoadTransparent>
+									</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
@@ -8001,7 +8163,10 @@
 								</dcscor:item>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Картинка</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:НаследованиеОтключеноСПапкой"/>
+									<dcscor:value xmlns:d10p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d10p1:Picture">
+										<d10p1:Ref>CommonPicture.НаследованиеОтключеноСПапкой</d10p1:Ref>
+										<d10p1:LoadTransparent>true</d10p1:LoadTransparent>
+									</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
@@ -8034,7 +8199,10 @@
 								</dcscor:item>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Картинка</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:НаследованиеВключеноСПапкой"/>
+									<dcscor:value xmlns:d10p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d10p1:Picture">
+										<d10p1:Ref>CommonPicture.НаследованиеВключеноСПапкой</d10p1:Ref>
+										<d10p1:LoadTransparent>true</d10p1:LoadTransparent>
+									</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
@@ -8081,7 +8249,10 @@
 							</dcscor:item>
 							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 								<dcscor:parameter>Картинка</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:НаследованиеВключено"/>
+								<dcscor:value xmlns:d9p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d9p1:Picture">
+									<d9p1:Ref>CommonPicture.НаследованиеВключено</d9p1:Ref>
+									<d9p1:LoadTransparent>true</d9p1:LoadTransparent>
+								</dcscor:value>
 							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
@@ -8317,7 +8488,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8346,7 +8520,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8370,7 +8547,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8399,7 +8579,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8428,7 +8611,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8452,7 +8638,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8481,7 +8670,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8510,7 +8702,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8539,7 +8734,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8842,7 +9040,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8871,7 +9072,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8895,7 +9099,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8924,7 +9131,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8953,7 +9163,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -8977,7 +9190,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9006,7 +9222,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9035,7 +9254,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9064,7 +9286,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9388,7 +9613,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9417,7 +9645,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9441,7 +9672,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9470,7 +9704,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9499,7 +9736,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9523,7 +9763,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9552,7 +9795,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9581,7 +9827,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9610,7 +9859,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9954,7 +10206,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -9978,7 +10233,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10003,7 +10261,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10027,7 +10288,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10313,7 +10577,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаЧтениеБезПросмотра"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаЧтениеБезПросмотра</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10342,7 +10609,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаПросмотр"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаПросмотр</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10366,7 +10636,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезПросмотраИРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезПросмотраИРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10395,7 +10668,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаИзменениеБезРедактирования"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаИзменениеБезРедактирования</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10424,7 +10700,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаРедактирование"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаРедактирование</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10448,7 +10727,10 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезПросмотраИРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10477,7 +10759,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезРедактированияИСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезРедактированияИСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10506,7 +10791,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаДобавлениеБезСоздания"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаДобавлениеБезСоздания</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -10535,7 +10823,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УровеньДоступаСоздание"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.УровеньДоступаСоздание</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>

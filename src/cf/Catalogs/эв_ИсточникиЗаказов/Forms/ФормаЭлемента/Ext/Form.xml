@@ -36,14 +36,6 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Наименование" id="4">
-			<DataPath>Объект.Description</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-		</InputField>
 		<UsualGroup name="Группа1" id="76">
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="77"/>
@@ -61,17 +53,17 @@
 					<ContextMenu name="АктивныйКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="АктивныйРасширеннаяПодсказка" id="9"/>
 				</CheckBoxField>
-				<InputField name="СимволВСписке" id="78">
-					<DataPath>Объект.СимволВСписке</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Представление в списке заказов</v8:content>
-						</v8:item>
-					</Title>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="СимволВСпискеКонтекстноеМеню" id="79"/>
-					<ExtendedTooltip name="СимволВСпискеРасширеннаяПодсказка" id="80"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">СкладПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -82,6 +74,9 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="СкладКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">СкладПриИзменении</Event>
+			</Events>
 		</InputField>
 		<InputField name="ВидЦен" id="13">
 			<DataPath>Объект.ВидЦен</DataPath>
@@ -96,6 +91,72 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="СрокХраненияРезерваКонтекстноеМеню" id="43"/>
 			<ExtendedTooltip name="СрокХраненияРезерваРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<UsualGroup name="Группа4" id="117">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контакты</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<InputField name="Регион" id="119">
+					<DataPath>Объект.Регион</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>15</Width>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регион</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="РегионКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="Город" id="123">
+					<DataPath>Объект.Город</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>15</Width>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Город</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ГородКонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="125"/>
+				</InputField>
+				<InputField name="Адрес" id="105">
+					<DataPath>Объект.Адрес</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>20</Width>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Улица, дом и т.д.</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="АдресКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="107"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Телефон" id="109">
+			<DataPath>Объект.Телефон</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТелефонКонтекстноеМеню" id="110"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="111"/>
+		</InputField>
+		<InputField name="Почта" id="113">
+			<DataPath>Объект.Почта</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПочтаКонтекстноеМеню" id="114"/>
+			<ExtendedTooltip name="ПочтаРасширеннаяПодсказка" id="115"/>
 		</InputField>
 		<InputField name="ГрафикРаботы" id="26">
 			<DataPath>Объект.ГрафикРаботы</DataPath>

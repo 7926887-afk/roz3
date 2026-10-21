@@ -429,7 +429,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:Предупреждение"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.Предупреждение</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -569,7 +572,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:EventLog"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>StdPicture.EventLog</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -849,7 +855,10 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:GrayedAll"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>StdPicture.GrayedAll</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -1241,7 +1250,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:Предупреждение"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.Предупреждение</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
@@ -1322,7 +1334,10 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:Предупреждение"/>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d8p1:Picture">
+								<d8p1:Ref>CommonPicture.Предупреждение</d8p1:Ref>
+								<d8p1:LoadTransparent>true</d8p1:LoadTransparent>
+							</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>

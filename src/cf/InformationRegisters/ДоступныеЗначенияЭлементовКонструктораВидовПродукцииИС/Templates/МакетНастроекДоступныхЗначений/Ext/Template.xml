@@ -475,7 +475,10 @@
 								<dcsset:appearance>
 									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 										<dcscor:parameter>Картинка</dcscor:parameter>
-										<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:УспешнаяПроверкаНаличияГосИС"/>
+										<dcscor:value xmlns:d11p1="http://v8.1c.ru/8.3/xcf/readable" xsi:type="d11p1:Picture">
+											<d11p1:Ref>CommonPicture.УспешнаяПроверкаНаличияГосИС</d11p1:Ref>
+											<d11p1:LoadTransparent>true</d11p1:LoadTransparent>
+										</dcscor:value>
 									</dcscor:item>
 								</dcsset:appearance>
 							</dcsset:item>

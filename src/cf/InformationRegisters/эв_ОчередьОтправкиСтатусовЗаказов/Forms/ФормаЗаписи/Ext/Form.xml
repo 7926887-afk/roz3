@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ЗаказПокупателя" id="1">
+			<DataPath>Запись.ЗаказПокупателя</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗаказПокупателяКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЗаказПокупателяРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ИсточникЗаказов" id="5">
+			<DataPath>Запись.ИсточникЗаказов</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИсточникЗаказовКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ИсточникЗаказовРасширеннаяПодсказка" id="7"/>
+		</InputField>
+		<InputField name="СтатусЗаказа" id="9">
+			<DataPath>Запись.СтатусЗаказа</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтатусЗаказаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="СтатусЗаказаРасширеннаяПодсказка" id="11"/>
+		</InputField>
+		<InputField name="СтатусОтправки" id="13">
+			<DataPath>Запись.СтатусОтправки</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтатусОтправкиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СтатусОтправкиРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="КоличествоПопыток" id="17">
+			<DataPath>Запись.КоличествоПопыток</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="19"/>
+		</InputField>
+		<InputField name="ТекстОшибки" id="21">
+			<DataPath>Запись.ТекстОшибки</DataPath>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="Дата" id="25">
+			<DataPath>Запись.Дата</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ДатаОкончанияРезерва" id="29">
+			<DataPath>Запись.ДатаОкончанияРезерва</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаОкончанияРезерваКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ДатаОкончанияРезерваРасширеннаяПодсказка" id="31"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.эв_ОчередьОтправкиСтатусовЗаказов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

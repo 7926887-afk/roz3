@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="a99d503c-568a-46a9-9e64-4e263992b877">
+		<Name>ОтмененАптекой</Name>
+		<Code/>
+		<Description>Отменен аптекой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9d89c308-e1ef-4e0f-9a0d-2259bef64c71">
+		<Name>ОтмененКлиентом</Name>
+		<Code/>
+		<Description>Отменен клиентом</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bafd6cb3-6b19-4898-b626-feecceba5389">
+		<Name>ОтмененРезерв</Name>
+		<Code/>
+		<Description>Отменен резерв по сроку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5e820ba9-b4e4-48c7-a404-e381344c64aa">
+		<Name>ОтмененСервисом</Name>
+		<Code/>
+		<Description>Отменен сервисом</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
