@@ -2,3 +2,4 @@ e:\cursor\roz3\src\cfe\Documents\ЗаказПокупателя\Forms\Форма
 e:\cursor\roz3\src\cf\CommonModules\эв_ОбменСПорталамиСервер\Ext\Module.bsl
 e:\cursor\roz3\src\cf\CommonModules\эв_ОбменСПорталамиМегааптека\Ext\Module.bsl
 e:\cursor\roz3\src\cf\CommonModules\эв_ОбменСПорталамиЮтека\Ext\Module.bsl
+e:\cursor\roz3\src\cf\CommonModules\эв_ОбменСПорталамиАсна\Ext\Module.bsl
