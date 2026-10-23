@@ -127,6 +127,7 @@
 			<CommonModule>МенеджерОборудованияСлужебныйКлиент</CommonModule>
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
+			<CommonModule>РаспределеннаяФискализация</CommonModule>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>ВидыЗаказовПокупателей</Catalog>
 			<Catalog>эв_ИсточникиЗаказов</Catalog>
