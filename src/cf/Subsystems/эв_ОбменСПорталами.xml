@@ -34,6 +34,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ВыгруженныеОстаткиПорталов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_НастройкиAPIИсточникаЗаказов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ОчередьУстановккиСтатусовЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_НастройкиAPIОнлайнКассы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

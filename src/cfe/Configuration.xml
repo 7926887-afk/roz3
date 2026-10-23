@@ -120,6 +120,7 @@
 			<CommonPicture>КоллекцияКонтрагентыЛиды</CommonPicture>
 			<CommonPicture>Напоминание</CommonPicture>
 			<CommonPicture>КоллекцияКонтрагентыФизическоеЛицо</CommonPicture>
+			<CommonPicture>ПометкаНаУдаление</CommonPicture>
 			<Role>эв_ОсновнаяРоль</Role>
 			<CommonModule>ОборудованиеПлатежныеСистемыКлиентСервер</CommonModule>
 			<CommonModule>ор_ПрограммноеСозданиеЭлементовФормОР</CommonModule>
@@ -127,6 +128,8 @@
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
 			<Catalog>Контрагенты</Catalog>
+			<Catalog>ВидыЗаказовПокупателей</Catalog>
+			<Catalog>эв_ИсточникиЗаказов</Catalog>
 			<Document>ЗаказПокупателя</Document>
 			<Document>ЧекККМ</Document>
 			<Document>ПриходнаяНакладная</Document>
@@ -136,6 +139,7 @@
 			<Enum>СервисыДоставки</Enum>
 			<Enum>ТипыДокументовЭДО</Enum>
 			<Enum>ВариантыЗавершенияЗаказа</Enum>
+			<Enum>СтатусыЧековККМ</Enum>
 			<DataProcessor>РабочееМестоКассира</DataProcessor>
 			<DataProcessor>ПроверкаИПодборПродукцииИС</DataProcessor>
 		</ChildObjects>

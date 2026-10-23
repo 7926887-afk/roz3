@@ -39,6 +39,30 @@
 			<RegisterRecords/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="51867765-d272-4de8-959f-3bd6c84cf5df">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СостояниеЗаказа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2e33dd49-eee5-4cf8-b315-72bf4d578b18</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="cb8a681d-83ca-417b-8610-fcd39aeec313">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидЗаказа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3164e35f-3601-42b5-ba0d-68001304ec8b</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаДокумента</Form>
 			<Form>ФормаСписка</Form>
 		</ChildObjects>

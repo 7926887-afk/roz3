@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="4720539f-3209-4244-9dc5-b299e2f9f50a">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыЧековККМ" category="Ref">
+				<xr:TypeId>78294b2f-cfbe-4c35-a56f-8deef1fb30d8</xr:TypeId>
+				<xr:ValueId>f2c42446-c3c4-48be-a491-06ff30d7e841</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыЧековККМ" category="Manager">
+				<xr:TypeId>f6ce249b-4014-42e3-83c8-ac33a5c2794b</xr:TypeId>
+				<xr:ValueId>c66bd660-16b9-419f-bd11-772cac62213c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыЧековККМ" category="List">
+				<xr:TypeId>25959266-dc9a-40ac-b3f2-7236bed7d85a</xr:TypeId>
+				<xr:ValueId>0edb62f2-f62b-4efc-b474-6d6721fc0cb2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыЧековККМ</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>e42ff5c7-b085-461e-9c96-02e9b5fef361</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>
