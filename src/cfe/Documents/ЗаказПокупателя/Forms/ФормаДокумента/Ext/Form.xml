@@ -297,6 +297,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="AfterWriteAtServer" callType="After">ос_ПослеЗаписиНаСервереПосле</Event>
+		<Event name="OnReadAtServer" callType="After">эв_ПриЧтенииНаСервереПосле</Event>
 		<Event name="OnOpen" callType="After">ос_ПриОткрытииПосле</Event>
 		<Event name="OnCreateAtServer" callType="After">ос_ПриСозданииНаСервереПосле</Event>
 	</Events>

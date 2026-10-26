@@ -128,6 +128,12 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="ЭквайринговыйТерминал" id="73">
+			<DataPath>Запись.ЭквайринговыйТерминал</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЭквайринговыйТерминалКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="ЭквайринговыйТерминалРасширеннаяПодсказка" id="75"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">

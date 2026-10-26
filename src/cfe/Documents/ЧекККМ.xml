@@ -63,6 +63,31 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="0b14ddd9-cf99-4874-a88b-a87611d1a36c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Контрагент</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a1690381-edbd-46b0-bec3-422e001c2eba</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6d41ec75-9a97-4390-beb2-ba5ac45a8ed8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СпособЗачетаПредоплаты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>aa1d512b-e70b-4e6b-b6a1-44d719351c9b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СпособыЗачетаИРаспределенияПлатежей</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="3e17ef22-9a5f-4700-9257-9df63f5bf785">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ЧекККМ.Запасы" category="TabularSection">
@@ -95,7 +120,25 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="91698b0a-78db-4b82-bc8e-bb2bf4f1b489">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ЧекККМ.Предоплата" category="TabularSection">
+						<xr:TypeId>3cae4286-e073-4b23-a630-0914648096a7</xr:TypeId>
+						<xr:ValueId>a1c55217-bcb4-447b-a711-a6a5afef443c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ЧекККМ.Предоплата" category="TabularSectionRow">
+						<xr:TypeId>4ae96090-53bb-40b6-a977-d5864210da74</xr:TypeId>
+						<xr:ValueId>e5c11d3b-fad1-4bd7-bf65-3ec9b45faf31</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Предоплата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>65516df9-628d-4dec-9826-9a25be67e68d</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>
