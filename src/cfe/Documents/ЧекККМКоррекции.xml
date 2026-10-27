@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="8f4c2a19-6d3e-4b71-9a05-c7e1b2d84f60">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЧекККМКоррекции" category="Object">
+				<xr:TypeId>3c8e1a72-9b45-4d16-8f20-a1b6c5d7e394</xr:TypeId>
+				<xr:ValueId>6d2f9b81-4c07-4e53-a8d1-0f3e7c5b2a16</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЧекККМКоррекции" category="Ref">
+				<xr:TypeId>9e1b4c83-2a76-4f08-b5d3-7c0a1e6f4d28</xr:TypeId>
+				<xr:ValueId>2b7d5e94-8c31-4a60-9f12-5d3c8b0e7a41</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЧекККМКоррекции" category="Selection">
+				<xr:TypeId>4a6c8e05-1d92-4b37-8e54-c0f2a7d3b619</xr:TypeId>
+				<xr:ValueId>7f3a1c26-5e84-4d09-b672-1a8e4c0d5f37</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЧекККМКоррекции" category="List">
+				<xr:TypeId>0c5d7a38-6f12-4e85-9b43-2d1a8f6c4e50</xr:TypeId>
+				<xr:ValueId>5e9b2d41-7a03-4c68-8f15-3b6d0a7e2c94</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЧекККМКоррекции" category="Manager">
+				<xr:TypeId>1d4f6a80-3b27-4e59-a0c6-8f2e5b7d1a43</xr:TypeId>
+				<xr:ValueId>6a8c0e52-4d19-4b73-9f28-1c5a7e3b0d64</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЧекККМКоррекции</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>0dfa1a62-6cdf-49e1-8e91-d5bf6d4c2bf1</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

@@ -136,6 +136,7 @@
 			<Catalog>эв_ИсточникиЗаказов</Catalog>
 			<Document>ЗаказПокупателя</Document>
 			<Document>ЧекККМ</Document>
+			<Document>ЧекККМКоррекции</Document>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>ОтчетОРозничныхПродажах</Document>
 			<Enum>СпособыДоставки</Enum>
@@ -146,6 +147,7 @@
 			<Enum>СтатусыЧековККМ</Enum>
 			<Enum>СпособыЗачетаИРаспределенияПлатежей</Enum>
 			<DataProcessor>РабочееМестоКассира</DataProcessor>
+			<DataProcessor>СозданиеЧековКоррекции</DataProcessor>
 			<DataProcessor>ПроверкаИПодборПродукцииИС</DataProcessor>
 		</ChildObjects>
 	</Configuration>
