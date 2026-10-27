@@ -9007,6 +9007,8 @@
 			<CommonModule>эв_ОбменСПорталамиЮтека</CommonModule>
 			<CommonModule>эв_ОбменСПорталамиАптекаМос</CommonModule>
 			<CommonModule>эв_ОбменСПорталамиЭвалар</CommonModule>
+			<CommonModule>эв_УдаленнаяФискализация</CommonModule>
+			<CommonModule>эв_РаспределеннаяФискализация</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>
@@ -17779,6 +17781,7 @@
 			<InformationRegister>эв_ИсторияСтатусовЗаказов</InformationRegister>
 			<InformationRegister>эв_ЛогиHTTPПорталов</InformationRegister>
 			<InformationRegister>эв_ОчередьУстановккиСтатусовЗаказов</InformationRegister>
+			<InformationRegister>эв_НастройкиAPIОнлайнКассы</InformationRegister>
 			<AccumulationRegister>АвансовыеПлатежиИностранцевПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>БухгалтерскиеВзаиморасчетыССотрудниками</AccumulationRegister>

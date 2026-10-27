@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<ShowTitle>true</ShowTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">эв_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<TitleLocation>Left</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Pages name="Страницы" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<Page name="СтраницаПорядокСостояний" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок состояний</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ShowTitle>true</ShowTitle>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаПорядокСостоянийРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<UsualGroup name="Баннер" id="454">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Баннер</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Баннер</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="БаннерРасширеннаяПодсказка" id="455"/>
+						</UsualGroup>
+						<Table name="ПорядокСостояний" id="10">
+							<Representation>List</Representation>
+							<MaxHeight>15</MaxHeight>
+							<RowInputMode>AfterCurrentRow</RowInputMode>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<InitialListView>Beginning</InitialListView>
+							<InitialRowActivation>Activate</InitialRowActivation>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Состояния</v8:content>
+								</v8:item>
+							</Title>
+							<CurrentRowUse>Choice</CurrentRowUse>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПорядокСостоянийКонтекстноеМеню" id="11">
+								<ChildItems>
+									<ButtonGroup name="ПорядокСостоянийКонтекстноеМенюГруппаКомандыУдаления" id="308">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Порядок состояний контекстное меню группа команды удаления</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПорядокСостоянийКонтекстноеМенюГруппаКомандыУдаленияРасширеннаяПодсказка" id="309"/>
+										<ChildItems>
+											<Button name="ПорядокСостоянийКонтекстноеМенюПометитьНаУдаление" id="298">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Пометить на удаление / Снять пометку</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ПорядокСостоянийКонтекстноеМенюПометитьНаУдалениеРасширеннаяПодсказка" id="299"/>
+											</Button>
+											<Button name="ПорядокСостоянийКонтекстноеМенюУдалить" id="304">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Исключить из вида</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ПорядокСостоянийКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="305"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ПорядокСостоянийКоманднаяПанель" id="12">
+								<ChildItems>
+									<Button name="ПорядокСостоянийДобавитьВсе" id="36">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ПорядокСостоянийДобавитьВсеРасширеннаяПодсказка" id="37"/>
+									</Button>
+									<ButtonGroup name="КнопкиВверхВниз" id="42">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Кнопки вверх вниз</v8:content>
+											</v8:item>
+										</Title>
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="КнопкиВверхВнизРасширеннаяПодсказка" id="43"/>
+										<ChildItems>
+											<Button name="ПорядокСостоянийПереместитьВверх" id="38">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="ПорядокСостоянийПереместитьВверхРасширеннаяПодсказка" id="39"/>
+											</Button>
+											<Button name="ПорядокСостоянийПереместитьВниз" id="40">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="ПорядокСостоянийПереместитьВнизРасширеннаяПодсказка" id="41"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ПорядокСостоянийКомандыУдаления" id="306">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Порядок состояний команды удаления</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПорядокСостоянийКомандыУдаленияРасширеннаяПодсказка" id="307"/>
+										<ChildItems>
+											<Button name="ПорядокСостоянийУдалить" id="48">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>0</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Исключить из вида</v8:content>
+													</v8:item>
+												</Title>
+												<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+												<ExtendedTooltip name="ПорядокСостоянийУдалитьРасширеннаяПодсказка" id="49"/>
+											</Button>
+											<Button name="ПорядокСостоянийПометитьНаУдаление" id="278">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Пометить на удаление / Снять пометку</v8:content>
+													</v8:item>
+												</Title>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПорядокСостоянийПометитьНаУдалениеРасширеннаяПодсказка" id="279"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПорядокСостоянийРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="ПорядокСостоянийСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>ПорядокСостояний</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПорядокСостоянийСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ПорядокСостоянийСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПорядокСостоянийСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>ПорядокСостояний</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПорядокСостоянийСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ПорядокСостоянийСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПорядокСостоянийУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>ПорядокСостояний</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПорядокСостоянийУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ПорядокСостоянийУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПорядокСостоянийНомерСтроки" id="275">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПорядокСостоянийНомерСтрокиКонтекстноеМеню" id="276"/>
+									<ExtendedTooltip name="ПорядокСостоянийНомерСтрокиРасширеннаяПодсказка" id="277"/>
+								</LabelField>
+								<ColumnGroup name="ПорядокСостоянийГруппа" id="300">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Порядок состояний группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ShowTitle>true</ShowTitle>
+									<ExtendedTooltip name="ПорядокСостоянийГруппаРасширеннаяПодсказка" id="301"/>
+									<ChildItems>
+										<PictureField name="ПорядокСостоянийСостояниеПометкаУдаления" id="293">
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CellMark>ShapeUnderTextOval</CellMark>
+											<AutoEditMode>true</AutoEditMode>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.ПометкаНаУдаление</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ValuesPicture>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+											</Border>
+											<ContextMenu name="ПорядокСостоянийСостояниеПометкаУдаленияКонтекстноеМеню" id="294"/>
+											<ExtendedTooltip name="ПорядокСостоянийСостояниеПометкаУдаленияРасширеннаяПодсказка" id="295"/>
+										</PictureField>
+										<InputField name="ПорядокСостоянийСостояние" id="26">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Состояние</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ChoiceButton>true</ChoiceButton>
+											<OpenButton>true</OpenButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChooseType>false</ChooseType>
+											<ContextMenu name="ПорядокСостоянийСостояниеКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ПорядокСостоянийСостояниеРасширеннаяПодсказка" id="28"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ПорядокСостоянийЦветСостояния" id="287">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Цвет</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<CellMark>IconCircle</CellMark>
+									<AutoEditMode>true</AutoEditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ПорядокСостоянийЦветСостоянияКонтекстноеМеню" id="288"/>
+									<ExtendedTooltip name="ПорядокСостоянийЦветСостоянияРасширеннаяПодсказка" id="289"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<InputField name="Комментарий" id="29">
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>52</MaxWidth>
+							<Height>2</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>2</MaxHeight>
+							<VerticalStretch>false</VerticalStretch>
+							<ChoiceButton>true</ChoiceButton>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Комментарий</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="30">
+								<ChildItems>
+									<Button name="КомментарийКонтекстноеМенюКомментарийИзменить" id="424">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="КомментарийКонтекстноеМенюКомментарийИзменитьРасширеннаяПодсказка" id="425"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="31"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПроцессы" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процессы</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ShowTitle>true</ShowTitle>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаПроцессыРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<Table name="Процессы" id="369">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<RowActionsShowType>DontShow</RowActionsShowType>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<HierarchyPanelLocation>None</HierarchyPanelLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПроцессыКонтекстноеМеню" id="370">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<AutoCommandBar name="ПроцессыКоманднаяПанель" id="371">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПроцессыРасширеннаяПодсказка" id="372"/>
+							<SearchStringAddition name="ПроцессыСтрокаПоиска" id="373">
+								<AdditionSource>
+									<Item>Процессы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроцессыСтрокаПоискаКонтекстноеМеню" id="374"/>
+								<ExtendedTooltip name="ПроцессыСтрокаПоискаРасширеннаяПодсказка" id="375"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПроцессыСостояниеПросмотра" id="376">
+								<AdditionSource>
+									<Item>Процессы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроцессыСостояниеПросмотраКонтекстноеМеню" id="377"/>
+								<ExtendedTooltip name="ПроцессыСостояниеПросмотраРасширеннаяПодсказка" id="378"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПроцессыУправлениеПоиском" id="379">
+								<AdditionSource>
+									<Item>Процессы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроцессыУправлениеПоискомКонтекстноеМеню" id="380"/>
+								<ExtendedTooltip name="ПроцессыУправлениеПоискомРасширеннаяПодсказка" id="381"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="ГруппаЗаголовков" id="438">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовков</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовков</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>true</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗаголовковРасширеннаяПодсказка" id="439"/>
+									<ChildItems>
+										<LabelField name="ПроцессыЗаголовокНастройки" id="390">
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<AutoWidthInTable>None</AutoWidthInTable>
+											<Width>66</Width>
+											<ContextMenu name="ПроцессыЗаголовокНастройкиКонтекстноеМеню" id="391"/>
+											<ExtendedTooltip name="ПроцессыЗаголовокНастройкиРасширеннаяПодсказка" id="392"/>
+										</LabelField>
+										<LabelField name="ПроцессыНастройкаАссистента" id="410">
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<AutoEditMode>true</AutoEditMode>
+											<AutoWidthInTable>None</AutoWidthInTable>
+											<CellHyperlinkRepresentation>Show</CellHyperlinkRepresentation>
+											<CellHyperlinkDisplayVariant>Always</CellHyperlinkDisplayVariant>
+											<Width>66</Width>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="ПроцессыНастройкаАссистентаКонтекстноеМеню" id="411"/>
+											<ExtendedTooltip name="ПроцессыНастройкаАссистентаРасширеннаяПодсказка" id="412"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<CheckBoxField name="ПроцессыИспользуетсяДляСостояния_ЗавершенУспешно" id="398">
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПроцессыИспользуетсяДляСостояния_ЗавершенУспешноКонтекстноеМеню" id="399"/>
+									<ExtendedTooltip name="ПроцессыИспользуетсяДляСостояния_ЗавершенУспешноРасширеннаяПодсказка" id="400"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПроцессыИспользуетсяДляСостояния_ЗавершенОтменен" id="402">
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПроцессыИспользуетсяДляСостояния_ЗавершенОтмененКонтекстноеМеню" id="403"/>
+									<ExtendedTooltip name="ПроцессыИспользуетсяДляСостояния_ЗавершенОтмененРасширеннаяПодсказка" id="404"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+						<CheckBoxField name="ВключитьДоставку" id="432">
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ВключитьДоставкуКонтекстноеМеню" id="433"/>
+							<ExtendedTooltip name="ВключитьДоставкуРасширеннаяПодсказка" id="434"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.21">
+		<WindowOpeningMode>DontBlock</WindowOpeningMode>
+		<Group>Vertical</Group>
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<ShowTitle>true</ShowTitle>
+		<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<InputField name="Наименование" id="1">
+				<TitleLocation>Left</TitleLocation>
+				<EditMode>EnterOnInput</EditMode>
+				<AutoEditMode>true</AutoEditMode>
+				<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+				<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+			</InputField>
+			<Pages name="Страницы" id="54">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Страницы</v8:content>
+					</v8:item>
+				</Title>
+				<PagesRepresentation>TabsOnTop</PagesRepresentation>
+				<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="55"/>
+				<ChildItems>
+					<Page name="СтраницаПорядокСостояний" id="56">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Порядок состояний</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Vertical</Group>
+						<ShowTitle>true</ShowTitle>
+						<ScrollOnCompress>true</ScrollOnCompress>
+						<ExtendedTooltip name="СтраницаПорядокСостоянийРасширеннаяПодсказка" id="57"/>
+						<ChildItems>
+							<UsualGroup name="Баннер" id="454">
+								<Visible>false</Visible>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Баннер</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Баннер</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="БаннерРасширеннаяПодсказка" id="455"/>
+							</UsualGroup>
+							<Table name="ПорядокСостояний" id="10">
+								<Representation>List</Representation>
+								<MaxHeight>15</MaxHeight>
+								<RowInputMode>AfterCurrentRow</RowInputMode>
+								<RowSelectionMode>Cell</RowSelectionMode>
+								<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+								<InitialListView>Beginning</InitialListView>
+								<InitialRowActivation>Activate</InitialRowActivation>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<FileDragMode>AsFile</FileDragMode>
+								<BorderColor>style:FormBackColor</BorderColor>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Состояния</v8:content>
+									</v8:item>
+								</Title>
+								<CurrentRowUse>Choice</CurrentRowUse>
+								<RowFilter xsi:nil="true"/>
+								<ContextMenu name="ПорядокСостоянийКонтекстноеМеню" id="11">
+									<ChildItems>
+										<ButtonGroup name="ПорядокСостоянийКонтекстноеМенюГруппаКомандыУдаления" id="308">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Порядок состояний контекстное меню группа команды удаления</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПорядокСостоянийКонтекстноеМенюГруппаКомандыУдаленияРасширеннаяПодсказка" id="309"/>
+											<ChildItems>
+												<Button name="ПорядокСостоянийКонтекстноеМенюПометитьНаУдаление" id="298">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пометить на удаление / Снять пометку</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПорядокСостоянийКонтекстноеМенюПометитьНаУдалениеРасширеннаяПодсказка" id="299"/>
+												</Button>
+												<Button name="ПорядокСостоянийКонтекстноеМенюУдалить" id="304">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исключить из вида</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПорядокСостоянийКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="305"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+									</ChildItems>
+								</ContextMenu>
+								<AutoCommandBar name="ПорядокСостоянийКоманднаяПанель" id="12">
+									<ChildItems>
+										<Button name="ПорядокСостоянийДобавитьВсе" id="36">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ПорядокСостоянийДобавитьВсеРасширеннаяПодсказка" id="37"/>
+										</Button>
+										<ButtonGroup name="КнопкиВверхВниз" id="42">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопки вверх вниз</v8:content>
+												</v8:item>
+											</Title>
+											<Representation>Compact</Representation>
+											<ExtendedTooltip name="КнопкиВверхВнизРасширеннаяПодсказка" id="43"/>
+											<ChildItems>
+												<Button name="ПорядокСостоянийПереместитьВверх" id="38">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>0</CommandName>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="ПорядокСостоянийПереместитьВверхРасширеннаяПодсказка" id="39"/>
+												</Button>
+												<Button name="ПорядокСостоянийПереместитьВниз" id="40">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>0</CommandName>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="ПорядокСостоянийПереместитьВнизРасширеннаяПодсказка" id="41"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<ButtonGroup name="ПорядокСостоянийКомандыУдаления" id="306">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Порядок состояний команды удаления</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПорядокСостоянийКомандыУдаленияРасширеннаяПодсказка" id="307"/>
+											<ChildItems>
+												<Button name="ПорядокСостоянийУдалить" id="48">
+													<Type>CommandBarButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>0</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Исключить из вида</v8:content>
+														</v8:item>
+													</Title>
+													<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+													<ExtendedTooltip name="ПорядокСостоянийУдалитьРасширеннаяПодсказка" id="49"/>
+												</Button>
+												<Button name="ПорядокСостоянийПометитьНаУдаление" id="278">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пометить на удаление / Снять пометку</v8:content>
+														</v8:item>
+													</Title>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПорядокСостоянийПометитьНаУдалениеРасширеннаяПодсказка" id="279"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+									</ChildItems>
+								</AutoCommandBar>
+								<ExtendedTooltip name="ПорядокСостоянийРасширеннаяПодсказка" id="13"/>
+								<SearchStringAddition name="ПорядокСостоянийСтрокаПоиска" id="14">
+									<AdditionSource>
+										<Item>ПорядокСостояний</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ПорядокСостоянийСтрокаПоискаКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ПорядокСостоянийСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="ПорядокСостоянийСостояниеПросмотра" id="17">
+									<AdditionSource>
+										<Item>ПорядокСостояний</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ПорядокСостоянийСостояниеПросмотраКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ПорядокСостоянийСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="ПорядокСостоянийУправлениеПоиском" id="20">
+									<AdditionSource>
+										<Item>ПорядокСостояний</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="ПорядокСостоянийУправлениеПоискомКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ПорядокСостоянийУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<LabelField name="ПорядокСостоянийНомерСтроки" id="275">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>№</v8:content>
+											</v8:item>
+										</Title>
+										<EditMode>EnterOnInput</EditMode>
+										<AutoEditMode>true</AutoEditMode>
+										<ContextMenu name="ПорядокСостоянийНомерСтрокиКонтекстноеМеню" id="276"/>
+										<ExtendedTooltip name="ПорядокСостоянийНомерСтрокиРасширеннаяПодсказка" id="277"/>
+									</LabelField>
+									<ColumnGroup name="ПорядокСостоянийГруппа" id="300">
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Порядок состояний группа</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>InCell</Group>
+										<ShowTitle>true</ShowTitle>
+										<ExtendedTooltip name="ПорядокСостоянийГруппаРасширеннаяПодсказка" id="301"/>
+										<ChildItems>
+											<PictureField name="ПорядокСостоянийСостояниеПометкаУдаления" id="293">
+												<TitleLocation>None</TitleLocation>
+												<EditMode>EnterOnInput</EditMode>
+												<CellMark>ShapeUnderTextOval</CellMark>
+												<AutoEditMode>true</AutoEditMode>
+												<ValuesPicture>
+													<xr:Ref>CommonPicture.ПометкаНаУдаление</xr:Ref>
+													<xr:LoadTransparent>false</xr:LoadTransparent>
+												</ValuesPicture>
+												<Border width="1">
+													<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+												</Border>
+												<ContextMenu name="ПорядокСостоянийСостояниеПометкаУдаленияКонтекстноеМеню" id="294"/>
+												<ExtendedTooltip name="ПорядокСостоянийСостояниеПометкаУдаленияРасширеннаяПодсказка" id="295"/>
+											</PictureField>
+											<InputField name="ПорядокСостоянийСостояние" id="26">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Состояние</v8:content>
+													</v8:item>
+												</Title>
+												<EditMode>EnterOnInput</EditMode>
+												<AutoEditMode>true</AutoEditMode>
+												<ChoiceButton>true</ChoiceButton>
+												<OpenButton>true</OpenButton>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ChooseType>false</ChooseType>
+												<ContextMenu name="ПорядокСостоянийСостояниеКонтекстноеМеню" id="27"/>
+												<ExtendedTooltip name="ПорядокСостоянийСостояниеРасширеннаяПодсказка" id="28"/>
+											</InputField>
+										</ChildItems>
+									</ColumnGroup>
+									<InputField name="ПорядокСостоянийЦветСостояния" id="287">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Цвет</v8:content>
+											</v8:item>
+										</Title>
+										<EditMode>EnterOnInput</EditMode>
+										<CellMark>IconCircle</CellMark>
+										<AutoEditMode>true</AutoEditMode>
+										<ChoiceButton>true</ChoiceButton>
+										<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+										<TextEdit>false</TextEdit>
+										<ContextMenu name="ПорядокСостоянийЦветСостоянияКонтекстноеМеню" id="288"/>
+										<ExtendedTooltip name="ПорядокСостоянийЦветСостоянияРасширеннаяПодсказка" id="289"/>
+									</InputField>
+								</ChildItems>
+							</Table>
+							<InputField name="Комментарий" id="29">
+								<TitleLocation>None</TitleLocation>
+								<EditMode>EnterOnInput</EditMode>
+								<AutoEditMode>true</AutoEditMode>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>52</MaxWidth>
+								<Height>2</Height>
+								<AutoMaxHeight>false</AutoMaxHeight>
+								<MaxHeight>2</MaxHeight>
+								<VerticalStretch>false</VerticalStretch>
+								<ChoiceButton>true</ChoiceButton>
+								<InputHint>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Комментарий</v8:content>
+									</v8:item>
+								</InputHint>
+								<ContextMenu name="КомментарийКонтекстноеМеню" id="30">
+									<ChildItems>
+										<Button name="КомментарийКонтекстноеМенюКомментарийИзменить" id="424">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="КомментарийКонтекстноеМенюКомментарийИзменитьРасширеннаяПодсказка" id="425"/>
+										</Button>
+									</ChildItems>
+								</ContextMenu>
+								<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="31"/>
+							</InputField>
+						</ChildItems>
+					</Page>
+					<Page name="СтраницаПроцессы" id="81">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Процессы</v8:content>
+							</v8:item>
+						</Title>
+						<HorizontalStretch>true</HorizontalStretch>
+						<Group>Vertical</Group>
+						<ShowTitle>true</ShowTitle>
+						<ScrollOnCompress>true</ScrollOnCompress>
+						<ExtendedTooltip name="СтраницаПроцессыРасширеннаяПодсказка" id="82"/>
+						<ChildItems>
+							<Table name="Процессы" id="369">
+								<Representation>List</Representation>
+								<ChangeRowSet>false</ChangeRowSet>
+								<ChangeRowOrder>false</ChangeRowOrder>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<SelectionMode>SingleRow</SelectionMode>
+								<RowSelectionMode>Row</RowSelectionMode>
+								<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+								<AutoInsertNewRow>true</AutoInsertNewRow>
+								<RowActionsShowType>DontShow</RowActionsShowType>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<SearchStringLocation>None</SearchStringLocation>
+								<ViewStatusLocation>None</ViewStatusLocation>
+								<SearchControlLocation>None</SearchControlLocation>
+								<HierarchyPanelLocation>None</HierarchyPanelLocation>
+								<RowFilter xsi:nil="true"/>
+								<ContextMenu name="ПроцессыКонтекстноеМеню" id="370">
+									<Autofill>false</Autofill>
+								</ContextMenu>
+								<AutoCommandBar name="ПроцессыКоманднаяПанель" id="371">
+									<Autofill>false</Autofill>
+								</AutoCommandBar>
+								<ExtendedTooltip name="ПроцессыРасширеннаяПодсказка" id="372"/>
+								<SearchStringAddition name="ПроцессыСтрокаПоиска" id="373">
+									<AdditionSource>
+										<Item>Процессы</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ПроцессыСтрокаПоискаКонтекстноеМеню" id="374"/>
+									<ExtendedTooltip name="ПроцессыСтрокаПоискаРасширеннаяПодсказка" id="375"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="ПроцессыСостояниеПросмотра" id="376">
+									<AdditionSource>
+										<Item>Процессы</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ПроцессыСостояниеПросмотраКонтекстноеМеню" id="377"/>
+									<ExtendedTooltip name="ПроцессыСостояниеПросмотраРасширеннаяПодсказка" id="378"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="ПроцессыУправлениеПоиском" id="379">
+									<AdditionSource>
+										<Item>Процессы</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="ПроцессыУправлениеПоискомКонтекстноеМеню" id="380"/>
+									<ExtendedTooltip name="ПроцессыУправлениеПоискомРасширеннаяПодсказка" id="381"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<ColumnGroup name="ГруппаЗаголовков" id="438">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа заголовков</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа заголовков</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ShowTitle>true</ShowTitle>
+										<ExtendedTooltip name="ГруппаЗаголовковРасширеннаяПодсказка" id="439"/>
+										<ChildItems>
+											<LabelField name="ПроцессыЗаголовокНастройки" id="390">
+												<TitleLocation>None</TitleLocation>
+												<EditMode>EnterOnInput</EditMode>
+												<AutoEditMode>true</AutoEditMode>
+												<AutoWidthInTable>None</AutoWidthInTable>
+												<Width>66</Width>
+												<ContextMenu name="ПроцессыЗаголовокНастройкиКонтекстноеМеню" id="391"/>
+												<ExtendedTooltip name="ПроцессыЗаголовокНастройкиРасширеннаяПодсказка" id="392"/>
+											</LabelField>
+											<LabelField name="ПроцессыНастройкаАссистента" id="410">
+												<TitleLocation>None</TitleLocation>
+												<EditMode>EnterOnInput</EditMode>
+												<CellHyperlink>true</CellHyperlink>
+												<AutoEditMode>true</AutoEditMode>
+												<AutoWidthInTable>None</AutoWidthInTable>
+												<CellHyperlinkRepresentation>Show</CellHyperlinkRepresentation>
+												<CellHyperlinkDisplayVariant>Always</CellHyperlinkDisplayVariant>
+												<Width>66</Width>
+												<Hiperlink>true</Hiperlink>
+												<ContextMenu name="ПроцессыНастройкаАссистентаКонтекстноеМеню" id="411"/>
+												<ExtendedTooltip name="ПроцессыНастройкаАссистентаРасширеннаяПодсказка" id="412"/>
+											</LabelField>
+										</ChildItems>
+									</ColumnGroup>
+									<CheckBoxField name="ПроцессыИспользуетсяДляСостояния_ЗавершенУспешно" id="398">
+										<EditMode>EnterOnInput</EditMode>
+										<AutoEditMode>true</AutoEditMode>
+										<ContextMenu name="ПроцессыИспользуетсяДляСостояния_ЗавершенУспешноКонтекстноеМеню" id="399"/>
+										<ExtendedTooltip name="ПроцессыИспользуетсяДляСостояния_ЗавершенУспешноРасширеннаяПодсказка" id="400"/>
+									</CheckBoxField>
+									<CheckBoxField name="ПроцессыИспользуетсяДляСостояния_ЗавершенОтменен" id="402">
+										<EditMode>EnterOnInput</EditMode>
+										<AutoEditMode>true</AutoEditMode>
+										<ContextMenu name="ПроцессыИспользуетсяДляСостояния_ЗавершенОтмененКонтекстноеМеню" id="403"/>
+										<ExtendedTooltip name="ПроцессыИспользуетсяДляСостояния_ЗавершенОтмененРасширеннаяПодсказка" id="404"/>
+									</CheckBoxField>
+								</ChildItems>
+							</Table>
+							<CheckBoxField name="ВключитьДоставку" id="432">
+								<CheckBoxType>Switcher</CheckBoxType>
+								<ContextMenu name="ВключитьДоставкуКонтекстноеМеню" id="433"/>
+								<ExtendedTooltip name="ВключитьДоставкуРасширеннаяПодсказка" id="434"/>
+							</CheckBoxField>
+						</ChildItems>
+					</Page>
+				</ChildItems>
+			</Pages>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Catalog uuid="dea4ee27-7db0-444e-84b6-22593273d0c0">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.эв_ИсточникиЗаказов" category="Object">
+				<xr:TypeId>109db1a1-9aa6-49d2-a17e-6af7cce8331b</xr:TypeId>
+				<xr:ValueId>6f3e054e-b17f-48c4-bae8-b7995b97bcfe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.эв_ИсточникиЗаказов" category="Ref">
+				<xr:TypeId>964bd27c-8bdb-4a68-b0f6-8b5b0b7c0695</xr:TypeId>
+				<xr:ValueId>1bce0eb4-eea4-49d0-8995-e5ff220a9367</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.эв_ИсточникиЗаказов" category="Selection">
+				<xr:TypeId>14c2ddd3-1f89-41ff-8649-ff9d4e1477a0</xr:TypeId>
+				<xr:ValueId>de506c12-3467-405f-a859-5a7fd0330424</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.эв_ИсточникиЗаказов" category="List">
+				<xr:TypeId>7a4ac8c4-f814-4708-8277-5227811672d7</xr:TypeId>
+				<xr:ValueId>3aa6fac5-2c94-4d8c-9c99-8c5742df22b4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.эв_ИсточникиЗаказов" category="Manager">
+				<xr:TypeId>3e291f58-b8ac-4fe6-a6a1-cc0714d1d551</xr:TypeId>
+				<xr:ValueId>7eb9bff1-2f34-40d2-9f01-5af2a8c3b59b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>эв_ИсточникиЗаказов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>0896a02e-a927-413c-84ef-618c91c71ca4</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

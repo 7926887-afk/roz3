@@ -297,6 +297,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="AfterWriteAtServer" callType="After">ос_ПослеЗаписиНаСервереПосле</Event>
+		<Event name="OnReadAtServer" callType="After">эв_ПриЧтенииНаСервереПосле</Event>
 		<Event name="OnOpen" callType="After">ос_ПриОткрытииПосле</Event>
 		<Event name="OnCreateAtServer" callType="After">ос_ПриСозданииНаСервереПосле</Event>
 	</Events>
@@ -9969,7 +9970,19 @@
 			<ExtendedTooltip name="ИнформационнаяПанельСовместногоИспользованияРасширеннаяПодсказка" id="9608"/>
 		</UsualGroup>
 	</ChildItems>
-	<Attributes/>
+	<Attributes>
+		<Attribute name="эв_ИсточникЗаказа" id="1000001">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник заказа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.эв_ИсточникиЗаказов</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
 	<BaseForm version="2.21">
 		<WindowOpeningMode>DontBlock</WindowOpeningMode>
 		<Group>Vertical</Group>

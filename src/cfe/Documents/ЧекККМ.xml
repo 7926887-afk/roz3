@@ -23,6 +23,10 @@
 				<xr:ValueId>442f332d-014d-4d32-a2ef-c4dcf9708b03</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
 				<xr:Property>ManagerModule</xr:Property>
 				<xr:State>Extended</xr:State>
 			</xr:PropertyState>
@@ -34,6 +38,107 @@
 			<ExtendedConfigurationObject>07771644-d1a4-4837-b089-39d71440331e</ExtendedConfigurationObject>
 			<RegisterRecords/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="0de9955e-cb3f-4c4d-90b1-eb9d9ed28570">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Заказ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6be7ba55-3dee-46a9-9066-3923a1c05e4e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="58951972-38d4-42e1-9f09-46c9f36894eb">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Статус</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4f587d53-acbe-46d2-aba7-1790f9092e51</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыЧековККМ</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0b14ddd9-cf99-4874-a88b-a87611d1a36c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Контрагент</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a1690381-edbd-46b0-bec3-422e001c2eba</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6d41ec75-9a97-4390-beb2-ba5ac45a8ed8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СпособЗачетаПредоплаты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>aa1d512b-e70b-4e6b-b6a1-44d719351c9b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СпособыЗачетаИРаспределенияПлатежей</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="3e17ef22-9a5f-4700-9257-9df63f5bf785">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ЧекККМ.Запасы" category="TabularSection">
+						<xr:TypeId>fc6e6672-bdce-40e7-8b2d-8beab16cfd62</xr:TypeId>
+						<xr:ValueId>c7764325-a740-45b3-bc65-a25873d23392</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ЧекККМ.Запасы" category="TabularSectionRow">
+						<xr:TypeId>53fce4b0-3485-4911-8a23-47394b0f87bb</xr:TypeId>
+						<xr:ValueId>52c820f3-7e50-4fa1-82ca-bfa510617855</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Запасы</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>449453b0-3815-4b25-8df5-2ddc3c04cc95</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="e32946a5-0ee5-4240-acd8-993fc01ffdbd">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>bc5c05fd-148b-4699-ac12-db7c3796b6c4</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="91698b0a-78db-4b82-bc8e-bb2bf4f1b489">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ЧекККМ.Предоплата" category="TabularSection">
+						<xr:TypeId>3cae4286-e073-4b23-a630-0914648096a7</xr:TypeId>
+						<xr:ValueId>a1c55217-bcb4-447b-a711-a6a5afef443c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ЧекККМ.Предоплата" category="TabularSectionRow">
+						<xr:TypeId>4ae96090-53bb-40b6-a977-d5864210da74</xr:TypeId>
+						<xr:ValueId>e5c11d3b-fad1-4bd7-bf65-3ec9b45faf31</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Предоплата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>65516df9-628d-4dec-9826-9a25be67e68d</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
 	</Document>
 </MetaDataObject>
