@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<InformationRegister uuid="19ed9df0-570e-4448-9485-1f9cf6ca7489">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ФискальныеОперации" category="Record">
+				<xr:TypeId>24bc9418-7e9b-4597-9a3c-df60e7075b8c</xr:TypeId>
+				<xr:ValueId>4bd14505-2984-4ba3-8b30-9c4b4960add5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ФискальныеОперации" category="Manager">
+				<xr:TypeId>5ec011cc-694b-4285-9f71-b2e3b8267da4</xr:TypeId>
+				<xr:ValueId>1a3209d5-2eec-4f82-a9bd-ee9ae4ef96ef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ФискальныеОперации" category="Selection">
+				<xr:TypeId>dc38013a-2439-44ec-9234-204d645052aa</xr:TypeId>
+				<xr:ValueId>e16fcdc3-49de-4d4d-a4e5-083b239c1fa5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ФискальныеОперации" category="List">
+				<xr:TypeId>27770049-eeaa-4623-a5b3-84f426502624</xr:TypeId>
+				<xr:ValueId>1e1fe528-6901-4379-adb8-667adce784fd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ФискальныеОперации" category="RecordSet">
+				<xr:TypeId>7900a694-0740-48f7-a7d1-30f8aa788021</xr:TypeId>
+				<xr:ValueId>af325c8b-03f2-43fe-8ea3-e4161a6ce3ad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ФискальныеОперации" category="RecordKey">
+				<xr:TypeId>1055146a-c582-4a66-b3e3-f40d3e30a9cd</xr:TypeId>
+				<xr:ValueId>ee1a94fa-ef82-4fc7-b852-8ffb7bf0210a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ФискальныеОперации" category="RecordManager">
+				<xr:TypeId>674e5dfc-c963-4ad8-b0c9-1b4bf8327a3d</xr:TypeId>
+				<xr:ValueId>e5a17fd5-f74d-4d16-ac8d-6b27aff7b53d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ФискальныеОперации</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3c1c25ab-8458-4f2b-8485-6471eb235795</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЗаписи</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

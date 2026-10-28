@@ -139,6 +139,7 @@
 			<Document>ЧекККМКоррекции</Document>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>ОтчетОРозничныхПродажах</Document>
+			<InformationRegister>ФискальныеОперации</InformationRegister>
 			<Enum>СпособыДоставки</Enum>
 			<Enum>ТипыДенежныхСредств</Enum>
 			<Enum>СервисыДоставки</Enum>
