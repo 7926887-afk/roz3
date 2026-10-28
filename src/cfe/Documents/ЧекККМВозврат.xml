@@ -22,6 +22,10 @@
 				<xr:TypeId>3c69401a-e5bd-478f-c268-94d653b5a2ec</xr:TypeId>
 				<xr:ValueId>4d7a511b-f6ce-4890-d379-a5e764c6b3fd</xr:ValueId>
 			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
 		</InternalInfo>
 		<Properties>
 			<ObjectBelonging>Adopted</ObjectBelonging>
@@ -31,6 +35,51 @@
 			<RegisterRecords/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="e1b7c4a2-6d38-4f15-9a70-2c8e5b3d1f64">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РасчетВИнтернете</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5e8047e4-1048-4861-911d-a66dd28c6284</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f2c8d5b3-7e49-4016-ab81-3d9f6c4e2075">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АдресСайта</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5c475e44-f0e7-4d80-b7d0-86355af438b3</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>128</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a3d9e6c4-8f5a-4127-bc92-4e0a7d5f3186">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЧасоваяЗона</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a3357774-a55f-40af-9c42-1d7807457698</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаДокумента</Form>
 		</ChildObjects>
 	</Document>
