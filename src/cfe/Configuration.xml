@@ -137,6 +137,7 @@
 			<Document>ЗаказПокупателя</Document>
 			<Document>ЧекККМ</Document>
 			<Document>ЧекККМКоррекции</Document>
+			<Document>ОперацияПоПлатежнымКартам</Document>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>ОтчетОРозничныхПродажах</Document>
 			<InformationRegister>ФискальныеОперации</InformationRegister>

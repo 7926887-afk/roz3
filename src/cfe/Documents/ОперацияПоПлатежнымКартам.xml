@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="a7c3e1b4-2d58-4f90-9c16-5b8e0a4d7f21">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ОперацияПоПлатежнымКартам" category="Object">
+				<xr:TypeId>b8d4f2c5-3e69-4011-8d27-6c9f1b5e8022</xr:TypeId>
+				<xr:ValueId>c9e503d6-4f70-4122-9e38-7d0a2c6f9133</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ОперацияПоПлатежнымКартам" category="Ref">
+				<xr:TypeId>d0f614e7-5081-4233-af49-8e1b3d709244</xr:TypeId>
+				<xr:ValueId>e10725f8-6192-4344-b05a-9f2c4e810355</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ОперацияПоПлатежнымКартам" category="Selection">
+				<xr:TypeId>f2183609-7203-4455-c16b-a03d5f921466</xr:TypeId>
+				<xr:ValueId>0329471a-8314-4566-d27c-b14e60a32577</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ОперацияПоПлатежнымКартам" category="List">
+				<xr:TypeId>143a582b-9425-4677-e38d-c25f71b43688</xr:TypeId>
+				<xr:ValueId>254b693c-a536-4788-f49e-d36082c54799</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ОперацияПоПлатежнымКартам" category="Manager">
+				<xr:TypeId>365c7a4d-b647-4899-a5af-e47193d658aa</xr:TypeId>
+				<xr:ValueId>476d8b5e-c758-49aa-b6b0-f582a4e769bb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОперацияПоПлатежнымКартам</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>b57d8ff4-fd9e-4f2f-b0cf-762d593b7c40</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>
