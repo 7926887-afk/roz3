@@ -9007,7 +9007,6 @@
 			<CommonModule>эв_ОбменСПорталамиЮтека</CommonModule>
 			<CommonModule>эв_ОбменСПорталамиАптекаМос</CommonModule>
 			<CommonModule>эв_ОбменСПорталамиЭвалар</CommonModule>
-			<CommonModule>эв_УдаленнаяФискализация</CommonModule>
 			<CommonModule>эв_РаспределеннаяФискализация</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
