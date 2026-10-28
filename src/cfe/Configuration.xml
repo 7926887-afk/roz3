@@ -129,6 +129,8 @@
 			<CommonModule>ОборудованиеПлатежныеСистемыКлиентСервер</CommonModule>
 			<CommonModule>ор_ПрограммноеСозданиеЭлементовФормОР</CommonModule>
 			<CommonModule>МенеджерОборудованияСлужебныйКлиент</CommonModule>
+			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
+			<CommonModule>ОборудованиеЧекопечатающиеУстройства</CommonModule>
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
 			<Catalog>Контрагенты</Catalog>
