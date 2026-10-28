@@ -136,6 +136,7 @@
 			<Catalog>эв_ИсточникиЗаказов</Catalog>
 			<Document>ЗаказПокупателя</Document>
 			<Document>ЧекККМ</Document>
+			<Document>ЧекККМВозврат</Document>
 			<Document>ЧекККМКоррекции</Document>
 			<Document>ОперацияПоПлатежнымКартам</Document>
 			<Document>ПриходнаяНакладная</Document>
