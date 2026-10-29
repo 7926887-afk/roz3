@@ -1,28 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<InformationRegister uuid="0b9bdd36-fa64-44f8-8794-2da368209708">
+	<InformationRegister uuid="9147a50e-cec8-4fb0-87f7-1edc667064b3">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.эв_КодыНоменклатурыПорталов" category="Record">
-				<xr:TypeId>9e468c91-c26b-4c05-840a-944cb5c33e20</xr:TypeId>
-				<xr:ValueId>7cd1f79c-55af-43cb-bf56-500f614dd1f7</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="InformationRegisterManager.эв_КодыНоменклатурыПорталов" category="Manager">
-				<xr:TypeId>164280ea-f0d2-4e0e-81aa-f89683844c4a</xr:TypeId>
-				<xr:ValueId>4d92b17d-b5e2-4fb6-82de-50905ba77224</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="InformationRegisterSelection.эв_КодыНоменклатурыПорталов" category="Selection">
-				<xr:TypeId>88f39c70-4647-4078-9e89-af483ae2ba33</xr:TypeId>
-				<xr:ValueId>bf497a06-1477-40d0-84a9-b1e4e708f930</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="InformationRegisterList.эв_КодыНоменклатурыПорталов" category="List">
-				<xr:TypeId>61767e3c-b34a-40de-8092-dc7170f43294</xr:TypeId>
-				<xr:ValueId>5b183ed9-2d1e-4940-8992-491d7aa1ea4c</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="InformationRegisterRecordSet.эв_КодыНоменклатурыПорталов" category="RecordSet">
-				<xr:TypeId>87004606-5616-4e58-b2ae-8843e2ce022b</xr:TypeId>
-				<xr:ValueId>4c53f15e-5f9c-49a3-87f4-441ed4e3fe51</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="InformationRegisterRecordKey.эв_КодыНоменклатурыПорталов" category="RecordKey">
-				<xr:TypeId>1a5893cd-7a51-4eb5-ad0c-10631b9ce24d</xr:TypeId>
-				<xr:ValueId>950b669b-cfd6-4783-adc4-5943c306f7eb</xr:ValueId>
-			</xr:GeneratedType>			<xr:GeneratedType name="InformationRegisterRecordManager.эв_КодыНоменклатурыПорталов" category="RecordManager">
-				<xr:TypeId>30effef1-be5b-4b37-a6fd-ffcc2a0beb59</xr:TypeId>
-				<xr:ValueId>0b1058d7-b958-40a6-9414-617cf5018c16</xr:ValueId>
+				<xr:TypeId>4ec14537-b3af-4f11-a2f9-bf17e961c3b0</xr:TypeId>
+				<xr:ValueId>24ed3c3f-3706-48fe-b855-985ea3b64856</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.эв_КодыНоменклатурыПорталов" category="Manager">
+				<xr:TypeId>439fecf0-8b62-4984-b20e-9248df6cb79f</xr:TypeId>
+				<xr:ValueId>e1c5ef2c-fcea-4961-bf3b-fcfbdd5ce3bf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.эв_КодыНоменклатурыПорталов" category="Selection">
+				<xr:TypeId>9efae7eb-b484-43da-aee1-f8093ead6b40</xr:TypeId>
+				<xr:ValueId>c09bbe11-3bdf-47c3-be5c-acdcf8b77fad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.эв_КодыНоменклатурыПорталов" category="List">
+				<xr:TypeId>8d18e792-edf4-4060-9504-f0ee4ffff2b0</xr:TypeId>
+				<xr:ValueId>242bab68-1159-4654-b13d-8248260dc3d1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.эв_КодыНоменклатурыПорталов" category="RecordSet">
+				<xr:TypeId>480c36e8-6010-4cc7-8b35-bc0afdf08ca8</xr:TypeId>
+				<xr:ValueId>6fe089fb-93fd-4da0-bf41-724e979d60f3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.эв_КодыНоменклатурыПорталов" category="RecordKey">
+				<xr:TypeId>c37489c6-9f36-4b23-9a88-94ec8a0898d8</xr:TypeId>
+				<xr:ValueId>ba464969-ca2e-4fb6-bf32-e4bc71f6c12b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.эв_КодыНоменклатурыПорталов" category="RecordManager">
+				<xr:TypeId>df258bb8-6846-49d2-ab37-a9b1f143b2c4</xr:TypeId>
+				<xr:ValueId>991140f5-2889-450b-97c5-42ccac9411c5</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -30,14 +36,14 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Коды номенклатуры порталов</v8:content>
+					<v8:content>Справочник связок номенклатуры порталов (Эвалар)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm></DefaultRecordForm>
-			<DefaultListForm></DefaultListForm>
+			<DefaultRecordForm/>
+			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -168,7 +174,98 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Dimension uuid="6bfb9a2a-6e8d-433c-8f4a-2c332cb81fe5">
+			<Dimension uuid="79941472-412b-4be0-b824-8d3330e60357">
+				<Properties>
+					<Name>КодПортала</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код портала</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>Index</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+					<TypeReductionMode>TransformValues</TypeReductionMode>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="b2fee05d-e761-41b8-8801-a815681424cb">
+				<Properties>
+					<Name>Номенклатура</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>true</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+					<TypeReductionMode>TransformValues</TypeReductionMode>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="ab26cb6a-2c2e-4d64-8757-dc99628c58e6">
 				<Properties>
 					<Name>ВидИсточника</Name>
 					<Synonym>
@@ -193,49 +290,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>Index</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
-				</Properties>
-			</Dimension>			<Dimension uuid="678422c6-8513-4033-9ecd-fcaffd982ae8">
-				<Properties>
-					<Name>Номенклатура</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номенклатура</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
+					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -252,54 +307,7 @@
 					<DataHistory>Use</DataHistory>
 					<TypeReductionMode>TransformValues</TypeReductionMode>
 				</Properties>
-			</Dimension>			<Dimension uuid="97674b03-1aae-4ba2-bed9-35638fbc4713">
-				<Properties>
-					<Name>КодПортала</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Код портала</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>Index</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-					<TypeReductionMode>TransformValues</TypeReductionMode>
-				</Properties>
 			</Dimension>
-
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>
