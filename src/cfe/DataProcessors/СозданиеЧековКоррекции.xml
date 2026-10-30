@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<DataProcessor uuid="c9d1e5a3-7b24-4f68-8c30-2a6e9b1d4f75">
+	<DataProcessor uuid="18fa627e-d004-4e0f-aacb-906e83aeca66">
 		<InternalInfo>
 			<xr:GeneratedType name="DataProcessorObject.СозданиеЧековКоррекции" category="Object">
-				<xr:TypeId>8b3e6c21-4a95-4d07-b1f8-5c2a9e7d0b36</xr:TypeId>
-				<xr:ValueId>0f5a2c84-6d17-4e39-9b50-3a8c1d6e7f42</xr:ValueId>
+				<xr:TypeId>4cff0c87-39cd-4085-91ea-17dfeb9b77db</xr:TypeId>
+				<xr:ValueId>65ae1128-9a8d-4220-9122-119b92b0fcb8</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DataProcessorManager.СозданиеЧековКоррекции" category="Manager">
-				<xr:TypeId>2c7d9e15-8a40-4b63-a1f6-7e3b5c0d8a29</xr:TypeId>
-				<xr:ValueId>4e1b8a37-0c62-4d95-b7f3-6a2d9c5e1b80</xr:ValueId>
+				<xr:TypeId>7458081c-5616-4969-bd92-c65ffdc5cbdd</xr:TypeId>
+				<xr:ValueId>1d5532ac-51ff-4a53-889e-cacce3019d53</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

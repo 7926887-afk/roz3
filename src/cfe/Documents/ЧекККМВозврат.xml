@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<Document uuid="f3a8c1d2-7e46-4b19-9c50-2d8e6a4b1f70">
+	<Document uuid="87a63cd5-a981-4256-ba07-0aec0acfff87">
 		<InternalInfo>
 			<xr:GeneratedType name="DocumentObject.ЧекККМВозврат" category="Object">
-				<xr:TypeId>b4e1c8a2-6d35-4f17-9a80-1c5e7b3d2a64</xr:TypeId>
-				<xr:ValueId>c5f2d9b3-7e46-4018-ab91-2d6f8c4e3b75</xr:ValueId>
+				<xr:TypeId>5b591ba1-68db-476a-af1a-5d93467add77</xr:TypeId>
+				<xr:ValueId>3960d6da-a00b-4ba3-a5d8-cd9f3a2e58d6</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentRef.ЧекККМВозврат" category="Ref">
-				<xr:TypeId>d603eac4-8f57-4129-bc02-3e709d5f4c86</xr:TypeId>
-				<xr:ValueId>e714fbd5-9068-423a-cd13-4f810e605d97</xr:ValueId>
+				<xr:TypeId>d39f7ac5-9d17-4257-b0ed-b16ba01abec4</xr:TypeId>
+				<xr:ValueId>74e2eb14-efab-4be8-8fdf-742fafe32f55</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentSelection.ЧекККМВозврат" category="Selection">
-				<xr:TypeId>f8250ce6-a179-434b-de24-50921f716ea8</xr:TypeId>
-				<xr:ValueId>09361df7-b28a-445c-ef35-61a320827fb9</xr:ValueId>
+				<xr:TypeId>8f19ba2a-c268-4ce5-9102-9f01959f0f44</xr:TypeId>
+				<xr:ValueId>aa984c3b-3585-40b3-b538-6c463325b7c5</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentList.ЧекККМВозврат" category="List">
-				<xr:TypeId>1a472ef8-c39b-456d-a046-72b4319380ca</xr:TypeId>
-				<xr:ValueId>2b583f09-d4ac-467e-b157-83c542a491db</xr:ValueId>
+				<xr:TypeId>d48055e1-7d21-4dc3-90ba-53553da621b1</xr:TypeId>
+				<xr:ValueId>c7e28cec-05bf-4de4-a0ac-9c063d4a9364</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentManager.ЧекККМВозврат" category="Manager">
-				<xr:TypeId>3c69401a-e5bd-478f-c268-94d653b5a2ec</xr:TypeId>
-				<xr:ValueId>4d7a511b-f6ce-4890-d379-a5e764c6b3fd</xr:ValueId>
+				<xr:TypeId>3fd95d00-f0d0-443d-a93e-bc1cc041f250</xr:TypeId>
+				<xr:ValueId>77557975-4675-492a-a910-8709c73d15fe</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:PropertyState>
 				<xr:Property>ObjectModule</xr:Property>
@@ -35,51 +35,6 @@
 			<RegisterRecords/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="e1b7c4a2-6d38-4f15-9a70-2c8e5b3d1f64">
-				<InternalInfo/>
-				<Properties>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Name>РасчетВИнтернете</Name>
-					<Comment/>
-					<ExtendedConfigurationObject>5e8047e4-1048-4861-911d-a66dd28c6284</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="f2c8d5b3-7e49-4016-ab81-3d9f6c4e2075">
-				<InternalInfo/>
-				<Properties>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Name>АдресСайта</Name>
-					<Comment/>
-					<ExtendedConfigurationObject>5c475e44-f0e7-4d80-b7d0-86355af438b3</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>128</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="a3d9e6c4-8f5a-4127-bc92-4e0a7d5f3186">
-				<InternalInfo/>
-				<Properties>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Name>ЧасоваяЗона</Name>
-					<Comment/>
-					<ExtendedConfigurationObject>a3357774-a55f-40af-9c42-1d7807457698</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>2</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Properties>
-			</Attribute>
 			<Form>ФормаДокумента</Form>
 		</ChildObjects>
 	</Document>
