@@ -140,6 +140,7 @@
 			<Role>эв_ОсновнаяРоль</Role>
 			<CommonModule>ОборудованиеПлатежныеСистемыКлиентСервер</CommonModule>
 			<CommonModule>ор_ПрограммноеСозданиеЭлементовФормОР</CommonModule>
+			<CommonModule>ор_МенеджерОбменаЧерезУниверсальныйФормат</CommonModule>
 			<CommonModule>МенеджерОборудованияСлужебныйКлиент</CommonModule>
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
