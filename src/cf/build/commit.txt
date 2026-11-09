@@ -1,2 +1,0 @@
-e:\cursor\roz3\src\cfe\CommonModules\ор_МенеджерОбменаЧерезУниверсальныйФормат\Ext\Module.bsl
-e:\cursor\roz3\src\cfe\Documents\ЧекККМ\Forms\ФормаДокумента\Ext\Form\Module.bsl
