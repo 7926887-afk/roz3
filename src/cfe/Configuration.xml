@@ -144,6 +144,7 @@
 			<CommonModule>МенеджерОборудованияСлужебныйКлиент</CommonModule>
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
+			<ExchangePlan>ОбменУправлениеНебольшойФирмойБухгалтерия30</ExchangePlan>
 			<DefinedType>КассаККМРМК</DefinedType>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>ВидыЗаказовПокупателей</Catalog>
