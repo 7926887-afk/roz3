@@ -157,6 +157,7 @@
 			<Document>ЧекККМКоррекции</Document>
 			<Document>ОперацияПоПлатежнымКартам</Document>
 			<Document>ЧекККМВозврат</Document>
+			<Document>УстановкаЦенНоменклатуры</Document>
 			<Enum>СпособыДоставки</Enum>
 			<Enum>ТипыДенежныхСредств</Enum>
 			<Enum>СервисыДоставки</Enum>
