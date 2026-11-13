@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<DocumentJournal uuid="a7c3e1d4-8b20-4f16-9a55-2d0c6e8f1b40">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ЧекиККМ" category="Selection">
+				<xr:TypeId>b1c2d3e4-f506-4172-8394-a5b6c7d8e9f0</xr:TypeId>
+				<xr:ValueId>c2d3e4f5-0617-4283-94a5-b6c7d8e9f001</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ЧекиККМ" category="List">
+				<xr:TypeId>d3e4f506-1728-4394-a5b6-c7d8e9f00112</xr:TypeId>
+				<xr:ValueId>e4f50617-2839-4405-b6c7-d8e9f0011223</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ЧекиККМ" category="Manager">
+				<xr:TypeId>f5061728-3940-4516-c7d8-e9f001122334</xr:TypeId>
+				<xr:ValueId>06172839-4051-4627-d8e9-f00112233445</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЧекиККМ</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>30f4ccae-fa96-443a-960f-e45d0d4fe90b</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>
