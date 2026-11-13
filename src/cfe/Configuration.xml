@@ -159,6 +159,9 @@
 			<Document>ОперацияПоПлатежнымКартам</Document>
 			<Document>ЧекККМВозврат</Document>
 			<Document>ПоступлениеВКассу</Document>
+			<Document>ВнесениеНаличных</Document>
+			<Document>ВыемкаНаличных</Document>
+			<Document>РасходИзКассы</Document>
 			<Enum>СпособыДоставки</Enum>
 			<Enum>ТипыДенежныхСредств</Enum>
 			<Enum>СервисыДоставки</Enum>

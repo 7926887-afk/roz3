@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="5d9f3b28-7e16-4ca2-903b-2f8c0d1e6b75">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ВыемкаНаличных" category="Object">
+				<xr:TypeId>b1c2d3e4-f506-4172-8394-a5b6c7d8e9f0</xr:TypeId>
+				<xr:ValueId>c2d3e4f5-0617-4283-94a5-b6c7d8e9f001</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ВыемкаНаличных" category="Ref">
+				<xr:TypeId>d3e4f506-1728-4394-a5b6-c7d8e9f00112</xr:TypeId>
+				<xr:ValueId>e4f50617-2839-44a5-b6c7-d8e9f0011223</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ВыемкаНаличных" category="Selection">
+				<xr:TypeId>f5061728-394a-45b6-c7d8-e9f001122334</xr:TypeId>
+				<xr:ValueId>06172839-4a5b-46c7-d8e9-f00112233445</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ВыемкаНаличных" category="List">
+				<xr:TypeId>1728394a-5b6c-47d8-e9f0-011223344556</xr:TypeId>
+				<xr:ValueId>28394a5b-6c7d-48e9-f001-122334455667</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ВыемкаНаличных" category="Manager">
+				<xr:TypeId>394a5b6c-7d8e-49f0-0112-233445566778</xr:TypeId>
+				<xr:ValueId>4a5b6c7d-8e9f-4011-1223-344556677889</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВыемкаНаличных</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4f1aa61f-ae33-46b7-9821-b1327b4ef70d</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+	</Document>
+</MetaDataObject>
