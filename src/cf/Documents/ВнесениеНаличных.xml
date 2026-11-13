@@ -201,6 +201,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДенежныеСредстваВКассахККМ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.Управленческий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДенежныеСредстваКПоступлению</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.эв_ДенежныеСредстваВКассахККМРазмен</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>

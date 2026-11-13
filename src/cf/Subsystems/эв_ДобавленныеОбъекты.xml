@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_Инв_ДанныеСканирования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ОчередьСегментовДифСкидок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.эв_СтавкиБонусовПервостольника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.эв_ДенежныеСредстваВКассахККМРазмен</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

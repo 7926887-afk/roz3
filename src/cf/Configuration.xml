@@ -17920,6 +17920,7 @@
 			<AccumulationRegister>ФинансовыйРезультатПрогноз</AccumulationRegister>
 			<AccumulationRegister>ЭтапыПроизводства</AccumulationRegister>
 			<AccumulationRegister>эв_КошелекПервостольника</AccumulationRegister>
+			<AccumulationRegister>эв_ДенежныеСредстваВКассахККМРазмен</AccumulationRegister>
 			<ChartOfCharacteristicTypes>АналитикаДоходовИРасходов</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыБизнесПриложение</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
