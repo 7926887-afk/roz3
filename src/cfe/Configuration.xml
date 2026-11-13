@@ -171,7 +171,6 @@
 			<Enum>СпособыЗачетаИРаспределенияПлатежей</Enum>
 			<Enum>ВидыОперацийЭквайринга</Enum>
 			<Enum>СпособыОплатыЭквайринг</Enum>
-			<DocumentJournal>ЧекиККМ</DocumentJournal>
 			<DataProcessor>РабочееМестоКассира</DataProcessor>
 			<DataProcessor>ПроверкаИПодборПродукцииИС</DataProcessor>
 			<DataProcessor>СозданиеЧековКоррекции</DataProcessor>
