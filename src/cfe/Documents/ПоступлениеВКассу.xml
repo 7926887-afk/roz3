@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data-enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data-enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Document uuid="b8e4c1a2-7d36-4f09-8a51-6c2e9b0d4f17">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПоступлениеВКассу" category="Object">
+				<xr:TypeId>c1a2b3d4-e5f6-4789-a012-3456789abcde</xr:TypeId>
+				<xr:ValueId>d2b3c4e5-f6a7-4890-b123-456789abcdef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПоступлениеВКассу" category="Ref">
+				<xr:TypeId>e3c4d5f6-a7b8-4901-c234-56789abcdef0</xr:TypeId>
+				<xr:ValueId>f4d5e6a7-b8c9-4012-d345-6789abcdef01</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПоступлениеВКассу" category="Selection">
+				<xr:TypeId>a5e6f7b8-c9d0-4123-e456-789abcdef012</xr:TypeId>
+				<xr:ValueId>b6f7a8c9-d0e1-4234-f567-89abcdef0123</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПоступлениеВКассу" category="List">
+				<xr:TypeId>c7a8b9d0-e1f2-4345-a678-9abcdef01234</xr:TypeId>
+				<xr:ValueId>d8b9c0e1-f2a3-4456-b789-abcdef012345</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПоступлениеВКассу" category="Manager">
+				<xr:TypeId>e9c0d1f2-a3b4-4567-c890-bcdef0123456</xr:TypeId>
+				<xr:ValueId>f0d1e2a3-b4c5-4678-d901-cdef01234567</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПоступлениеВКассу</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>2779725f-0b43-430d-b275-f2432508f05d</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+	</Document>
+</MetaDataObject>

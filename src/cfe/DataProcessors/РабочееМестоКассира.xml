@@ -19,6 +19,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаРМК</Form>
+			<Form>ФормаВнесенияВыемки</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

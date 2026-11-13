@@ -145,6 +145,7 @@
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
 			<CommonModule>ОбменДаннымиСобытияБП</CommonModule>
+			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
 			<DefinedType>КассаККМРМК</DefinedType>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>ВидыЗаказовПокупателей</Catalog>
@@ -157,6 +158,7 @@
 			<Document>ЧекККМКоррекции</Document>
 			<Document>ОперацияПоПлатежнымКартам</Document>
 			<Document>ЧекККМВозврат</Document>
+			<Document>ПоступлениеВКассу</Document>
 			<Enum>СпособыДоставки</Enum>
 			<Enum>ТипыДенежныхСредств</Enum>
 			<Enum>СервисыДоставки</Enum>
