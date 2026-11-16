@@ -9009,6 +9009,7 @@
 			<CommonModule>эв_ОбменСПорталамиЭвалар</CommonModule>
 			<CommonModule>эв_РаспределеннаяФискализация</CommonModule>
 			<CommonModule>эв_ОбменЧерезБрокера</CommonModule>
+			<CommonModule>эв_ОбменЧерезБрокераПовтИсп</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>
