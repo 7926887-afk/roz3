@@ -146,6 +146,7 @@
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
 			<CommonModule>ОбменДаннымиСобытияБП</CommonModule>
 			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
+			<CommonModule>ОтчетыПереопределяемый</CommonModule>
 			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
 			<CommonModule>эв_СоздатьОбращение</CommonModule>
 			<CommonModule>эв_СоздатьОбращениеКлиент</CommonModule>
