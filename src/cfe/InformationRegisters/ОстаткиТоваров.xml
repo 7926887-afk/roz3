@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<InformationRegister uuid="bb3cb304-9dd2-4067-8186-b6336f38c884">
+		<InternalInfo>
+			<xr:PropertyState>
+				<xr:Property>RecordSetModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:GeneratedType name="InformationRegisterRecord.ОстаткиТоваров" category="Record">
+				<xr:TypeId>2bac8aef-b9a8-40f1-bdbc-2e632e16c751</xr:TypeId>
+				<xr:ValueId>1b03c8ce-4c83-4207-926b-9422a9b57aaa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ОстаткиТоваров" category="Manager">
+				<xr:TypeId>105c0d73-d975-492b-ac09-773bb7001556</xr:TypeId>
+				<xr:ValueId>f30d21c2-dfb3-47e6-b2de-6c0fd55f833e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ОстаткиТоваров" category="Selection">
+				<xr:TypeId>a5940383-9bd3-4f62-a918-8b1c6de5dd81</xr:TypeId>
+				<xr:ValueId>638ffda2-4155-4d10-a55f-793b444e299e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ОстаткиТоваров" category="List">
+				<xr:TypeId>f59da83d-d820-4f01-9a30-9aa4126e14cf</xr:TypeId>
+				<xr:ValueId>8e8788d9-056a-4a63-935e-9fede6f2aa14</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ОстаткиТоваров" category="RecordSet">
+				<xr:TypeId>fe021c06-cf81-431b-ac85-360127baae26</xr:TypeId>
+				<xr:ValueId>09a2e441-c617-44f8-8c3a-687b99d763cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ОстаткиТоваров" category="RecordKey">
+				<xr:TypeId>c1fee193-6600-4c99-ac89-9ca336d9a064</xr:TypeId>
+				<xr:ValueId>ecaedf6c-85d1-40c0-9f85-7e518a42997d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ОстаткиТоваров" category="RecordManager">
+				<xr:TypeId>2077035b-438f-4c00-9848-a19c94870e6f</xr:TypeId>
+				<xr:ValueId>a837fb95-a0b9-47bc-8d9c-771fbe28ffee</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОстаткиТоваров</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>39697d29-d018-41f6-97e5-ff0be80c288c</ExtendedConfigurationObject>
+		</Properties>
+	</InformationRegister>
+</MetaDataObject>

@@ -177,6 +177,7 @@
 			<DataProcessor>ПроверкаИПодборПродукцииИС</DataProcessor>
 			<DataProcessor>СозданиеЧековКоррекции</DataProcessor>
 			<DataProcessor>эв_КомпонентаRabbitMQ</DataProcessor>
+			<InformationRegister>ОстаткиТоваров</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
