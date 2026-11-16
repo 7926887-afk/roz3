@@ -23,6 +23,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.эв_СтавкиБонусовПервостольника</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.эв_ДенежныеСредстваВКассахККМРазмен</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.эв_ОчередиPinkRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.эв_КомпонентаRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.эв_СоздатьОбращение</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

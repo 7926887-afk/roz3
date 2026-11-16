@@ -5525,6 +5525,7 @@
 			<CommonTemplate>ШаблоныСообщенийОбОшибкахАЛКО</CommonTemplate>
 			<CommonTemplate>ШтампЭлектроннойПодписиOfficeOpen</CommonTemplate>
 			<CommonTemplate>ЭталонИС</CommonTemplate>
+			<CommonTemplate>эв_КомпонентаПауза</CommonTemplate>
 			<FilterCriterion>ДисконтныеКартыПоКонтрагенту</FilterCriterion>
 			<FilterCriterion>ДокументыПоДоговору</FilterCriterion>
 			<FilterCriterion>ДокументыПоЗаказуПокупателя</FilterCriterion>
@@ -16559,6 +16560,8 @@
 			<DataProcessor>ЭлектронноеВзаимодействие</DataProcessor>
 			<DataProcessor>ЭлектронныеДокументыОтправкаКаталога</DataProcessor>
 			<DataProcessor>ЭлектронныеПеревозочныеДокументы</DataProcessor>
+			<DataProcessor>эв_КомпонентаRabbitMQ</DataProcessor>
+			<DataProcessor>эв_СоздатьОбращение</DataProcessor>
 			<InformationRegister>АбонентыЭДО</InformationRegister>
 			<InformationRegister>АвтоНумерацияДоговоровКонтрагента</InformationRegister>
 			<InformationRegister>АвторизацияВСервисеФреш</InformationRegister>
