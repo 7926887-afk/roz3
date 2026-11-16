@@ -146,6 +146,7 @@
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
 			<CommonModule>ОбменДаннымиСобытияБП</CommonModule>
 			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
+			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<DefinedType>КассаККМРМК</DefinedType>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>ВидыЗаказовПокупателей</Catalog>
