@@ -141,6 +141,7 @@
 			<CommonModule>ОборудованиеПлатежныеСистемыКлиентСервер</CommonModule>
 			<CommonModule>ор_ПрограммноеСозданиеЭлементовФормОР</CommonModule>
 			<CommonModule>ор_МенеджерОбменаЧерезУниверсальныйФормат</CommonModule>
+			<CommonModule>эв_ОбменЧерезБрокера</CommonModule>
 			<CommonModule>МенеджерОборудованияСлужебныйКлиент</CommonModule>
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
@@ -175,6 +176,7 @@
 			<DataProcessor>РабочееМестоКассира</DataProcessor>
 			<DataProcessor>ПроверкаИПодборПродукцииИС</DataProcessor>
 			<DataProcessor>СозданиеЧековКоррекции</DataProcessor>
+			<DataProcessor>эв_КомпонентаRabbitMQ</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
