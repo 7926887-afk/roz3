@@ -146,6 +146,9 @@
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
 			<CommonModule>ОбменДаннымиСобытияБП</CommonModule>
 			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
+			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
+			<CommonModule>эв_СоздатьОбращение</CommonModule>
+			<CommonModule>эв_СоздатьОбращениеКлиент</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<DefinedType>КассаККМРМК</DefinedType>
 			<Catalog>Контрагенты</Catalog>
