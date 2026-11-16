@@ -14143,6 +14143,7 @@
 			<Catalog>Ячейки</Catalog>
 			<Catalog>эвПараметрыЭквайринкогоТерминалаСпасибо</Catalog>
 			<Catalog>эв_ИсточникиЗаказов</Catalog>
+			<Catalog>эв_ОчередиPinkRabbitMQ</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АвансовыйПлатежИностранцаПоНДФЛ</Document>
 			<Document>АктВыполненныхРабот</Document>
