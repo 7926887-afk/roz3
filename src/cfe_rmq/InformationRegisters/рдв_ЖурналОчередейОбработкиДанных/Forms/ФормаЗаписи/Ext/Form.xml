@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<Page name="ГруппаОсновное" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДатаЖурнала" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата журнала</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата журнала</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатаЖурналаРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<InputField name="ДатаЖурнала" id="1">
+									<DataPath>Запись.ДатаЖурналаUTC</DataPath>
+									<ContextMenu name="ДатаЖурналаКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ДатаЖурналаРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="ДатаЖурналаМс" id="4">
+									<DataPath>Запись.ДатаЖурналаМс</DataPath>
+									<ContextMenu name="ДатаЖурналаМсКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаЖурналаМсРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ТипОчереди" id="7">
+							<DataPath>Запись.ТипОчереди</DataPath>
+							<ContextMenu name="ТипОчередиКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ТипОчередиРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Объект" id="10">
+							<DataPath>Запись.Объект</DataPath>
+							<ContextMenu name="ОбъектКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Состояние" id="16">
+							<DataPath>Запись.Состояние</DataPath>
+							<ContextMenu name="СостояниеКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="ДатаЖурналаЛокальная" id="43">
+							<DataPath>Запись.ДатаЖурнала</DataPath>
+							<ContextMenu name="ДатаЖурналаЛокальнаяКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ДатаЖурналаЛокальнаяРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="ДатаСоздания" id="40">
+							<DataPath>Запись.ДатаСоздания</DataPath>
+							<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="ОписаниеСостояния" id="31">
+							<DataPath>Запись.ОписаниеСостояния</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ОписаниеСостоянияКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ОписаниеСостоянияРасширеннаяПодсказка" id="33"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПараметры" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<InputField name="ХешПараметров" id="54">
+							<DataPath>Запись.ХешПараметров</DataPath>
+							<ContextMenu name="ХешПараметровКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ХешПараметровРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<InputField name="ПредставлениеПараметров" id="57">
+							<DataPath>Запись.ПредставлениеПараметров</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ПредставлениеПараметровКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ПредставлениеПараметровРасширеннаяПодсказка" id="59"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительно" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<InputField name="ИдентификаторЗаписи" id="13">
+							<DataPath>Запись.ИдентификаторЗаписи</DataPath>
+							<ContextMenu name="ИдентификаторЗаписиКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ИдентификаторЗаписиРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ДлительностьОбработки" id="34">
+							<DataPath>Запись.ДлительностьОбработки</DataPath>
+							<ContextMenu name="ДлительностьОбработкиКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ДлительностьОбработкиРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<CheckBoxField name="ОстановленаОбработка" id="28">
+							<DataPath>Запись.ОстановленаОбработка</DataPath>
+							<ContextMenu name="ОстановленаОбработкаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ОстановленаОбработкаРасширеннаяПодсказка" id="30"/>
+						</CheckBoxField>
+						<InputField name="ДатаСозданияUTC" id="37">
+							<DataPath>Запись.ДатаСозданияUTC</DataPath>
+							<ContextMenu name="ДатаСозданияUTCКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ДатаСозданияUTCРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="КоличествоПопытокОбработки" id="22">
+							<DataPath>Запись.КоличествоПопытокОбработки</DataPath>
+							<ContextMenu name="КоличествоПопытокОбработкиКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="КоличествоПопытокОбработкиРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="ДатаСледующейПопыткиUTC" id="25">
+							<DataPath>Запись.ДатаСледующейПопыткиUTC</DataPath>
+							<ContextMenu name="ДатаСледующейПопыткиUTCКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ДатаСледующейПопыткиUTCРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ДатаНачалаОбработкиUTC" id="65">
+							<DataPath>Запись.ДатаНачалаОбработкиUTC</DataPath>
+							<ContextMenu name="ДатаНачалаОбработкиUTCКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ДатаНачалаОбработкиUTCРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="РазделительПотока" id="19">
+							<DataPath>Запись.РазделительПотока</DataPath>
+							<ContextMenu name="РазделительПотокаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="РазделительПотокаРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<LabelField name="ИдентификаторПотока" id="60">
+							<DataPath>Запись.ИдентификаторПотока</DataPath>
+							<ContextMenu name="ИдентификаторПотокаКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ИдентификаторПотокаРасширеннаяПодсказка" id="62"/>
+						</LabelField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.рдв_ЖурналОчередейОбработкиДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

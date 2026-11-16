@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<RadioButtonField name="Тип" id="7">
+			<DataPath>Объект.Тип</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.рдв_ТипыВыгружаемыхОбъектов.EnumValue.Ссылка</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.рдв_ТипыВыгружаемыхОбъектов.EnumValue.НаборЗаписей</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.рдв_ТипыВыгружаемыхОбъектов.EnumValue.Произвольный</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подтверждение получения</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.рдв_ТипыВыгружаемыхОбъектов.EnumValue.ПодтверждениеПолучения</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ТипКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ТипПриИзменении</Event>
+			</Events>
+		</RadioButtonField>
+		<InputField name="ИдентификаторДанных" id="13">
+			<DataPath>Объект.ИдентификаторДанных</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИдентификаторДанныхКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИдентификаторДанныхРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="ГруппаСсылка" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ссылка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСсылкаРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="СсылкаНаОбъект" id="10">
+					<DataPath>Объект.СсылкаНаОбъект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СсылкаНаОбъектКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СсылкаНаОбъектРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодтверждениеПолучения" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подтверждение получения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подтверждение получения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодтверждениеПолученияРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="ВидСообщения" id="53">
+					<DataPath>Объект.ВидСообщения</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВидСообщенияКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ВидСообщенияРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<CheckBoxField name="Успешно" id="47">
+					<DataPath>Объект.Успешно</DataPath>
+					<ContextMenu name="УспешноКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="УспешноРасширеннаяПодсказка" id="49"/>
+				</CheckBoxField>
+				<InputField name="ТекстОшибки" id="50">
+					<DataPath>Объект.ТекстОшибки</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНаборЗаписей" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа набор записей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа набор записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаборЗаписейРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Замещение" id="81">
+					<DataPath>Объект.Замещение</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗамещениеКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ЗамещениеРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<Table name="ОтборНабораЗаписей" id="16">
+					<Representation>List</Representation>
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ОтборНабораЗаписей</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОтборНабораЗаписейКонтекстноеМеню" id="17"/>
+					<AutoCommandBar name="ОтборНабораЗаписейКоманднаяПанель" id="18"/>
+					<ExtendedTooltip name="ОтборНабораЗаписейРасширеннаяПодсказка" id="19"/>
+					<SearchStringAddition name="ОтборНабораЗаписейСтрокаПоиска" id="20">
+						<AdditionSource>
+							<Item>ОтборНабораЗаписей</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтборНабораЗаписейСтрокаПоискаКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="ОтборНабораЗаписейСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОтборНабораЗаписейСостояниеПросмотра" id="23">
+						<AdditionSource>
+							<Item>ОтборНабораЗаписей</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтборНабораЗаписейСостояниеПросмотраКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="ОтборНабораЗаписейСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОтборНабораЗаписейУправлениеПоиском" id="26">
+						<AdditionSource>
+							<Item>ОтборНабораЗаписей</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОтборНабораЗаписейУправлениеПоискомКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ОтборНабораЗаписейУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ОтборНабораЗаписейНомерСтроки" id="29">
+							<DataPath>Объект.ОтборНабораЗаписей.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ОтборНабораЗаписейНомерСтрокиКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ОтборНабораЗаписейНомерСтрокиРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+						<InputField name="ОтборНабораЗаписейИмя" id="32">
+							<DataPath>Объект.ОтборНабораЗаписей.Имя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОтборНабораЗаписейИмяКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ОтборНабораЗаписейИмяРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="ОтборНабораЗаписейЗначение" id="35">
+							<DataPath>Объект.ОтборНабораЗаписей.Значение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОтборНабораЗаписейЗначениеКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ОтборНабораЗаписейЗначениеРасширеннаяПодсказка" id="37"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="НаборЗаписей" id="56">
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.НаборЗаписей</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="НаборЗаписейКонтекстноеМеню" id="57"/>
+					<AutoCommandBar name="НаборЗаписейКоманднаяПанель" id="58"/>
+					<ExtendedTooltip name="НаборЗаписейРасширеннаяПодсказка" id="59"/>
+					<SearchStringAddition name="НаборЗаписейСтрокаПоиска" id="60">
+						<AdditionSource>
+							<Item>НаборЗаписей</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НаборЗаписейСтрокаПоискаКонтекстноеМеню" id="61"/>
+						<ExtendedTooltip name="НаборЗаписейСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НаборЗаписейСостояниеПросмотра" id="63">
+						<AdditionSource>
+							<Item>НаборЗаписей</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НаборЗаписейСостояниеПросмотраКонтекстноеМеню" id="64"/>
+						<ExtendedTooltip name="НаборЗаписейСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НаборЗаписейУправлениеПоиском" id="66">
+						<AdditionSource>
+							<Item>НаборЗаписей</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НаборЗаписейУправлениеПоискомКонтекстноеМеню" id="67"/>
+						<ExtendedTooltip name="НаборЗаписейУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="НаборЗаписейНомерСтроки" id="69">
+							<DataPath>Объект.НаборЗаписей.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="НаборЗаписейНомерСтрокиКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="НаборЗаписейНомерСтрокиРасширеннаяПодсказка" id="71"/>
+						</LabelField>
+						<InputField name="НаборЗаписейНомерЗаписи" id="78">
+							<DataPath>Объект.НаборЗаписей.НомерЗаписи</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаборЗаписейНомерЗаписиКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="НаборЗаписейНомерЗаписиРасширеннаяПодсказка" id="80"/>
+						</InputField>
+						<InputField name="НаборЗаписейИмя" id="72">
+							<DataPath>Объект.НаборЗаписей.Имя</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаборЗаписейИмяКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="НаборЗаписейИмяРасширеннаяПодсказка" id="74"/>
+						</InputField>
+						<InputField name="НаборЗаписейЗначение" id="75">
+							<DataPath>Объект.НаборЗаписей.Значение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаборЗаписейЗначениеКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="НаборЗаписейЗначениеРасширеннаяПодсказка" id="77"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.рдв_ВыгружаемыеОбъекты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

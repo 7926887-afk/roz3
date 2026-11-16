@@ -1,0 +1,1333 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Auto</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКомандаНастроить" id="50">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаНастроить</CommandName>
+				<ExtendedTooltip name="ФормаКомандаНастроитьРасширеннаяПодсказка" id="51"/>
+			</Button>
+			<Button name="ФормаКомандаОбновить" id="52">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаОбновить</CommandName>
+				<ExtendedTooltip name="ФормаКомандаОбновитьРасширеннаяПодсказка" id="53"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбщая" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОбщаяРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДлительнаяОперация" id="102">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>HorizontalIfPossible</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДлительнаяОперацияРасширеннаяПодсказка" id="103"/>
+					<ChildItems>
+						<PictureDecoration name="ДлительнаяОперация" id="56">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация1</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.рдв_ДлительнаяОперация48</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДлительнаяОперацияКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ДлительнаяОперацияРасширеннаяПодсказка" id="58"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияОписаниеДлительнойОперации" id="104">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется обновление данных</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОписаниеДлительнойОперацииКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="ДекорацияОписаниеДлительнойОперацииРасширеннаяПодсказка" id="106"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРазделы" id="159">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разделы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разделы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРазделыРасширеннаяПодсказка" id="160"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРегистрацияИзменений" id="161">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистрация изменений</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация изменений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаРегистрацияИзмененийРасширеннаяПодсказка" id="162"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияОтступПояснениеРегистрацияИзмененийВсего" id="171">
+									<Width>2</Width>
+									<ContextMenu name="ДекорацияОтступПояснениеРегистрацияИзмененийВсегоКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ДекорацияОтступПояснениеРегистрацияИзмененийВсегоРасширеннаяПодсказка" id="173"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаРегистрацияИзмененийДетально" id="221">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа регистрация изменений детально</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа регистрация изменений детально</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРегистрацияИзмененийДетальноРасширеннаяПодсказка" id="222"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаОтправкаРегистрацияИзмененийВидыСообщений" id="176">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По видам сообщений</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отправка исходящая очередь всего</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОтправкаРегистрацияИзмененийВидыСообщенийРасширеннаяПодсказка" id="177"/>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОтправкаИсходящаяОчередьВсего" id="174">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Всего</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отправка исходящая очередь всего</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОтправкаИсходящаяОчередьВсегоРасширеннаяПодсказка" id="175"/>
+											<ChildItems>
+												<LabelDecoration name="ОтправкаИсходящаяОчередьВсего" id="43">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего</v8:content>
+														</v8:item>
+													</Title>
+													<Hyperlink>true</Hyperlink>
+													<ContextMenu name="ОтправкаИсходящаяОчередьВсегоКонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="ОтправкаИсходящаяОчередьВсегоРасширеннаяПодсказка" id="45"/>
+													<Events>
+														<Event name="Click">ГиперссылкаНажатие</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПояснениеРегистрацияИзменений" id="163">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пояснение регистрация изменений</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Explanation prepare items</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пояснение регистрация изменений</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПояснениеРегистрацияИзмененийРасширеннаяПодсказка" id="164"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОтступПояснениеРегистрацияИзменений" id="165">
+													<Visible>false</Visible>
+													<Width>2</Width>
+													<ContextMenu name="ДекорацияОтступПояснениеРегистрацияИзмененийКонтекстноеМеню" id="166"/>
+													<ExtendedTooltip name="ДекорацияОтступПояснениеРегистрацияИзмененийРасширеннаяПодсказка" id="167"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеРегистрацияИзменений" id="168">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>#807A59</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Список объектов, для которых зарегистрировано изменение и ожидается формирование сообщений интеграции</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Expense recognition for recording in the ledger of income and expenditure is carried out according to expense item settings. Configured settings will be applied only to the current transactions. To change the expenses recognized earlier, recognize them again.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеРегистрацияИзмененийКонтекстноеМеню" id="169"/>
+													<ExtendedTooltip name="ПояснениеРегистрацияИзмененийРасширеннаяПодсказка" id="170"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИсходящиеСообщения" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходящие сообщения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация изменений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаИсходящиеСообщенияРасширеннаяПодсказка" id="182"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИсходящиеСообщенияПоСтатусам" id="204">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа исходящие сообщения по статусам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа исходящие сообщения по статусам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИсходящиеСообщенияПоСтатусамРасширеннаяПодсказка" id="205"/>
+									<ChildItems>
+										<LabelDecoration name="ОтступИсходящиеСообщенияПоСтатусам" id="211">
+											<Width>2</Width>
+											<ContextMenu name="ОтступИсходящиеСообщенияПоСтатусамКонтекстноеМеню" id="212"/>
+											<ExtendedTooltip name="ОтступИсходящиеСообщенияПоСтатусамРасширеннаяПодсказка" id="213"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаИсходящиеСообщенияОбработано" id="214">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения обработано</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения обработано</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИсходящиеСообщенияОбработаноРасширеннаяПодсказка" id="215"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияИсходящиеСообщенияОбработаноЗаголовок" id="208">
+													<TextColor>style:FormTextColor</TextColor>
+													<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Обработано:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияИсходящиеСообщенияОбработаноЗаголовокКонтекстноеМеню" id="209"/>
+													<ExtendedTooltip name="ДекорацияИсходящиеСообщенияОбработаноЗаголовокРасширеннаяПодсказка" id="210"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаИсходящиеСообщенияОбработаноВидыСообщений" id="219">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИсходящиеСообщенияОбработаноВидыСообщенийРасширеннаяПодсказка" id="220"/>
+												</UsualGroup>
+												<LabelDecoration name="ИсходящиеСообщенияОбработаноВсего" id="216">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего</v8:content>
+														</v8:item>
+													</Title>
+													<Hyperlink>true</Hyperlink>
+													<ContextMenu name="ИсходящиеСообщенияОбработаноВсегоКонтекстноеМеню" id="217"/>
+													<ExtendedTooltip name="ИсходящиеСообщенияОбработаноВсегоРасширеннаяПодсказка" id="218"/>
+													<Events>
+														<Event name="Click">ГиперссылкаНажатие</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаИсходящиеСообщенияКОбработке" id="223">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения к обработке</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения обработано</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИсходящиеСообщенияКОбработкеРасширеннаяПодсказка" id="224"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияИсходящиеСообщенияКОбработкеЗаголовок" id="225">
+													<TextColor>style:FormTextColor</TextColor>
+													<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>К обработке:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияИсходящиеСообщенияКОбработкеЗаголовокКонтекстноеМеню" id="226"/>
+													<ExtendedTooltip name="ДекорацияИсходящиеСообщенияКОбработкеЗаголовокРасширеннаяПодсказка" id="227"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаИсходящиеСообщенияКОбработкеВидыСообщений" id="228">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения к обработке виды сообщений</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИсходящиеСообщенияКОбработкеВидыСообщенийРасширеннаяПодсказка" id="229"/>
+												</UsualGroup>
+												<LabelDecoration name="ИсходящиеСообщенияКОбработкеВсего" id="230">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего</v8:content>
+														</v8:item>
+													</Title>
+													<Hyperlink>true</Hyperlink>
+													<ContextMenu name="ИсходящиеСообщенияКОбработкеВсегоКонтекстноеМеню" id="231"/>
+													<ExtendedTooltip name="ИсходящиеСообщенияКОбработкеВсегоРасширеннаяПодсказка" id="232"/>
+													<Events>
+														<Event name="Click">ГиперссылкаНажатие</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаИсходящиеСообщенияОшибка" id="233">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения ошибка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения обработано</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИсходящиеСообщенияОшибкаРасширеннаяПодсказка" id="234"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияИсходящиеСообщенияОшибкаЗаголовок" id="235">
+													<TextColor>style:FormTextColor</TextColor>
+													<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ошибка:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияИсходящиеСообщенияОшибкаЗаголовокКонтекстноеМеню" id="236"/>
+													<ExtendedTooltip name="ДекорацияИсходящиеСообщенияОшибкаЗаголовокРасширеннаяПодсказка" id="237"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаИсходящиеСообщенияОшибкаВидыСообщений" id="238">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения ошибка виды сообщений</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИсходящиеСообщенияОшибкаВидыСообщенийРасширеннаяПодсказка" id="239"/>
+												</UsualGroup>
+												<LabelDecoration name="ИсходящиеСообщенияОшибкаВсего" id="240">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего</v8:content>
+														</v8:item>
+													</Title>
+													<Hyperlink>true</Hyperlink>
+													<ContextMenu name="ИсходящиеСообщенияОшибкаВсегоКонтекстноеМеню" id="241"/>
+													<ExtendedTooltip name="ИсходящиеСообщенияОшибкаВсегоРасширеннаяПодсказка" id="242"/>
+													<Events>
+														<Event name="Click">ГиперссылкаНажатие</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеИсходящиеСообщения" id="196">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пояснение исходящие сообщения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Explanation prepare items</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение регистрация изменений</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеИсходящиеСообщенияРасширеннаяПодсказка" id="197"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступПояснениеИсходящиеСообщения" id="198">
+											<Width>2</Width>
+											<ContextMenu name="ДекорацияОтступПояснениеИсходящиеСообщенияКонтекстноеМеню" id="199"/>
+											<ExtendedTooltip name="ДекорацияОтступПояснениеИсходящиеСообщенияРасширеннаяПодсказка" id="200"/>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеИсходящиеСообщения" id="201">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>#807A59</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список исходящих сообщений в разрезе статусов и видов сообщений.
+Статусы:
+ - Обработано: Сообщение отправлено во внешнюю систему
+ - К обработке: Сообщение сформировано и ожидает отправки во внешнюю систему
+ - Ошибка: При попытке отправки сообщения во внешнюю систему произошла ошибка. </v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Expense recognition for recording in the ledger of income and expenditure is carried out according to expense item settings. Configured settings will be applied only to the current transactions. To change the expenses recognized earlier, recognize them again.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеИсходящиеСообщенияКонтекстноеМеню" id="202"/>
+											<ExtendedTooltip name="ПояснениеИсходящиеСообщенияРасширеннаяПодсказка" id="203"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВходящиеСообщения" id="243">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Входящие сообщения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация изменений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаВходящиеСообщенияРасширеннаяПодсказка" id="244"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаВходящиеСообщенияПоСтатусам" id="245">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа входящие сообщения по статусам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа исходящие сообщения по статусам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВходящиеСообщенияПоСтатусамРасширеннаяПодсказка" id="246"/>
+									<ChildItems>
+										<LabelDecoration name="ОтступВходящиеСообщенияПоСтатусам" id="247">
+											<Width>2</Width>
+											<ContextMenu name="ОтступВходящиеСообщенияПоСтатусамКонтекстноеМеню" id="248"/>
+											<ExtendedTooltip name="ОтступВходящиеСообщенияПоСтатусамРасширеннаяПодсказка" id="249"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаВходящиеСообщенияОбработано" id="250">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа входящие сообщения обработано</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения обработано</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВходящиеСообщенияОбработаноРасширеннаяПодсказка" id="251"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияВходящиеСообщенияОбработаноЗаголовок" id="252">
+													<TextColor>style:FormTextColor</TextColor>
+													<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Обработано:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияВходящиеСообщенияОбработаноЗаголовокКонтекстноеМеню" id="253"/>
+													<ExtendedTooltip name="ДекорацияВходящиеСообщенияОбработаноЗаголовокРасширеннаяПодсказка" id="254"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВходящиеСообщенияОбработаноВидыСообщений" id="255">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа входящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВходящиеСообщенияОбработаноВидыСообщенийРасширеннаяПодсказка" id="256"/>
+												</UsualGroup>
+												<LabelDecoration name="ВходящиеСообщенияОбработаноВсего" id="257">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего</v8:content>
+														</v8:item>
+													</Title>
+													<Hyperlink>true</Hyperlink>
+													<ContextMenu name="ВходящиеСообщенияОбработаноВсегоКонтекстноеМеню" id="258"/>
+													<ExtendedTooltip name="ВходящиеСообщенияОбработаноВсегоРасширеннаяПодсказка" id="259"/>
+													<Events>
+														<Event name="Click">ГиперссылкаНажатие</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаВходящиеСообщенияКОбработке" id="260">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа входящие сообщения к обработке</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения обработано</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВходящиеСообщенияКОбработкеРасширеннаяПодсказка" id="261"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияВходящиеСообщенияКОбработкеЗаголовок" id="262">
+													<TextColor>style:FormTextColor</TextColor>
+													<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>К обработке:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияВходящиеСообщенияКОбработкеЗаголовокКонтекстноеМеню" id="263"/>
+													<ExtendedTooltip name="ДекорацияВходящиеСообщенияКОбработкеЗаголовокРасширеннаяПодсказка" id="264"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВходящиеСообщенияКОбработкеВидыСообщений" id="265">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа входящие сообщения к обработке виды сообщений</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВходящиеСообщенияКОбработкеВидыСообщенийРасширеннаяПодсказка" id="266"/>
+												</UsualGroup>
+												<LabelDecoration name="ВходящиеСообщенияКОбработкеВсего" id="267">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего</v8:content>
+														</v8:item>
+													</Title>
+													<Hyperlink>true</Hyperlink>
+													<ContextMenu name="ВходящиеСообщенияКОбработкеВсегоКонтекстноеМеню" id="268"/>
+													<ExtendedTooltip name="ВходящиеСообщенияКОбработкеВсегоРасширеннаяПодсказка" id="269"/>
+													<Events>
+														<Event name="Click">ГиперссылкаНажатие</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаВходящиеСообщенияОшибка" id="270">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа входящие сообщения ошибка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа исходящие сообщения обработано</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВходящиеСообщенияОшибкаРасширеннаяПодсказка" id="271"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияВходящиеСообщенияОшибкаЗаголовок" id="272">
+													<TextColor>style:FormTextColor</TextColor>
+													<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ошибка:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияВходящиеСообщенияОшибкаЗаголовокКонтекстноеМеню" id="273"/>
+													<ExtendedTooltip name="ДекорацияВходящиеСообщенияОшибкаЗаголовокРасширеннаяПодсказка" id="274"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВходящиеСообщенияОшибкаВидыСообщений" id="275">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа входящие сообщения ошибка виды сообщений</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исходящие сообщения обработано виды сообщений</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВходящиеСообщенияОшибкаВидыСообщенийРасширеннаяПодсказка" id="276"/>
+												</UsualGroup>
+												<LabelDecoration name="ВходящиеСообщенияОшибкаВсего" id="277">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего</v8:content>
+														</v8:item>
+													</Title>
+													<Hyperlink>true</Hyperlink>
+													<ContextMenu name="ВходящиеСообщенияОшибкаВсегоКонтекстноеМеню" id="278"/>
+													<ExtendedTooltip name="ВходящиеСообщенияОшибкаВсегоРасширеннаяПодсказка" id="279"/>
+													<Events>
+														<Event name="Click">ГиперссылкаНажатие</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПояснениеВходящиеСообщения" id="280">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пояснение входящие сообщения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Explanation prepare items</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пояснение регистрация изменений</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПояснениеВходящиеСообщенияРасширеннаяПодсказка" id="281"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступПояснениеВходящиеСообщения" id="282">
+											<Width>2</Width>
+											<ContextMenu name="ДекорацияОтступПояснениеВходящиеСообщенияКонтекстноеМеню" id="283"/>
+											<ExtendedTooltip name="ДекорацияОтступПояснениеВходящиеСообщенияРасширеннаяПодсказка" id="284"/>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеВходящиеСообщения" id="285">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>#807A59</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список входящих сообщений в разрезе статусов и видов сообщений.
+Статусы:
+ - Обработано: Сообщение обработано и данные сообщения загружены в текущую ИБ
+ - К обработке: Сообщение принято текущей ИБ, но данные сообщения еще не загружены
+ - Ошибка: При попытке обработки сообщения произошла ошибка. </v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Expense recognition for recording in the ledger of income and expenditure is carried out according to expense item settings. Configured settings will be applied only to the current transactions. To change the expenses recognized earlier, recognize them again.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеВходящиеСообщенияКонтекстноеМеню" id="286"/>
+											<ExtendedTooltip name="ПояснениеВходящиеСообщенияРасширеннаяПодсказка" id="287"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВнешниеСистемы" id="288">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внешние системы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация изменений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаВнешниеСистемыРасширеннаяПодсказка" id="289"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияОтступВнешниеСистемы" id="304">
+									<Width>2</Width>
+									<ContextMenu name="ДекорацияОтступВнешниеСистемыКонтекстноеМеню" id="305"/>
+									<ExtendedTooltip name="ДекорацияОтступВнешниеСистемыРасширеннаяПодсказка" id="306"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаВнешниеСистемыДетально" id="313">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа внешние системы детально</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа регистрация изменений детально</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВнешниеСистемыДетальноРасширеннаяПодсказка" id="314"/>
+									<ChildItems>
+										<Table name="ВнешниеСистемы" id="13">
+											<Representation>List</Representation>
+											<ReadOnly>true</ReadOnly>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>30</MaxWidth>
+											<HeightControlVariant>UseContentHeight</HeightControlVariant>
+											<RowSelectionMode>Cell</RowSelectionMode>
+											<Header>false</Header>
+											<HorizontalStretch>false</HorizontalStretch>
+											<DataPath>ВнешниеСистемы</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+											</CommandSet>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ВнешниеСистемыКонтекстноеМеню" id="15"/>
+											<AutoCommandBar name="ВнешниеСистемыКоманднаяПанель" id="14">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ВнешниеСистемыРасширеннаяПодсказка" id="16"/>
+											<SearchStringAddition name="ВнешниеСистемыСтрокаПоиска" id="17">
+												<AdditionSource>
+													<Item>ВнешниеСистемы</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ВнешниеСистемыСтрокаПоискаКонтекстноеМеню" id="18"/>
+												<ExtendedTooltip name="ВнешниеСистемыСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ВнешниеСистемыСостояниеПросмотра" id="23">
+												<AdditionSource>
+													<Item>ВнешниеСистемы</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ВнешниеСистемыСостояниеПросмотраКонтекстноеМеню" id="24"/>
+												<ExtendedTooltip name="ВнешниеСистемыСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ВнешниеСистемыУправлениеПоиском" id="20">
+												<AdditionSource>
+													<Item>ВнешниеСистемы</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ВнешниеСистемыУправлениеПоискомКонтекстноеМеню" id="21"/>
+												<ExtendedTooltip name="ВнешниеСистемыУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<PictureField name="ВнешниеСистемыСостояние" id="29">
+													<DataPath>ВнешниеСистемы.Состояние</DataPath>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.рдв_СостоянияВнешнихСистем</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<ContextMenu name="ВнешниеСистемыСостояниеКонтекстноеМеню" id="30"/>
+													<ExtendedTooltip name="ВнешниеСистемыСостояниеРасширеннаяПодсказка" id="31"/>
+												</PictureField>
+												<InputField name="ВнешниеСистемыВнешняяСистема" id="26">
+													<DataPath>ВнешниеСистемы.ВнешняяСистема</DataPath>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ContextMenu name="ВнешниеСистемыВнешняяСистемаКонтекстноеМеню" id="27"/>
+													<ExtendedTooltip name="ВнешниеСистемыВнешняяСистемаРасширеннаяПодсказка" id="28"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+										<UsualGroup name="ГруппаПояснениеВнешниеСистемы" id="302">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пояснение внешние системы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Explanation prepare items</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пояснение регистрация изменений</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПояснениеВнешниеСистемыРасширеннаяПодсказка" id="303"/>
+											<ChildItems>
+												<LabelDecoration name="ПояснениеВнешниеСистемы" id="307">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>#807A59</TextColor>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Список внешних систем и текущий статус подключение к внешней системе. 
+&lt;img 0:85998f14-805b-4e2b-ba19-9d79b0464042/&gt; - подключение выполнено успешно
+&lt;img 0:9ef73565-2250-4a35-9fb3-470bd19ca9ca/&gt; - внешняя система недоступна</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Expense recognition for recording in the ledger of income and expenditure is carried out according to expense item settings. Configured settings will be applied only to the current transactions. To change the expenses recognized earlier, recognize them again.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеВнешниеСистемыКонтекстноеМеню" id="308"/>
+													<ExtendedTooltip name="ПояснениеВнешниеСистемыРасширеннаяПодсказка" id="309"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОшибки" id="11">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ошибки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ControlRepresentation>Button</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаОшибкиРасширеннаяПодсказка" id="12"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияОтступОшибки" id="317">
+									<Width>2</Width>
+									<ContextMenu name="ДекорацияОтступОшибкиКонтекстноеМеню" id="318"/>
+									<ExtendedTooltip name="ДекорацияОтступОшибкиРасширеннаяПодсказка" id="319"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаОшибкиДетально" id="315">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ошибки детально</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ошибки детально</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОшибкиДетальноРасширеннаяПодсказка" id="316"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаОшибкиВидыСообщений" id="100">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отправлено виды сообщений</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<VerticalSpacing>None</VerticalSpacing>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОшибкиВидыСообщенийРасширеннаяПодсказка" id="101"/>
+										</UsualGroup>
+										<LabelDecoration name="ОшибкиВсего" id="97">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Всего</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ОшибкиВсегоКонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="ОшибкиВсегоРасширеннаяПодсказка" id="99"/>
+											<Events>
+												<Event name="Click">ГиперссылкаНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеОшибки" id="327">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>#807A59</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список ошибок с детализацией во пидам сообщений</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Expense recognition for recording in the ledger of income and expenditure is carried out according to expense item settings. Configured settings will be applied only to the current transactions. To change the expenses recognized earlier, recognize them again.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеОшибкиКонтекстноеМеню" id="328"/>
+											<ExtendedTooltip name="ПояснениеОшибкиРасширеннаяПодсказка" id="329"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПравила" id="7">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<VerticalSpacing>None</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<ControlRepresentation>Button</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПравилаРасширеннаяПодсказка" id="8"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияОтступПравила" id="324">
+									<Width>2</Width>
+									<ContextMenu name="ДекорацияОтступПравилаКонтекстноеМеню" id="325"/>
+									<ExtendedTooltip name="ДекорацияОтступПравилаРасширеннаяПодсказка" id="326"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаПравилаРегистрации" id="320">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правила регистрации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правила регистрации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПравилаРегистрацииРасширеннаяПодсказка" id="321"/>
+									<ChildItems>
+										<Button name="Отчетрдв_ПредставлениеПравилРегистрацииКомандаКомандаОткрыть" id="95">
+											<Type>Hyperlink</Type>
+											<CommandName>Report.рдв_ПредставлениеПравилРегистрации.Command.КомандаОткрыть</CommandName>
+											<ExtendedTooltip name="Отчетрдв_ПредставлениеПравилРегистрацииКомандаКомандаОткрытьРасширеннаяПодсказка" id="96"/>
+										</Button>
+										<LabelDecoration name="ПояснениеПравилаРегистрации" id="330">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>#807A59</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отчет показывающий правила регистрации текущей ИБ</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Expense recognition for recording in the ledger of income and expenditure is carried out according to expense item settings. Configured settings will be applied only to the current transactions. To change the expenses recognized earlier, recognize them again.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеПравилаРегистрацииКонтекстноеМеню" id="331"/>
+											<ExtendedTooltip name="ПояснениеПравилаРегистрацииРасширеннаяПодсказка" id="332"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПравилаКонвертации" id="322">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правила конвертации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правила конвертации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПравилаКонвертацииРасширеннаяПодсказка" id="323"/>
+									<ChildItems>
+										<Button name="Отчетрдв_ПредставлениеПравилКонвертацииКомандаКомандаОткрыть" id="93">
+											<Type>Hyperlink</Type>
+											<CommandName>Report.рдв_ПредставлениеПравилКонвертации.Command.КомандаОткрыть</CommandName>
+											<ExtendedTooltip name="Отчетрдв_ПредставлениеПравилКонвертацииКомандаКомандаОткрытьРасширеннаяПодсказка" id="94"/>
+										</Button>
+										<LabelDecoration name="ПояснениеПравилаКонвертации" id="333">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>#807A59</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отчет показывающий правила конвертации текущей ИБ</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Expense recognition for recording in the ledger of income and expenditure is carried out according to expense item settings. Configured settings will be applied only to the current transactions. To change the expenses recognized earlier, recognize them again.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеПравилаКонвертацииКонтекстноеМеню" id="334"/>
+											<ExtendedTooltip name="ПояснениеПравилаКонвертацииРасширеннаяПодсказка" id="335"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРасчетХеша" id="155">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сверка полноты и точности данных</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>None</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<ControlRepresentation>Button</ControlRepresentation>
+							<Representation>WeakSeparation</Representation>
+							<ExtendedTooltip name="ГруппаРасчетХешаРасширеннаяПодсказка" id="156"/>
+							<ChildItems>
+								<Button name="Отчетрдв_СверкаПолнотыТочностиДанныхКомандаСверкаПолнотыТочностиДанных" id="157">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.рдв_СверкаПолнотыТочностиДанных.Command.СверкаПолнотыТочностиДанных</CommandName>
+									<ExtendedTooltip name="Отчетрдв_СверкаПолнотыТочностиДанныхКомандаСверкаПолнотыТочностиДанныхРасширеннаяПодсказка" id="158"/>
+								</Button>
+								<Button name="Отчетрдв_ПредставлениеПравилРасчетаХешаКомандаКомандаОткрыть" id="153">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.рдв_ПредставлениеПравилРасчетаХеша.Command.КомандаОткрыть</CommandName>
+									<ExtendedTooltip name="Отчетрдв_ПредставлениеПравилРасчетаХешаКомандаКомандаОткрытьРасширеннаяПодсказка" id="154"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.рдв_АРМИнтеграции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВнешниеСистемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внешние системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВнешняяСистема" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внешняя система</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.рдв_ВнешниеСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДанныеОткрытияФормы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные открытия формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяЭлемента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя элемента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПараметрыОткрытияФормы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры открытия формы</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ИмяФормы" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя формы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НастройкиФормы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>НастройкиФормы</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаНастроить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КомандаНастроить</Action>
+		</Command>
+		<Command name="КомандаОбновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОбновить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="8951b263-fad8-4846-8287-3c0d1996bdbd">
+		<Name>ACK_RECEIVED</Name>
+		<Code>000000002</Code>
+		<Description>ACK RECEIVED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2fd7a365-3913-49ff-89f9-941d94827fab">
+		<Name>BROKER_UNAVAILABLE</Name>
+		<Code>000000015</Code>
+		<Description>BROKER UNAVAILABLE</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b9a0389b-d541-4085-90ff-a3897b728ec9">
+		<Name>DEAD_LETTERED</Name>
+		<Code>000000020</Code>
+		<Description>DEAD LETTERED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6e0e33e1-bd6c-4605-8e76-0aafd8495e7c">
+		<Name>DUPLICATE</Name>
+		<Code>000000013</Code>
+		<Description>DUPLICATE</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b113dd26-0771-445e-930b-1d603df047e5">
+		<Name>EXPIRED</Name>
+		<Code>000000023</Code>
+		<Description>EXPIRED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b51dbd98-2810-4b53-8eb4-8b93052ef5c0">
+		<Name>FAILURE</Name>
+		<Code>000000014</Code>
+		<Description>FAILURE</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="05628908-5a11-456b-bced-d6df1293ad96">
+		<Name>FORBIDDEN</Name>
+		<Code>000000011</Code>
+		<Description>FORBIDDEN</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="78740735-cffc-4fa6-9952-67d741cc1cd4">
+		<Name>INTERNAL_ERROR</Name>
+		<Code>000000019</Code>
+		<Description>INTERNAL ERROR</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3fa6aa2e-fb45-4b87-a77a-c975eda3dfa4">
+		<Name>INVALID_PAYLOAD</Name>
+		<Code>000000009</Code>
+		<Description>INVALID PAYLOAD</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f2f446db-cd95-4a9f-97d9-fe798d831a53">
+		<Name>MESSAGE_REJECTED</Name>
+		<Code>000000018</Code>
+		<Description>MESSAGE REJECTED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ae455023-b905-4f97-80e4-ffc16d30abc4">
+		<Name>NACK_RECEIVED</Name>
+		<Code>000000017</Code>
+		<Description>NACK RECEIVED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7e8695a9-2193-4d9d-9d9a-6709ccc5e92d">
+		<Name>NO_ACTION_NEEDED</Name>
+		<Code>000000004</Code>
+		<Description>NO ACTION NEEDED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3afa0c1f-1ba4-426a-9f05-a95455b14996">
+		<Name>NOT_FOUND</Name>
+		<Code>000000012</Code>
+		<Description>NOT FOUND</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b73f2392-5464-4d15-90fb-a7b66a0c6b7e">
+		<Name>PENDING</Name>
+		<Code>000000008</Code>
+		<Description>PENDING</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03778fae-ce8b-4f9d-bf0a-5724a7bce1d0">
+		<Name>PROCESSED</Name>
+		<Code>000000003</Code>
+		<Description>PROCESSED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4ca4dd6f-db41-42ed-8e0e-dc9e607dcffd">
+		<Name>QUEUED</Name>
+		<Code>000000006</Code>
+		<Description>QUEUED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6c27959c-d6fc-4d4d-98f5-51331b7627e1">
+		<Name>REDELIVERED</Name>
+		<Code>000000021</Code>
+		<Description>REDELIVERED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df1d7ea7-7597-48c6-98db-8dc9dc4ca4bd">
+		<Name>RETRYING</Name>
+		<Code>000000005</Code>
+		<Description>RETRYING</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4d61c1cc-638f-4205-89ed-78cb84631bc4">
+		<Name>SKIPPED</Name>
+		<Code>000000022</Code>
+		<Description>SKIPPED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dd20c0b8-8612-42f6-9690-534c298e4069">
+		<Name>SUCCESS</Name>
+		<Code>000000001</Code>
+		<Description>SUCCESS</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6ecd6e31-cd5c-4c06-a0f7-70684343cd94">
+		<Name>TIMEOUT</Name>
+		<Code>000000016</Code>
+		<Description>TIMEOUT</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4eea258a-2703-448e-b841-052aebc1b99e">
+		<Name>TOO_LARGE</Name>
+		<Code>000000025</Code>
+		<Description>TOO LARGE</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25852661-b12a-4bca-8158-9b354b433393">
+		<Name>UNAUTHORIZED</Name>
+		<Code>000000010</Code>
+		<Description>UNAUTHORIZED</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="37b7819f-a0bf-461a-b03e-d1ec7bc5d94d">
+		<Name>UNSUPPORTED_TYPE</Name>
+		<Code>000000024</Code>
+		<Description>UNSUPPORTED TYPE</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fa32c6fd-af5d-4f4f-8a89-4bdd4ceccf7e">
+		<Name>WAITING_ACK</Name>
+		<Code>000000007</Code>
+		<Description>WAITING ACK</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

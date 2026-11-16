@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ВыгружаемыйОбъект" id="10">
+			<DataPath>Запись.ВыгружаемыйОбъект</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВыгружаемыйОбъектКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВыгружаемыйОбъектРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Page name="ГруппаОсновное" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<InputField name="ИдентификаторСобытия" id="36">
+							<DataPath>Запись.ИдентификаторСобытия</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИдентификаторСобытияКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ИдентификаторСобытияРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="ИдентификаторСообщения" id="7">
+							<DataPath>Запись.ИдентификаторСообщения</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ДатаРегистрации" id="13">
+							<DataPath>Запись.ДатаРегистрации</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаРегистрацииКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ДатаРегистрацииРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ДатаРегистрацииВМиллисекундах" id="4">
+							<DataPath>Запись.ДатаРегистрацииВМиллисекундах</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата регистрации (м/с)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаРегистрацииВМиллисекундахКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ДатаРегистрацииВМиллисекундахРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Статус" id="19">
+							<DataPath>Запись.Статус</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаИнтеграция" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интеграция</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа интеграция</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаИнтеграцияРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="ВнешняяСистема" id="33">
+							<DataPath>Запись.ВнешняяСистема</DataPath>
+							<ContextMenu name="ВнешняяСистемаКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ВнешняяСистемаРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="АдресМетода" id="44">
+							<DataPath>Запись.АдресМетода</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="АдресМетодаКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="АдресМетодаРасширеннаяПодсказка" id="46"/>
+						</InputField>
+						<InputField name="Интерфейс" id="47">
+							<ContextMenu name="ИнтерфейсКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ИнтерфейсРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="ВидСообщения" id="50">
+							<DataPath>Запись.ВидСообщения</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВидСообщенияКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ВидСообщенияРасширеннаяПодсказка" id="52"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТекстОшибки" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текст ошибки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаТекстОшибкиРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="ТекстОшибки" id="22">
+							<DataPath>Запись.ТекстОшибки</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.рдв_РегистрацияИзменений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименования" id="151">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Half</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованияРасширеннаяПодсказка" id="152"/>
+			<ChildItems>
+				<InputField name="Наименование" id="153">
+					<DataPath>Объект.Description</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="154"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="155"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="рдв_Идентификатор" id="156">
+					<DataPath>Объект.рдв_Идентификатор</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="рдв_ИдентификаторКонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="рдв_ИдентификаторРасширеннаяПодсказка" id="158"/>
+				</InputField>
+				<InputField name="Тип" id="7">
+					<DataPath>Объект.Тип</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТипКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ТипПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="164">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="165"/>
+			<ChildItems>
+				<Page name="СтраницаПараметрыПодключения" id="166">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключение</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаПараметрыПодключенияРасширеннаяПодсказка" id="167"/>
+					<ChildItems>
+						<UsualGroup name="Шапка" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<InputField name="Сервер" id="10">
+									<DataPath>Объект.Сервер</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СерверКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="Пользователь" id="22">
+									<DataPath>Пользователь</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<PasswordMode>false</PasswordMode>
+									<ContextMenu name="ПользовательКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="OnChange">ПользовательПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Пароль" id="25">
+									<DataPath>Пароль</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="27"/>
+									<Events>
+										<Event name="OnChange">ПарольПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Порт" id="148">
+									<DataPath>Объект.Порт</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ContextMenu name="ПортКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="150"/>
+								</InputField>
+								<CheckBoxField name="ЗащищенноеСоединение" id="161">
+									<DataPath>Объект.ЗащищенноеСоединение</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ContextMenu name="ЗащищенноеСоединениеКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="ЗащищенноеСоединениеРасширеннаяПодсказка" id="163"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="168">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="169"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапкаДополнительныеНастройки" id="142" DisplayImportance="VeryLow">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Half</VerticalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаДополнительныеНастройкиРасширеннаяПодсказка" id="143"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРасписание" id="170">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="СтраницаРасписаниеРасширеннаяПодсказка" id="171"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРасписание" id="159" DisplayImportance="VeryLow">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расписание</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Half</VerticalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасписаниеРасширеннаяПодсказка" id="160"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьРасписание" id="93">
+									<DataPath>ИспользоватьРасписание</DataPath>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="ИспользоватьРасписаниеКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ИспользоватьРасписаниеРасширеннаяПодсказка" id="95"/>
+									<Events>
+										<Event name="OnChange">ИспользоватьРасписаниеПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаРасписаниеОтправка" id="86">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа расписание отправка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<VerticalSpacing>Half</VerticalSpacing>
+									<Representation>WeakSeparation</Representation>
+									<ExtendedTooltip name="ГруппаРасписаниеОтправкаРасширеннаяПодсказка" id="87"/>
+									<ChildItems>
+										<Button name="НастроитьРасписаниеОбработкиОтправка" id="48">
+											<Type>Hyperlink</Type>
+											<Height>1</Height>
+											<CommandName>Form.Command.НастроитьРасписаниеОбработкиОтправка</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="НастроитьРасписаниеОбработкиОтправкаРасширеннаяПодсказка" id="49"/>
+										</Button>
+										<InputField name="ИмяПользователяРегламентаОтправка" id="81">
+											<DataPath>Объект.ИмяПользователяРегламентаОтправка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя пользователя регламентного задания</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Top</TitleLocation>
+											<DropListButton>true</DropListButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИмяПользователяРегламентаОтправкаКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="ИмяПользователяРегламентаОтправкаРасширеннаяПодсказка" id="83"/>
+											<Events>
+												<Event name="EditTextChange">ИмяПользователяРегламентаИзменениеТекстаРедактирования</Event>
+												<Event name="StartListChoice">ИмяПользователяРегламентаНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаПараметрыОтправки" id="117">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отправки</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПараметрыОтправкиРасширеннаяПодсказка" id="118"/>
+											<ChildItems>
+												<CheckBoxField name="ДержатьСоединениеОткрытым" id="119">
+													<DataPath>Объект.ДержатьСоединениеОткрытым</DataPath>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После отправки сообщений, соединение остается открытым для последующей отправки через время = ожидание до следующей порции на время = время открытого соединения</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="ДержатьСоединениеОткрытымКонтекстноеМеню" id="120"/>
+													<ExtendedTooltip name="ДержатьСоединениеОткрытымРасширеннаяПодсказка" id="121"/>
+													<Events>
+														<Event name="OnChange">ДержатьСоединениеОткрытымПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<UsualGroup name="ГруппаВремяСоединения" id="122">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа время соединения</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВремяСоединенияРасширеннаяПодсказка" id="123"/>
+													<ChildItems>
+														<InputField name="ВремяОткрытогоСоединения" id="124">
+															<DataPath>Объект.ВремяОткрытогоСоединения</DataPath>
+															<TitleLocation>Top</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Время в течении которого соединение будет открыто в ожидании новых данных</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<ContextMenu name="ВремяОткрытогоСоединенияКонтекстноеМеню" id="125"/>
+															<ExtendedTooltip name="ВремяОткрытогоСоединенияРасширеннаяПодсказка" id="126"/>
+														</InputField>
+														<InputField name="ОжидатьДоСледующейПорции" id="127">
+															<DataPath>Объект.ОжидатьДоСледующейПорции</DataPath>
+															<TitleLocation>Top</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пауза после отправки данных в ожидании следующих данных</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<ContextMenu name="ОжидатьДоСледующейПорцииКонтекстноеМеню" id="128"/>
+															<ExtendedTooltip name="ОжидатьДоСледующейПорцииРасширеннаяПодсказка" id="129"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаРасписаниеПолучение" id="88">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа расписание получение</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>WeakSeparation</Representation>
+									<ExtendedTooltip name="ГруппаРасписаниеПолучениеРасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<Button name="НастроитьРасписаниеОбработкиПолучение" id="96">
+											<Type>Hyperlink</Type>
+											<Height>1</Height>
+											<CommandName>Form.Command.НастроитьРасписаниеОбработкиПолучение</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="НастроитьРасписаниеОбработкиПолучениеРасширеннаяПодсказка" id="97"/>
+										</Button>
+										<InputField name="ИмяПользователяРегламентаПолучение" id="90">
+											<DataPath>Объект.ИмяПользователяРегламентаПолучение</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя пользователя регламентного задания</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Top</TitleLocation>
+											<DropListButton>true</DropListButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИмяПользователяРегламентаПолучениеКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="ИмяПользователяРегламентаПолучениеРасширеннаяПодсказка" id="92"/>
+											<Events>
+												<Event name="EditTextChange">ИмяПользователяРегламентаИзменениеТекстаРедактирования</Event>
+												<Event name="StartChoice">ИмяПользователяРегламентаНачалоВыбора</Event>
+												<Event name="StartListChoice">ИмяПользователяРегламентаНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.рдв_ВнешниеСистемы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Пароль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пользователь" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольИзменен" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИзменен" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасписаниеОтправка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание отправка</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="РасписаниеПолучение" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание получение</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИспользоватьРасписание" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать расписание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьРасписаниеОбработкиОтправка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание обработки отправка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьРасписаниеОбработкиОтправка</Action>
+		</Command>
+		<Command name="НастроитьРасписаниеОбработкиПолучение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание обработки отправка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьРасписаниеОбработкиПолучение</Action>
+		</Command>
+	</Commands>
+</Form>

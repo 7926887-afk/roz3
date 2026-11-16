@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьДанныеЭлементаПоУмолчанию" id="74">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьДанныеЭлементаПоУмолчанию</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заполнить по умолчанию</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаполнитьДанныеЭлементаПоУмолчаниюРасширеннаяПодсказка" id="75"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеКод" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеКодРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<Page name="ГруппаОсновное" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<CheckBoxField name="РегистрироватьОчереди" id="58">
+							<DataPath>Объект.РегистрироватьОчереди</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="РегистрироватьОчередиКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="РегистрироватьОчередиРасширеннаяПодсказка" id="60"/>
+						</CheckBoxField>
+						<CheckBoxField name="ОбрабатыватьОчереди" id="61">
+							<DataPath>Объект.ОбрабатыватьОчереди</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ОбрабатыватьОчередиКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ОбрабатыватьОчередиРасширеннаяПодсказка" id="63"/>
+						</CheckBoxField>
+						<InputField name="МаксОчередейВВыборке" id="19">
+							<DataPath>Объект.МаксОчередейВВыборке</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="МаксОчередейВВыборкеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="МаксОчередейВВыборкеРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="ВремяНахожденияВСостоянииОбработки" id="79">
+							<DataPath>Объект.МаксВремяОбработкиМин</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если запись очереди находится в состоянии "Обработка" дольше указанного времени, то при следующей обработке очередей эта запись будет обработана независимо от состояния. Если указано 0, то попытка повторной обработки выполняться не будет</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ВремяНахожденияВСостоянииОбработкиКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ВремяНахожденияВСостоянииОбработкиРасширеннаяПодсказка" id="81"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРегламент" id="98">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламент</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регламент</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаРегламентРасширеннаяПодсказка" id="99"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользованиеРегламента" id="68">
+							<DataPath>ИспользованиеРегламента</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ИспользованиеРегламентаКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ИспользованиеРегламентаРасширеннаяПодсказка" id="70"/>
+							<Events>
+								<Event name="OnChange">ИспользованиеРегламентаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаРегламентОбработки" id="66">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регламент обработки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регламент обработки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРегламентОбработкиРасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<CheckBoxField name="ПростаяНастройкаРегламента" id="82">
+									<DataPath>Объект.ПростаяНастройкаРегламента</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="ПростаяНастройкаРегламентаКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ПростаяНастройкаРегламентаРасширеннаяПодсказка" id="84"/>
+									<Events>
+										<Event name="OnChange">ПростаяНастройкаРегламентаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаПростаяНастройкаРегламента" id="93">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа простая настройка регламента</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа простая настройка регламента</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПростаяНастройкаРегламентаРасширеннаяПодсказка" id="94"/>
+									<ChildItems>
+										<InputField name="ПериодОбработкиОчередиСек" id="87">
+											<DataPath>Объект.ПериодОбработкиОчередиСек</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ContextMenu name="ПериодОбработкиОчередиСекКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ПериодОбработкиОчередиСекРасширеннаяПодсказка" id="89"/>
+											<Events>
+												<Event name="OnChange">ПериодОбработкиОчередиСекПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ВремяЖизниЗаданияОбработкиМин" id="90">
+											<DataPath>Объект.ВремяЖизниЗаданияОбработкиМин</DataPath>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ContextMenu name="ВремяЖизниЗаданияОбработкиМинКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="ВремяЖизниЗаданияОбработкиМинРасширеннаяПодсказка" id="92"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПолнаяНастройкаРегламента" id="85">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа полная настройка регламента</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа полная настройка регламента</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПолнаяНастройкаРегламентаРасширеннаяПодсказка" id="86"/>
+									<ChildItems>
+										<Button name="НастроитьРасписаниеОбработки" id="64">
+											<Type>Hyperlink</Type>
+											<Height>1</Height>
+											<CommandName>Form.Command.НастроитьРасписаниеОбработки</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="НастроитьРасписаниеОбработкиРасширеннаяПодсказка" id="65"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ИмяПользователяРегламента" id="76">
+									<DataPath>Объект.ИмяПользователяРегламента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя пользователя</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ИмяПользователяРегламентаКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ИмяПользователяРегламентаРасширеннаяПодсказка" id="78"/>
+									<Events>
+										<Event name="EditTextChange">ИмяПользователяИзменениеТекстаРедактирования</Event>
+										<Event name="StartChoice">ИмяПользователяНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПорции" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа порции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПорцииРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<CheckBoxField name="ПорционнаяОбработка" id="51">
+							<DataPath>Объект.ПорционнаяОбработка</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПорционнаяОбработкаКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ПорционнаяОбработкаРасширеннаяПодсказка" id="53"/>
+						</CheckBoxField>
+						<InputField name="МаксЗаписейВПорции" id="25">
+							<DataPath>Объект.МаксЗаписейВПорции</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="МаксЗаписейВПорцииКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="МаксЗаписейВПорцииРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПотоки" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Потоки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа потоки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПотокиРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<CheckBoxField name="МногопоточнаяОбработка" id="28">
+							<DataPath>Объект.МногопоточнаяОбработка</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="МногопоточнаяОбработкаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="МногопоточнаяОбработкаРасширеннаяПодсказка" id="30"/>
+						</CheckBoxField>
+						<InputField name="КоличествоПотоков" id="31">
+							<DataPath>Объект.КоличествоПотоков</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КоличествоПотоковКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="КоличествоПотоковРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="МаксОчередейВПотоке" id="34">
+							<DataPath>Объект.МаксЗаписейВПотоке</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="МаксОчередейВПотокеКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="МаксОчередейВПотокеРасширеннаяПодсказка" id="36"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПопытки" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Попытки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа попытки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаПопыткиРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="КоличествоПопыток" id="7">
+							<DataPath>Объект.КоличествоПопыток</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ДлительностьПопытокДней" id="10">
+							<DataPath>Объект.ДлительностьПопытокДней</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ДлительностьПопытокДнейКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ДлительностьПопытокДнейРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="ВремяДоВторойПопыткиСек" id="13">
+							<DataPath>Объект.ВремяДоВторойПопыткиСек</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ВремяДоВторойПопыткиСекКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ВремяДоВторойПопыткиСекРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="КоэффициентУвеличенияВремениМеждуПопытками" id="16">
+							<DataPath>Объект.КоэффициентУвеличенияВремениМеждуПопытками</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="КоэффициентУвеличенияВремениМеждуПопыткамиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="КоэффициентУвеличенияВремениМеждуПопыткамиРасширеннаяПодсказка" id="18"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЖурнал" id="103">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа журнал</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаЖурналРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<CheckBoxField name="ВестиЖурналОчередей" id="100">
+							<DataPath>Объект.ВестиЖурналОчередей</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ВестиЖурналОчередейКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ВестиЖурналОчередейРасширеннаяПодсказка" id="102"/>
+							<Events>
+								<Event name="OnChange">ВестиЖурналОчередейПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ХранениеЖурналовДней" id="95">
+							<DataPath>Объект.ХранениеЖурналовДней</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ХранениеЖурналовДнейКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ХранениеЖурналовДнейРасширеннаяПодсказка" id="97"/>
+						</InputField>
+						<CheckBoxField name="ВестиЖурналСобытий" id="108">
+							<DataPath>Объект.ВестиЖурналСобытий</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ВестиЖурналСобытийКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ВестиЖурналСобытийРасширеннаяПодсказка" id="110"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="ИмяОчереди" id="105">
+			<DataPath>Объект.ИмяОчереди</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<ContextMenu name="ИмяОчередиКонтекстноеМеню" id="106"/>
+			<ExtendedTooltip name="ИмяОчередиРасширеннаяПодсказка" id="107"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.рдв_ТипыОчередейОбработкиДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасписаниеОбработки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИспользованиеРегламента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование регламента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЭтоФайловаяИБ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это файловая ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МинПериодРегламентаСек" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мин период регламента, сек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьРасписаниеОбработки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание обработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьРасписаниеОбработки</Action>
+		</Command>
+		<Command name="ЗаполнитьДанныеЭлементаПоУмолчанию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить данные элемента по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить данные элемента по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДанныеЭлементаПоУмолчанию</Action>
+		</Command>
+	</Commands>
+</Form>
