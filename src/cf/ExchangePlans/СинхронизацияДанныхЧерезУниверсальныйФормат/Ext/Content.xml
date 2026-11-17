@@ -385,6 +385,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Catalog.АвтоматическиеСкидки</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Document.ПриходныйОрдер</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
