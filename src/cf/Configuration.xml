@@ -9013,6 +9013,8 @@
 			<CommonModule>эв_ОбменЧерезБрокераПовтИсп</CommonModule>
 			<CommonModule>эв_ОбработкаОбращений</CommonModule>
 			<CommonModule>эв_ОбработкаОбращенийКлиент</CommonModule>
+			<CommonModule>эв_СоздатьОбращение</CommonModule>
+			<CommonModule>эв_СоздатьОбращениеКлиент</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>

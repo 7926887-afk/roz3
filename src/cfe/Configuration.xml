@@ -149,8 +149,6 @@
 			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
 			<CommonModule>ОтчетыПереопределяемый</CommonModule>
 			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
-			<CommonModule>эв_СоздатьОбращение</CommonModule>
-			<CommonModule>эв_СоздатьОбращениеКлиент</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<XDTOPackage>эв_РасширениеФорматаОбмена</XDTOPackage>
 			<DefinedType>КассаККМРМК</DefinedType>
