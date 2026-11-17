@@ -3,11 +3,11 @@
 	<DocumentJournal uuid="a7c3e1d4-8b20-4f16-9a55-2d0c6e8f1b40">
 		<InternalInfo>
 			<xr:GeneratedType name="DocumentJournalSelection.ЧекиККМ" category="Selection">
-				<xr:TypeId>b1c2d3e4-f506-4172-8394-a5b6c7d8e9f0</xr:TypeId>
-				<xr:ValueId>c2d3e4f5-0617-4283-94a5-b6c7d8e9f001</xr:ValueId>
+				<xr:TypeId>c308bb82-836a-465a-957c-5ac353645b49</xr:TypeId>
+				<xr:ValueId>86ec887c-7671-4f59-9cad-bc5004b7e53f</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentJournalList.ЧекиККМ" category="List">
-				<xr:TypeId>d3e4f506-1728-4394-a5b6-c7d8e9f00112</xr:TypeId>
+				<xr:TypeId>e7ce76fa-654b-499b-ac6b-0e9d290dd4e1</xr:TypeId>
 				<xr:ValueId>e4f50617-2839-4405-b6c7-d8e9f0011223</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentJournalManager.ЧекиККМ" category="Manager">
