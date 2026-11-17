@@ -13,8 +13,8 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
-		<Event name="OnOpen">ПриОткрытии</Event>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnOpen" callType="Before">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer" callType="Before">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<Pages name="СлоиВнесенияВыемки" id="5">
@@ -229,7 +229,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.НеотрицательноеЧисло15_2_РМК</v8:TypeSet>
+				<v8:TypeId>d044bdf4-7037-45d8-9eab-48fd07170dbc</v8:TypeId>
 			</Type>
 		</Attribute>
 		<Attribute name="НаличныеВКассе" id="3">
@@ -240,7 +240,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.Число15_2РМК</v8:TypeSet>
+				<v8:TypeId>9f3139c6-bb0e-412e-acd3-7ff83112e274</v8:TypeId>
 			</Type>
 		</Attribute>
 		<Attribute name="ПравоПросмотраОстаткаНаличныхРМК" id="5">
@@ -288,7 +288,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.ОрганизацияРМК</v8:TypeSet>
+				<v8:TypeId>96774c19-3138-400a-a2ac-c2e9ddb794e7</v8:TypeId>
 			</Type>
 		</Attribute>
 		<Attribute name="КассаККМ" id="8">
@@ -310,7 +310,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.КассирРМК</v8:TypeSet>
+				<v8:TypeId>6bc38f4b-2566-4b2b-9839-fae3e654b010</v8:TypeId>
 			</Type>
 		</Attribute>
 		<Attribute name="КассоваяСмена" id="10">
@@ -321,7 +321,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.КассоваяСменаРМК</v8:TypeSet>
+				<v8:TypeId>de42469e-abac-4c91-a5c5-b7d77bdd9fad</v8:TypeId>
 			</Type>
 		</Attribute>
 		<Attribute name="ПользовательБД" id="11">
@@ -332,7 +332,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.ПользовательРМК</v8:TypeSet>
+				<v8:TypeId>d3b2cbb4-16ab-404d-922a-7223ceab7284</v8:TypeId>
 			</Type>
 		</Attribute>
 		<Attribute name="ПодключаемоеОборудование" id="12">
@@ -343,7 +343,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.ПодключаемоеОборудованиеРМК</v8:TypeSet>
+				<v8:TypeId>c951db01-b2a2-407e-a6a6-60780a14aab5</v8:TypeId>
 			</Type>
 		</Attribute>
 		<Attribute name="СписокРолейПользователя" id="13">
@@ -380,7 +380,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.ТорговыйОбъектРМК</v8:TypeSet>
+				<v8:TypeId>94364d70-8024-41e9-9e45-341b97ff788b</v8:TypeId>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -392,7 +392,7 @@
 					<v8:content>Enter</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ГорячаяКлавишаEnter</Action>
+			<Action callType="Before">ГорячаяКлавишаEnter</Action>
 		</Command>
 		<Command name="ГорячаяКлавишаESC" id="2">
 			<Title>
@@ -401,7 +401,7 @@
 					<v8:content>Горячая клавиша ESC</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ГорячаяКлавишаESC</Action>
+			<Action callType="Before">ГорячаяКлавишаESC</Action>
 		</Command>
 		<Command name="ВыполнитьОперацию" id="3">
 			<Title>
@@ -410,7 +410,7 @@
 					<v8:content>Выполнить операцию</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ВыполнитьОперацию</Action>
+			<Action callType="Before">ВыполнитьОперацию</Action>
 		</Command>
 		<Command name="ОтменитьОперацию" id="4">
 			<Title>
@@ -419,7 +419,7 @@
 					<v8:content>Отменить операцию</v8:content>
 				</v8:item>
 			</Title>
-			<Action>ОтменитьОперацию</Action>
+			<Action callType="Before">ОтменитьОперацию</Action>
 		</Command>
 	</Commands>
 	<Parameters>
