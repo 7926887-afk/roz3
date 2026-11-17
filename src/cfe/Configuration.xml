@@ -141,7 +141,6 @@
 			<CommonModule>ОборудованиеПлатежныеСистемыКлиентСервер</CommonModule>
 			<CommonModule>ор_ПрограммноеСозданиеЭлементовФормОР</CommonModule>
 			<CommonModule>ор_МенеджерОбменаЧерезУниверсальныйФормат</CommonModule>
-			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
 			<CommonModule>МенеджерОборудованияСлужебныйКлиент</CommonModule>
 			<CommonModule>ОборудованиеЧекопечатающиеУстройстваКлиентСервер</CommonModule>
 			<CommonModule>ТабличныеЧастиУНФКлиент</CommonModule>
@@ -150,7 +149,6 @@
 			<CommonModule>ОтчетыПереопределяемый</CommonModule>
 			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
-			<XDTOPackage>эв_РасширениеФорматаОбмена</XDTOPackage>
 			<DefinedType>КассаККМРМК</DefinedType>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>ВидыЗаказовПокупателей</Catalog>
