@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://evalar.ru/edi/EnterpriseData/1.24/Extension" elementFormQualified="true">
+	<objectType name="Справочник.СкидкиНаценки" open="true" sequenced="true"/>
+	<objectType name="ОбщиеСвойстваОбъектовФормата" open="true" sequenced="true">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="эв_АвтоматическаяСкидка" type="ev:ОбщиеСвойстваАвтоматическаяСкидка" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваСсылка" open="true" sequenced="true">
+		<property name="Тип" type="xs:string" lowerBound="0"/>
+		<property name="УИД" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="ЭтоГруппа" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="СтрокаГруппы" open="true" sequenced="true">
+		<property name="Тип" type="xs:string" lowerBound="0"/>
+		<property name="УИД" type="xs:string" lowerBound="0"/>
+		<property name="РодительУИД" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаГрупп">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаГруппы" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаВремени" open="true" sequenced="true">
+		<property name="Выбран" type="xs:boolean" lowerBound="0"/>
+		<property name="ДеньНедели" type="xs:string" lowerBound="0"/>
+		<property name="ВремяНачала" type="xs:dateTime" lowerBound="0"/>
+		<property name="ВремяОкончания" type="xs:dateTime" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаВремени">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаВремени" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаУточнения" open="true" sequenced="true">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ЗначениеУточнения" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ЗначениеСкидкиНаценки" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Характеристика" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаУточнений">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаУточнения" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаУсловияСкидки" open="true" sequenced="true">
+		<property name="У" type="xs:string" lowerBound="0"/>
+		<property name="r" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаУсловийСкидки">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаУсловияСкидки" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаПолучателя" open="true" sequenced="true">
+		<property name="П" type="xs:string" lowerBound="0"/>
+		<property name="r" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаПолучателей">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаПолучателя" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаПодарка" open="true" sequenced="true">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Номенклатура" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Характеристика" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ЕдиницаИзмерения" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="Количество" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаПодарков">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаПодарка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаДопРеквизита" open="true" sequenced="true">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Свойство" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="Значение" type="xs:string" lowerBound="0"/>
+		<property name="ТекстоваяСтрока" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаДопРеквизитов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаДопРеквизита" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаУсловия" open="true" sequenced="true">
+		<property name="УИД" type="xs:string" lowerBound="0"/>
+		<property name="РодительУИД" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+		<property name="УсловиеПредоставления" type="xs:string" lowerBound="0"/>
+		<property name="КритерийОграниченияПримененияЗаОбъемПродаж" type="xs:string" lowerBound="0"/>
+		<property name="ОбластьОграничения" type="xs:string" lowerBound="0"/>
+		<property name="ЗначениеУсловияОграничения" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ВалютаОграничения" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ТипСравнения" type="xs:string" lowerBound="0"/>
+		<property name="УчитыватьПродажуТолькоОпределенногоСпискаНоменклатуры" type="xs:boolean" lowerBound="0"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ВидДисконтнойКарты" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ВидПериода" type="xs:string" lowerBound="0"/>
+		<property name="Периодичность" type="xs:string" lowerBound="0"/>
+		<property name="ВключатьТекущуюПродажуВНакопленныйОбъемПродаж" type="xs:boolean" lowerBound="0"/>
+		<property name="ДнейПередДнемРождения" type="xs:decimal" lowerBound="0"/>
+		<property name="ДнейПослеДняРождения" type="xs:decimal" lowerBound="0"/>
+		<property name="ВариантПредоставленияСкидкиПоНоменклатуре" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ШаблонПромокода" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ИмяСхемыКомпоновкиДанных" type="xs:string" lowerBound="0"/>
+		<property name="ХранилищеСхемыКомпоновкиДанных" type="xs:string" lowerBound="0"/>
+		<property name="ХранилищеНастроекКомпоновкиДанных" type="xs:string" lowerBound="0"/>
+		<property name="ХранилищеСкомпонованногоМакета" type="xs:string" lowerBound="0"/>
+		<property name="СхемаСКДМодифицированаВручную" type="xs:boolean" lowerBound="0"/>
+		<property name="ВидОплаты" type="xs:string" lowerBound="0"/>
+		<property name="ДоплатаБонусамиОтменяетСкидку" type="xs:boolean" lowerBound="0"/>
+		<property name="ПериодСрокаГодности" type="xs:string" lowerBound="0"/>
+		<property name="КатегорияПокупателя" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаУсловий">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаУсловия" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаКомплекта" open="true" sequenced="true">
+		<property name="УсловиеУИД" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Номенклатура" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Характеристика" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ЕдиницаИзмерения" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="Количество" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаКомплекта">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаКомплекта" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаПрефиксаУсловия" open="true" sequenced="true">
+		<property name="УсловиеУИД" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Префикс" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаПрефиксовУсловия">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаПрефиксаУсловия" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаОтбораНоменклатуры" open="true" sequenced="true">
+		<property name="УсловиеУИД" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Номенклатура" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Характеристика" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаОтбораНоменклатуры">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаОтбораНоменклатуры" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаОтбораСегмента" open="true" sequenced="true">
+		<property name="УсловиеУИД" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="СегментНоменклатуры" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаОтбораСегментов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаОтбораСегмента" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаСегмента" open="true" sequenced="true">
+		<property name="УИД" type="xs:string" lowerBound="0"/>
+		<property name="РодительУИД" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+		<property name="ВидСегмента" type="xs:string" lowerBound="0"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property name="СхемаКомпоновкиДанных" type="xs:string" lowerBound="0"/>
+		<property name="Обновляемый" type="xs:boolean" lowerBound="0"/>
+		<property name="РасширенныйРежимРедактирования" type="xs:boolean" lowerBound="0"/>
+		<property name="ИмяШаблонаСКД" type="xs:string" lowerBound="0"/>
+		<property name="ПравилаПеренесеныНаНовуюСхему" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаСегментов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаСегмента" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаСостава" open="true" sequenced="true">
+		<property name="СегментУИД" type="xs:string" lowerBound="0"/>
+		<property name="СпособДобавления" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Номенклатура" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Характеристика" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Контрагент" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаСостава">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаСостава" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаВидаКарты" open="true" sequenced="true">
+		<property name="УИД" type="xs:string" lowerBound="0"/>
+		<property name="РодительУИД" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+		<property name="Скидка" type="xs:decimal" lowerBound="0"/>
+		<property name="ВидСкидкиВДисконтныхКартах" type="xs:string" lowerBound="0"/>
+		<property name="ТипКарты" type="xs:string" lowerBound="0"/>
+		<property name="КраткийСоставСкидок" type="xs:string" lowerBound="0"/>
+		<property name="ЭтоИменнаяКарта" type="xs:boolean" lowerBound="0"/>
+		<property name="ВидПериода" type="xs:string" lowerBound="0"/>
+		<property name="Периодичность" type="xs:string" lowerBound="0"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ШаблонДисконтнойКарты" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="СтарыйМеханизмСкидок" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="БонуснаяПрограмма" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ГенерироватьНомер" type="xs:boolean" lowerBound="0"/>
+		<property name="ПрисваиватьНомерКартыКНомеруТелефона" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ШаблонГенерацииШтрихкода" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаВидовКарт">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаВидаКарты" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаПорога" open="true" sequenced="true">
+		<property name="ВидКартыУИД" type="xs:string" lowerBound="0"/>
+		<property name="НижняяГраница" type="xs:decimal" lowerBound="0"/>
+		<property name="Скидка" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаПорогов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаПорога" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаШаблона" open="true" sequenced="true">
+		<property name="УИД" type="xs:string" lowerBound="0"/>
+		<property name="РодительУИД" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+		<property name="МаскаПромокода" type="xs:string" lowerBound="0"/>
+		<property name="АктивироватьЧерезДней" type="xs:decimal" lowerBound="0"/>
+		<property name="КоличествоДнейДействия" type="xs:decimal" lowerBound="0"/>
+		<property name="КоличествоРазПрименения" type="xs:decimal" lowerBound="0"/>
+		<property name="КоличествоСимволов" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаШаблонов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаШаблона" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаСимвола" open="true" sequenced="true">
+		<property name="ШаблонУИД" type="xs:string" lowerBound="0"/>
+		<property name="Символ" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаСимволов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаСимвола" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаПрефикса" open="true" sequenced="true">
+		<property name="УИД" type="xs:string" lowerBound="0"/>
+		<property name="РодительУИД" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаПрефиксов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаПрефикса" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтрокаДиапазона" open="true" sequenced="true">
+		<property name="ПрефиксУИД" type="xs:string" lowerBound="0"/>
+		<property name="Префикс" type="xs:string" lowerBound="0"/>
+		<property name="ТипКарты" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТаблицаДиапазонов">
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Строка" type="ev:СтрокаДиапазона" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ОбщиеСвойстваАвтоматическаяСкидка" open="true" sequenced="true">
+		<property name="РодительУИД" type="xs:string" lowerBound="0"/>
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="БонуснаяПрограмма" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ВалютаПредоставления" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ВариантОграниченияПоНоменклатуре" type="xs:string" lowerBound="0"/>
+		<property name="ВариантОкругления" type="xs:string" lowerBound="0"/>
+		<property name="ВариантСовместногоПрименения" type="xs:string" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ВидЦен" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ДатаНачала" type="xs:dateTime" lowerBound="0"/>
+		<property name="ДатаОкончания" type="xs:dateTime" lowerBound="0"/>
+		<property name="Действует" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьГруппыВУточненииПоНоменклатуре" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьОграниченияПоПолучателямКонтрагентам" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьОграниченияПоПолучателямСкладам" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьРасписание" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьУсловияПоДК" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьУточненияПоКатегориям" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьУточненияПоНоменклатуре" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьУточненияПоЦеновымГруппам" type="xs:boolean" lowerBound="0"/>
+		<property name="ЗначениеСкидкиНаценки" type="xs:decimal" lowerBound="0"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property name="Назначение" type="xs:string" lowerBound="0"/>
+		<property name="ОбластьПредоставления" type="xs:string" lowerBound="0"/>
+		<property name="ПорядокОкругления" type="xs:string" lowerBound="0"/>
+		<property name="СпособПредоставления" type="xs:string" lowerBound="0"/>
+		<property name="ЭтоПравилоНачисленияБонусов" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьОграниченияПоПолучателямСегментам" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьУточненияПоСегментамНоменклатуры" type="xs:boolean" lowerBound="0"/>
+		<property name="ВариантОграниченияПоПолучателям" type="xs:string" lowerBound="0"/>
+		<property name="ТекстСообщения" type="xs:string" lowerBound="0"/>
+		<property name="МоментВыдачиСообщения" type="xs:string" lowerBound="0"/>
+		<property name="ЛюбойПодарокИзСписка" type="xs:boolean" lowerBound="0"/>
+		<property name="ПодарокИзКорзиныПокупателя" type="xs:boolean" lowerBound="0"/>
+		<property name="УчитыватьПодарокКакПродажу" type="xs:boolean" lowerBound="0"/>
+		<property name="КратноКоличествуУсловий" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="СчетЗатратПодарка" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ЕстьУсловияПредъявленПромокод" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="СкидкаНаСледующуюПокупкуПоПромокоду" type="ev:КлючевыеСвойстваСсылка" lowerBound="0"/>
+		<property name="ЕстьУсловияАктивацииВручную" type="xs:boolean" lowerBound="0"/>
+		<property name="ИдентификаторДляРасчетаВРасширении" type="xs:string" lowerBound="0"/>
+		<property name="ДаритьТолькоПолныйКомплект" type="xs:boolean" lowerBound="0"/>
+		<property name="ИспользоватьПриВозврате" type="xs:boolean" lowerBound="0"/>
+		<property name="ЕстьУсловияПоВидуОплаты" type="xs:boolean" lowerBound="0"/>
+		<property name="УменьшатьНаСуммуОплатыБаллами" type="xs:boolean" lowerBound="0"/>
+		<property name="КртаностьСкидкиПоУсловию" type="xs:decimal" lowerBound="0"/>
+		<property name="ИспользоватьРежимКратности" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Группы" type="ev:ТаблицаГрупп" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ВремяПоДнямНедели" type="ev:ТаблицаВремени" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="НоменклатураГруппыЦеновыеГруппы" type="ev:ТаблицаУточнений" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="УсловияПредоставления" type="ev:ТаблицаУсловийСкидки" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ПолучателиСкидкиКонтрагенты" type="ev:ТаблицаПолучателей" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ПолучателиСкидкиСклады" type="ev:ТаблицаПолучателей" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ПолучателиСкидкиСегменты" type="ev:ТаблицаПолучателей" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="НаборПодарков" type="ev:ТаблицаПодарков" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ДополнительныеРеквизиты" type="ev:ТаблицаДопРеквизитов" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Условия" type="ev:ТаблицаУсловий" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="КомплектПокупки" type="ev:ТаблицаКомплекта" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ПрефиксыУсловий" type="ev:ТаблицаПрефиксовУсловия" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ОтборПродажПоНоменклатуре" type="ev:ТаблицаОтбораНоменклатуры" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ОтборПродажПоСегменту" type="ev:ТаблицаОтбораСегментов" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="Сегменты" type="ev:ТаблицаСегментов" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="СоставСегментов" type="ev:ТаблицаСостава" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ВидыДисконтныхКарт" type="ev:ТаблицаВидовКарт" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ПорогиНакопительныхСкидок" type="ev:ТаблицаПорогов" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ШаблоныПромокодов" type="ev:ТаблицаШаблонов" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="СловарьСимволов" type="ev:ТаблицаСимволов" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="ПрефиксыДиапазонов" type="ev:ТаблицаПрефиксов" lowerBound="0"/>
+		<property xmlns:ev="http://evalar.ru/edi/EnterpriseData/1.24/Extension" name="СтрокиПрефиксов" type="ev:ТаблицаДиапазонов" lowerBound="0"/>
+	</objectType>
+</package>
