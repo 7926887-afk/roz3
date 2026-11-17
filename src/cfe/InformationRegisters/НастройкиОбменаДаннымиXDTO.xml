@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<InformationRegister uuid="4e8a1c73-9b26-4d05-a7f1-6c3e0b9d2a58">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.НастройкиОбменаДаннымиXDTO" category="Record">
+				<xr:TypeId>a1b2c3d4-e5f6-4718-8293-a4b5c6d7e8f0</xr:TypeId>
+				<xr:ValueId>b2c3d4e5-f607-4829-93a4-b5c6d7e8f001</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.НастройкиОбменаДаннымиXDTO" category="Manager">
+				<xr:TypeId>c3d4e5f6-0718-493a-a4b5-c6d7e8f00112</xr:TypeId>
+				<xr:ValueId>d4e5f607-1829-4a4b-b5c6-d7e8f0011223</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.НастройкиОбменаДаннымиXDTO" category="Selection">
+				<xr:TypeId>e5f60718-293a-4b5c-c6d7-e8f001122334</xr:TypeId>
+				<xr:ValueId>f6071829-3a4b-4c6d-d7e8-f00112233445</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.НастройкиОбменаДаннымиXDTO" category="List">
+				<xr:TypeId>0718293a-4b5c-4d6e-e8f0-011223344556</xr:TypeId>
+				<xr:ValueId>18293a4b-5c6d-4e7f-f001-122334455667</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.НастройкиОбменаДаннымиXDTO" category="RecordSet">
+				<xr:TypeId>293a4b5c-6d7e-4f80-0112-233445566778</xr:TypeId>
+				<xr:ValueId>3a4b5c6d-7e8f-4011-1223-344556677889</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.НастройкиОбменаДаннымиXDTO" category="RecordKey">
+				<xr:TypeId>4b5c6d7e-8f90-4112-2334-455667788990</xr:TypeId>
+				<xr:ValueId>5c6d7e8f-9011-4223-3445-566778899001</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.НастройкиОбменаДаннымиXDTO" category="RecordManager">
+				<xr:TypeId>6d7e8f90-1122-4334-4556-677889900112</xr:TypeId>
+				<xr:ValueId>7e8f9011-2233-4445-5667-788990011223</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НастройкиОбменаДаннымиXDTO</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>28dd22df-07cc-4e6d-89b2-b15a13f76615</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаЗаписи</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

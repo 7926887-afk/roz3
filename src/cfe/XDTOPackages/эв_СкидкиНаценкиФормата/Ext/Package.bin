@@ -1,0 +1,16 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://evalar.ru/edi/EnterpriseData/СкидкиНаценки">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<import namespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.24.RetPharm"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.СкидкиНаценки" base="d2p1:Object">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.24.RetPharm" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваСкидкиНаценки"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.24.RetPharm" name="ПрограммаЛояльности" type="d3p1:КлючевыеСвойстваПрограммыЛояльности" lowerBound="0"/>
+		<property name="ПроцентСкидкиНаценки" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:decimal" variety="Atomic" totalDigits="15" fractionDigits="2"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.24.RetPharm" name="СуммаСкидкиНаценки" type="d3p1:ТипСумма" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.24.RetPharm" name="ТипЦен" type="d3p1:КлючевыеСвойстваТипЦен" lowerBound="0"/>
+		<property name="НаДокумент" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.24.RetPharm" name="УсловияПредоставления" type="d3p1:Справочник.СкидкиНаценки.УсловияПредоставления" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.24.RetPharm" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+</package>
