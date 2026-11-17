@@ -9011,8 +9011,8 @@
 			<CommonModule>эв_РаспределеннаяФискализация</CommonModule>
 			<CommonModule>эв_ОбменЧерезБрокера</CommonModule>
 			<CommonModule>эв_ОбменЧерезБрокераПовтИсп</CommonModule>
-			<CommonModule>эв_СоздатьОбращение</CommonModule>
-			<CommonModule>эв_СоздатьОбращениеКлиент</CommonModule>
+			<CommonModule>эв_ОбработкаОбращений</CommonModule>
+			<CommonModule>эв_ОбработкаОбращенийКлиент</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>
@@ -15814,6 +15814,7 @@
 			<Enum>эв_ТипыСообщенийЛога</Enum>
 			<Enum>эв_ВидыСтатусовОчередиЗаказов</Enum>
 			<Enum>эв_ВидыИсточниковЗаказа</Enum>
+			<Enum>эв_СтатусыОбращенийВТехподдержку</Enum>
 			<Report>ABCXYZАнализПродаж</Report>
 			<Report>ABCАнализПродаж</Report>
 			<Report>АвтоматическиеСкидки</Report>
@@ -17791,6 +17792,7 @@
 			<InformationRegister>эв_ОчередьУстановккиСтатусовЗаказов</InformationRegister>
 			<InformationRegister>эв_НастройкиAPIОнлайнКассы</InformationRegister>
 			<InformationRegister>эв_КодыНоменклатурыПорталов</InformationRegister>
+			<InformationRegister>эв_ОбращенияВТехподдержку</InformationRegister>
 			<AccumulationRegister>АвансовыеПлатежиИностранцевПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>БухгалтерскиеВзаиморасчетыССотрудниками</AccumulationRegister>
