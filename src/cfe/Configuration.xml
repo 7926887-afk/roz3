@@ -167,6 +167,7 @@
 			<Document>ВнесениеНаличных</Document>
 			<Document>ВыемкаНаличных</Document>
 			<Document>РасходИзКассы</Document>
+			<Document>УстановкаЦенНоменклатуры</Document>
 			<DocumentJournal>ЧекиККМ</DocumentJournal>
 			<Enum>СпособыДоставки</Enum>
 			<Enum>ТипыДенежныхСредств</Enum>
