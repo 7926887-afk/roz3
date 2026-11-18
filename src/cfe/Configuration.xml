@@ -148,7 +148,9 @@
 			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
 			<CommonModule>ОтчетыПереопределяемый</CommonModule>
 			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
+			<CommonModule>эв_СегментыДифСкидок</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
+			<ScheduledJob>эв_ОбработкаОчередиСегментовДифСкидок</ScheduledJob>
 			<DefinedType>КассаККМРМК</DefinedType>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>ВидыЗаказовПокупателей</Catalog>
