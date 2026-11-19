@@ -364,8 +364,8 @@
 			<Subsystem>ЭлектронноеВзаимодействие</Subsystem>
 			<Subsystem>ЭлектронноеВзаимодействиеВнедрение</Subsystem>
 			<Subsystem>эв_ДобавленныеОбъекты</Subsystem>
-			<Subsystem>эв_СберСпасибо</Subsystem>
-			<Subsystem>эв_ОбменСПорталами</Subsystem>
+			<Subsystem>эв_ПрограммнаяМодификацияФорм</Subsystem>
+			<Subsystem>эв_ИзмененныеОбъекты</Subsystem>
 			<StyleItem>АктуальнаяПодпискаЦвет</StyleItem>
 			<StyleItem>БазовыйЦветСостояний</StyleItem>
 			<StyleItem>БазовыйЦветФонаЭтапаОтправки</StyleItem>
@@ -9013,8 +9013,8 @@
 			<CommonModule>эв_ОбменЧерезБрокераПовтИсп</CommonModule>
 			<CommonModule>эв_ОбработкаОбращений</CommonModule>
 			<CommonModule>эв_ОбработкаОбращенийКлиент</CommonModule>
-			<CommonModule>эв_СоздатьОбращение</CommonModule>
-			<CommonModule>эв_СоздатьОбращениеКлиент</CommonModule>
+			<CommonModule>эв_СегментыДифСкидок</CommonModule>
+			<CommonModule>эв_ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>
@@ -10219,6 +10219,7 @@
 			<ScheduledJob>эв_ОбработкаОчередиСтатусовПорталов</ScheduledJob>
 			<ScheduledJob>эв_СнятиеПросроченныхРезервовПорталов</ScheduledJob>
 			<ScheduledJob>эв_ОбработкаОчередиСтатусовЗаказов</ScheduledJob>
+			<ScheduledJob>эв_ОбработкаОчередиСегментовДифСкидок</ScheduledJob>
 			<SettingsStorage>БуферОбмена</SettingsStorage>
 			<SettingsStorage>БуферыОбменаНовостей</SettingsStorage>
 			<SettingsStorage>НастройкиНовостей</SettingsStorage>
@@ -12965,6 +12966,7 @@
 			<Constant>ЭтоБизКубБРО</Constant>
 			<Constant>эв_ОбменСПорталамиВключен</Constant>
 			<Constant>ДатаГраницыЗагрузкиЗаказовАсна</Constant>
+			<Constant>эв_ЭтоБазаОфиса</Constant>
 			<CommonForm>АварийныйРежимИСМП</CommonForm>
 			<CommonForm>АварийныйРежимМДЛП</CommonForm>
 			<CommonForm>АвтоматическийОбменСПодключаемымОборудованиемOffline</CommonForm>

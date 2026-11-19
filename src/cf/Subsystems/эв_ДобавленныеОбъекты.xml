@@ -27,8 +27,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.эв_СоздатьОбращение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.эв_СтатусыОбращенийВТехподдержку</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ОбращенияВТехподдержку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.эв_ЭтоБазаОфиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоннекторHTTP</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>эв_СберСпасибо</Subsystem>
+			<Subsystem>эв_ОбменСПорталами</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

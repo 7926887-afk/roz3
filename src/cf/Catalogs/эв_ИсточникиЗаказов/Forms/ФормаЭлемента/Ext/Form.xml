@@ -78,14 +78,31 @@
 				<Event name="OnChange">СкладПриИзменении</Event>
 			</Events>
 		</InputField>
-		<InputField name="ВидЦен" id="13">
-			<DataPath>Объект.ВидЦен</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ВидЦенКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ВидЦенРасширеннаяПодсказка" id="15"/>
-		</InputField>
+		<UsualGroup name="Группа5" id="175">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="176"/>
+			<ChildItems>
+				<InputField name="ВидЦен" id="13">
+					<DataPath>Объект.ВидЦен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВидЦенКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ВидЦенРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<CheckBoxField name="ПрименятьДействующиеСкидки" id="177">
+					<DataPath>Объект.УчитыватьДействующиеСкидки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Со скидками</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПрименятьДействующиеСкидкиКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="ПрименятьДействующиеСкидкиРасширеннаяПодсказка" id="179"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="СрокХраненияРезерва" id="42">
 			<DataPath>Объект.СрокХраненияРезерва</DataPath>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
