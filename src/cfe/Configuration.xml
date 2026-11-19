@@ -148,10 +148,12 @@
 			<CommonModule>ОбщегоНазначенияРМКУНФ</CommonModule>
 			<CommonModule>ОтчетыПереопределяемый</CommonModule>
 			<CommonModule>ПодключаемыеКомандыПереопределяемый</CommonModule>
+<<<<<<< HEAD
 			<CommonModule>эв_ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>эв_СегментыДифСкидок</CommonModule>
+=======
+>>>>>>> c50fe20ab638284f4ea7723cb25e7578f00cd43c
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
-			<ScheduledJob>эв_ОбработкаОчередиСегментовДифСкидок</ScheduledJob>
 			<DefinedType>КассаККМРМК</DefinedType>
 			<Constant>эв_ЭтоБазаОфиса</Constant>
 			<Catalog>Контрагенты</Catalog>

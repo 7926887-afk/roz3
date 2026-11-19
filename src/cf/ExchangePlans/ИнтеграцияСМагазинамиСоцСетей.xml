@@ -1477,7 +1477,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">e99c181d-c760-4478-a342-b6294ee86710.9b6065e7-092d-4be9-bed8-5b580763721c</FillValue>
+					<FillValue xsi:type="xr:DesignTimeRef">Catalog.ВидыЗаказовПокупателей.Основной</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
