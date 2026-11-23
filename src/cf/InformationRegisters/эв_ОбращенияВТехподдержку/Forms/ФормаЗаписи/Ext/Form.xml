@@ -39,11 +39,75 @@
 			<ReadOnly>true</ReadOnly>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<AutoMaxHeight>false</AutoMaxHeight>
-			<Height>20</Height>
+			<Height>16</Height>
 			<VerticalStretch>true</VerticalStretch>
 			<ContextMenu name="ЗадачаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="6"/>
 		</HTMLDocumentField>
+		<UsualGroup name="ГруппаКомментарий" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаКомментарийРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<InputField name="ТекстКомментария" id="22">
+					<DataPath>ТекстКомментария</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст</v8:content>
+						</v8:item>
+					</Title>
+					<MultiLine>true</MultiLine>
+					<Height>4</Height>
+					<ContextMenu name="ТекстКомментарияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТекстКомментарияРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<UsualGroup name="ГруппаФайлКомментария" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФайлКомментарияРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<InputField name="ПутьФайлаКомментария" id="27">
+							<DataPath>ПутьФайлаКомментария</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файл</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ПутьФайлаКомментарияКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ПутьФайлаКомментарияРасширеннаяПодсказка" id="29"/>
+							<Events>
+								<Event name="StartChoice">ПутьФайлаКомментарияНачалоВыбора</Event>
+								<Event name="Clearing">ПутьФайлаКомментарияОчистка</Event>
+							</Events>
+						</InputField>
+						<Button name="ОтправитьКомментарий" id="30">
+							<Type>UsualButton</Type>
+							<DefaultButton>false</DefaultButton>
+							<CommandName>Form.Command.ОтправитьКомментарий</CommandName>
+							<ExtendedTooltip name="ОтправитьКомментарийРасширеннаяПодсказка" id="31"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="ТекстОбращения" id="10">
 			<DataPath>Запись.ТекстОбращения</DataPath>
 			<Visible>false</Visible>
@@ -95,5 +159,52 @@
 				<v8:Type>cfg:EnumRef.эв_СтатусыОбращенийВТехподдержку</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ТекстКомментария" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст комментария</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьФайлаКомментария" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл комментария</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ОтправитьКомментарий" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить комментарий в общение с инициатором в Итилиум</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьКомментарий</Action>
+		</Command>
+	</Commands>
 </Form>
