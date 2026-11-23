@@ -299,21 +299,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="6aa55fc0-7967-435c-af3c-31a60c83c34c">
+			<Attribute uuid="8efe9dfb-3581-46d0-91b3-01072cef29e8">
 				<Properties>
-					<Name>ДатаСоздания</Name>
+					<Name>Скриншоты</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата создания</v8:content>
+							<v8:content>Скриншоты</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:Type>v8:ValueStorage</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -341,18 +338,21 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="8efe9dfb-3581-46d0-91b3-01072cef29e8">
+			<Attribute uuid="aec3deee-077f-442c-a131-d5b3520186a1">
 				<Properties>
-					<Name>Скриншоты</Name>
+					<Name>ДатаСоздания</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Скриншоты</v8:content>
+							<v8:content>Дата создания</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>v8:ValueStorage</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

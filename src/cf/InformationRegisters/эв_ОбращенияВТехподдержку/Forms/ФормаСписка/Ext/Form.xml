@@ -1,17 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<WindowOpeningMode>DontBlock</WindowOpeningMode>
-	<Group>Vertical</Group>
-	<CommandSet>
-		<ExcludedCommand>Copy</ExcludedCommand>
-		<ExcludedCommand>Create</ExcludedCommand>
-	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
 		<ChildItems>
-			<Button name="ФормаОбновитьИзИтилиум" id="46">
+			<Button name="ФормаОбновить" id="48">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОбновитьИзИтилиум</CommandName>
-				<ExtendedTooltip name="ФормаОбновитьИзИтилиумРасширеннаяПодсказка" id="47"/>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="49"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -36,11 +31,11 @@
 			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
-			<RowSelectionMode>Cell</RowSelectionMode>
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<ShowCommandBar>false</ShowCommandBar>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -89,30 +84,29 @@
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 			</Events>
 			<ChildItems>
-				<LabelField name="ДатаСоздания" id="48">
+				<LabelField name="ДатаСоздания" id="50">
 					<DataPath>Список.ДатаСоздания</DataPath>
-					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="49"/>
-					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="50"/>
+					<Width>1</Width>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="52"/>
 				</LabelField>
-				<LabelField name="id" id="16">
-					<DataPath>Список.id</DataPath>
-					<ContextMenu name="idКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="idРасширеннаяПодсказка" id="18"/>
-				</LabelField>
-				<LabelField name="Статус" id="19">
-					<DataPath>Список.Статус</DataPath>
-					<ContextMenu name="СтатусКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="21"/>
-				</LabelField>
-				<LabelField name="ТекстОбращения" id="22">
+				<LabelField name="ТекстОбращения" id="32">
 					<DataPath>Список.ТекстОбращения</DataPath>
-					<ContextMenu name="ТекстОбращенияКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ТекстОбращенияРасширеннаяПодсказка" id="24"/>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ТекстОбращенияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТекстОбращенияРасширеннаяПодсказка" id="34"/>
 				</LabelField>
-				<LabelField name="ТекстОтвета" id="25">
+				<LabelField name="ТекстОтвета" id="36">
 					<DataPath>Список.ТекстОтвета</DataPath>
-					<ContextMenu name="ТекстОтветаКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="ТекстОтветаРасширеннаяПодсказка" id="27"/>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ТекстОтветаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ТекстОтветаРасширеннаяПодсказка" id="38"/>
+				</LabelField>
+				<LabelField name="Статус" id="28">
+					<DataPath>Список.Статус</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -147,7 +141,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ОбновитьИзИтилиум" id="1">
+		<Command name="Обновить" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -157,7 +151,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить из Итилиум состояния, решения и общение с инициатором</v8:content>
+					<v8:content>Обновить</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьИзИтилиум</Action>
