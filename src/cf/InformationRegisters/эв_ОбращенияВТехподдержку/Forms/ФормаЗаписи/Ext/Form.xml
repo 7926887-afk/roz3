@@ -80,24 +80,28 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаФайлКомментарияРасширеннаяПодсказка" id="26"/>
 					<ChildItems>
-						<InputField name="ПутьФайлаКомментария" id="27">
-							<DataPath>ПутьФайлаКомментария</DataPath>
+						<LabelField name="ИмяФайлаКомментария" id="27">
+							<DataPath>ИмяФайлаКомментария</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Файл</v8:content>
 								</v8:item>
 							</Title>
-							<ChoiceButton>true</ChoiceButton>
-							<ClearButton>true</ClearButton>
 							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="ПутьФайлаКомментарияКонтекстноеМеню" id="28"/>
-							<ExtendedTooltip name="ПутьФайлаКомментарияРасширеннаяПодсказка" id="29"/>
-							<Events>
-								<Event name="StartChoice">ПутьФайлаКомментарияНачалоВыбора</Event>
-								<Event name="Clearing">ПутьФайлаКомментарияОчистка</Event>
-							</Events>
-						</InputField>
+							<ContextMenu name="ИмяФайлаКомментарияКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ИмяФайлаКомментарияРасширеннаяПодсказка" id="29"/>
+						</LabelField>
+						<Button name="ВыбратьФайлКомментария" id="32">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыбратьФайлКомментария</CommandName>
+							<ExtendedTooltip name="ВыбратьФайлКомментарияРасширеннаяПодсказка" id="33"/>
+						</Button>
+						<Button name="ОчиститьФайлКомментария" id="34">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОчиститьФайлКомментария</CommandName>
+							<ExtendedTooltip name="ОчиститьФайлКомментарияРасширеннаяПодсказка" id="35"/>
+						</Button>
 						<Button name="ОтправитьКомментарий" id="30">
 							<Type>UsualButton</Type>
 							<DefaultButton>false</DefaultButton>
@@ -174,11 +178,26 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПутьФайлаКомментария" id="5">
+		<Attribute name="ИмяФайлаКомментария" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Файл комментария</v8:content>
+					<v8:content>Файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресФайлаКомментария" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес файла комментария</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -205,6 +224,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтправитьКомментарий</Action>
+		</Command>
+		<Command name="ВыбратьФайлКомментария" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать файл для комментария</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьФайлКомментария</Action>
+		</Command>
+		<Command name="ОчиститьФайлКомментария" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить выбранный файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьФайлКомментария</Action>
 		</Command>
 	</Commands>
 </Form>
