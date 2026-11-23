@@ -9,8 +9,22 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<InputField name="id" id="7">
+			<DataPath>Запись.id</DataPath>
+			<Visible>false</Visible>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="idКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="idРасширеннаяПодсказка" id="9"/>
+		</InputField>
 		<InputField name="Статус" id="1">
 			<DataPath>Запись.Статус</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="СтатусКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="3"/>
 		</InputField>
@@ -26,9 +40,26 @@
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<AutoMaxHeight>false</AutoMaxHeight>
 			<Height>20</Height>
+			<VerticalStretch>true</VerticalStretch>
 			<ContextMenu name="ЗадачаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="6"/>
 		</HTMLDocumentField>
+		<InputField name="ТекстОбращения" id="10">
+			<DataPath>Запись.ТекстОбращения</DataPath>
+			<Visible>false</Visible>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТекстОбращенияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТекстОбращенияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ТекстОтвета" id="13">
+			<DataPath>Запись.ТекстОтвета</DataPath>
+			<Visible>false</Visible>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТекстОтветаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТекстОтветаРасширеннаяПодсказка" id="15"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">
