@@ -84,6 +84,28 @@
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 			</Events>
 			<ChildItems>
+				<PictureField name="Вложения" id="70">
+					<DataPath>Список.ЕстьВложения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вложения</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.КоллекцияСкрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<Width>2</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ВложенияКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ВложенияРасширеннаяПодсказка" id="72"/>
+				</PictureField>
 				<LabelField name="ДатаСоздания" id="50">
 					<DataPath>Список.ДатаСоздания</DataPath>
 					<Width>1</Width>
