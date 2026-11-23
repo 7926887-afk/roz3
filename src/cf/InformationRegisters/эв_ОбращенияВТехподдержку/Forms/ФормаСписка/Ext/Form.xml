@@ -89,6 +89,11 @@
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 			</Events>
 			<ChildItems>
+				<LabelField name="ДатаСоздания" id="48">
+					<DataPath>Список.ДатаСоздания</DataPath>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="50"/>
+				</LabelField>
 				<LabelField name="id" id="16">
 					<DataPath>Список.id</DataPath>
 					<ContextMenu name="idКонтекстноеМеню" id="17"/>

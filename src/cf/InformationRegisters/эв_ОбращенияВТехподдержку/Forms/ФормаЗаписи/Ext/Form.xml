@@ -28,6 +28,13 @@
 			<ContextMenu name="СтатусКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="3"/>
 		</InputField>
+		<InputField name="ДатаСоздания" id="48">
+			<DataPath>Запись.ДатаСоздания</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="50"/>
+		</InputField>
 		<HTMLDocumentField name="Задача" id="4">
 			<DataPath>Задача</DataPath>
 			<Title>
