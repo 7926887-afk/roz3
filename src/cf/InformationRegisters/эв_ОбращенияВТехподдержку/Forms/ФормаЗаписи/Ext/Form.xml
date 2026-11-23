@@ -9,18 +9,7 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="44">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа шапка</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа шапка</v8:content>
-				</v8:item>
-			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="45"/>
 			<ChildItems>
@@ -33,7 +22,6 @@
 				<InputField name="ДатаСоздания" id="46">
 					<DataPath>Запись.ДатаСоздания</DataPath>
 					<ReadOnly>true</ReadOnly>
-					<TitleLocation>None</TitleLocation>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="48"/>
@@ -42,6 +30,17 @@
 		</UsualGroup>
 		<HTMLDocumentField name="Задача" id="19">
 			<DataPath>Задача</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+			</Title>
+			<ReadOnly>true</ReadOnly>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<Height>12</Height>
+			<VerticalStretch>true</VerticalStretch>
 			<ContextMenu name="ЗадачаКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="21"/>
 		</HTMLDocumentField>
@@ -57,64 +56,119 @@
 			<ExtendedTooltip name="ГруппаКомментарийРасширеннаяПодсказка" id="27"/>
 			<ChildItems>
 				<InputField name="ТекстКомментария" id="28">
-					<DataPath>ПутьФайлаКомментария</DataPath>
+					<DataPath>ТекстКомментария</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Текст</v8:content>
 						</v8:item>
 					</Title>
-					<Height>2</Height>
+					<TitleLocation>Top</TitleLocation>
+					<Height>3</Height>
 					<MultiLine>true</MultiLine>
 					<ContextMenu name="ТекстКомментарияКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ТекстКомментарияРасширеннаяПодсказка" id="30"/>
 				</InputField>
-				<UsualGroup name="ГруппаФайлКомментария" id="32">
+				<Table name="ФайлыКомментария" id="50">
+					<Representation>List</Representation>
+					<Height>3</Height>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ФайлыКомментария</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Файл</v8:content>
+							<v8:content>Вложения</v8:content>
 						</v8:item>
 					</Title>
-					<HorizontalStretch>false</HorizontalStretch>
-					<Group>AlwaysHorizontal</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаФайлКомментарияРасширеннаяПодсказка" id="33"/>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ФайлыКомментарияКонтекстноеМеню" id="51"/>
+					<AutoCommandBar name="ФайлыКомментарияКоманднаяПанель" id="52">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ФайлыКомментарияДобавить" id="60">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.ФайлыКомментария.StandardCommand.Add</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ПриложитьФайл</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ФайлыКомментарияДобавитьРасширеннаяПодсказка" id="61"/>
+							</Button>
+							<Button name="ФайлыКомментарияУдалить" id="62">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.ФайлыКомментария.StandardCommand.Delete</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ОчиститьЗначение</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ФайлыКомментарияУдалитьРасширеннаяПодсказка" id="63"/>
+							</Button>
+							<Button name="ОтправитьКомментарий" id="38">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.ОтправитьКомментарий</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.Отправить</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ОтправитьКомментарийРасширеннаяПодсказка" id="39"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ФайлыКомментарияРасширеннаяПодсказка" id="53"/>
+					<SearchStringAddition name="ФайлыКомментарияСтрокаПоиска" id="54">
+						<AdditionSource>
+							<Item>ФайлыКомментария</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ФайлыКомментарияСтрокаПоискаКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="ФайлыКомментарияСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ФайлыКомментарияСостояниеПросмотра" id="57">
+						<AdditionSource>
+							<Item>ФайлыКомментария</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ФайлыКомментарияСостояниеПросмотраКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="ФайлыКомментарияСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ФайлыКомментарияУправлениеПоиском" id="64">
+						<AdditionSource>
+							<Item>ФайлыКомментария</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ФайлыКомментарияУправлениеПоискомКонтекстноеМеню" id="65"/>
+						<ExtendedTooltip name="ФайлыКомментарияУправлениеПоискомРасширеннаяПодсказка" id="66"/>
+					</SearchControlAddition>
 					<ChildItems>
-						<Button name="ВыбратьФайлКомментария" id="40">
-							<Type>UsualButton</Type>
-							<Representation>Picture</Representation>
-							<Width>3</Width>
-							<CommandName>Form.Command.ВыбратьФайлКомментария</CommandName>
-							<Picture>
-								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ExtendedTooltip name="ВыбратьФайлКомментарияРасширеннаяПодсказка" id="41"/>
-						</Button>
-						<Button name="ОчиститьФайлКомментария" id="42">
-							<Type>UsualButton</Type>
-							<Representation>Picture</Representation>
-							<Width>3</Width>
-							<CommandName>Form.Command.ОчиститьФайлКомментария</CommandName>
-							<Picture>
-								<xr:Ref>CommonPicture.СписокНоменклатурыТележкаОтмена</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ExtendedTooltip name="ОчиститьФайлКомментарияРасширеннаяПодсказка" id="43"/>
-						</Button>
-						<Button name="ОтправитьКомментарий" id="38">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ОтправитьКомментарий</CommandName>
-							<ExtendedTooltip name="ОтправитьКомментарийРасширеннаяПодсказка" id="39"/>
-						</Button>
+						<InputField name="ФайлыКомментарияФайл" id="67">
+							<DataPath>ФайлыКомментария.Файл</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файл</v8:content>
+								</v8:item>
+							</Title>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ФайлыКомментарияФайлКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ФайлыКомментарияФайлРасширеннаяПодсказка" id="69"/>
+						</InputField>
 					</ChildItems>
-				</UsualGroup>
+					<Events>
+						<Event name="BeforeAddRow">ФайлыКомментарияПередНачаломДобавления</Event>
+					</Events>
+				</Table>
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="id" id="1">
 			<DataPath>Запись.id</DataPath>
+			<Visible>false</Visible>
 			<ReadOnly>true</ReadOnly>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="idКонтекстноеМеню" id="2"/>
@@ -155,21 +209,6 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПутьФайлаКомментария" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Файл комментария</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="ТекстКомментария" id="5">
 			<Title>
 				<v8:item>
@@ -185,35 +224,33 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="АдресФайлаКомментария" id="6">
+		<Attribute name="ФайлыКомментария" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес файла комментария</v8:content>
+					<v8:content>Вложения</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
-		</Attribute>
-		<Attribute name="ИмяФайлаКомментария" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Имя файла комментария</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
+			<Columns>
+				<Column name="Файл" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -221,7 +258,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить комментарий</v8:content>
+					<v8:content>Отправить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -230,37 +267,12 @@
 					<v8:content>Отправить комментарий в общение с инициатором в Итилиум</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Отправить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ОтправитьКомментарий</Action>
-		</Command>
-		<Command name="ВыбратьФайлКомментария" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выбрать файл</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выбрать файл комментария</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ВыбратьФайлКомментария</Action>
-		</Command>
-		<Command name="ОчиститьФайлКомментария" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Очистить</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Очистить файл комментария</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОчиститьФайлКомментария</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
