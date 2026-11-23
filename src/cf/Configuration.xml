@@ -366,6 +366,7 @@
 			<Subsystem>эв_ДобавленныеОбъекты</Subsystem>
 			<Subsystem>эв_ПрограммнаяМодификацияФорм</Subsystem>
 			<Subsystem>эв_ИзмененныеОбъекты</Subsystem>
+			<Subsystem>эв_ОбращенияВТехПоддержку</Subsystem>
 			<StyleItem>АктуальнаяПодпискаЦвет</StyleItem>
 			<StyleItem>БазовыйЦветСостояний</StyleItem>
 			<StyleItem>БазовыйЦветФонаЭтапаОтправки</StyleItem>
@@ -12967,11 +12968,6 @@
 			<Constant>эв_ОбменСПорталамиВключен</Constant>
 			<Constant>ДатаГраницыЗагрузкиЗаказовАсна</Constant>
 			<Constant>эв_ЭтоБазаОфиса</Constant>
-			<Constant>эв_АдресСервисаИтилиум</Constant>
-			<Constant>эв_ПользовательСервисаИтилиум</Constant>
-			<Constant>эв_ПарольСервисаИтилиум</Constant>
-			<Constant>эв_КлиентИтилиум</Constant>
-			<Constant>эв_ИнициаторИтилиум</Constant>
 			<CommonForm>АварийныйРежимИСМП</CommonForm>
 			<CommonForm>АварийныйРежимМДЛП</CommonForm>
 			<CommonForm>АвтоматическийОбменСПодключаемымОборудованиемOffline</CommonForm>
