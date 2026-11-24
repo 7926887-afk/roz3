@@ -122,11 +122,11 @@
 			</EnumValue>
 			<EnumValue uuid="e4522389-c5ef-427e-bf9f-4269e2028a81">
 				<Properties>
-					<Name>ОжидаетОтвета</Name>
+					<Name>ОжиданиеОтвета</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ожидает ответа</v8:content>
+							<v8:content>Ожидание ответа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
