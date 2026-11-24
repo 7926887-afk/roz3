@@ -6,6 +6,7 @@
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="44">
@@ -29,6 +30,9 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СтатусКонтекстноеМеню" id="6"/>
 					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="7"/>
+					<Events>
+						<Event name="OnChange">СтатусПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="ДатаСоздания" id="46">
 					<DataPath>Запись.ДатаСоздания</DataPath>
