@@ -308,7 +308,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="890c2ac2-6c12-4382-bc87-bda4cda76285">
+			<Dimension uuid="9eb4bb58-f4d8-434b-8227-08b34fa8b4b8">
 				<Properties>
 					<Name>Клиент</Name>
 					<Synonym>
@@ -346,11 +346,15 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
+					<TypeReductionMode>TransformValues</TypeReductionMode>
 				</Properties>
-			</Resource>
+			</Dimension>
 			<Form>ФормаЗаписи</Form>
 			<Form>ФормаСписка</Form>
 		</ChildObjects>
