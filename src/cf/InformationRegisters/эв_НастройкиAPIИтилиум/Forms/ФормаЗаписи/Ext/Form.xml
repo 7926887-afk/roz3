@@ -4,13 +4,17 @@
 	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаПроверитьСвязь" id="92">
+			<Button name="ФормаПроверить" id="93">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ПроверитьСвязь</CommandName>
-				<ExtendedTooltip name="ФормаПроверитьСвязьРасширеннаяПодсказка" id="93"/>
+				<CommandName>Form.Command.Проверить</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьРасширеннаяПодсказка" id="94"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<InputField name="Клиент" id="89">
 			<DataPath>Запись.Клиент</DataPath>
@@ -65,17 +69,17 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ПроверитьСвязь" id="1">
+		<Command name="Проверить" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проверить связь</v8:content>
+					<v8:content>Проверить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проверить связь с HTTP-сервисом Итилиум</v8:content>
+					<v8:content>Проверить</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ПроверитьСвязь</Action>
