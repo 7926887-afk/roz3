@@ -57,15 +57,14 @@
 			<ExtendedTooltip name="ГруппаКомментарийРасширеннаяПодсказка" id="27"/>
 			<ChildItems>
 				<InputField name="ТекстКомментария" id="28">
-					<DataPath>ТекстКомментария</DataPath>
+					<DataPath>ПутьФайлаКомментария</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Текст</v8:content>
 						</v8:item>
 					</Title>
-					<TitleLocation>Top</TitleLocation>
-					<Height>3</Height>
+					<Height>2</Height>
 					<MultiLine>true</MultiLine>
 					<ContextMenu name="ТекстКомментарияКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ТекстКомментарияРасширеннаяПодсказка" id="30"/>

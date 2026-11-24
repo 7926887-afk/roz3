@@ -17798,6 +17798,7 @@
 			<InformationRegister>эв_НастройкиAPIОнлайнКассы</InformationRegister>
 			<InformationRegister>эв_КодыНоменклатурыПорталов</InformationRegister>
 			<InformationRegister>эв_ОбращенияВТехподдержку</InformationRegister>
+			<InformationRegister>эв_НастройкиAPIИтилиум</InformationRegister>
 			<AccumulationRegister>АвансовыеПлатежиИностранцевПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>БухгалтерскиеВзаиморасчетыССотрудниками</AccumulationRegister>

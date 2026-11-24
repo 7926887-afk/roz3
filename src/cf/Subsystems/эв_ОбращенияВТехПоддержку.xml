@@ -20,6 +20,8 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_ОбращенияВТехподдержку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.эв_СоздатьОбращение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.эв_НастройкиAPIИтилиум</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
