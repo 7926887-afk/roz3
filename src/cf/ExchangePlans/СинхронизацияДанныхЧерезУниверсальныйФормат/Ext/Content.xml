@@ -85,6 +85,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Document.эв_СтавкиБонусовПервостольника</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.ор_СМНН</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
